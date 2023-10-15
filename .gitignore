@@ -1,0 +1,4 @@
+/venv/
+
+/server-setup/*/data/*
+!/server-setup/*/data/README.md

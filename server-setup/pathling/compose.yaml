@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  pathling:
+    image: aehrc/pathling:6
+    ports:
+      - "${PATHLING_PORT:-8080}:8080"
+    environment:
+      pathling.terminology.serverUrl: "${TERMINOLOGY_SERVER_URL:-https://ontoserver.imi.uni-luebeck.de/fhir}"
+      pathling.cors.allowedOrigins: http://localhost:3000
+    volumes:
+      - pathling-data:/usr/share/warehouse
+      - "${DATA_PATH:-./data}:/usr/share/staging"
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:8080/fhir/metadata" ]
+      interval: 10s
+      timeout: 10s
+      retries: 30
+      start_period: 5s
+
+volumes:
+  pathling-data:
+    driver: local
