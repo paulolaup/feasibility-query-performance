@@ -3,3 +3,8 @@
 
 /server-setup/*/data/*
 !/server-setup/*/data/README.md
+!/server-setup/*/data/ndjson/README.md
+
+
+/server-setup/*/result/*
+!/server-setup/*/result/README.md
