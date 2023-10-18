@@ -1,10 +1,12 @@
 version: '3.8'
 
 services:
-  postgres:
-    image: postgres:latest
+  fhirbase:
+    image: fhirbase/fhirbase:latest
     ports:
-      - "${POSTGRES_PORT:-8080}:5432"
+      - "${POSTGRES_PORT:-8080}:3000"
+    volumes:
+      - ./data/ndjson:/fhirbase/data
     environment:
       - "POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}"
     healthcheck:

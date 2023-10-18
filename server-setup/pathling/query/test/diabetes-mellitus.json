@@ -1,0 +1,4 @@
+{
+  "_query": "fhirPath",
+  "filter": "reverseResolve(Condition.subject).code.coding.subsumedBy(system=http://snomed.info/sct|73211009)"
+}

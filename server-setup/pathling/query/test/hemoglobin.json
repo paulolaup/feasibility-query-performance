@@ -1,0 +1,4 @@
+{
+  "_query": "fhirPath",
+  "filter": "reverseResolve(Observation.subject).exists((code.coding.exists(system='http://loinc.org' and code='718-7') and valueQuantity.exists(system='http://unitsofmeasure.org' and code='g/dl') or (code.coding.exists(system='http://loinc.org' and code='17856-6') and valueQuantity.exists(system='http://unitsofmeasure.org' and code='%')) or (code.coding.exists(system='http://loinc.org' and code='4548-4') and valueQuantity.exists(system='http://unitsofmeasure.org' and code='%')) or (code.coding.exists(system='http://loinc.org' and code='4549-2') and valueQuantity.exists(system='http://unitsofmeasure.org' and code='%')))"
+}

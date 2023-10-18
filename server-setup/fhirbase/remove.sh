@@ -1,5 +1,5 @@
 #!/usr/bin/bash
 
-echo "Removing Blaze FHIR server"
-docker compose --project-name feasibility-query-performance-blaze down --volumes
+echo "Removing fhirbase FHIR server"
+docker compose --project-name feasibility-query-performance-fhirbase down --volumes
 echo "Done"

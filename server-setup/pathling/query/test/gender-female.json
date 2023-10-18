@@ -1,0 +1,4 @@
+{
+  "_query": "fhirPath",
+  "filter": "Patient.gender = 'female'"
+}
