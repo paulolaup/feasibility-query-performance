@@ -1,0 +1,8 @@
+{
+  "_query": "fhirPath",
+  "filter": [
+    "Patient.birthDate < 2005-10-20",
+    "Patient.where(gender = 'female').reverseResolve(Condition.subject).where(code.coding.exists(system='http://snomed.info/sct' and code='72892002') and clinicalStatus.coding.exists(system='http://terminology.hl7.org/CodeSystem/condition-clinical' and code='resolved')).empty()",
+    ""
+  ]
+}

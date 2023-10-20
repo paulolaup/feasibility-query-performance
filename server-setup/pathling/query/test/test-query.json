@@ -1,4 +1,6 @@
 {
   "_query": "fhirPath",
-  "filter": "reverseResolve(Condition.subject).code.coding.exists(system='http://snomed.info/sct' and code='72892002')"
+  "filter": [
+    "reverseResolve(Condition.subject).code.coding.exists(system='http://snomed.info/sct' and code='72892002')"
+  ]
 }
