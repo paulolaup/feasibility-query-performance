@@ -1,0 +1,1 @@
+Location for holding temporary decompressed data for the FHIR server.

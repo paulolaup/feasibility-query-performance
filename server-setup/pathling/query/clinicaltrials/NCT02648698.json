@@ -1,0 +1,9 @@
+{
+  "_query": "fhirPath",
+  "filter": [
+    "Patient.where(birthDate < @2005-10-01 and birthDate > @ 1973-10-01)",
+    "Patient.reverseResolve(Condition.subject).where(code.coding.subsumedBy(http://snomed.info/sct|237072009) and abatementDateTime > @2023-10-01).empty()",
+    "Patient.reverseResolve(Procedure.subject).where(code.coding.subsumedBy(http://snomed.info/sct|297279009) amd abatementDateTime > @2023-09-01).empty()",
+    "Patient.reverseResolve(AllergyIntolerance).code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and (code='82122' or code='10612')).not()"
+  ]
+}

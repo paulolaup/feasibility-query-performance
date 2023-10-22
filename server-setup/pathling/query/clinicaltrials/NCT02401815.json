@@ -3,6 +3,9 @@
   "filter": [
     "Patient.birthDate < 2005-10-20",
     "Patient.where(gender = 'female').reverseResolve(Condition.subject).where(code.coding.exists(system='http://snomed.info/sct' and code='72892002') and clinicalStatus.coding.exists(system='http://terminology.hl7.org/CodeSystem/condition-clinical' and code='resolved')).empty()",
-    ""
+    "Patient.reverseResolve(AllergyIntolerance.patient).where(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and (code='2183102' or code='357977'))).not()",
+    "Patient.reverseResolve(Condition).where(code.coding.subsumedBy(http://snomed.info/sct|66071002) or code.coding.subsumedBy(http://snomed.info/sct|50711007)).empty()",
+    "Patient.reverseResolve(Condition).where(code.coding.subsumedBy(http://snomed.info/sct|235856003) or code.coding.subsumedBy(http://snomed.info/sct|39621005)).empty()",
+    "Patient.reverseResolve(Condition).where(code.coding.subsumedBy(http://snomed.info/sct|233703007)).empty()"
   ]
 }
