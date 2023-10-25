@@ -1,2 +1,1 @@
-Directory which shall contain the NDJSON bundle files which are uploaded to
-Pathling via the $import operation.
+This directory is mounted to <container>:/usr/share/staging for upload of ndjson data.

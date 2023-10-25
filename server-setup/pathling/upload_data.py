@@ -11,6 +11,7 @@ from json_to_ndjson import convert_fhir_bundles_to_ndjson
 temp_dir = os.path.join('data', 'temp')
 ndjson_dir = os.path.join('data', 'ndjson')
 
+
 if __name__ == "__main__":
     assert len(sys.argv) >= 2, "Provide a path to the compressed data you want to upload"
     compressed_data_path = sys.argv[1]
@@ -19,13 +20,12 @@ if __name__ == "__main__":
     pathling_port = os.environ.get('PATHLING_PORT')
     assert pathling_port is not None, "Set PATHLING_PORT environment variable in .env file"
 
-    if not os.path.exists(temp_dir):
-        os.makedirs(temp_dir)
-    if not os.path.exists(ndjson_dir):
-        os.makedirs(ndjson_dir)
-
     print(f"Reading directory {compressed_data_path}")
-    for file_path in glob.glob(pathname='*.zip', root_dir=compressed_data_path, recursive=True):
+    for file_path in glob.glob(pathname='*.*', root_dir=compressed_data_path, recursive=True):
+        if not os.path.exists(temp_dir):
+            os.makedirs(temp_dir)
+        if not os.path.exists(ndjson_dir):
+            os.makedirs(ndjson_dir)
         print(f"Processing file {file_path}")
         # Decompress zipped file
         print("Decompressing file")
@@ -46,13 +46,18 @@ if __name__ == "__main__":
         response = requests.post(url=request_url, json=json.load(fp=open(request_file_path, mode='r')))
         if response.status_code < 300:
             print(f"Upload successful: {response.status_code}")
+            print("Removing temporary data")
+            subprocess.run(['rm', '-r', temp_dir])
+            subprocess.run(f"rm {os.path.join(ndjson_dir, '*.ndjson')}", shell=True)
+            subprocess.run(f"rm {os.path.join(ndjson_dir, '*.json')}", shell=True)
         else:
             print(f"Upload failed: {response.status_code}")
             print(response.text)
+            exit(1)
 
-    print("Removing temporary data")
-    subprocess.run(['rm', '-r', temp_dir])
-    subprocess.run(['rm', os.path.join(ndjson_dir, '*.ndjson')])
-    subprocess.run(['rm', os.path.join(ndjson_dir, '*.json')])
+#        print("Removing temporary data")
+#        subprocess.run(['rm', '-r', temp_dir])
+#        subprocess.run(f"rm {os.path.join(ndjson_dir, '*.ndjson')}", shell=True)
+#        subprocess.run(f"rm {os.path.join(ndjson_dir, '*.json')}", shell=True)
 
     print("Done")

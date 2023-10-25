@@ -111,19 +111,7 @@
             },
             "datasources": {
                 "default": {
-                    "jndiName": "jdbc/bootstrap_default_default",
-                    "type": "derby",
-                    "currentSchema": "APP"
-                },
-                "_db2sample": {
-                    "type": "db2",
-                    "tenantKey": "<the-tenant-key>",
-                    "currentSchema": "fhirdata",
-                    "hints" : {
-                      "search.reopt": "ONCE"
-                    }
-                },
-                "_pgsample": {
+                    "jndiName": "jdbc/fhir_default_default",
                     "type": "postgresql",
                     "currentSchema": "fhirdata",
                     "searchOptimizerOptions": {
@@ -158,8 +146,8 @@
                 },
                 "pageSize": 100,
                 "batchIdEncodingKey": "change-password",
-                "maxPartitions": 5,
-                "maxInputs": 5,
+                "maxPartitions": 16,
+                "maxInputs": 64,
                 "maxChunkReadTime": "90000",
                 "systemExportImpl": "fast",
                 "defaultExportProvider": "default",

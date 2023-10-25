@@ -53,7 +53,7 @@ def generate_request_json_body_file(dst):
                 },
                 {
                     'name': "mode",
-                    'valueCode': "overwrite"
+                    'valueCode': "merge"
                 }
             ]
         }
@@ -64,11 +64,14 @@ def generate_request_json_body_file(dst):
 
 
 def convert_fhir_bundles_to_ndjson(src, dst):
-    for file in os.listdir(src):
+    files = os.listdir(src)
+    length = len(files)
+    idx = 1
+    for file in files:
         filename = os.fsdecode(file)
         full_path = os.path.join(src, filename)
         with open(full_path, encoding='utf-8') as bundle_file:
-            print(f"Processing file {full_path}")
+            print(f"[{idx}/{length}] Processing file {full_path}", end='\r', flush=True)
             bundle_json = json.load(bundle_file)
             entry_elem = bundle_json['entry']
             for entry in entry_elem:
@@ -78,9 +81,10 @@ def convert_fhir_bundles_to_ndjson(src, dst):
                 if resource_type not in detected_resource_types:
                     print(f"Detected resource type {resource_type}")
                     type_ndjson_file_path = os.path.join(dst, f"{resource_type}.ndjson")
-                    detected_resource_types[resource_type] = open(type_ndjson_file_path, mode='a', encoding='utf-8')
+                    detected_resource_types[resource_type] = open(type_ndjson_file_path, mode='a+', encoding='utf-8')
                 # Append resource instance to resource type specific NDJSON file
                 detected_resource_types[resource_type].write(json.dumps(resource) + '\n')
+        idx += 1
 
     generate_request_json_body_file(dst)
 

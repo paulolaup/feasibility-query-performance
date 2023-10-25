@@ -6,9 +6,16 @@ services:
     ports:
       - "${LINUX4HEALTH_PORT:-8443}:9443"
     environment:
-      - "BOOTSTRAP_DB=true"
+      BATCH_DB_HOSTNAME: postgres
+      BATCH_DB_NAME: fhirdb
+      BATCH_DB_USER: fhirserver
+      BATCH_DB_PASSWORD: change-password
+    volumes:
+      - ./config/configDropins/defaults:/opt/ol/wlp/usr/servers/defaultServer/configDropins/defaults
+      - ./config/configDropins/overrides:/opt/ol/wlp/usr/servers/defaultServer/configDropins/overrides
+      - ./config/default/fhir-server-config.json:/opt/ol/wlp/usr/servers/defaultServer/config/default/fhir-server-config.json
     healthcheck:
-      test: [ "CMD", "curl", "-f", "-k", "https://localhost:9443/fhir-server/api/v4/metadata" ]
+      test: curl --fail -k https://localhost:9443/fhir-server/api/v4/metadata || exit 1
       interval: 10s
       timeout: 10s
       retries: 30
