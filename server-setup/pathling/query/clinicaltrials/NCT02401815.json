@@ -2,13 +2,13 @@
   "_query": "fhirPath",
   "filter": [
     "Patient.birthDate < @2005-10-20",
-    "Patient.where(gender = 'female').reverseResolve(Condition.subject).where(code.coding.exists(system='http://snomed.info/sct' and code='77386006') and clinicalStatus.coding.exists(system='http://terminology.hl7.org/CodeSystem/condition-clinical' and code='resolved') and recordedDateTime < @ 2023-10-01).empty()",
-    "Patient.reverseResolve(AllergyIntolerance.patient).where(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and (code='2183102' or code='357977')) and recordedDateTime < @ 2023-10-01).not()",
-    "Patient.reverseResolve(Condition).where(code.coding.subsumedBy(http://snomed.info/sct|66071002) or code.coding.subsumedBy(http://snomed.info/sct|50711007) and recordedDateTime < @ 2023-10-01).empty()",
-    "Patient.reverseResolve(Condition).where(code.coding.subsumedBy(http://snomed.info/sct|235856003) or code.coding.subsumedBy(http://snomed.info/sct|39621005) and recordedDateTime < @ 2023-10-01).empty()",
-    "Patient.reverseResolve(Condition).where(code.coding.subsumedBy(http://snomed.info/sct|233703007) and recordedDateTime < @ 2023-10-01).empty()",
-    "Patient.reverseResolve(Procedure).where((code.coding.subsumedBy(http://snomed.info/sct|387713003) or code.coding.subsumedBy(417746004)) and recordedDateTime < @ 2023-10-01).empty()",
-    "Patient.reverseResolve(Condition).where(code.coding.subsumedBy(http://snomed.info/sct|417746004 and recordedDateTime < @ 2023-10-01)).empty()",
-    "Patient.reverseResolve(Condition).where(code.coding.subsumedBy(http://snomed.info/sct|363346000 and recordedDateTime > @ 2021-10-01)).empty()"
+    "Patient.where(gender = 'female').reverseResolve(Condition.subject).where(code.coding.exists(system='http://snomed.info/sct' and code='77386006') and clinicalStatus.coding.exists(system='http://terminology.hl7.org/CodeSystem/condition-clinical' and code='resolved') and recordedDateTime < @2023-10-01).empty()",
+    "Patient.reverseResolve(AllergyIntolerance.patient).where(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and (code='2183102' or code='357977')) and recordedDateTime < @2023-10-01).not()",
+    "Patient.reverseResolve(Condition).where(code.coding.subsumedBy(http://snomed.info/sct|66071002).exists() or code.coding.subsumedBy(http://snomed.info/sct|50711007).exists() and recordedDateTime < @2023-10-01).empty()",
+    "Patient.reverseResolve(Condition).where(code.coding.subsumedBy(http://snomed.info/sct|235856003).exists() or code.coding.subsumedBy(http://snomed.info/sct|39621005).exists() and recordedDateTime < @2023-10-01).empty()",
+    "Patient.reverseResolve(Condition).where(code.coding.subsumedBy(http://snomed.info/sct|233703007).exists() and recordedDateTime < @2023-10-01).empty()",
+    "Patient.reverseResolve(Procedure).where((code.coding.subsumedBy(http://snomed.info/sct|387713003).exists() or code.coding.subsumedBy(417746004).exists()) and recordedDateTime < @2023-10-01).empty()",
+    "Patient.reverseResolve(Condition).where(code.coding.subsumedBy(http://snomed.info/sct|417746004).exists() and recordedDateTime < @2023-10-01)).empty()",
+    "Patient.reverseResolve(Condition).where(code.coding.subsumedBy(http://snomed.info/sct|363346000).exists() and recordedDateTime > @2021-10-01)).empty()"
   ]
 }

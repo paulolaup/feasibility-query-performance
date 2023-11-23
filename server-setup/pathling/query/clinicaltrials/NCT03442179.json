@@ -1,19 +1,19 @@
 {
   "_query": "fhirPath",
   "filter": [
-    "Patient.where(birthDate < @1958-10-01)",
-    "Patient.reverseResolve(Procedure.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|73632009 and status = 'not-done'))",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|52448006 and recordedDateTime < 2023-10-01T00:00:00)).not()",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|58214004 and recordedDateTime < 2023-10-01T00:00:00)).not()",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|52448006 and recordedDateTime < 2023-10-01T00:00:00)).not()",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|32798002 and recordedDateTime < 2023-10-01T00:00:00)).not()",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|128613002 and recordedDateTime < 2023-10-01T00:00:00)).not()",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|127294003 and recordedDateTime < 2023-10-01T00:00:00)).not()",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|428061005 and recordedDateTime < 2023-10-01T00:00:00)).not()",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|230690007 and recordedDateTime < 2023-10-01T00:00:00)).not()",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|45170000 and recordedDateTime < 2023-10-01T00:00:00)).not()",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|266257000 and recordedDateTime < 2023-10-01T00:00:00)).not()",
-    "Patient.reverseResolve(Observation.subject).where(code.coding.exists(system = 'http://loinc.org' and code='26463-7') and valueQuantity.exists(system = 'http://unitsofmeasure.org' and code= 'kg' and value < 136.078) and recordedDateTime < 2023-01-10T00:00:00).empty()",
-    "Patient.reverseResolve(Observation.subject).where(code.coding.exists(system = 'http://loinc.org' and code='39156-5') and valueQuantity.exists(system = 'http://unitsofmeasure.org' and code= 'kg/m2' and value < 40) and recordedDateTime < 2023-01-10T00:00:00).empty()"
+    "Patient.exists(birthDate < @1958-10-01)",
+    "Patient.reverseResolve(Procedure.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|73632009).exists() and status = 'not-done')",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|52448006).exists() and recordedDateTime < @2023-10-01T00:00:00).not()",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|58214004).exists() and recordedDateTime < @2023-10-01T00:00:00).not()",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|52448006).exists() and recordedDateTime < @2023-10-01T00:00:00).not()",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|32798002).exists() and recordedDateTime < @2023-10-01T00:00:00).not()",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|128613002).exists() and recordedDateTime < @2023-10-01T00:00:00).not()",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|127294003).exists() and recordedDateTime < @2023-10-01T00:00:00).not()",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|428061005).exists() and recordedDateTime < @2023-10-01T00:00:00).not()",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|230690007).exists() and recordedDateTime < @2023-10-01T00:00:00).not()",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|45170000).exists() and recordedDateTime < @2023-10-01T00:00:00).not()",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|266257000).exists() and recordedDateTime < @2023-10-01T00:00:00).not()",
+    "Patient.reverseResolve(Observation.subject).where(code.coding.exists(system = 'http://loinc.org' and code='26463-7') and valueQuantity.exists(system = 'http://unitsofmeasure.org' and code= 'kg' and value < 136.078) and recordedDateTime < @2023-01-10T00:00:00).empty()",
+    "Patient.reverseResolve(Observation.subject).where(code.coding.exists(system = 'http://loinc.org' and code='39156-5') and valueQuantity.exists(system = 'http://unitsofmeasure.org' and code= 'kg/m2' and value < 40) and recordedDateTime < @2023-01-10T00:00:00).empty()"
   ]
 }

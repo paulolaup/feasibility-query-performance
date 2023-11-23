@@ -1,1 +1,0 @@
-Mounting point for compressed NDJSON data to be uploaded to the fhirbase FHIR server.

@@ -9,12 +9,20 @@ import subprocess
 from json_to_ndjson import convert_fhir_bundles_to_ndjson
 
 temp_dir = os.path.join('data', 'temp')
+block_dir = os.path.join('data', 'block')
 ndjson_dir = os.path.join('data', 'ndjson')
+
+
+def chunks(lst, n):
+    for i in range(0, len(lst), n):
+        yield lst[i:i + n]
 
 
 if __name__ == "__main__":
     assert len(sys.argv) >= 2, "Provide a path to the compressed data you want to upload"
     compressed_data_path = sys.argv[1]
+
+    max_block_size = int(sys.argv[2]) if len(sys.argv) >= 3 else 10000
 
     dotenv.load_dotenv('.env')
     pathling_port = os.environ.get('PATHLING_PORT')
@@ -34,30 +42,66 @@ if __name__ == "__main__":
         (output, err) = p.communicate()
         p_status = p.wait()
 
-        # Create NDJSON files and request
-        print("Creating NDJSON bundles")
-        decompressed_data_path = os.path.join(temp_dir, 'output', 'fhir')
-        convert_fhir_bundles_to_ndjson(decompressed_data_path, ndjson_dir)
+        bundle_files = glob.glob(pathname='**/*.json', root_dir=temp_dir, recursive=True)
+        bundle_chunks = list(chunks(bundle_files, max_block_size))
+        for chunk in bundle_chunks:
+            if not os.path.exists(block_dir):
+                os.makedirs(block_dir)
 
-        # Upload data
-        request_file_path = os.path.join(ndjson_dir, 'request.json')
-        request_url = f"http://localhost:8080/fhir/$import"
-        print(f"Uploading data to {request_url}")
-        response = requests.post(url=request_url, json=json.load(fp=open(request_file_path, mode='r')))
-        if response.status_code < 300:
-            print(f"Upload successful: {response.status_code}")
+            # Move files in chunk
+            for bundle_file in chunk:
+                os.renames(os.path.join(temp_dir, bundle_file), os.path.join(block_dir, bundle_file))
+
+            # Create NDJSON files and request
+            print("Creating NDJSON bundles")
+            decompressed_data_path = os.path.join(block_dir, 'output', 'fhir')
+            convert_fhir_bundles_to_ndjson(decompressed_data_path, ndjson_dir)
+
+            # Upload data
+            request_file_path = os.path.join(ndjson_dir, 'request.json')
+            request_url = f"http://localhost:8080/fhir/$import"
+            print(f"Uploading data to {request_url}")
+            response = requests.post(url=request_url, json=json.load(fp=open(request_file_path, mode='r')))
+            if response.status_code < 300:
+                print(f"Upload successful: {response.status_code}")
+                #print("Removing temporary data")
+                #subprocess.run(['rm', '-r', temp_dir])
+                #subprocess.run(f"rm {os.path.join(ndjson_dir, '*.ndjson')}", shell=True)
+                #subprocess.run(f"rm {os.path.join(ndjson_dir, '*.json')}", shell=True)
+            else:
+                print(f"Upload failed: {response.status_code}")
+                print(response.text)
+                exit(1)
+
             print("Removing temporary data")
-            subprocess.run(['rm', '-r', temp_dir])
+            subprocess.run(f"rm -r {os.path.join(block_dir)}", shell=True)
             subprocess.run(f"rm {os.path.join(ndjson_dir, '*.ndjson')}", shell=True)
             subprocess.run(f"rm {os.path.join(ndjson_dir, '*.json')}", shell=True)
-        else:
-            print(f"Upload failed: {response.status_code}")
-            print(response.text)
-            exit(1)
 
-#        print("Removing temporary data")
-#        subprocess.run(['rm', '-r', temp_dir])
-#        subprocess.run(f"rm {os.path.join(ndjson_dir, '*.ndjson')}", shell=True)
-#        subprocess.run(f"rm {os.path.join(ndjson_dir, '*.json')}", shell=True)
+        # Create NDJSON files and request
+        #print("Creating NDJSON bundles")
+        #decompressed_data_path = os.path.join(temp_dir, 'output', 'fhir')
+        #convert_fhir_bundles_to_ndjson(decompressed_data_path, ndjson_dir)
+
+        # Upload data
+        #request_file_path = os.path.join(ndjson_dir, 'request.json')
+        #request_url = f"http://localhost:8080/fhir/$import"
+        #print(f"Uploading data to {request_url}")
+        #response = requests.post(url=request_url, json=json.load(fp=open(request_file_path, mode='r')))
+        #if response.status_code < 300:
+        #    print(f"Upload successful: {response.status_code}")
+        #    print("Removing temporary data")
+        #    subprocess.run(['rm', '-r', temp_dir])
+        #    subprocess.run(f"rm {os.path.join(ndjson_dir, '*.ndjson')}", shell=True)
+        #    subprocess.run(f"rm {os.path.join(ndjson_dir, '*.json')}", shell=True)
+        #else:
+        #    print(f"Upload failed: {response.status_code}")
+        #    print(response.text)
+        #    exit(1)
+
+        print("Removing temporary data")
+        subprocess.run(['rm', '-r', temp_dir])
+        #subprocess.run(f"rm {os.path.join(ndjson_dir, '*.ndjson')}", shell=True)
+        #subprocess.run(f"rm {os.path.join(ndjson_dir, '*.json')}", shell=True)
 
     print("Done")

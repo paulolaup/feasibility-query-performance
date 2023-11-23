@@ -2,9 +2,9 @@
   "_query": "fhirPath",
   "filter": [
     "Patient.birthDate.exists($this > @2005-10-01 and $this < @1957-10-01)",
-    "reverseResolve(Procedure.subject).exists(code.coding.subsumedBy(https://snomed.info/sct|699253003) and performedPeriod.start.exists($this > @2023-11-01 and $this < @2024-05-01))",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(https://snomed.info/sct|56019007) and onsetDateTime < @2023-10-01 and abatementDateTime > @2023-10-01).not()",
-    "reverseResolve(Observation.subject).where(code.coding.exists(system='http://loinc.org' and code='39165-5')).valueCodeableConcept.coding.exists(system='http://unitsofmeasure.org' and code='kg/m2' and value > 30).not",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|236423003) and onsetDateTime < @2023-10-01)"
+    "reverseResolve(Procedure.subject).exists(code.coding.subsumedBy(https://snomed.info/sct|699253003).exists() and performedPeriod.start.exists($this > @2023-11-01 and $this < @2024-05-01))",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(https://snomed.info/sct|56019007).exists() and onsetDateTime < @2023-10-01 and abatementDateTime > @2023-10-01).not()",
+    "reverseResolve(Observation.subject).where(code.coding.exists(system='http://loinc.org' and code='39165-5')).valueQuantity.coding.exists(system='http://unitsofmeasure.org' and code='kg/m2' and value > 30).not",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|236423003).exists() and onsetDateTime < @2023-10-01)"
     ]
 }

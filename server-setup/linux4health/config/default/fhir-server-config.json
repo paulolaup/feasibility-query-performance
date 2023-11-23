@@ -146,8 +146,8 @@
                 },
                 "pageSize": 100,
                 "batchIdEncodingKey": "change-password",
-                "maxPartitions": 5,
-                "maxInputs": 5,
+                "maxPartitions": 16,
+                "maxInputs": 64,
                 "maxChunkReadTime": "90000",
                 "systemExportImpl": "fast",
                 "defaultExportProvider": "default",
@@ -156,9 +156,8 @@
             "storageProviders": {
                 "default" : {
                     "type": "file",
-                    "_type": "ibm-cos|aws-s3|file|https|azure-blob",
                     "validBaseUrls": [],
-                    "fileBase": "/output/bulkdata",
+                    "fileBase": "/input/bulkdata/ndjson",
                     "bucketName": "fhir-performance",
                     "location": "us",
                     "endpointInternal": "https://s3.us-east.cloud-object-storage.appdomain.cloud",

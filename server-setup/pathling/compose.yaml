@@ -11,7 +11,9 @@ services:
       JAVA_TOOL_OPTIONS: "${JAVA_TOOL_OPTIONS:--Xmx16g}"
     volumes:
       - pathling-data:/usr/share/warehouse
+#      - /run/media/confi/Expansion/volumes/pathling:/usr/share/warehouse
       - "${DATA_PATH:-./data/ndjson}:/usr/share/staging"
+      - ./config/application.yml:/app/resources/application.yml
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:8080/fhir/metadata" ]
       interval: 10s

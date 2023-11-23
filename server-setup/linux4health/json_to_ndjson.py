@@ -1,6 +1,7 @@
 import sys
 import os
 import json
+import glob
 import traceback
 
 
@@ -31,29 +32,38 @@ pathling_ndjson_import_url = "file:///usr/share/staging/"
 #                ndjson_file.write(bundle_ndjson)
 
 
-def generate_request_json_body_file(dst, resource_type_dict):
+def generate_request_json_body_file(dst, resource_type_dict, url):
     print("Generating request body file")
     parameters = {
         'resourceType': "Parameters",
-        'parameter': []
+        'parameter': [
+            {
+                'name': "inputFormat",
+                'valueString': "application/fhir+ndjson"
+            },
+            {
+                'name': "inputSource",
+                'valueUri': url
+            },
+            {
+                'name': "storageDetail",
+                'valueString': "http"
+            }
+        ]
     }
     parameter_elem = parameters['parameter']
 
     for resource_type, file in resource_type_dict.items():
         parameter = {
-            'name': "source",
+            'name': "input",
             'part': [
                 {
-                    'name': "resourceType",
-                    'valueCode': resource_type
+                    'name': "type",
+                    'valueString': resource_type
                 },
                 {
                     'name': "url",
-                    'valueUrl': pathling_ndjson_import_url + os.path.basename(file.name)
-                },
-                {
-                    'name': "mode",
-                    'valueCode': "merge"
+                    'valueUrl': os.path.basename(file.name)
                 }
             ]
         }
@@ -63,9 +73,9 @@ def generate_request_json_body_file(dst, resource_type_dict):
         request_file.write(json.dumps(parameters, indent=2))
 
 
-def convert_fhir_bundles_to_ndjson(src, dst):
+def convert_fhir_bundles_to_ndjson(src, dst, url):
     detected_resource_types = dict()
-    files = os.listdir(src)
+    files = glob.glob(pathname='**/*.json', root_dir=src, recursive=True)
     length = len(files)
     idx = 1
     for file in files:
@@ -73,7 +83,7 @@ def convert_fhir_bundles_to_ndjson(src, dst):
         full_path = os.path.join(src, filename)
         with open(full_path, encoding='utf-8') as bundle_file:
             try:
-                #print(f"[{idx}/{length}] Processing file {full_path}", end='\r', flush=True)
+                print(f"[{idx}/{length}] Processing file {full_path}", end='\r', flush=True)
                 bundle_json = json.load(bundle_file)
                 entry_elem = bundle_json['entry']
                 for entry in entry_elem:
@@ -91,7 +101,7 @@ def convert_fhir_bundles_to_ndjson(src, dst):
                 print(traceback.print_exc())
         idx += 1
 
-    generate_request_json_body_file(dst, detected_resource_types)
+    generate_request_json_body_file(dst, detected_resource_types, url)
 
     # Close file pointers
     for file_ptr in detected_resource_types.values():
@@ -101,4 +111,5 @@ def convert_fhir_bundles_to_ndjson(src, dst):
 if __name__ == "__main__":
     src_dir = sys.argv[1]
     dst_dir = sys.argv[2]
-    convert_fhir_bundles_to_ndjson(src_dir, dst_dir)
+    file_server_url = sys.argv[3]
+    convert_fhir_bundles_to_ndjson(src_dir, dst_dir, file_server_url)

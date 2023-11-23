@@ -2,9 +2,9 @@
   "_query": "fhirPath",
   "filter": [
     "Patient.birthDate > @2005-10-01",
-    "reverseResolve(Observation.subject).where(code.coding.system='http://loinc.org' and (code='26499-4' or code='751-8' or code='753-4')).valueCodeableConcept.coding.exists(system='http://unitsofmeasure.org' and code='10*3/uL' and value >= 1.5)",
-    "reverseResolve(Observation.subject).where(code.coding.system='http://loinc.org' and (code='26515-7' or code='49497-1' or code='778-1')).valueCodeableConcept.coding.exists(system='http://unitsofmeasure.org' and code='10*3/uL' and value >= 100)",
-    "reverseResolve(Procedure.subject).exists(code.coding.exists(subsumedBy(http://snomed.info/sct|367336001) or subsumedBy(http://snomed.info/sct|108290001)) and performedPeriod.end > @2023-09-01).not()",
+    "reverseResolve(Observation.subject).where(code.coding.exists(system='http://loinc.org' and (code='26499-4' or code='751-8' or code='753-4'))).valueQuantity.coding.exists(system='http://unitsofmeasure.org' and code='10*3/uL' and value >= 1.5)",
+    "reverseResolve(Observation.subject).where(code.coding.exists(system='http://loinc.org' and (code='26515-7' or code='49497-1' or code='778-1'))).valueQuantity.exists(system='http://unitsofmeasure.org' and code='10*3/uL' and value >= 100)",
+    "reverseResolve(Procedure.subject).exists(code.coding.exists(subsumedBy(http://snomed.info/sct|367336001).exists() or subsumedBy(http://snomed.info/sct|108290001).exists()) and performedPeriod.end > @2023-09-01).not()",
     "reverseResolve(MedicationAdministration.subject).exists(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and (code='1291986' or code='2604803' or code='757968' or code='197516' or code='197517' or code='240741' or code='251854' or code='309322' or code='359385' or code='597455')) and effectiveDateTime > @2023-09-17).not()",
     "reverseResolve(MedicationAdministration.subject).exists(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and (code='103518' or code='106307' or code='153371' or code='1668264' or code='197650' or code='244374' or code='250697' or code='310149' or code='310150' or code='310152' or code='310154' or code='310155' or code='310157' or code='313968' or code='315090' or code='318202' or code='349148' or code='389251' or code='425351' or code='486912' or code='486955' or code='486960' or code='597193' or code='597194' or code='598006' or code='598008' or code='686350' or code='686355' or code='686400' or code='686405' or code='686406' or code='686418' or code='797452' or code='890953')) and effectiveDateTime > @2023-09-17).not()",
     "reverseResolve(MedicationAdministration.subject).exists(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and code='198337') and effectiveDateTime > @2023-09-17).not()",
@@ -25,15 +25,15 @@
     "reverseResolve(MedicationAdministration.subject).exists(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and code='258326') and effectiveDateTime > @2023-09-17).not()",
     "reverseResolve(MedicationAdministration.subject).exists(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and (code='205324' or code='260218')) and effectiveDateTime > @2023-09-17).not()",
     "reverseResolve(MedicationAdministration.subject).exists(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and (code='1365653' or code='1365842' or code='1365844' or code='283536' or code='312136' or code='312137' or code='312138')) and effectiveDateTime > @2023-09-17).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|94225005) and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|40733004) and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|42343007) and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|194828000) and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|698247007) and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|77386006) and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|19030005) and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|94225005).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|40733004).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|42343007).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|194828000).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|698247007).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|77386006).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|19030005).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
     "reverseResolve(AllergyIntolerance.patient).exists(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and code='37333') and recordedDateTime < @2023-10-01).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|126877002) and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|51387008) and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()"
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|126877002).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|51387008).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()"
   ]
 }

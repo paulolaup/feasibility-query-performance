@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  file-server:
+    build:
+      dockerfile: ./Dockerfile
+    hostname: file-server
+    ports:
+      - "${FILE_SERVER_PORT:-8000}:8000"
+    volumes:
+      - "./../data/ndjson:/opt/file-server/data/ndjson"
+    healthcheck:
+      test: curl --fail -k https://localhost:8000/ || exit 1
+      interval: 10s
+      timeout: 10s
+      retries: 30
+      start_period: 5s
