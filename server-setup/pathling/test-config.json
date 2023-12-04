@@ -1,8 +1,0 @@
-{
-  "runs": [
-    {
-      "name": "run_01",
-      "compressed_data": "/path/to/data"
-    }
-  ]
-}
