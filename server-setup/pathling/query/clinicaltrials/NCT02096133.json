@@ -2,7 +2,7 @@
   "_query": "fhirPath",
   "filter": [
     "Patient.gender = 'female'",
-    "Patient.birthDate < 2005-10-01",
+    "Patient.birthDate < @2005-10-01",
     "reverseResolve(Condition.subject).exists((code.coding.subsumedBy(http://snomed.info/sct|66931009).exists() or code.coding.subsumedBy(http://snomed.info/sct|27712000).exists() or code.coding.subsumedBy(http://snomed.info/sct|95570007).exists() or code.coding.subsumedBy(http://snomed.info/sct|236423003).exists()) and onsetDateTime < @2023-10-01 and abatementDateTime > @2023-10-01).not()",
     "reverseResolve(MedicationAdministration.subject).exists(medicationCodeableConcept.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and code='3264') and effectiveDateTime > @2023-08-10 and effectiveDateTime < @2023-10-01).not()",
     "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|370143000).exists() and onsetDateTime < @2023-10-01 and abatementDateTime > @2023-10-01).not()",

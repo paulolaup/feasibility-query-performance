@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  pathling:
+  server:
     image: aehrc/pathling:6
     ports:
       - "${PATHLING_PORT:-8080}:8080"

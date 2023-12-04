@@ -20,6 +20,7 @@ pathling:
   spark:
     # The name that Pathling will be identified as within the Spark cluster.
     appName: pathling
+    explainQueries: true
     
   storage:
     # The base URL at which Pathling will look for data files, and where it will save data received
@@ -119,6 +120,13 @@ pathling:
   async:
     enabled: true
 
+  terminology:
+    cache:
+      defaultExpiry:
+        3600
+      overrideExpiry:
+        3600
+
 # Use this section to set or override any Spark configuration parameter. Tuning these parameters is
 # essential to get the optimal performance for your dataset.
 # Here is the full list: https://spark.apache.org/docs/latest/configuration.html
@@ -129,6 +137,9 @@ spark:
       enabled: true
       coalescePartitions:
         enabled: true
+    autoBroadcastJoinThreshold: -1
+    driver:
+      memory: 32g
     extensions: io.delta.sql.DeltaSparkSessionExtension
     catalog:
       spark_catalog: org.apache.spark.sql.delta.catalog.DeltaCatalog
@@ -136,9 +147,20 @@ spark:
       partitions: 200
   databricks:
     delta:
+      autoCompact:
+        enabled: auto
       schema:
         autoMerge:
           enabled: true
+  driver:
+    extraJavaOptions: -XX:+UseG1GC
+  executor:
+#    instances:
+#      12
+    cores:
+      16
+    memory: 1g
+    extraJavaOptions: -XX:+UseG1GC
   network:
     timeout: 1200
   scheduler:
