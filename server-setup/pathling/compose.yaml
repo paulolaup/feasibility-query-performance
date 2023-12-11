@@ -2,13 +2,17 @@ version: '3.8'
 
 services:
   server:
-    image: aehrc/pathling:6
+    image: docker.io/aehrc/pathling:6.4.0@sha256:b523a16910caf03d9faf6e2c9a2de02646541bdcd6888ea68006be9d425b5021
     ports:
       - "${PATHLING_PORT:-8080}:8080"
+      - "8040:4040"
+      - "8077:7077"
     environment:
       pathling.terminology.serverUrl: "${TERMINOLOGY_SERVER_URL:-https://ontoserver.imi.uni-luebeck.de/fhir}"
       pathling.cors.allowedOrigins: http://localhost:3000
       JAVA_TOOL_OPTIONS: "${JAVA_TOOL_OPTIONS:--Xmx16g}"
+      SPARK_MASTER_HOST: "0.0.0.0"
+      SPARK_MASTER_PORT: "7777"
     volumes:
       - pathling-data:/usr/share/warehouse
 #      - /run/media/confi/Expansion/volumes/pathling:/usr/share/warehouse

@@ -8,7 +8,6 @@ import requests
 import datetime
 import subprocess
 
-
 pathling_project_name = 'feasibility-query-performance-pathling'
 query_path = 'query'
 query_file_pattern = '*.json'
@@ -17,6 +16,7 @@ aggregate_query_template = json.load(open(os.path.join('data', 'template', 'aggr
 headers = {
     'Content-Type': "application/fhir+json"
 }
+timeout = 1800  # 30 minutes
 
 
 def load_queries(path, file_pattern):
@@ -72,7 +72,7 @@ def calculate_avg(times):
         if time is not None:
             total += time
             cnt += 1
-    return total/cnt if cnt != 0 else None
+    return total / cnt if cnt != 0 else None
 
 
 def generate_aggregate_request_body(query):
@@ -114,7 +114,8 @@ def run_test(query_sets, url, project_name, rounds=None, num_pre_run_queries=Non
             # response = requests.post(url=f"{url}/Patient/_search", data=query, headers=headers)
             response = requests.post(url=f"{url}/Patient/$aggregate",
                                      json=generate_aggregate_request_body(query),
-                                     headers=headers)
+                                     headers=headers,
+                                     timeout=timeout)
             if response.status_code != 200:
                 print(f"Error while running pre-run query '{test_name}#{query_name}'")
                 print(f"Status code: {response.status_code}. Reason:\n{response.text}")
@@ -126,7 +127,8 @@ def run_test(query_sets, url, project_name, rounds=None, num_pre_run_queries=Non
             # response = requests.post(url=f"{url}/Patient/_search", data=query, headers=headers)
             response = requests.post(url=f"{url}/Patient/$aggregate",
                                      json=generate_aggregate_request_body(query),
-                                     headers=headers)
+                                     headers=headers,
+                                     timeout=timeout)
             if response.status_code == 200:
                 time_elapsed = response.elapsed
                 result_sets[test_name][query_name].append(time_elapsed)
@@ -191,6 +193,6 @@ if __name__ == "__main__":
     pathling_test_result = run_test(pathling_query_sets, base_url, pathling_project_name, num_rounds,
                                     num_pre_run_queries)
 
-    with open(os.path.join(result_path, 'result_' + datetime.datetime.today().strftime('%Y-%m-%d#%H:%M:%S')), mode='w+') as result_file:
+    with open(os.path.join(result_path, 'result_' + datetime.datetime.today().strftime('%Y-%m-%d#%H:%M:%S')),
+              mode='w+') as result_file:
         json.dump(pathling_test_result, result_file, indent=2)
-

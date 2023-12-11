@@ -119,6 +119,9 @@ pathling:
 
   async:
     enabled: true
+    varyHeadersExcludedFromCacheKey:
+      - Accept
+      - Accept-Encoding
 
   terminology:
     cache:
@@ -153,6 +156,8 @@ spark:
         autoMerge:
           enabled: true
   driver:
+    host: 0.0.0.0
+    port: 7077
     extraJavaOptions: -XX:+UseG1GC
   executor:
 #    instances:
