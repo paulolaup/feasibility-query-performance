@@ -77,29 +77,30 @@ def calculate_avg(times):
 
 
 def run_single_query(query):
-    prepared_query = query.replace('"', '\\"')
+    # prepared_query = query.replace('"', '\\"')
     start = time.time()
-    result = subprocess.run(['docker', 'exec', f'{fhirbase_project_name}-server-1', 'psql', '-U', 'postgres', '-c',
-                            f'\"{prepared_query}\"'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
+    result = subprocess.run(['docker', 'exec', f'{fhirbase_project_name}-server-1', 'psql', '-U', 'postgres',
+                             '-d', 'fb',
+                             '-c', f'{query}'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
     end = time.time()
 
     if result.returncode != 0:
         print(f"Process finished with unexpected return code {result.returncode}")
         print(f"Error log:\n{result.stderr.decode('utf-8')}")
 
-    query_result = str(result.stdout).decode("utf-8")
-    if re.fullmatch(query_error_pattern, query_result) is None:
+    query_result = result.stdout.decode("utf-8")
+    if re.fullmatch(query_error_pattern, query_result) is not None:
         print(f"Failure: Query execution failed with message:\n{query_result}")
         return None
     else:
-        time_elapsed = datetime.timedelta(end - start)
+        time_elapsed = datetime.timedelta(seconds=(end - start))
         print(f"Success: Time elapsed: {time_elapsed}")
         return time_elapsed
 
 
 def restart_containers(project):
     print(f"Restarting containers for project '{project}'")
-    subprocess.run(['docker', 'compose', '--project-name', project, 'down'])
+    subprocess.run(['docker', 'container', 'stop', f'{project}-server-1'])
     subprocess.run(['docker', 'compose', '--project-name', project, 'up', '--wait'])
 
 
@@ -129,8 +130,7 @@ def run_test(query_sets, project_name, rounds=None, num_pre_run_queries=None):
         for test_name, query_name, query in query_set:
             print(f"Query [{test_name}]{query_name}")
             execution_time = run_single_query(query)
-            if execution_time is not None:
-                result_sets[test_name][query_name].append(execution_time)
+            result_sets[test_name][query_name].append(execution_time)
 
     # Generate report
     print("Processing results")
@@ -175,16 +175,16 @@ def run_test(query_sets, project_name, rounds=None, num_pre_run_queries=None):
 
 
 if __name__ == "__main__":
-    assert len(sys.argv) >= 3, "Provide number of repetitions"
-    num_rounds = int(sys.argv[2])
+    assert len(sys.argv) >= 2, "Provide number of repetitions"
+    num_rounds = int(sys.argv[1])
 
-    assert len(sys.argv) >= 4, "Provide number of queries to run each round before measuring"
-    num_pre_run_queries = int(sys.argv[3])
+    assert len(sys.argv) >= 3, "Provide number of queries to run each round before measuring"
+    num_pre_run_queries = int(sys.argv[2])
 
     fhirbase_query_sets = load_queries(query_path, query_file_pattern)
     fhirbase_test_result = run_test(fhirbase_query_sets, fhirbase_project_name, num_rounds,
                                     num_pre_run_queries)
 
-    with open(os.path.join(result_path, 'result_' + datetime.datetime.today().strftime('%Y-%m-%d#%H:%M:%S')),
+    with open(os.path.join(result_path, 'result_' + datetime.datetime.today().strftime('%Y-%m-%d#%H:%M:%S') + '.json'),
               mode='w+') as result_file:
         json.dump(fhirbase_test_result, result_file, indent=2)

@@ -15,19 +15,18 @@ mkdir "$DATA_PATH/temp"
 pigz -dc "$compressed_data_path" | tar -xf - -C "$DATA_PATH/temp"
 
 echo "Processing files"
-mkdir "$DATA_PATH/ndjson"
-python bundle_to_compressed_ndjson.py "$DATA_PATH/temp/output/fhir" "$DATA_PATH/ndjson"
+python3 bundle_to_compressed_ndjson.py "$DATA_PATH/temp/output/fhir" "$DATA_PATH/ndjson"
 
 echo "Uploading files to fhirbase"
 find "$DATA_PATH/ndjson" -type f -name "*.ndjson.gz" -print0 | while read -d $'\0' file
 do
     echo "Uploading file ${file}"
-    docker exec feasibility-query-performance-fhirbase-fhirbase-1 fhirbase -d fb --fhir=4.0.0 load -m insert "/fhirbase/data/$(basename -- $file)"
+    docker exec feasibility-query-performance-fhirbase-server-1 fhirbase -d fb --fhir=4.0.0 load -m insert "/fhirbase/data/ndjson/$(basename -- $file)"
 done
 
 echo "Removing temporary data"
 rm -r "$DATA_PATH/temp"
-rm -r "$DATA_PATH/ndjson"
+# rm "$DATA_PATH/ndjson/*"
 
 echo "Done"
 
