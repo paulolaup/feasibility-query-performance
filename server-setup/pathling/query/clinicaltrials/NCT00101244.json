@@ -1,7 +1,7 @@
 {
   "_query": "fhirPath",
   "filter": [
-    "Patient.birthDate > @2005-10-01",
+    "Patient.birthDate < @2005-10-01",
     "reverseResolve(Observation.subject).where(code.coding.exists(system='http://loinc.org' and (code='26499-4' or code='751-8' or code='753-4'))).valueQuantity.exists(system='http://unitsofmeasure.org' and code='10*3/uL' and value >= 1.5)",
     "reverseResolve(Observation.subject).where(code.coding.exists(system='http://loinc.org' and (code='26515-7' or code='49497-1' or code='778-1'))).valueQuantity.exists(system='http://unitsofmeasure.org' and code='10*3/uL' and value >= 100)",
     "reverseResolve(Procedure.subject).exists(code.coding.exists(subsumedBy(http://snomed.info/sct|367336001).exists() or subsumedBy(http://snomed.info/sct|108290001).exists()) and performedPeriod.end > @2023-09-01).not()",
@@ -32,7 +32,7 @@
     "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|698247007).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
     "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|77386006).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
     "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|19030005).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
-    "reverseResolve(AllergyIntolerance.patient).exists(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and code='37333') and recordedDate < @2023-10-01).not()",
+    "reverseResolve(AllergyIntolerance.patient).exists(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and code='37333') and recordedDate <= @2023-10-01).not()",
     "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|126877002).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()",
     "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|51387008).exists() and onsetDateTime <= @2023-10-01 and abatementDateTime >= @2023-10-01).not()"
   ]
