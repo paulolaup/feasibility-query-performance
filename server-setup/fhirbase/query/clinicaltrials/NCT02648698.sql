@@ -1,7 +1,8 @@
 SELECT COUNT(DISTINCT (inclusion.id))
 FROM ((SELECT p.id
        FROM patient p
-       WHERE (p.resource ->> 'birthDate')::timestamp <@ '[1973-10-01,2005-10-01)'::tsrange)) inclusion
+       WHERE p.resource ->> 'gender' = 'female' AND
+             (p.resource ->> 'birthDate')::timestamp <@ '[1973-10-01,2005-10-01)'::tsrange)) inclusion
 WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                             FROM condition c,
                                  jsonb_array_elements(c.resource #> '{code,coding}') coding
@@ -20,7 +21,7 @@ WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                                    ('297279009', '860724003', '788751009', '710818004', '307513002', '297283009',
                                     '309807009', '297280007', '1141994004', '722491009', '434601000124108', '724162002',
                                     '724163007'))
-                              AND (p.resource #>> '{performed,Period,end}')::timestamp < '2023-09-01'::timestamp)
+                              AND (p.resource #>> '{performed,Period,end}')::timestamp <@ '[2023-09-01,2023-10-01)'::tsrange)
                            UNION
                            (SELECT ai.resource #>> '{patient,id}'
                             FROM allergyintolerance ai,
