@@ -46,7 +46,7 @@ FROM ((SELECT p.id
                                                                                       '30985009', '73869005',
                                                                                       '190244006', '69329005')))
          AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp
-         AND ((c.resource #>> '{abatement,dateTime}')::timestamp IS NULL OR
+         AND (c.resource #> '{abatement,dateTime}' IS NULL OR
               (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp))) inclusion
 WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                             FROM condition c,
@@ -113,4 +113,5 @@ WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                                     '251175005', '251181002', '6624005', '251180001', '184004', '74390002',
                                     '773587008'))
                               AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp
-                              AND (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp))
+                              AND (c.resource #> '{abatement,dateTime}' IS NULL
+                                  OR (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp)))

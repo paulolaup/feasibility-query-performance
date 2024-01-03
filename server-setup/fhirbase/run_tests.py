@@ -1,11 +1,10 @@
 import os
 import re
-import sys
 import glob
 import json
 import time
 import random
-import requests
+import argparse
 import datetime
 import subprocess
 
@@ -17,7 +16,7 @@ headers = {
     'Content-Type': "application/fhir+json"
 }
 timeout = 1800  # 30 minutes
-query_error_pattern = "^ERROR:.*$"
+query_error_pattern = "^.*ERROR:.*$"
 
 
 def load_queries(path, file_pattern):
@@ -29,9 +28,9 @@ def load_queries(path, file_pattern):
         if os.path.isdir(os.path.join(path, dir_name)):
             # Get query files in directory
             queries = {}
-            for query_file in glob.glob(os.path.join(path, dir_name, file_pattern)):
-                key = os.path.splitext(os.path.basename(query_file))[0]
-                queries[key] = open(query_file, encoding='utf8').read()
+            for query_file_path in glob.glob(os.path.join(path, dir_name, file_pattern)):
+                key = os.path.splitext(os.path.basename(query_file_path))[0]
+                queries[key] = query_file_path
             query_sets[dir_name] = queries
 
     print(f"Loaded query sets: {', '.join(query_sets.keys())}")
@@ -76,12 +75,15 @@ def calculate_avg(times):
     return total / cnt if cnt != 0 else None
 
 
-def run_single_query(query):
+def run_single_query(query_path):
     # prepared_query = query.replace('"', '\\"')
     start = time.time()
-    result = subprocess.run(['docker', 'exec', f'{fhirbase_project_name}-server-1', 'psql', '-U', 'postgres',
-                             '-d', 'fb',
-                             '-c', f'{query}'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
+    # result = subprocess.run(['docker', 'exec', f'{fhirbase_project_name}-server-1', 'psql', '-U', 'postgres',
+    #                          '-d', 'fb', '-f', f'/fhirbase/{query_path}'],
+    #                         stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
+    result = subprocess.run(['psql', '-h', 'localhost', '-p', '9432', '-U', 'postgres',
+                             '-d', 'fb', '-f', f'{query_path}'],
+                            stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
     end = time.time()
 
     if result.returncode != 0:
@@ -121,15 +123,15 @@ def run_test(query_sets, project_name, rounds=None, num_pre_run_queries=None):
 
         # Run pre-run queries
         print("Running pre-run queries")
-        for test_name, query_name, query in pre_run_query_set:
+        for test_name, query_name, query_file_path in pre_run_query_set:
             print(f"Query [{test_name}]{query_name}")
-            run_single_query(query)
+            run_single_query(query_file_path)
 
         # Run queries
         print("Running queries")
-        for test_name, query_name, query in query_set:
+        for test_name, query_name, query_file_path in query_set:
             print(f"Query [{test_name}]{query_name}")
-            execution_time = run_single_query(query)
+            execution_time = run_single_query(query_file_path)
             result_sets[test_name][query_name].append(execution_time)
 
     # Generate report
@@ -174,12 +176,20 @@ def run_test(query_sets, project_name, rounds=None, num_pre_run_queries=None):
 #    return result_sets
 
 
-if __name__ == "__main__":
-    assert len(sys.argv) >= 2, "Provide number of repetitions"
-    num_rounds = int(sys.argv[1])
+def configure_argparser():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-r', '--rounds', type=int, default=10, help='Number of rounds where all tests are run')
+    parser.add_argument('-p', '--num-pre-queries', type=int, default=0,
+                        help='Number of random queries to run before running all queries each round')
+    return parser
 
-    assert len(sys.argv) >= 3, "Provide number of queries to run each round before measuring"
-    num_pre_run_queries = int(sys.argv[2])
+
+if __name__ == "__main__":
+    arg_parser = configure_argparser()
+    args = arg_parser.parse_args()
+
+    num_rounds = args.rounds
+    num_pre_run_queries = args.num_pre_queries
 
     fhirbase_query_sets = load_queries(query_path, query_file_pattern)
     fhirbase_test_result = run_test(fhirbase_query_sets, fhirbase_project_name, num_rounds,

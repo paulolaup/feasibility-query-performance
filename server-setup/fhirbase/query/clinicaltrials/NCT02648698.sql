@@ -11,7 +11,7 @@ WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                                    ('277158007', '134031000119108', '399497006', '198322002', '10738291000119106',
                                     '198321009', '237072009', '399473002', '721204009', '721205005', '198324001'))
                               AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp
-                              AND (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp)
+                              AND (c.resource #> '{abatement,dateTime}' IS NULL OR (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp))
                            UNION
                            (SELECT p.resource #>> '{subject,id}'
                             FROM procedure p,

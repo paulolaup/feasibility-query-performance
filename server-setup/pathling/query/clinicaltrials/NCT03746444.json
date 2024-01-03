@@ -2,10 +2,10 @@
   "_query": "fhirPath",
   "filter": [
     "Patient.birthDate.exists($this > @2005-10-01 and $this < @1957-10-01)",
-    "reverseResolve(Procedure.subject).exists(code.coding.subsumedBy(https://snomed.info/sct|699253003).exists() and performedPeriod.start.exists($this > @2022-10-01 and $this < @2023-10-01) and performedPeriod.end < @2023-10-01)",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(https://snomed.info/sct|56019007).exists() and onsetDateTime < @2023-10-01 and abatementDateTime > @2023-10-01).not()",
+    "reverseResolve(Procedure.subject).exists(code.coding.subsumedBy(https://snomed.info/sct|699253003).anyTrue() and performedPeriod.start.exists($this > @2022-10-01 and $this < @2023-10-01) and performedPeriod.end < @2023-10-01)",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(https://snomed.info/sct|56019007).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
     "reverseResolve(Observation.subject).where(code.coding.exists(system='http://loinc.org' and code='39156-5') and valueQuantity.exists(system='http://unitsofmeasure.org' and code='kg/m2' and value > 30) and effectiveDateTime.exists($this => @2022-10-01 and $this < @2023-10-01)).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|236423003).exists() and onsetDateTime < @2023-10-01).not()",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|236423003).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "Patient.reverseResolve(AllergyIntolerance.patient).exists(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and (code='8782' or code='4337' or code='68139' or code='36453' or code='1815')) and recordedDate < @2023-10-01).not()"
     ]
 }

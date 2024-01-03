@@ -3,7 +3,7 @@
 compressed_data_path="$1"
 
 if [[ -z "$compressed_data_path" ]]; then
-  echo "Provide path to the compressed data to decompress and upload"
+  echo "Provide path to the compressed data file to decompress and upload"
   exit 1
 fi
 

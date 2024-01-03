@@ -142,7 +142,7 @@ spark:
         enabled: true
     autoBroadcastJoinThreshold: -1
     driver:
-      memory: 32g
+      memory: 22g
     extensions: io.delta.sql.DeltaSparkSessionExtension
     catalog:
       spark_catalog: org.apache.spark.sql.delta.catalog.DeltaCatalog

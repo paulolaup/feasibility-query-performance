@@ -1,9 +1,9 @@
 import os
-import sys
 import glob
 import json
 import copy
 import random
+import argparse
 import requests
 import datetime
 import subprocess
@@ -133,6 +133,7 @@ def run_test(query_sets, url, project_name, rounds=None, num_pre_run_queries=Non
                 time_elapsed = response.elapsed
                 result_sets[test_name][query_name].append(time_elapsed)
                 print(f"Success: Time elapsed: {time_elapsed}")
+                print(response.text)
             else:
                 result_sets[test_name][query_name].append(None)
                 print(f"Failure: {response.status_code}. Reason:\n{response.text}")
@@ -179,15 +180,22 @@ def run_test(query_sets, url, project_name, rounds=None, num_pre_run_queries=Non
 #    return result_sets
 
 
+def configure_argparse():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-r', '--rounds', type=int, default=10, help='Number of rounds in which each query is run')
+    parser.add_argument('-p', '--num-pre-queries', type=int, default=0,
+                        help='number of queries to run before running queries each round')
+    parser.add_argument('-u', '--url', required=True, help='Pathling URL to send requests to')
+    return parser
+
+
 if __name__ == "__main__":
-    assert len(sys.argv) >= 2, "Provide Pathling base URL"
-    base_url = sys.argv[1]
+    arg_parser = configure_argparse()
+    args = arg_parser.parse_args()
 
-    assert len(sys.argv) >= 3, "Provide number of repetitions"
-    num_rounds = int(sys.argv[2])
-
-    assert len(sys.argv) >= 4, "Provide number of queries to run each round before measuring"
-    num_pre_run_queries = int(sys.argv[3])
+    base_url = args.url
+    num_rounds = args.rounds
+    num_pre_run_queries = args.num_pre_queries
 
     pathling_query_sets = load_queries(query_path, query_file_pattern)
     pathling_test_result = run_test(pathling_query_sets, base_url, pathling_project_name, num_rounds,

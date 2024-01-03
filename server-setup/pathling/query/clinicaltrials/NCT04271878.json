@@ -2,11 +2,11 @@
   "_query": "fhirPath",
   "filter": [
     "Patient.exists(birthDate < @2005-10-01 and birthDate > @1963-10-01)",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|371073003).exists() and onsetDateTime < @2023-10-01 and abatementDateTime > @2023-10-01)",
-    "reverseResolve(Observation.subject).exists(code.coding.exists(system = 'http://loinc.org' and code = '72166-2') and valueCodeableConcept.exists(system = 'http://snomed.infot/sct' and (code = '266919005' or code = '449868002')) and effectiveDateTime.exists($this > @2022-10-01 and $this < @2023-10-01))",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|34095006).exists() and onsetDateTime < @2023-10-01 and abatementDateTime > @2023-10-01).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|397923000).exists() and onsetDateTime < @2023-10-01 and abatementDateTime > @2023-10-01).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|77386006).exists() and onsetDateTime < @2023-10-01 and abatementDateTime > @2023-10-01).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|48447003).exists() and onsetDateTime < @2023-10-01 and abatementDateTime > @2023-10-01).not()"
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|371073003).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01))",
+    "reverseResolve(Observation.subject).exists(code.coding.exists(system = 'http://loinc.org' and code = '72166-2') and valueCodeableConcept.coding.exists(system = 'http://snomed.infot/sct' and (code = '266919005' or code = '449868002')) and effectiveDateTime.exists($this > @2022-10-01 and $this < @2023-10-01))",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|34095006).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|397923000).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|77386006).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|48447003).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()"
   ]
 }

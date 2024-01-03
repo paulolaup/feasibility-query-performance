@@ -5,10 +5,15 @@ import json
 import gzip
 
 
+allowed_resource_types = {"Condition", "Observation", "MedicationRequest", "Encounter", "Procedure", "Immunization",
+                          "MedicationAdministration", "Medication", "Patient", "AllergyIntolerance", "Device"}
+
+
 def bundle_to_compressed_ndjson(file_path, output_file_pointer):
     bundle = json.load(fp=open(file_path, mode='r'))
     for entry in bundle['entry']:
-        output_file_pointer.write((json.dumps(entry['resource']) + '\n').encode('utf-8'))
+        if entry['resource']['resourceType'] in allowed_resource_types:
+            output_file_pointer.write((json.dumps(entry['resource']) + '\n').encode('utf-8'))
 
 
 if __name__ == "__main__":
