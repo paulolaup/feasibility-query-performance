@@ -20,7 +20,7 @@
   ],
   "exclusionCriteria": [
     {
-      "termCodes": subsumedBy(http://snomed.info/sct|237072009),
+      "termCodes": [{"system": "http://snomed.info/sct", "code": "277158007", "display": "Atypical endometrial hyperplasia"}, {"system": "http://snomed.info/sct", "code": "134031000119108", "display": "Benign endometrial hyperplasia"}, {"system": "http://snomed.info/sct", "code": "399497006", "display": "Complex atypical endometrial hyperplasia"}, {"system": "http://snomed.info/sct", "code": "198322002", "display": "Complex endometrial hyperplasia"}, {"system": "http://snomed.info/sct", "code": "10738291000119106", "display": "Complex endometrial hyperplasia without atypia"}, {"system": "http://snomed.info/sct", "code": "198321009", "display": "Endometrial cystic hyperplasia"}, {"system": "http://snomed.info/sct", "code": "237072009", "display": "Endometrial hyperplasia"}, {"system": "http://snomed.info/sct", "code": "399473002", "display": "Simple atypical endometrial hyperplasia"}, {"system": "http://snomed.info/sct", "code": "721204009", "display": "Simple endometrial glandular hyperplasia with atypia"}, {"system": "http://snomed.info/sct", "code": "721205005", "display": "Simple endometrial glandular hyperplasia without atypia"}, {"system": "http://snomed.info/sct", "code": "198324001", "display": "Simple endometrial hyperplasia"}],
       "context": {
         "code": "Diagnose",
         "system": "fdpg.mii.synthea",
@@ -32,7 +32,7 @@
       }
     },
     {
-      "termCodes": subsumedBy(http://snomed.info/sct|297279009),
+      "termCodes": [{"system": "http://snomed.info/sct", "code": "297279009", "display": "Administration of steroid"}, {"system": "http://snomed.info/sct", "code": "860724003", "display": "Antenatal therapeutic administration of corticosteroid"}, {"system": "http://snomed.info/sct", "code": "788751009", "display": "Corticosteroid and/or corticosteroid derivative therapy"}, {"system": "http://snomed.info/sct", "code": "710818004", "display": "Inhaled steroid therapy"}, {"system": "http://snomed.info/sct", "code": "307513002", "display": "Intramuscular steroid therapy"}, {"system": "http://snomed.info/sct", "code": "297283009", "display": "Intravenous hydrocortisone therapy"}, {"system": "http://snomed.info/sct", "code": "309807009", "display": "Methylprednisolone pulse therapy"}, {"system": "http://snomed.info/sct", "code": "297280007", "display": "Oral steroid therapy"}, {"system": "http://snomed.info/sct", "code": "1141994004", "display": "R-CEOP (rituximab, cyclophosphamide, etoposide, vincristine, prednisone) antineoplastic chemotherapy"}, {"system": "http://snomed.info/sct", "code": "722491009", "display": "R-CHOP chemotherapy regimen"}, {"system": "http://snomed.info/sct", "code": "434601000124108", "display": "Steroid therapy for fetal lung maturation"}, {"system": "http://snomed.info/sct", "code": "724162002", "display": "Testosterone cypionate therapy"}, {"system": "http://snomed.info/sct", "code": "724163007", "display": "Testosterone replacement therapy"}],
       "context": {
         "code": "Procedure",
         "system": "fdpg.mii.synthea",
