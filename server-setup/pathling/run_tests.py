@@ -131,7 +131,10 @@ def run_test(query_sets, url, project_name, rounds=None, num_pre_run_queries=Non
                                      timeout=timeout)
             if response.status_code == 200:
                 time_elapsed = response.elapsed
-                result_sets[test_name][query_name].append(time_elapsed)
+                result_sets[test_name][query_name].append({
+                    'time': time_elapsed,
+                    'result': response.text
+                })
                 print(f"Success: Time elapsed: {time_elapsed}")
                 print(response.text)
             else:
@@ -146,8 +149,9 @@ def run_test(query_sets, url, project_name, rounds=None, num_pre_run_queries=Non
         report[test_name] = test_results
         for query_name, query_results in queries.items():
             result_entry = {
-                'avg': str(calculate_avg(query_results)),
-                'times': [str(time) for time in query_results]
+                'avg': str(calculate_avg([result['time'] for result in query_results])),
+                'times': [str(result['time']) for result in query_results],
+                'results': [str(result['result']) for result in query_results]
             }
             test_results[query_name] = result_entry
 
