@@ -3029,9 +3029,9 @@ WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                                  jsonb_array_elements(o.resource #> '{value,Quantity}' || '[]') quantity
                             WHERE coding ->> 'system' = 'http://loinc.org'
                               AND quantity ->> 'system' = 'http://unitsofmeasure.org'
-                              AND ((coding ->> 'code' = '26463-7'
+                              AND ((coding ->> 'code' = '29463-7'
                                 AND quantity ->> 'code' = 'kg'
-                                AND (quantity ->> 'value')::decimal < 136.078) OR (coding ->> 'code' = '39156-5'
+                                AND (quantity ->> 'value')::decimal > 136.078) OR (coding ->> 'code' = '39156-5'
                                 AND quantity ->> 'code' = 'kg/m2'
-                                AND (quantity ->> 'value')::decimal < 40.0))
+                                AND (quantity ->> 'value')::decimal > 40.0))
                               AND (o.resource #>> '{effective,dateTime}')::timestamp <@ '[2023-09-01,2023-10-01)'::tsrange))

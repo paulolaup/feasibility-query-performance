@@ -1,0 +1,70 @@
+{
+  "version": "http://to_be_decided.com/draft-1/schema#",
+  "display": "",
+  "inclusionCriteria": [
+    {
+        "termCodes": [
+          {
+            "code": "424144002",
+            "system": "http://snomed.info/sct",
+            "display": "GegenwÃ¤rtiges chronologisches Alter"
+          }
+        ],
+        "context": {
+          "code": "Patient",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Patient"
+        }
+      }
+  ],
+  "exclusionCriteria": [
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|237072009),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|297279009),
+      "context": {
+        "code": "Procedure",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Prozedur"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-09-01"
+      }
+    },
+    {
+      "termCodes": [
+        {
+          "code": "82122",
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "display": "levofloxacin"
+        },
+        {
+          "code": "10612",
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "display": "tinidazole"
+        }
+      ],
+      "context": {
+        "code": "AllergyIntolerance",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "AllergyIntolerance"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    }
+  ]
+}

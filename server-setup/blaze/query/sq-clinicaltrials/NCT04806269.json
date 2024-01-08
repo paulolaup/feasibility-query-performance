@@ -1,0 +1,59 @@
+{
+  "version": "http://to_be_decided.com/draft-1/schema#",
+  "display": "",
+  "inclusionCriteria": [
+    [{
+        "termCodes": [
+          {
+            "code": "424144002",
+            "system": "http://snomed.info/sct",
+            "display": "GegenwÃ¤rtiges chronologisches Alter"
+          }
+        ],
+        "context": {
+          "code": "Patient",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Patient"
+        }
+      }],
+      [{
+      "termCodes": subsumedBy(http://snomed.info/sct|40930008),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    }],
+    [{
+      "termCodes": subsumedBy(http://snomed.info/sct|90739004),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    }]
+  ],
+  "exclusionCriteria": [
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|698247007),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    }
+  ]
+}

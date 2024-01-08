@@ -18,7 +18,7 @@ FROM ((SELECT p.id
        WHERE coding ->> 'system' = 'http://loinc.org'
          AND coding ->> 'code' = '72166-2'
          AND valueCoding ->> 'system' = 'http://snomed.info/sct'
-         AND valueCoding ->> 'code' IN ('266919005', '449868002')
+         AND valueCoding ->> 'code' IN ('266919005', '8517006')
          AND (o.resource #>> '{effective,dateTime}')::timestamp <@ '[2022-10-01, 2023-10-01)'::tsrange)) inclusion
 WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                             FROM condition c,

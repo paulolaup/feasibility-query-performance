@@ -1,0 +1,511 @@
+{
+  "version": "http://to_be_decided.com/draft-1/schema#",
+  "display": "",
+  "inclusionCriteria": [
+    [
+      {
+        "termCodes": [
+          {
+            "code": "424144002",
+            "system": "http://snomed.info/sct",
+            "display": "GegenwÃ¤rtiges chronologisches Alter"
+          }
+        ],
+        "context": {
+          "code": "Patient",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Patient"
+        }
+      },
+      {
+        "termCodes": [
+          {
+            "code": "26499-4",
+            "system": "http://loinc.org",
+            "display": "Neutrophils [#/volume] in Blood"
+          },
+          {
+            "code": "751-8",
+            "system": "http://loinc.org",
+            "display": "Neutrophils [#/volume] in Blood by Automated count"
+          },
+          {
+            "code": "753-4",
+            "system": "http://loinc.org",
+            "display": "Neutrophils [#/volume] in Blood by Manual count"
+          }
+        ],
+        "context": {
+          "code": "Laboruntersuchung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Laboruntersuchung"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "comparator": "ge",
+          "unit": {
+            "code": "10*3/uL",
+            "display": "10*3/uL"
+          },
+          "value": 9
+        }
+      },
+      {
+        "termCodes": [
+          {
+            "code": "26515-7",
+            "system": "http://loinc.org",
+            "display": "Platelets [#/volume] in Blood"
+          },
+          {
+            "code": "49497-1",
+            "system": "http://loinc.org",
+            "display": "Platelets [#/volume] in Blood by Estimate"
+          },
+          {
+            "code": "778-1",
+            "system": "http://loinc.org",
+            "display": "Platelets [#/volume] in Blood by Manual count"
+          }
+        ],
+        "context": {
+          "code": "Laboruntersuchung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Laboruntersuchung"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "comparator": "ge",
+          "unit": {
+            "code": "K/uL",
+            "display": "K/uL"
+          },
+          "value": 100
+        }
+      }
+    ]
+  ],
+  "exclusionCriteria": [
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|367336001),
+      "context": {
+        "code": "Procedure",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Prozedur"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|108290001),
+      "context": {
+        "code": "Procedure",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Prozedur"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-01"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(21212,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(4053,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(10864,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(28031,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(6135,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(121243,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(31565,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(42355,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(11170,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(3443,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(8183,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(2002,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(8134,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(9384,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(55672,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(35617,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(30125,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(32624,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(1314580,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-17"
+      }
+    },
+    {
+      "termCodes": relatedByTTY(1431224,[IN,MIN,SCD,SBD,SCDC,SBDC,BPCK,GPCK]),
+      "context": {
+        "code": "Medikamentenverabreichung",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Verabreichung von Medikamenten"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2023-09-24"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|94225005),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|40733004),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|42343007),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|194828000),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|698247007),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|77386006),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|19030005),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|126877002),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|51387008),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": [
+        {
+          "code": "37333",
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "display": "sulfanilylurea"
+        }
+      ],
+      "context": {
+        "code": "AllergyIntolerance",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "AllergyIntolerance"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    }
+  ]
+}

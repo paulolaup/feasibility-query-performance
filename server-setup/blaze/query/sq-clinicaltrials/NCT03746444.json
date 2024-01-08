@@ -1,0 +1,126 @@
+{
+  "version": "http://to_be_decided.com/draft-1/schema#",
+  "display": "",
+  "inclusionCriteria": [
+    {
+        "termCodes": [
+          {
+            "code": "424144002",
+            "system": "http://snomed.info/sct",
+            "display": "GegenwÃ¤rtiges chronologisches Alter"
+          }
+        ],
+        "context": {
+          "code": "Patient",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Patient"
+        }
+      },
+      {
+      "termCodes": subsumedBy(http://snomed.info/sct|699253003),
+      "context": {
+        "code": "Procedure",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Prozedur"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01",
+        "afterDate": "2022-10-01"
+      }
+    }
+  ],
+  "exclusionCriteria": [
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|56019007),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|236423003),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+        "termCodes": [
+          {
+            "code": "39156-5",
+            "system": "http://loinc.org",
+            "display": "Body mass index (BMI) [Ratio]"
+          }
+        ],
+        "context": {
+          "code": "Laboruntersuchung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Laboruntersuchung"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01",
+          "afterDate": "2022-10-01"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "comparator": "gt",
+          "unit": {
+            "code": "kg/m2",
+            "display": "kg/m2"
+          },
+          "value": 30.0
+        }
+      },
+    {
+      "termCodes": [
+        {
+          "code": "8782",
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "display": "propofol"
+        },
+        {
+          "code": "4337",
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "display": "fentanyl"
+        },
+        {
+          "code": "68139",
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "display": "rocuronium"
+        },
+        {
+          "code": "36453",
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "display": "sevoflurane"
+        },
+        {
+          "code": "1815",
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "display": "bupivacaine"
+        }
+      ],
+      "context": {
+        "code": "AllergyIntolerance",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "AllergyIntolerance"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    }
+  ]
+}

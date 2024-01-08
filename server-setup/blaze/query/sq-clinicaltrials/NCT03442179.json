@@ -1,0 +1,211 @@
+{
+  "version": "http://to_be_decided.com/draft-1/schema#",
+  "display": "",
+  "inclusionCriteria": [
+    {
+        "termCodes": [
+          {
+            "code": "424144002",
+            "system": "http://snomed.info/sct",
+            "display": "GegenwÃ¤rtiges chronologisches Alter"
+          }
+        ],
+        "context": {
+          "code": "Patient",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Patient"
+        }
+      },
+      {
+      "termCodes": subsumedBy(http://snomed.info/sct|387713003),
+      "context": {
+        "code": "Procedure",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Prozedur"
+      },
+      "timeRestriction": {
+        "afterDate": "2023-10-01"
+      }
+    }
+  ],
+  "exclusionCriteria": [
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|52448006),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|58214004),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|26929004),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|32798002),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|128613002),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|127294003),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|428061005),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|230690007),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|45170000),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+      "termCodes": subsumedBy(http://snomed.info/sct|266257000),
+      "context": {
+        "code": "Diagnose",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Diagnose"
+      },
+      "timeRestriction": {
+        "beforeDate": "2023-10-01"
+      }
+    },
+    {
+        "termCodes": [
+          {
+            "code": "29463-7",
+            "system": "http://loinc.org",
+            "display": "Body weight"
+          }
+        ],
+        "context": {
+          "code": "Laboruntersuchung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Laboruntersuchung"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01",
+          "afterDate": "2022-10-01"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "comparator": "gt",
+          "unit": {
+            "code": "kg",
+            "display": "kg"
+          },
+          "value": 136.078
+        }
+      },
+    {
+        "termCodes": [
+          {
+            "code": "39156-5",
+            "system": "http://loinc.org",
+            "display": "Body mass index (BMI) [Ratio]"
+          }
+        ],
+        "context": {
+          "code": "Laboruntersuchung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Laboruntersuchung"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01",
+          "afterDate": "2022-10-01"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "comparator": "gt",
+          "unit": {
+            "code": "kg/m2",
+            "display": "kg/m2"
+          },
+          "value": 40.0
+        }
+      }
+  ]
+}
