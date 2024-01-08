@@ -1,7 +1,8 @@
 {
   "_query": "fhirPath",
   "filter": [
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|264580006).exists() and abatementDateTime > @2023-10-01)",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|698247007).exists() and abatementDateTime > @2023-10-01).not()"
+    "Patient.birthDate.exists($this > @1963-10-01 and $this < @2005-10-01)",
+    "reverseResolve(Condition.subject).exists((code.coding.subsumedBy(http://snomed.info/sct|40930008).anyTrue() or code.coding.subsumedBy(http://snomed.info/sct|90739004).anyTrue()) and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01))",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|698247007).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()"
   ]
 }

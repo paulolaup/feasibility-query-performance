@@ -14,15 +14,18 @@ ndjson_dir = os.path.join('data', 'ndjson')
 
 
 def chunks(lst, n):
-    for i in range(0, len(lst), n):
-        yield lst[i:i + n]
+    if n <= 0:
+        yield lst
+    else:
+        for i in range(0, len(lst), n):
+            yield lst[i:i + n]
 
 
 if __name__ == "__main__":
     assert len(sys.argv) >= 2, "Provide a path to the compressed data you want to upload"
     compressed_data_path = sys.argv[1]
 
-    max_block_size = int(sys.argv[2]) if len(sys.argv) >= 3 else 10000
+    max_block_size = int(sys.argv[2]) if len(sys.argv) >= 3 else -1
 
     dotenv.load_dotenv('.env')
     pathling_port = os.environ.get('PATHLING_PORT')
