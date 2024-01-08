@@ -186,6 +186,7 @@ def configure_argparse():
     parser.add_argument('-p', '--num-pre-queries', type=int, default=0,
                         help='number of queries to run before running queries each round')
     parser.add_argument('-u', '--url', required=True, help='Pathling URL to send requests to')
+    parser.add_argument('-d', '--directory', default=result_path, help='Output directory of report file')
     return parser
 
 
@@ -201,6 +202,6 @@ if __name__ == "__main__":
     pathling_test_result = run_test(pathling_query_sets, base_url, pathling_project_name, num_rounds,
                                     num_pre_run_queries)
 
-    with open(os.path.join(result_path, 'result_' + datetime.datetime.today().strftime('%Y-%m-%d#%H:%M:%S')),
+    with open(os.path.join(result_path, 'result_pathling_' + datetime.datetime.today().strftime('%Y-%m-%d#%H:%M:%S')),
               mode='w+') as result_file:
         json.dump(pathling_test_result, result_file, indent=2)

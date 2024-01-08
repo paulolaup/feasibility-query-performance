@@ -97,7 +97,7 @@ def run_single_query(query_path):
     else:
         time_elapsed = datetime.timedelta(seconds=(end - start))
         print(f"Success: Time elapsed: {time_elapsed}")
-        return time_elapsed
+        return time_elapsed, query_result
 
 
 def restart_containers(project):
@@ -131,21 +131,33 @@ def run_test(query_sets, project_name, rounds=None, num_pre_run_queries=None):
         print("Running queries")
         for test_name, query_name, query_file_path in query_set:
             print(f"Query [{test_name}]{query_name}")
-            execution_time = run_single_query(query_file_path)
-            result_sets[test_name][query_name].append(execution_time)
+            execution_time, query_result = run_single_query(query_file_path)
+            result_sets[test_name][query_name].append({
+                'time': execution_time,
+                'result': query_result
+            })
 
     # Generate report
     print("Processing results")
-    report = {}
+    metadata = {
+        'rounds': num_rounds,
+        'pre_queries': num_pre_run_queries
+    }
+    test_results = {}
     for test_name, queries in result_sets.items():
-        test_results = {}
-        report[test_name] = test_results
+        test_result = {}
+        test_results[test_name] = test_result
         for query_name, query_results in queries.items():
             result_entry = {
-                'avg': str(calculate_avg(query_results)),
-                'times': [str(time) for time in query_results]
+                'avg': str(calculate_avg([result['time'] for result in query_results])),
+                'times': [str(result['time']) for result in query_results],
+                'results': [str(result['result']) for result in query_results]
             }
-            test_results[query_name] = result_entry
+            test_result[query_name] = result_entry
+    report = {
+        'metadata': metadata,
+        'results': test_results
+    }
 
     print("Done")
     return report
@@ -181,6 +193,9 @@ def configure_argparser():
     parser.add_argument('-r', '--rounds', type=int, default=10, help='Number of rounds where all tests are run')
     parser.add_argument('-p', '--num-pre-queries', type=int, default=0,
                         help='Number of random queries to run before running all queries each round')
+    parser.add_argument('-f', '--file', default=os.path.join(result_path, 'result_fhirbase_' +
+                                                             datetime.datetime.today().strftime('%Y-%m-%d#%H:%M:%S') +
+                                                             '.json'), help='Output file for report')
     return parser
 
 
@@ -195,6 +210,4 @@ if __name__ == "__main__":
     fhirbase_test_result = run_test(fhirbase_query_sets, fhirbase_project_name, num_rounds,
                                     num_pre_run_queries)
 
-    with open(os.path.join(result_path, 'result_' + datetime.datetime.today().strftime('%Y-%m-%d#%H:%M:%S') + '.json'),
-              mode='w+') as result_file:
-        json.dump(fhirbase_test_result, result_file, indent=2)
+    json.dump(fhirbase_test_result, fp=open(args.file, mode='w+'), indent=2)

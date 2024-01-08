@@ -25,8 +25,8 @@ do
 done
 
 echo "Removing temporary data"
-rm -r "$DATA_PATH/temp"
-# rm "$DATA_PATH/ndjson/*"
+rm -r "data/temp"
+rm "data/ndjson/data.ndjson.gz"
 
 echo "Done"
 
