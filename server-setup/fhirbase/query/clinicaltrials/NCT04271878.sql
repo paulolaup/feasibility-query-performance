@@ -1,7 +1,7 @@
 SELECT COUNT(DISTINCT (inclusion.id))
 FROM ((SELECT p.id
        FROM patient p
-       WHERE (p.resource ->> 'birthDate')::timestamp <@ '[1963-10-01,2023-10-01)'::tsrange)
+       WHERE (p.resource ->> 'birthDate')::timestamp <@ '[1963-10-01,2005-10-01)'::tsrange)
       INTERSECT
       (SELECT c.resource #>> '{subject,id}'
        FROM condition c,

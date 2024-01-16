@@ -16,6 +16,15 @@
           "system": "fdpg.mii.synthea",
           "version": "1.0.0",
           "display": "Patient"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "unit": {
+            "code": "a",
+            "display": "a"
+          },
+          "value": 18,
+          "comparator": "gt"
         }
       },
       {

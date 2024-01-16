@@ -3,20 +3,53 @@
   "display": "",
   "inclusionCriteria": [
     {
-        "termCodes": [
-          {
-            "code": "424144002",
-            "system": "http://snomed.info/sct",
-            "display": "GegenwÃ¤rtiges chronologisches Alter"
-          }
-        ],
-        "context": {
-          "code": "Patient",
-          "system": "fdpg.mii.synthea",
-          "version": "1.0.0",
-          "display": "Patient"
+      "termCodes": [
+        {
+          "code": "424144002",
+          "system": "http://snomed.info/sct",
+          "display": "GegenwÃ¤rtiges chronologisches Alter"
         }
+      ],
+      "context": {
+        "code": "Patient",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Patient"
       },
+      "valueFilter": {
+        "type": "quantity-comparator",
+        "unit": {
+          "code": "a",
+          "display": "a"
+        },
+        "value": 18,
+        "comparator": "gt"
+      }
+    },
+    {
+      "termCodes": [
+        {
+          "code": "424144002",
+          "system": "http://snomed.info/sct",
+          "display": "GegenwÃ¤rtiges chronologisches Alter"
+        }
+      ],
+      "context": {
+        "code": "Patient",
+        "system": "fdpg.mii.synthea",
+        "version": "1.0.0",
+        "display": "Patient"
+      },
+      "valueFilter": {
+        "type": "quantity-comparator",
+        "unit": {
+          "code": "a",
+          "display": "a"
+        },
+        "value": 60,
+        "comparator": "lt"
+      }
+    },
       {
       "termCodes": [{"system": "http://snomed.info/sct", "code": "371073003", "display": "Postural orthostatic tachycardia syndrome"}, {"system": "http://snomed.info/sct", "code": "1217211002", "display": "Postural orthostatic tachycardia syndrome due to norepinephrine transporter deficiency"}],
       "context": {
