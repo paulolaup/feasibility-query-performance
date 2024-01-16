@@ -2,2825 +2,894 @@
   "version": "http://to_be_decided.com/draft-1/schema#",
   "display": "",
   "inclusionCriteria": [
-    {
-      "termCodes": [
-        {
-          "code": "263495000",
-          "system": "http://snomed.info/sct",
-          "display": "Geschlecht"
-        }
-      ],
-      "context": {
-        "code": "Patient",
-        "system": "fdpg.mii.synthea",
-        "version": "1.0.0",
-        "display": "Patient"
-      },
-      "valueFilter": {
-        "type": "concept",
-        "selectedConcepts": [
+    [
+      {
+        "termCodes": [
           {
-            "code": "female",
-            "system": "http://hl7.org/fhir/administrative-gender",
-            "display": "Female"
+            "code": "263495000",
+            "system": "http://snomed.info/sct",
+            "display": "Geschlecht"
           }
-        ]
-      }
-    },
-    {
-      "termCodes": [
-        {
-          "code": "424144002",
-          "system": "http://snomed.info/sct",
-          "display": "GegenwÃ¤rtiges chronologisches Alter"
-        }
-      ],
-      "context": {
-        "code": "Patient",
-        "system": "fdpg.mii.synthea",
-        "version": "1.0.0",
-        "display": "Patient"
-      },
-      "valueFilter": {
-        "type": "quantity-comparator",
-        "unit": {
-          "code": "a",
-          "display": "a"
+        ],
+        "context": {
+          "code": "Patient",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Patient"
         },
-        "value": 18,
-        "comparator": "gt"
+        "valueFilter": {
+          "type": "concept",
+          "selectedConcepts": [
+            {
+              "code": "female",
+              "system": "http://hl7.org/fhir/administrative-gender",
+              "display": "Female"
+            }
+          ]
+        }
       }
-    }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "code": "424144002",
+            "system": "http://snomed.info/sct",
+            "display": "GegenwÃ¤rtiges chronologisches Alter"
+          }
+        ],
+        "context": {
+          "code": "Patient",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Patient"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "unit": {
+            "code": "a",
+            "display": "a"
+          },
+          "value": 18,
+          "comparator": "gt"
+        }
+      }
+    ]
   ],
   "exclusionCriteria": [
-    {
-      "termCodes": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "704166007",
-          "display": "Acquired hypocalciuric hypercalcemia"
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "66931009",
+            "display": "Hypercalcemia (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
         },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "88380005",
-          "display": "Acute milk alkali syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "771445001",
-          "display": "Autosomal recessive infantile hypercalcemia"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "57557005",
-          "display": "Chronic milk alkali syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "237885008",
-          "display": "Familial hypocalciuric hypercalcemia"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "47709007",
-          "display": "Humoral hypercalcemia of malignancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "66931009",
-          "display": "Hypercalcemia"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "88351001",
-          "display": "Hypercalcemia associated with chronic dialysis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1237272007",
-          "display": "Hypercalcemia caused by thiazide and/or retinol"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "2638001",
-          "display": "Hypercalcemia due to a drug"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1148934008",
-          "display": "Hypercalcemia due to chronic kidney disease"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "52760008",
-          "display": "Hypercalcemia due to granulomatous disease"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "2243000",
-          "display": "Hypercalcemia due to hyperthyroidism"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "699260009",
-          "display": "Hypercalcemia due to hypervitaminosis D"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "24052000",
-          "display": "Hypercalcemia due to immobilization"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "361129004",
-          "display": "Hypercalcemia due to lithium"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "7085002",
-          "display": "Hypercalcemia due to sarcoidosis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "698729002",
-          "display": "Hypercalcemia due to tuberculosis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "13901000119100",
-          "display": "Hypocalciuric hypercalcemia"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "190866006",
-          "display": "Idiopathic hypercalcemia"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "34225008",
-          "display": "Idiopathic hypercalcemia of infancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "276646003",
-          "display": "Idiopathic infantile hypercalcemia - mild form"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "276645004",
-          "display": "Infantile hypercalcemia"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "43258006",
-          "display": "Milk alkali syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "724559006",
-          "display": "Myopathy co-occurrent and due to hypercalcemia"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "58136006",
-          "display": "Nutritional disorder due to calcium-phosphorus imbalance"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "237880003",
-          "display": "Secondary hypercalcemia"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "277481003",
-          "display": "Severe idiopathic hypercalcemia of infancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "45646000",
-          "display": "Subacute milk alkali syndrome"
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
         }
-      ],
-      "context": {
-        "code": "Diagnose",
-        "system": "fdpg.mii.synthea",
-        "version": "1.0.0",
-        "display": "Diagnose"
-      },
-      "timeRestriction": {
-        "beforeDate": "2023-10-01"
       }
-    },
-    {
-      "termCodes": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "27712000",
-          "display": "Hypervitaminosis D"
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "27712000",
+            "display": "Hypervitaminosis D (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
         }
-      ],
-      "context": {
-        "code": "Diagnose",
-        "system": "fdpg.mii.synthea",
-        "version": "1.0.0",
-        "display": "Diagnose"
-      },
-      "timeRestriction": {
-        "beforeDate": "2023-10-01"
       }
-    },
-    {
-      "termCodes": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "733137002",
-          "display": "Acute kidney failure stage 1"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "733138007",
-          "display": "Acute kidney failure stage 2"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "733139004",
-          "display": "Acute kidney failure stage 3"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "14669001",
-          "display": "Acute kidney injury"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "368951000119105",
-          "display": "Acute kidney injury caused by contrast agent"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "722095005",
-          "display": "Acute kidney injury due to circulatory failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "870589006",
-          "display": "Acute kidney injury due to COVID-19"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "722096006",
-          "display": "Acute kidney injury due to hypovolemia"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "722278006",
-          "display": "Acute kidney injury due to sepsis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1177174007",
-          "display": "Acute kidney injury following administration of contrast media"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "88380005",
-          "display": "Acute milk alkali syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "140031000119103",
-          "display": "Acute nontraumatic kidney injury"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "438783006",
-          "display": "Acute postoperative renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "422593004",
-          "display": "Acute renal failure due to ACE inhibitor"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "429224003",
-          "display": "Acute renal failure due to acute cortical necrosis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "269257004",
-          "display": "Acute renal failure due to crush syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "423533009",
-          "display": "Acute renal failure due to ischemia"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "429489008",
-          "display": "Acute renal failure due to obstruction"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "36225005",
-          "display": "Acute renal failure due to procedure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "145681000119101",
-          "display": "Acute renal failure due to tubular necrosis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1263955004",
-          "display": "Acute renal failure following ectopic pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1263956003",
-          "display": "Acute renal failure following molar pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "129721000119106",
-          "display": "Acute renal failure on dialysis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "430535006",
-          "display": "Acute renal failure with oliguria"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "236424009",
-          "display": "Acute renal impairment"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "723189000",
-          "display": "Acute renal insufficiency"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "298015003",
-          "display": "Acute renal papillary necrosis with renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "236433006",
-          "display": "Acute-on-chronic renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "236552002",
-          "display": "Adynamic bone disease"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "691421000119108",
-          "display": "Anemia co-occurrent and due to chronic kidney disease stage 3"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "707324008",
-          "display": "Anemia in end stage renal disease"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "49708008",
-          "display": "Anemia of chronic renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "310647000",
-          "display": "Anemia secondary to renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1801000119106",
-          "display": "Anemia, pre-end stage renal disease on erythropoietin protocol"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "789660001",
-          "display": "Atypical hemolytic uremic syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "707742001",
-          "display": "Bartter syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "700107006",
-          "display": "Bartter syndrome antenatal type 1"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "700109009",
-          "display": "Bartter syndrome antenatal type 2"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "700111000",
-          "display": "Bartter syndrome type 3"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "700112007",
-          "display": "Bartter syndrome type 4"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "717791000",
-          "display": "Bartter syndrome type 4a"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "698591006",
-          "display": "Benign hypertensive renal disease with renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "445236007",
-          "display": "Cardiorenal syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "709044004",
-          "display": "Chronic kidney disease"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "722149000",
-          "display": "Chronic kidney disease due to and following excision of neoplasm of kidney"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "284961000119106",
-          "display": "Chronic kidney disease due to benign hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "104931000119100",
-          "display": "Chronic kidney disease due to hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "722150000",
-          "display": "Chronic kidney disease due to systemic infection"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "722467000",
-          "display": "Chronic kidney disease due to traumatic loss of kidney"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "96441000119101",
-          "display": "Chronic kidney disease due to type 1 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "771000119108",
-          "display": "Chronic kidney disease due to type 2 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "722098007",
-          "display": "Chronic kidney disease following donor nephrectomy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "713313000",
-          "display": "Chronic kidney disease mineral and bone disorder"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "431855005",
-          "display": "Chronic kidney disease stage 1"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "284971000119100",
-          "display": "Chronic kidney disease stage 1 due to benign hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "368421000119108",
-          "display": "Chronic kidney disease stage 1 due to drug induced diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "117681000119102",
-          "display": "Chronic kidney disease stage 1 due to hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "90721000119101",
-          "display": "Chronic kidney disease stage 1 due to type 1 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "751000119104",
-          "display": "Chronic kidney disease stage 1 due to type 2 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "431856006",
-          "display": "Chronic kidney disease stage 2"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "284981000119102",
-          "display": "Chronic kidney disease stage 2 due to benign hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "368431000119106",
-          "display": "Chronic kidney disease stage 2 due to drug induced diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "129181000119109",
-          "display": "Chronic kidney disease stage 2 due to hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "90731000119103",
-          "display": "Chronic kidney disease stage 2 due to type 1 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "741000119101",
-          "display": "Chronic kidney disease stage 2 due to type 2 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "433144002",
-          "display": "Chronic kidney disease stage 3"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "284991000119104",
-          "display": "Chronic kidney disease stage 3 due to benign hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "368441000119102",
-          "display": "Chronic kidney disease stage 3 due to drug induced diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "129171000119106",
-          "display": "Chronic kidney disease stage 3 due to hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "90741000119107",
-          "display": "Chronic kidney disease stage 3 due to type 1 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "731000119105",
-          "display": "Chronic kidney disease stage 3 due to type 2 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "700378005",
-          "display": "Chronic kidney disease stage 3A"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "700379002",
-          "display": "Chronic kidney disease stage 3B"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "431857002",
-          "display": "Chronic kidney disease stage 4"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "285001000119105",
-          "display": "Chronic kidney disease stage 4 due to benign hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "368451000119100",
-          "display": "Chronic kidney disease stage 4 due to drug induced diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "129151000119102",
-          "display": "Chronic kidney disease stage 4 due to hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "90751000119109",
-          "display": "Chronic kidney disease stage 4 due to type 1 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "721000119107",
-          "display": "Chronic kidney disease stage 4 due to type 2 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "433146000",
-          "display": "Chronic kidney disease stage 5"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "285011000119108",
-          "display": "Chronic kidney disease stage 5 due to benign hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "368461000119103",
-          "display": "Chronic kidney disease stage 5 due to drug induced diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "129161000119100",
-          "display": "Chronic kidney disease stage 5 due to hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "90761000119106",
-          "display": "Chronic kidney disease stage 5 due to type 1 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "711000119100",
-          "display": "Chronic kidney disease stage 5 due to type 2 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "714152005",
-          "display": "Chronic kidney disease stage 5 on dialysis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "714153000",
-          "display": "Chronic kidney disease stage 5 with transplant"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "897308007",
-          "display": "Chronic kidney disease with osteoporosis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "57557005",
-          "display": "Chronic milk alkali syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "425369003",
-          "display": "Chronic progressive renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "90688005",
-          "display": "Chronic renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "723190009",
-          "display": "Chronic renal insufficiency"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "444976001",
-          "display": "Congenital hemolytic uremic syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "268854008",
-          "display": "Congenital renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "23697004",
-          "display": "Crush syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "373421000",
-          "display": "Diarrhea-associated hemolytic uremic syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "373422007",
-          "display": "Diarrhea-negative hemolytic uremic syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "109477002",
-          "display": "Enamel-renal syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "712487000",
-          "display": "End stage renal disease due to benign hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "111411000119103",
-          "display": "End stage renal disease due to hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "368471000119109",
-          "display": "End stage renal disease on dialysis due to drug induced diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "153891000119101",
-          "display": "End stage renal disease on dialysis due to hypertension"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "90771000119100",
-          "display": "End stage renal disease on dialysis due to type 1 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "90791000119104",
-          "display": "End stage renal disease on dialysis due to type 2 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "236435004",
-          "display": "End stage renal failure on dialysis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "236434000",
-          "display": "End stage renal failure untreated by renal replacement therapy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "236436003",
-          "display": "End stage renal failure with renal transplant"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "46177005",
-          "display": "End-stage renal disease"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "17380002",
-          "display": "Failed attempted termination of pregnancy with acute renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "62216007",
-          "display": "Familial arthrogryposis-cholestatic hepatorenal syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "722721004",
-          "display": "Familial hemolytic uremic syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "111407006",
-          "display": "Hemolytic uremic syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "36568005",
-          "display": "Hemolytic uremic syndrome of childhood"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1269225005",
-          "display": "Hemolytic uremic syndrome with DGKE deficiency"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "78209002",
-          "display": "Hemolytic uremic syndrome, adult type"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "716864001",
-          "display": "Hemorrhagic fever with renal syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "51292008",
-          "display": "Hepatorenal syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "213231008",
-          "display": "Hepatorenal syndrome as a complication of care"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "31005002",
-          "display": "Hepatorenal syndrome due to a procedure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "22846003",
-          "display": "Hepatorenal syndrome following delivery"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "704667004",
-          "display": "Hypertension concurrent and due to end stage renal disease on dialysis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "128001000119105",
-          "display": "Hypertension concurrent and due to end stage renal disease on dialysis due to type 1 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "127991000119101",
-          "display": "Hypertension concurrent and due to end stage renal disease on dialysis due to type 2 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "71701000119105",
-          "display": "Hypertension in chronic kidney disease due to type 1 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "71421000119105",
-          "display": "Hypertension in chronic kidney disease due to type 2 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "140131000119102",
-          "display": "Hypertension in chronic kidney disease stage 2 due to type 2 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "140121000119100",
-          "display": "Hypertension in chronic kidney disease stage 3 due to type 2 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "140111000119107",
-          "display": "Hypertension in chronic kidney disease stage 4 due to type 2 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "140101000119109",
-          "display": "Hypertension in chronic kidney disease stage 5 due to type 2 diabetes mellitus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "8501000119104",
-          "display": "Hypertensive heart and chronic kidney disease"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "96701000119107",
-          "display": "Hypertensive heart AND chronic kidney disease on dialysis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "96751000119106",
-          "display": "Hypertensive heart AND chronic kidney disease stage 1"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "96741000119109",
-          "display": "Hypertensive heart AND chronic kidney disease stage 2"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "96731000119100",
-          "display": "Hypertensive heart AND chronic kidney disease stage 3"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "96721000119103",
-          "display": "Hypertensive heart AND chronic kidney disease stage 4"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "96711000119105",
-          "display": "Hypertensive heart AND chronic kidney disease stage 5"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "194781004",
-          "display": "Hypertensive heart and renal disease with both (congestive) heart failure and renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "194780003",
-          "display": "Hypertensive heart and renal disease with renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "49220004",
-          "display": "Hypertensive renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "776416004",
-          "display": "Hyperuricemia, pulmonary hypertension, renal failure, alkalosis syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "733097003",
-          "display": "Ichthyosis, intellectual disability, dwarfism, renal impairment syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1220586000",
-          "display": "Incomplete induced termination of pregnancy complicated by renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "609455009",
-          "display": "Induced termination of pregnancy complicated by acute renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "609472002",
-          "display": "Induced termination of pregnancy complicated by acute renal failure with oliguria"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "609452007",
-          "display": "Induced termination of pregnancy complicated by renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1269270002",
-          "display": "Infection-related hemolytic uremic syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "285831000119108",
-          "display": "Malignant hypertensive chronic kidney disease"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "285851000119102",
-          "display": "Malignant hypertensive chronic kidney disease stage 1"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "285861000119100",
-          "display": "Malignant hypertensive chronic kidney disease stage 2"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "285871000119106",
-          "display": "Malignant hypertensive chronic kidney disease stage 3"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "285881000119109",
-          "display": "Malignant hypertensive chronic kidney disease stage 4"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "153851000119106",
-          "display": "Malignant hypertensive chronic kidney disease stage 5"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "285841000119104",
-          "display": "Malignant hypertensive end stage renal disease"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "286371000119107",
-          "display": "Malignant hypertensive end stage renal disease on dialysis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "43258006",
-          "display": "Milk alkali syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "708975004",
-          "display": "Mixed renal osteodystrophy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "424114000",
-          "display": "Nephrogenic systemic fibrosis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "724093004",
-          "display": "Nephropathy, deafness, hyperparathyroidism syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "236428007",
-          "display": "Nephrotoxic acute renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "197664009",
-          "display": "Phosphate-losing tubular disorders"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "200118004",
-          "display": "Post-delivery acute renal failure with postnatal problem"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "301814009",
-          "display": "Post-renal renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "275408006",
-          "display": "Postoperative renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1259460004",
-          "display": "Postoperative renal impairment"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "733839001",
-          "display": "Postpartum acute renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "12245621000119102",
-          "display": "Postprocedural acute renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "118781000119108",
-          "display": "Pre-existing hypertensive chronic kidney disease in mother complicating pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "10757401000119104",
-          "display": "Pre-existing hypertensive heart and chronic kidney disease in mother complicating childbirth"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "10757481000119107",
-          "display": "Pre-existing hypertensive heart and chronic kidney disease in mother complicating pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "129561000119108",
-          "display": "Prerenal renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "236432001",
-          "display": "Pulmonary renal syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "236369004",
-          "display": "Renal acidemia"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "10752771000119100",
-          "display": "Renal failure after ectopic pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "269301005",
-          "display": "Renal failure as a complication of care"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "363287001",
-          "display": "Renal failure associated with renal vascular disease"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1220648003",
-          "display": "Renal failure due to and following complete induced termination of pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "198647008",
-          "display": "Renal failure due to and following incomplete miscarriage"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "737327002",
-          "display": "Renal failure following molar pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "42399005",
-          "display": "Renal failure syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "713696000",
-          "display": "Renal failure syndrome co-occurrent with human immunodeficiency virus infection"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "197671004",
-          "display": "Renal function impairment with growth failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "236423003",
-          "display": "Renal impairment"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "713453003",
-          "display": "Renal impairment caused by Polyomavirus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "723188008",
-          "display": "Renal insufficiency"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "16726004",
-          "display": "Renal osteodystrophy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1217070004",
-          "display": "Renal osteodystrophy due to hyperparathyroidism"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "897310009",
-          "display": "Renal osteodystrophy with high bone turnover"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "897312001",
-          "display": "Renal osteodystrophy with low bone turnover"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "897311008",
-          "display": "Renal osteodystrophy with normal bone turnover"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1263953006",
-          "display": "Renal tubular necrosis following ectopic pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1263954000",
-          "display": "Renal tubular necrosis following molar pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1208934006",
-          "display": "Sagliker syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "45646000",
-          "display": "Subacute milk alkali syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "307309005",
-          "display": "Transient acute renal failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "236431008",
-          "display": "Traumatic anuria - crush syndrome"
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "236423003",
+            "display": "Renal impairment (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
         }
-      ],
-      "context": {
-        "code": "Diagnose",
-        "system": "fdpg.mii.synthea",
-        "version": "1.0.0",
-        "display": "Diagnose"
-      },
-      "timeRestriction": {
-        "beforeDate": "2023-10-01"
       }
-    },
-    {
-      "termCodes": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "14183003",
-          "display": "Chronic major depressive disorder, single episode"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "2618002",
-          "display": "Chronic recurrent major depressive disorder"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "63412003",
-          "display": "Major depression in full remission"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "30605009",
-          "display": "Major depression in partial remission"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "42810003",
-          "display": "Major depression in remission"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "70747007",
-          "display": "Major depression single episode, in partial remission"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "726772006",
-          "display": "Major depression with psychotic features"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "320751009",
-          "display": "Major depression, melancholic type"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "36923009",
-          "display": "Major depression, single episode"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "370143000",
-          "display": "Major depressive disorder"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "10811121000119102",
-          "display": "Major depressive disorder in mother complicating childbirth"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "10811161000119107",
-          "display": "Major depressive disorder in mother complicating pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "42925002",
-          "display": "Major depressive disorder, single episode with atypical features"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "69392006",
-          "display": "Major depressive disorder, single episode with catatonic features"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "63778009",
-          "display": "Major depressive disorder, single episode with melancholic features"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "25922000",
-          "display": "Major depressive disorder, single episode with postpartum onset"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "87512008",
-          "display": "Mild major depression"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "79298009",
-          "display": "Mild major depression, single episode"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "16265951000119109",
-          "display": "Mild major depressive disorder co-occurrent with anxiety single episode"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "40379007",
-          "display": "Mild recurrent major depression"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "720455008",
-          "display": "Minimal major depression"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "720454007",
-          "display": "Minimal major depression single episode"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "720451004",
-          "display": "Minimal recurrent major depression"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "832007",
-          "display": "Moderate major depression"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "15639000",
-          "display": "Moderate major depression, single episode"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "16266831000119100",
-          "display": "Moderate major depressive disorder co-occurrent with anxiety single episode"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "18818009",
-          "display": "Moderate recurrent major depression"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "719592004",
-          "display": "Moderately severe major depression"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "720453001",
-          "display": "Moderately severe major depression single episode"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "720452006",
-          "display": "Moderately severe recurrent major depression"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "104851000119103",
-          "display": "Postpartum major depression in remission"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "66344007",
-          "display": "Recurrent major depression"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "46244001",
-          "display": "Recurrent major depression in full remission"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "33135002",
-          "display": "Recurrent major depression in partial remission"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "68019004",
-          "display": "Recurrent major depression in remission"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "16265061000119105",
-          "display": "Recurrent major depressive disorder co-occurrent with anxiety in full remission"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "16265301000119106",
-          "display": "Recurrent major depressive disorder in partial remission co-occurrent with anxiety"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "38694004",
-          "display": "Recurrent major depressive disorder with atypical features"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "39809009",
-          "display": "Recurrent major depressive disorder with catatonic features"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "319768000",
-          "display": "Recurrent major depressive disorder with melancholic features"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "71336009",
-          "display": "Recurrent major depressive disorder with postpartum onset"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "268621008",
-          "display": "Recurrent major depressive episodes"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "191610000",
-          "display": "Recurrent major depressive episodes, mild"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "191611001",
-          "display": "Recurrent major depressive episodes, moderate"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "191613003",
-          "display": "Recurrent major depressive episodes, severe, with psychosis"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "16264621000119109",
-          "display": "Recurrent mild major depressive disorder co-occurrent with anxiety"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "16264901000119109",
-          "display": "Recurrent moderate major depressive disorder co-occurrent with anxiety"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "16264821000119108",
-          "display": "Recurrent severe major depressive disorder co-occurrent with anxiety"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "450714000",
-          "display": "Severe major depression"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "73867007",
-          "display": "Severe major depression with psychotic features"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "33736005",
-          "display": "Severe major depression with psychotic features, mood-congruent"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "60099002",
-          "display": "Severe major depression with psychotic features, mood-incongruent"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "75084000",
-          "display": "Severe major depression without psychotic features"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "251000119105",
-          "display": "Severe major depression, single episode"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "430852001",
-          "display": "Severe major depression, single episode, with psychotic features"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "77911002",
-          "display": "Severe major depression, single episode, with psychotic features, mood-congruent"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "20250007",
-          "display": "Severe major depression, single episode, with psychotic features, mood-incongruent"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "76441001",
-          "display": "Severe major depression, single episode, without psychotic features"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "16266991000119108",
-          "display": "Severe major depressive disorder co-occurrent with anxiety single episode"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "281000119103",
-          "display": "Severe recurrent major depression"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "28475009",
-          "display": "Severe recurrent major depression with psychotic features"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "33078009",
-          "display": "Severe recurrent major depression with psychotic features, mood-congruent"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "15193003",
-          "display": "Severe recurrent major depression with psychotic features, mood-incongruent"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "36474008",
-          "display": "Severe recurrent major depression without psychotic features"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "19527009",
-          "display": "Single episode of major depression in full remission"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "191604000",
-          "display": "Single major depressive episode, severe, with psychosis"
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "370143000",
+            "display": "Major depressive disorder (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
         }
-      ],
-      "context": {
-        "code": "Diagnose",
-        "system": "fdpg.mii.synthea",
-        "version": "1.0.0",
-        "display": "Diagnose"
-      },
-      "timeRestriction": {
-        "beforeDate": "2023-10-01"
       }
-    },
-    {
-      "termCodes": [
-        {
-          "system": "http://snomed.info/sct",
-          "code": "699240001",
-          "display": "Combined intrauterine and ovarian pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169470007",
-          "display": "Combined oral contraceptive pill failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "31601007",
-          "display": "Combined pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "442478007",
-          "display": "Combined tubal and intrauterine pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "12275071000119109",
-          "display": "Conjoined twin pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "199306007",
-          "display": "Continuing pregnancy after abortion of one fetus or more"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "237247003",
-          "display": "Continuing pregnancy after abortion of sibling fetus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "199307003",
-          "display": "Continuing pregnancy after intrauterine death of one or more fetuses"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "472321009",
-          "display": "Continuing pregnancy after intrauterine death of one twin with intrauterine retention of dead twin"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "429187001",
-          "display": "Continuing pregnancy after intrauterine death of twin fetus"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "36801000119105",
-          "display": "Continuing triplet pregnancy after spontaneous abortion of one or more fetuses"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "102955006",
-          "display": "Contraception failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169533001",
-          "display": "Contraceptive sponge failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "21987001",
-          "display": "Delayed delivery of second of multiple births"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "275429002",
-          "display": "Delayed delivery of second twin"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "237321009",
-          "display": "Delayed delivery of triplet"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "199863008",
-          "display": "Delayed delivery second twin with antenatal problem"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169524003",
-          "display": "Depot contraceptive failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "72957006",
-          "display": "Diamniotic-monochorionic twins"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "459166009",
-          "display": "Dichorionic diamniotic twin pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "713575004",
-          "display": "Dizygotic twin pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "89244003",
-          "display": "Entanglement of cords of twins in monoamniotic sac"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "9279009",
-          "display": "Extra-amniotic pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "45307008",
-          "display": "Extrachorial pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169550004",
-          "display": "Female sterilization failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "127373004",
-          "display": "Gravida 10"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "127365008",
-          "display": "Gravida 2"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "127366009",
-          "display": "Gravida 3"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "127367000",
-          "display": "Gravida 4"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "127368005",
-          "display": "Gravida 5"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "127369002",
-          "display": "Gravida 6"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "127370001",
-          "display": "Gravida 7"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "127371002",
-          "display": "Gravida 8"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "127372009",
-          "display": "Gravida 9"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "127374005",
-          "display": "Gravida more than 10"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "47200007",
-          "display": "High risk pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "444661007",
-          "display": "High risk pregnancy due to history of preterm labor"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "134781000119106",
-          "display": "High risk pregnancy due to recurrent pregnancy loss"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1148970006",
-          "display": "Higher order multiple pregnancy due to and following medically assisted reproduction"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "439311009",
-          "display": "Intends to continue pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "69777007",
-          "display": "Interlocked twins"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "65727000",
-          "display": "Intrauterine pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169488004",
-          "display": "IUD failure - pregnant"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "73621009",
-          "display": "Monoamniotic twins"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "459168005",
-          "display": "Monochorionic diamniotic twin pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "459170001",
-          "display": "Monochorionic diamniotic twin pregnancy with dissimilar amniotic fluid volumes"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "459169002",
-          "display": "Monochorionic diamniotic twin pregnancy with similar amniotic fluid volumes"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "459171002",
-          "display": "Monochorionic monoamniotic twin pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "459167000",
-          "display": "Monochorionic twin pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "713576003",
-          "display": "Monozygotic twin pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "2256007",
-          "display": "Monozygotic twins"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "102876002",
-          "display": "Multigravida"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "443460007",
-          "display": "Multigravida of advanced maternal age"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "80224003",
-          "display": "Multiple gestation with one OR more fetal malpresentations"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "16356006",
-          "display": "Multiple pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1148848009",
-          "display": "Multiple pregnancy following assisted fertilization"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "199378009",
-          "display": "Multiple pregnancy with malpresentation"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "199381004",
-          "display": "Multiple pregnancy with malpresentation with antenatal problem"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "428511009",
-          "display": "Multiple pregnancy with one fetal loss"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "72892002",
-          "display": "Normal pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "1268535008",
-          "display": "Obstructed labor due to interlocked twins"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169545005",
-          "display": "Postcoital IUCD failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169544009",
-          "display": "Postcoital OCP failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "14418008",
-          "display": "Precocious pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "77386006",
-          "display": "Pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "568141000005106",
-          "display": "Pregnancy after cervical conization"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "102872000",
-          "display": "Pregnancy on oral contraceptive"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "813541000000100",
-          "display": "Pregnancy resulting from assisted conception"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169567006",
-          "display": "Pregnancy unplanned and unwanted"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169566002",
-          "display": "Pregnancy unplanned but wanted"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "890096007",
-          "display": "Pregnancy with implant contraceptive"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169561007",
-          "display": "Pregnant - blood test confirms"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169564004",
-          "display": "Pregnant - on abdominal palpation"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169563005",
-          "display": "Pregnant - on history"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169560008",
-          "display": "Pregnant - urine test confirms"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169562000",
-          "display": "Pregnant - vaginal examination confirms"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169501005",
-          "display": "Pregnant, diaphragm failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169508004",
-          "display": "Pregnant, sheath failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "82634006",
-          "display": "Previous pregnancies 10"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "80856001",
-          "display": "Previous pregnancies 8"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "17618008",
-          "display": "Previous pregnancies 9"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "6867004",
-          "display": "Previous pregnancies more than 10"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169471006",
-          "display": "Progestogen-only pill failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "60810003",
-          "display": "Quadruplet pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "199326006",
-          "display": "Quadruplet pregnancy with antenatal problem"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "35381000119101",
-          "display": "Quadruplet pregnancy with loss of one or more fetuses"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "80997009",
-          "display": "Quintuplet pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "38720006",
-          "display": "Septuplet pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "43990006",
-          "display": "Sextuplet pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "102875003",
-          "display": "Surrogate pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169539002",
-          "display": "Symptothermal contraception failure"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "64254006",
-          "display": "Triplet pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "199322008",
-          "display": "Triplet pregnancy with antenatal problem"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "65147003",
-          "display": "Twin pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "199318003",
-          "display": "Twin pregnancy with antenatal problem"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "417006004",
-          "display": "Twin reversal arterial perfusion syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "237236005",
-          "display": "Undiagnosed multiple pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "237237001",
-          "display": "Undiagnosed twin pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "83074005",
-          "display": "Unplanned pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169568001",
-          "display": "Unplanned pregnancy unknown if child is wanted"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "58532003",
-          "display": "Unwanted pregnancy"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "237245006",
-          "display": "Vanishing twin syndrome"
-        },
-        {
-          "system": "http://snomed.info/sct",
-          "code": "169548007",
-          "display": "Vasectomy failure"
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "77386006",
+            "display": "Pregnancy (finding)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
         }
-      ],
-      "context": {
-        "code": "Diagnose",
-        "system": "fdpg.mii.synthea",
-        "version": "1.0.0",
-        "display": "Diagnose"
       },
-      "timeRestriction": {
-        "beforeDate": "2023-10-01"
-      }
-    },
-    {
-      "termCodes": [
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1998481",
-          "display": "{49 (dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 12 Day Taper]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1998482",
-          "display": "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 6 Day Taper]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2118829",
-          "display": "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack [HiDex 6-Day Taper]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2118835",
-          "display": "{27 (dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 7-Day Taper]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2121735",
-          "display": "{39 (dexamethasone 1.5 MG Oral Tablet) } Pack [Dxevo 11 Day Taper]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2387356",
-          "display": "{25 (dexamethasone 1.5 MG Oral Tablet) } Pack [Zcort 7 Day Taper]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "795716",
-          "display": "{12 (dexamethasone 0.75 MG Oral Tablet [Decadron]) } Pack [Decadron 5-12]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "797022",
-          "display": "{35 (dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak TaperPak Junior 10 Day]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "797023",
-          "display": "{51 (dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak TaperPak 13 Day]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "847225",
-          "display": "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak TaperPak 6 Day]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1869595",
-          "display": "{27 (dexamethasone 1.5 MG Oral Tablet) } Pack"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1943550",
-          "display": "{49 (dexamethasone 1.5 MG Oral Tablet) } Pack"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2121587",
-          "display": "{39 (dexamethasone 1.5 MG Oral Tablet) } Pack"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2387355",
-          "display": "{25 (dexamethasone 1.5 MG Oral Tablet) } Pack"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "759481",
-          "display": "{51 (dexamethasone 1.5 MG Oral Tablet) } Pack"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "759696",
-          "display": "{12 (dexamethasone 0.75 MG Oral Tablet) } Pack"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "759697",
-          "display": "{35 (dexamethasone 1.5 MG Oral Tablet) } Pack"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "846192",
-          "display": "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "3264",
-          "display": "dexamethasone"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1007105",
-          "display": "astemizole / dexamethasone"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1007256",
-          "display": "clioquinol / dexamethasone"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1007423",
-          "display": "dexamethasone / oxytetracycline"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1007483",
-          "display": "dexamethasone / hypromellose"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1007628",
-          "display": "dexamethasone / dobesilic acid / lidocaine"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1007854",
-          "display": "clotrimazole / dexamethasone"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1008217",
-          "display": "clemastine / dexamethasone"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1008930",
-          "display": "dexamethasone / phenylephrine"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1009150",
-          "display": "dexamethasone / sodium phosphate"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1009387",
-          "display": "dexamethasone / neomycin / thiabendazole"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "214478",
-          "display": "dexamethasone / lidocaine"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "216524",
-          "display": "dexamethasone / neomycin"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "216525",
-          "display": "dexamethasone / neomycin / polymyxin B"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "465397",
-          "display": "ciprofloxacin / dexamethasone"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "687304",
-          "display": "dexamethasone / tramazoline"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "813683",
-          "display": "dexamethasone / theophylline"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "814504",
-          "display": "dexamethasone / indomethacin"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "815833",
-          "display": "chloramphenicol / dexamethasone"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "818139",
-          "display": "dexamethasone / terfenadine"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "820465",
-          "display": "carisoprodol / dexamethasone / ibuprofen"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "821542",
-          "display": "cyproheptadine / dexamethasone"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "822000",
-          "display": "carisoprodol / dexamethasone / tenoxicam"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "883815",
-          "display": "dexamethasone / tobramycin"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1009392",
-          "display": "dexamethasone 1 MG/ML / neomycin 3.2 MG/ML / thiabendazole 40 MG/ML Topical Solution [Tresaderm]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1011080",
-          "display": "dexamethasone 0.5 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension [Tobradex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1049386",
-          "display": "dexamethasone 2 MG/ML Injectable Solution [Dexium]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "105392",
-          "display": "dexamethasone 0.5 MG Oral Tablet [Decadron]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1087757",
-          "display": "dexamethasone 2 MG/ML Injectable Solution [Dexasone]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1087919",
-          "display": "dexamethasone 3 MG/ML Injectable Solution [Dexium]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2045409",
-          "display": "0.005 ML dexamethasone 103.4 MG/ML Injection [Dexycu]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "205669",
-          "display": "dexamethasone 1 MG/ML Ophthalmic Suspension [Maxidex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "205712",
-          "display": "dexamethasone 4 MG Oral Tablet [Decadron]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "205717",
-          "display": "dexamethasone 6 MG Oral Tablet [Decadron]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "208591",
-          "display": "dexamethasone 1 MG/ML / neomycin 3.5 MG/ML / polymyxin B 10000 UNT/ML Ophthalmic Suspension [Maxitrol]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "208601",
-          "display": "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG Ophthalmic Ointment [Maxitrol]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "208602",
-          "display": "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG Ophthalmic Ointment [Poly-Dex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "208813",
-          "display": "dexamethasone 1 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension [Tobradex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "208821",
-          "display": "dexamethasone 0.001 MG/MG / tobramycin 0.003 MG/MG Ophthalmic Ointment [Tobradex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2108020",
-          "display": "dexamethasone 0.4 MG Drug Implant [Dextenza]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2286261",
-          "display": "dexamethasone 20 MG Oral Tablet [Hemady]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "343040",
-          "display": "dexamethasone 0.75 MG Oral Tablet [Decadron]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "404630",
-          "display": "ciprofloxacin 3 MG/ML / dexamethasone 1 MG/ML Otic Suspension [Ciprodex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "854181",
-          "display": "dexamethasone 0.7 MG Drug Implant [Ozurdex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1009390",
-          "display": "dexamethasone 1 MG/ML / neomycin 3.2 MG/ML / thiabendazole 40 MG/ML [Tresaderm]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1011079",
-          "display": "dexamethasone 0.5 MG/ML / tobramycin 3 MG/ML [Tobradex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1049384",
-          "display": "dexamethasone 2 MG/ML [Dexium]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1087756",
-          "display": "dexamethasone 2 MG/ML [Dexasone]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1087918",
-          "display": "dexamethasone 3 MG/ML [Dexium]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2045406",
-          "display": "dexamethasone 103.4 MG/ML [Dexycu]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2108017",
-          "display": "dexamethasone 0.4 MG [Dextenza]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2286257",
-          "display": "dexamethasone 20 MG [Hemady]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "545158",
-          "display": "ciprofloxacin 3 MG/ML / dexamethasone 1 MG/ML [Ciprodex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "564044",
-          "display": "dexamethasone 0.5 MG [Decadron]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "566561",
-          "display": "dexamethasone 1 MG/ML [Maxidex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "566603",
-          "display": "dexamethasone 4 MG [Decadron]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "566608",
-          "display": "dexamethasone 6 MG [Decadron]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "569262",
-          "display": "dexamethasone 1 MG/ML / neomycin 3.5 MG/ML / polymyxin B 10000 UNT/ML [Maxitrol]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "569272",
-          "display": "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG [Maxitrol]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "569273",
-          "display": "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG [Poly-Dex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "569462",
-          "display": "dexamethasone 1 MG/ML / tobramycin 3 MG/ML [Tobradex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "569470",
-          "display": "dexamethasone 0.001 MG/MG / tobramycin 0.003 MG/MG [Tobradex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "575233",
-          "display": "dexamethasone 0.75 MG [Decadron]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "854179",
-          "display": "dexamethasone 0.7 MG [Ozurdex]"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1009388",
-          "display": "dexamethasone 1 MG/ML / neomycin 3.2 MG/ML / thiabendazole 40 MG/ML Topical Solution"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1049400",
-          "display": "dexamethasone sodium phosphate 4 MG/ML Injectable Solution"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1116927",
-          "display": "dexamethasone phosphate 4 MG/ML Injectable Solution"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1249712",
-          "display": "dexamethasone sodium phosphate 0.4 MG/ML Injectable Solution"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1374372",
-          "display": "dexamethasone acetate 8 MG/ML Injectable Suspension"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1812079",
-          "display": "1 ML dexamethasone phosphate 10 MG/ML Injection"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1812095",
-          "display": "1 ML dexamethasone phosphate 4 MG/ML Prefilled Syringe"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1812194",
-          "display": "1 ML dexamethasone phosphate 4 MG/ML Injection"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197576",
-          "display": "dexamethasone 0.25 MG Oral Tablet"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197577",
-          "display": "dexamethasone 0.5 MG Oral Tablet"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197579",
-          "display": "dexamethasone 1 MG Oral Tablet"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197580",
-          "display": "dexamethasone 1.5 MG Oral Tablet"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197581",
-          "display": "dexamethasone 2 MG Oral Tablet"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197582",
-          "display": "dexamethasone 4 MG Oral Tablet"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "197583",
-          "display": "dexamethasone 6 MG Oral Tablet"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2045404",
-          "display": "0.005 ML dexamethasone 103.4 MG/ML Injection"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2099700",
-          "display": "1 ML dexamethasone phosphate 10 MG/ML Prefilled Syringe"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2108015",
-          "display": "dexamethasone 0.4 MG Drug Implant"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2261802",
-          "display": "dexamethasone 20 MG Oral Tablet"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "226343",
-          "display": "dexamethasone phosphate 1 MG/ML Ophthalmic Solution"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "227142",
-          "display": "dexamethasone 1 MG/ML / hypromellose 5 MG/ML Ophthalmic Solution"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "248175",
-          "display": "dexamethasone 0.02 MG/ACTUAT / tramazoline 0.12 MG/ACTUAT Nasal Spray"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "309679",
-          "display": "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG Ophthalmic Ointment"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "309680",
-          "display": "dexamethasone 1 MG/ML / neomycin 3.5 MG/ML / polymyxin B 10000 UNT/ML Ophthalmic Suspension"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "309682",
-          "display": "dexamethasone 0.001 MG/MG / tobramycin 0.003 MG/MG Ophthalmic Ointment"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "309683",
-          "display": "dexamethasone 1 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "309684",
-          "display": "dexamethasone 1 MG/ML Oral Solution"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "309686",
-          "display": "dexamethasone 0.1 MG/ML Oral Solution"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "309692",
-          "display": "dexamethasone 1 MG/ML Ophthalmic Suspension"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "309696",
-          "display": "dexamethasone phosphate 10 MG/ML Injectable Solution"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "343033",
-          "display": "dexamethasone 0.75 MG Oral Tablet"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "388755",
-          "display": "dexamethasone 1 MG/ML Topical Solution"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "403908",
-          "display": "ciprofloxacin 3 MG/ML / dexamethasone 1 MG/ML Otic Suspension"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "435681",
-          "display": "dexamethasone 2 MG/ML Injectable Solution"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "849115",
-          "display": "dexamethasone 0.5 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "854177",
-          "display": "dexamethasone 0.7 MG Drug Implant"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "880649",
-          "display": "dexamethasone 3 MG/ML Injectable Solution"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1049399",
-          "display": "dexamethasone sodium phosphate 4 MG/ML"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1116926",
-          "display": "dexamethasone phosphate 4 MG/ML"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1249711",
-          "display": "dexamethasone sodium phosphate 0.4 MG/ML"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1374371",
-          "display": "dexamethasone acetate 8 MG/ML"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "1812078",
-          "display": "dexamethasone phosphate 10 MG/ML"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2045403",
-          "display": "dexamethasone 103.4 MG/ML"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2261801",
-          "display": "dexamethasone 20 MG"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "2265538",
-          "display": "dexamethasone phosphate 1 MG/ML"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "315773",
-          "display": "dexamethasone 0.1 MG/ML"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "315774",
-          "display": "dexamethasone 0.25 MG"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "315775",
-          "display": "dexamethasone 0.5 MG"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "315776",
-          "display": "dexamethasone 1 MG"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "315777",
-          "display": "dexamethasone 1.5 MG"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "315778",
-          "display": "dexamethasone 4 MG"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "315779",
-          "display": "dexamethasone 6 MG"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "317346",
-          "display": "dexamethasone 2 MG"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "317629",
-          "display": "dexamethasone 1 MG/ML"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "332981",
-          "display": "dexamethasone 3 MG/ML"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "332984",
-          "display": "dexamethasone 0.4 MG"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "335766",
-          "display": "dexamethasone 0.02 MG/ACTUAT"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "339981",
-          "display": "dexamethasone 0.001 MG/MG"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "345816",
-          "display": "dexamethasone 0.75 MG"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "438889",
-          "display": "dexamethasone 0.5 MG/ML"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "451789",
-          "display": "dexamethasone 2 MG/ML"
-        },
-        {
-          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-          "code": "854175",
-          "display": "dexamethasone 0.7 MG"
+      {
+        "termCodes": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1998481",
+            "display": "{49 (dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 12 Day Taper]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1998482",
+            "display": "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 6 Day Taper]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2118829",
+            "display": "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack [HiDex 6-Day Taper]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2118835",
+            "display": "{27 (dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 7-Day Taper]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2121735",
+            "display": "{39 (dexamethasone 1.5 MG Oral Tablet) } Pack [Dxevo 11 Day Taper]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2387356",
+            "display": "{25 (dexamethasone 1.5 MG Oral Tablet) } Pack [Zcort 7 Day Taper]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "795716",
+            "display": "{12 (dexamethasone 0.75 MG Oral Tablet [Decadron]) } Pack [Decadron 5-12]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "797022",
+            "display": "{35 (dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak TaperPak Junior 10 Day]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "797023",
+            "display": "{51 (dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak TaperPak 13 Day]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "847225",
+            "display": "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak TaperPak 6 Day]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1869595",
+            "display": "{27 (dexamethasone 1.5 MG Oral Tablet) } Pack"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1943550",
+            "display": "{49 (dexamethasone 1.5 MG Oral Tablet) } Pack"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2121587",
+            "display": "{39 (dexamethasone 1.5 MG Oral Tablet) } Pack"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2387355",
+            "display": "{25 (dexamethasone 1.5 MG Oral Tablet) } Pack"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "759481",
+            "display": "{51 (dexamethasone 1.5 MG Oral Tablet) } Pack"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "759696",
+            "display": "{12 (dexamethasone 0.75 MG Oral Tablet) } Pack"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "759697",
+            "display": "{35 (dexamethasone 1.5 MG Oral Tablet) } Pack"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "846192",
+            "display": "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "3264",
+            "display": "dexamethasone"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1007105",
+            "display": "astemizole / dexamethasone"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1007256",
+            "display": "clioquinol / dexamethasone"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1007423",
+            "display": "dexamethasone / oxytetracycline"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1007483",
+            "display": "dexamethasone / hypromellose"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1007628",
+            "display": "dexamethasone / dobesilic acid / lidocaine"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1007854",
+            "display": "clotrimazole / dexamethasone"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1008217",
+            "display": "clemastine / dexamethasone"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1008930",
+            "display": "dexamethasone / phenylephrine"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1009150",
+            "display": "dexamethasone / sodium phosphate"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1009387",
+            "display": "dexamethasone / neomycin / thiabendazole"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "214478",
+            "display": "dexamethasone / lidocaine"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "216524",
+            "display": "dexamethasone / neomycin"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "216525",
+            "display": "dexamethasone / neomycin / polymyxin B"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "465397",
+            "display": "ciprofloxacin / dexamethasone"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "687304",
+            "display": "dexamethasone / tramazoline"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "813683",
+            "display": "dexamethasone / theophylline"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "814504",
+            "display": "dexamethasone / indomethacin"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "815833",
+            "display": "chloramphenicol / dexamethasone"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "818139",
+            "display": "dexamethasone / terfenadine"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "820465",
+            "display": "carisoprodol / dexamethasone / ibuprofen"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "821542",
+            "display": "cyproheptadine / dexamethasone"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "822000",
+            "display": "carisoprodol / dexamethasone / tenoxicam"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "883815",
+            "display": "dexamethasone / tobramycin"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1009392",
+            "display": "dexamethasone 1 MG/ML / neomycin 3.2 MG/ML / thiabendazole 40 MG/ML Topical Solution [Tresaderm]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1011080",
+            "display": "dexamethasone 0.5 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension [Tobradex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1049386",
+            "display": "dexamethasone 2 MG/ML Injectable Solution [Dexium]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "105392",
+            "display": "dexamethasone 0.5 MG Oral Tablet [Decadron]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1087757",
+            "display": "dexamethasone 2 MG/ML Injectable Solution [Dexasone]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1087919",
+            "display": "dexamethasone 3 MG/ML Injectable Solution [Dexium]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2045409",
+            "display": "0.005 ML dexamethasone 103.4 MG/ML Injection [Dexycu]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "205669",
+            "display": "dexamethasone 1 MG/ML Ophthalmic Suspension [Maxidex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "205712",
+            "display": "dexamethasone 4 MG Oral Tablet [Decadron]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "205717",
+            "display": "dexamethasone 6 MG Oral Tablet [Decadron]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "208591",
+            "display": "dexamethasone 1 MG/ML / neomycin 3.5 MG/ML / polymyxin B 10000 UNT/ML Ophthalmic Suspension [Maxitrol]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "208601",
+            "display": "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG Ophthalmic Ointment [Maxitrol]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "208602",
+            "display": "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG Ophthalmic Ointment [Poly-Dex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "208813",
+            "display": "dexamethasone 1 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension [Tobradex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "208821",
+            "display": "dexamethasone 0.001 MG/MG / tobramycin 0.003 MG/MG Ophthalmic Ointment [Tobradex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2108020",
+            "display": "dexamethasone 0.4 MG Drug Implant [Dextenza]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2286261",
+            "display": "dexamethasone 20 MG Oral Tablet [Hemady]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "343040",
+            "display": "dexamethasone 0.75 MG Oral Tablet [Decadron]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "404630",
+            "display": "ciprofloxacin 3 MG/ML / dexamethasone 1 MG/ML Otic Suspension [Ciprodex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "854181",
+            "display": "dexamethasone 0.7 MG Drug Implant [Ozurdex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1009390",
+            "display": "dexamethasone 1 MG/ML / neomycin 3.2 MG/ML / thiabendazole 40 MG/ML [Tresaderm]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1011079",
+            "display": "dexamethasone 0.5 MG/ML / tobramycin 3 MG/ML [Tobradex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1049384",
+            "display": "dexamethasone 2 MG/ML [Dexium]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1087756",
+            "display": "dexamethasone 2 MG/ML [Dexasone]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1087918",
+            "display": "dexamethasone 3 MG/ML [Dexium]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2045406",
+            "display": "dexamethasone 103.4 MG/ML [Dexycu]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2108017",
+            "display": "dexamethasone 0.4 MG [Dextenza]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2286257",
+            "display": "dexamethasone 20 MG [Hemady]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "545158",
+            "display": "ciprofloxacin 3 MG/ML / dexamethasone 1 MG/ML [Ciprodex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "564044",
+            "display": "dexamethasone 0.5 MG [Decadron]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "566561",
+            "display": "dexamethasone 1 MG/ML [Maxidex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "566603",
+            "display": "dexamethasone 4 MG [Decadron]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "566608",
+            "display": "dexamethasone 6 MG [Decadron]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "569262",
+            "display": "dexamethasone 1 MG/ML / neomycin 3.5 MG/ML / polymyxin B 10000 UNT/ML [Maxitrol]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "569272",
+            "display": "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG [Maxitrol]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "569273",
+            "display": "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG [Poly-Dex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "569462",
+            "display": "dexamethasone 1 MG/ML / tobramycin 3 MG/ML [Tobradex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "569470",
+            "display": "dexamethasone 0.001 MG/MG / tobramycin 0.003 MG/MG [Tobradex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "575233",
+            "display": "dexamethasone 0.75 MG [Decadron]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "854179",
+            "display": "dexamethasone 0.7 MG [Ozurdex]"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1009388",
+            "display": "dexamethasone 1 MG/ML / neomycin 3.2 MG/ML / thiabendazole 40 MG/ML Topical Solution"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1049400",
+            "display": "dexamethasone sodium phosphate 4 MG/ML Injectable Solution"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1116927",
+            "display": "dexamethasone phosphate 4 MG/ML Injectable Solution"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1249712",
+            "display": "dexamethasone sodium phosphate 0.4 MG/ML Injectable Solution"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1374372",
+            "display": "dexamethasone acetate 8 MG/ML Injectable Suspension"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1812079",
+            "display": "1 ML dexamethasone phosphate 10 MG/ML Injection"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1812095",
+            "display": "1 ML dexamethasone phosphate 4 MG/ML Prefilled Syringe"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1812194",
+            "display": "1 ML dexamethasone phosphate 4 MG/ML Injection"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "197576",
+            "display": "dexamethasone 0.25 MG Oral Tablet"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "197577",
+            "display": "dexamethasone 0.5 MG Oral Tablet"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "197579",
+            "display": "dexamethasone 1 MG Oral Tablet"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "197580",
+            "display": "dexamethasone 1.5 MG Oral Tablet"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "197581",
+            "display": "dexamethasone 2 MG Oral Tablet"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "197582",
+            "display": "dexamethasone 4 MG Oral Tablet"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "197583",
+            "display": "dexamethasone 6 MG Oral Tablet"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2045404",
+            "display": "0.005 ML dexamethasone 103.4 MG/ML Injection"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2099700",
+            "display": "1 ML dexamethasone phosphate 10 MG/ML Prefilled Syringe"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2108015",
+            "display": "dexamethasone 0.4 MG Drug Implant"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2261802",
+            "display": "dexamethasone 20 MG Oral Tablet"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "226343",
+            "display": "dexamethasone phosphate 1 MG/ML Ophthalmic Solution"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "227142",
+            "display": "dexamethasone 1 MG/ML / hypromellose 5 MG/ML Ophthalmic Solution"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "248175",
+            "display": "dexamethasone 0.02 MG/ACTUAT / tramazoline 0.12 MG/ACTUAT Nasal Spray"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "309679",
+            "display": "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG Ophthalmic Ointment"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "309680",
+            "display": "dexamethasone 1 MG/ML / neomycin 3.5 MG/ML / polymyxin B 10000 UNT/ML Ophthalmic Suspension"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "309682",
+            "display": "dexamethasone 0.001 MG/MG / tobramycin 0.003 MG/MG Ophthalmic Ointment"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "309683",
+            "display": "dexamethasone 1 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "309684",
+            "display": "dexamethasone 1 MG/ML Oral Solution"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "309686",
+            "display": "dexamethasone 0.1 MG/ML Oral Solution"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "309692",
+            "display": "dexamethasone 1 MG/ML Ophthalmic Suspension"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "309696",
+            "display": "dexamethasone phosphate 10 MG/ML Injectable Solution"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "343033",
+            "display": "dexamethasone 0.75 MG Oral Tablet"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "388755",
+            "display": "dexamethasone 1 MG/ML Topical Solution"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "403908",
+            "display": "ciprofloxacin 3 MG/ML / dexamethasone 1 MG/ML Otic Suspension"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "435681",
+            "display": "dexamethasone 2 MG/ML Injectable Solution"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "849115",
+            "display": "dexamethasone 0.5 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "854177",
+            "display": "dexamethasone 0.7 MG Drug Implant"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "880649",
+            "display": "dexamethasone 3 MG/ML Injectable Solution"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1049399",
+            "display": "dexamethasone sodium phosphate 4 MG/ML"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1116926",
+            "display": "dexamethasone phosphate 4 MG/ML"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1249711",
+            "display": "dexamethasone sodium phosphate 0.4 MG/ML"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1374371",
+            "display": "dexamethasone acetate 8 MG/ML"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "1812078",
+            "display": "dexamethasone phosphate 10 MG/ML"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2045403",
+            "display": "dexamethasone 103.4 MG/ML"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2261801",
+            "display": "dexamethasone 20 MG"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "2265538",
+            "display": "dexamethasone phosphate 1 MG/ML"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "315773",
+            "display": "dexamethasone 0.1 MG/ML"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "315774",
+            "display": "dexamethasone 0.25 MG"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "315775",
+            "display": "dexamethasone 0.5 MG"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "315776",
+            "display": "dexamethasone 1 MG"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "315777",
+            "display": "dexamethasone 1.5 MG"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "315778",
+            "display": "dexamethasone 4 MG"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "315779",
+            "display": "dexamethasone 6 MG"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "317346",
+            "display": "dexamethasone 2 MG"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "317629",
+            "display": "dexamethasone 1 MG/ML"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "332981",
+            "display": "dexamethasone 3 MG/ML"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "332984",
+            "display": "dexamethasone 0.4 MG"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "335766",
+            "display": "dexamethasone 0.02 MG/ACTUAT"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "339981",
+            "display": "dexamethasone 0.001 MG/MG"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "345816",
+            "display": "dexamethasone 0.75 MG"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "438889",
+            "display": "dexamethasone 0.5 MG/ML"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "451789",
+            "display": "dexamethasone 2 MG/ML"
+          },
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "854175",
+            "display": "dexamethasone 0.7 MG"
+          }
+        ],
+        "context": {
+          "code": "Medikamentenverabreichung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Verabreichung von Medikamenten"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01",
+          "afterDate": "2023-08-01"
         }
-      ],
-      "context": {
-        "code": "Medikamentenverabreichung",
-        "system": "fdpg.mii.synthea",
-        "version": "1.0.0",
-        "display": "Verabreichung von Medikamenten"
-      },
-      "timeRestriction": {
-        "beforeDate": "2023-10-01",
-        "afterDate": "2023-08-01"
       }
-    }
+    ]
   ]
 }
