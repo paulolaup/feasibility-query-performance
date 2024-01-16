@@ -140,7 +140,7 @@ def run_test(query_sets, project_name, rounds=None, num_pre_run_queries=None):
     # Generate report
     print("Processing results")
     metadata = {
-        'rounds': num_rounds,
+        'rounds': rounds,
         'pre_queries': num_pre_run_queries
     }
     test_results = {}
