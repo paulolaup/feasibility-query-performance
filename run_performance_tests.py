@@ -46,6 +46,31 @@ def determine_run_plans(test_config):
     return plans
 
 
+def run_pathling(plans, base_dir):
+    print("Running tests for Pathling")
+    pathling_setup_location = setup_location['pathling']
+    os.makedirs(os.path.join(base_dir, 'pathling'), exist_ok=True)
+
+    prev_cwd = os.getcwd()
+    os.chdir(pathling_setup_location)
+    for plan in plans:
+        print("Running test for Pathling with plan: " + str(plan))
+        # Upload data
+        subprocess.run(['bash', shutdown_script_name])
+        subprocess.run(['bash', startup_script_name])
+        for archive_file_path in plan['archives']:
+            print(f"Uploading data @ {archive_file_path}")
+            subprocess.run(['python3', 'upload_data.py', archive_file_path])
+
+        # Run tests
+        print("Running tests")
+        report_file_path = os.path.join(base_dir, 'pathling', f"run_{plan['num_patients']}.json")
+        subprocess.run(['python3', test_script_name, '-r', str(plan['num_rounds']), '-p', str(plan['num_pre_queries']),
+                        '-u', 'http://localhost:8080/fhir', '-f', report_file_path])
+    os.chdir(prev_cwd)
+    subprocess.run(['bash', shutdown_script_name])
+
+
 def run_fhirbase(plans, base_dir):
     print("Running tests for Fhirbase")
     fhirbase_setup_location = setup_location['fhirbase']
@@ -61,9 +86,6 @@ def run_fhirbase(plans, base_dir):
         for archive_file_path in plan['archives']:
             print(f"Uploading data @ {archive_file_path}")
             subprocess.run(['bash', upload_script_name, archive_file_path])
-        print("Testing patient count")
-        subprocess.run(['psql', '-U', 'postgres', '-h', 'localhost', '-p', '9432', '-d', 'fb',
-                        '-c', 'SELECT COUNT(*) FROM patient;'])
 
         # Run tests
         print("Running tests")
@@ -85,4 +107,5 @@ if __name__ == "__main__":
 
     # Perform tests
     output_dir = os.path.abspath(dir_path)
-    run_fhirbase(run_plans, output_dir)
+    run_pathling(run_plans, output_dir)
+    # run_fhirbase(run_plans, output_dir)
