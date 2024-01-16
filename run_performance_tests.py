@@ -46,6 +46,32 @@ def determine_run_plans(test_config):
     return plans
 
 
+def run_blaze(plans, base_dir):
+    print("Running tests for Blaze")
+    blaze_setup_location = setup_location['blaze']
+    os.makedirs(os.path.join(base_dir, 'blaze'), exist_ok=True)
+
+    prev_cwd = os.getcwd()
+    os.chdir(blaze_setup_location)
+    for plan in plans:
+        print("Running test for Blaze with plan: " + str(plan))
+        # Upload data
+        subprocess.run(['bash', 'remove_with_flare.sh'])
+        subprocess.run(['bash', 'setup_with_flare.sh'])
+        for archive_file_path in plan['archives']:
+            print(f"Uploading data @ {archive_file_path}")
+            subprocess.run(['bash', 'upload_data.sh', archive_file_path])
+
+        # Run tests
+        print("Running tests")
+        report_file_path_1 = os.path.join(base_dir, 'blaze', f"run_{plan['num_patients']}_sq.json")
+        report_file_path_2 = os.path.join(base_dir, 'blaze', f"run_{plan['num_patients']}_cql.json")
+        subprocess.run(['python3', test_script_name, '-r', str(plan['num_rounds']), '-p', str(plan['num_pre_queries']),
+                        '-f1', report_file_path_1, '-f2', report_file_path_2])
+    os.chdir(prev_cwd)
+    subprocess.run(['bash', 'remove_with_flare.sh'])
+
+
 def run_pathling(plans, base_dir):
     print("Running tests for Pathling")
     pathling_setup_location = setup_location['pathling']
@@ -107,5 +133,6 @@ if __name__ == "__main__":
 
     # Perform tests
     output_dir = os.path.abspath(dir_path)
+    run_blaze(run_plans, output_dir)
     run_pathling(run_plans, output_dir)
     # run_fhirbase(run_plans, output_dir)

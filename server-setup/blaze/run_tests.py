@@ -128,12 +128,12 @@ def post_cql_query(query):
     try:
         print("\t\t\tUploading Library resource")
         response = requests.post(url=f"{blaze_url}/Library", data=json.dumps(library), headers=headers_cql)
-        if response.status_code != 201:
+        if response.status_code not in [200, 201]:
             raise Exception(f"Could not upload Library resource: {response.status_code}. Reason: {response.text}")
 
         print("\t\t\tUploading Measure resource")
         response = requests.post(url=f"{blaze_url}/Measure", data=json.dumps(measure), headers=headers_cql)
-        if response.status_code != 201:
+        if response.status_code not in [200, 201]:
             raise Exception(f"Could not upload Measure resource: {response.status_code}. Reason: {response.text}")
 
         print("\t\t\tEvaluating measure")
