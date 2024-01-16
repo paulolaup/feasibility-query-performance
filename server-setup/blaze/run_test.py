@@ -26,25 +26,35 @@ flare_url = f"http://localhost:{os.environ['FLARE_PORT']}"
 
 def load_queries(path, file_extensions):
     print("Loading queries")
-    query_sets = {}
+    sq_query_sets = {}
+    cql_query_sets = {}
 
     # Detect test directories
     for dir_name in os.listdir(path):
         if os.path.isdir(os.path.join(path, dir_name)):
             # Get query files in directory
-            queries = {}
+            sq_queries = {}
+            cql_queries = {}
             for query_file in glob.glob(os.path.join(path, dir_name, '*.*')):
                 file_ext = os.path.splitext(query_file)[1]
                 if file_ext in file_extensions:
+
                     key = os.path.splitext(os.path.basename(query_file))[0]
-                    queries[key] = {
+                    entry = {
                         'type': file_ext,
                         'query': open(query_file, encoding='utf8').read()
                     }
-            query_sets[dir_name] = queries
 
-    print(f"Loaded query sets: {', '.join(query_sets.keys())}")
-    return query_sets
+                    if file_ext == 'json':
+                        sq_queries[key] = entry
+                    elif file_ext == 'cql':
+                        cql_queries[key] = entry
+            sq_query_sets[dir_name] = sq_queries
+            cql_query_sets[dir_name] = cql_queries
+
+    print(f"Loaded SQ query sets: {', '.join(sq_query_sets.keys())}")
+    print(f"Loaded CQL query sets: {', '.join(cql_query_sets.keys())}")
+    return sq_query_sets, cql_query_sets
 
 
 def generate_library_from_cql_query(query):
