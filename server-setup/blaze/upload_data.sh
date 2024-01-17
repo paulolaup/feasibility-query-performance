@@ -10,12 +10,12 @@ fi
 # Load environment variables from .env file
 export $(grep -v '^#' .env | xargs -d '\n')
 
-#echo "Decompressing data at ${compressed_data_path}"
-#mkdir "$DATA_PATH/temp"
-#pigz -dc "$compressed_data_path" | tar -xf - -C "$DATA_PATH/temp"
+echo "Decompressing data at ${compressed_data_path}"
+mkdir "$DATA_PATH/temp"
+pigz -dc "$compressed_data_path" | tar -xf - -C "$DATA_PATH/temp"
 
 echo "Uploading data"
-blazectl --server "http://localhost:$BLAZE_PORT/fhir" upload "$compressed_data_path"
+blazectl --server "http://localhost:$BLAZE_PORT/fhir" upload "$DATA_PATH/temp"
 
-#echo "Removing temporary data"
-#rm -r "$DATA_PATH/temp"
+echo "Removing temporary data"
+rm -r "$DATA_PATH/temp"

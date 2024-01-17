@@ -68,8 +68,8 @@ def run_blaze(plans, base_dir):
         report_file_path_2 = os.path.join(base_dir, 'blaze', f"run_{plan['num_patients']}_cql.json")
         subprocess.run(['python3', test_script_name, '-r', str(plan['num_rounds']), '-p', str(plan['num_pre_queries']),
                         '-f1', report_file_path_1, '-f2', report_file_path_2])
-    os.chdir(prev_cwd)
     subprocess.run(['bash', 'remove_with_flare.sh'])
+    os.chdir(prev_cwd)
 
 
 def run_pathling(plans, base_dir):
@@ -93,8 +93,8 @@ def run_pathling(plans, base_dir):
         report_file_path = os.path.join(base_dir, 'pathling', f"run_{plan['num_patients']}.json")
         subprocess.run(['python3', test_script_name, '-r', str(plan['num_rounds']), '-p', str(plan['num_pre_queries']),
                         '-u', 'http://localhost:8080/fhir', '-f', report_file_path])
-    os.chdir(prev_cwd)
     subprocess.run(['bash', shutdown_script_name])
+    os.chdir(prev_cwd)
 
 
 def run_fhirbase(plans, base_dir):
@@ -118,8 +118,8 @@ def run_fhirbase(plans, base_dir):
         report_file_path = os.path.join(base_dir, 'fhirbase', f"run_{plan['num_patients']}.json")
         subprocess.run(['python3', test_script_name, '-r', str(plan['num_rounds']), '-p', str(plan['num_pre_queries']),
                         '-f', report_file_path])
-    os.chdir(prev_cwd)
     subprocess.run(['bash', shutdown_script_name])
+    os.chdir(prev_cwd)
 
 
 if __name__ == "__main__":
@@ -134,5 +134,5 @@ if __name__ == "__main__":
     # Perform tests
     output_dir = os.path.abspath(dir_path)
     run_blaze(run_plans, output_dir)
-    run_pathling(run_plans, output_dir)
+    # run_pathling(run_plans, output_dir)
     # run_fhirbase(run_plans, output_dir)

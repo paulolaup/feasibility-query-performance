@@ -11,7 +11,6 @@ import datetime
 import subprocess
 
 query_path = 'query'
-query_file_extensions = {'.sq', '.cql'}
 result_path = 'result'
 headers_cql = {
     'Content-Type': "application/fhir+json"
@@ -25,7 +24,7 @@ blaze_url = f"http://localhost:{os.environ['BLAZE_PORT']}/fhir"
 flare_url = f"http://localhost:{os.environ['FLARE_PORT']}"
 
 
-def load_queries(path, file_extensions):
+def load_queries(path):
     print("Loading queries")
     sq_query_sets = {}
     cql_query_sets = {}
@@ -38,12 +37,11 @@ def load_queries(path, file_extensions):
             cql_queries = {}
             for query_file_path in glob.glob(os.path.join(path, dir_name, '*.*')):
                 file_ext = os.path.splitext(query_file_path)[1]
-                if file_ext in file_extensions:
-                    key = os.path.splitext(os.path.basename(query_file_path))[0]
-                    if file_ext == 'json':
-                        sq_queries[key] = query_file_path
-                    elif file_ext == 'cql':
-                        cql_queries[key] = query_file_path
+                key = os.path.splitext(os.path.basename(query_file_path))[0]
+                if file_ext == '.json':
+                    sq_queries[key] = query_file_path
+                elif file_ext == '.cql':
+                    cql_queries[key] = query_file_path
             if len(sq_queries) > 0:
                 sq_query_sets[dir_name] = sq_queries
             if len(cql_queries) > 0:
@@ -184,7 +182,7 @@ def restart_containers(project):
     print(f"Restarting containers for project '{project}'")
     subprocess.run(['docker', 'container', 'stop', f'{project}-server-1'])
     subprocess.run(['docker', 'container', 'stop', f'{project}-flare-1'])
-    subprocess.run(['docker', 'compose', '--project-name', project, 'up', '--wait'])
+    subprocess.run(['docker', 'compose', '--project-name', project, '-f', 'compose-with-flare.yaml', 'up', '--wait'])
 
 
 def calculate_avg(times):
@@ -301,7 +299,7 @@ def configure_argparser():
                                                                 datetime.datetime.today().strftime(
                                                                     '%Y-%m-%d#%H:%M:%S') +
                                                                 '.json'), help='Output file for SQ report')
-    parser.add_argument('-f1', '--file-2', default=os.path.join(result_path, 'result_cql_' +
+    parser.add_argument('-f2', '--file-2', default=os.path.join(result_path, 'result_cql_' +
                                                                 datetime.datetime.today().strftime(
                                                                     '%Y-%m-%d#%H:%M:%S') +
                                                                 '.json'), help='Output file for CQL report')
@@ -315,8 +313,9 @@ if __name__ == "__main__":
     num_rounds = args.rounds
     num_pre_run_queries = args.num_pre_queries
 
-    blaze_sq_query_sets, blaze_cql_query_sets = load_queries(query_path, query_file_extensions)
+    blaze_sq_query_sets, blaze_cql_query_sets = load_queries(query_path)
     blaze_sq_test_report, blaze_cql_test_report = run_test(blaze_sq_query_sets, blaze_cql_query_sets,
+                                                           'feasibility-query-performance-blaze',
                                                            num_rounds, num_pre_run_queries)
 
     json.dump(blaze_sq_test_report, fp=open(args.file_1, mode='w+'), indent=2)

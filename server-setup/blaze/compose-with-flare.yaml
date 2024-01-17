@@ -22,7 +22,7 @@ services:
     volumes:
       - "./ontology:/app/ontology"
     environment:
-      - "FLARE_FHIR_SERVER=https://localhost:${BLAZE_PORT}/fhir"
+      - "FLARE_FHIR_SERVER=http://server:8080/fhir"
     depends_on:
       server:
         condition: service_healthy
