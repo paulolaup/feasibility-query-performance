@@ -23,237 +23,8 @@
             "code": "a",
             "display": "a"
           },
-          "value": 18,
-          "comparator": "gt"
-        }
-      }
-    ]
-  ],
-  "exclusionCriteria": [
-    [
-      {
-        "termCodes": [
-          {
-            "code": "263495000",
-            "system": "http://snomed.info/sct",
-            "display": "Geschlecht"
-          }
-        ],
-        "context": {
-          "code": "Patient",
-          "system": "fdpg.mii.synthea",
-          "version": "1.0.0",
-          "display": "Patient"
-        },
-        "valueFilter": {
-          "type": "concept",
-          "selectedConcepts": [
-            {
-              "code": "female",
-              "system": "http://hl7.org/fhir/administrative-gender",
-              "display": "Female"
-            }
-          ]
-        }
-      }
-    ],
-    [
-      {
-        "termCodes": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "77386006",
-            "display": "Pregnancy (finding)"
-          }
-        ],
-        "context": {
-          "code": "Diagnose",
-          "system": "fdpg.mii.synthea",
-          "version": "1.0.0",
-          "display": "Diagnose"
-        },
-        "timeRestriction": {
-          "beforeDate": "2023-10-01"
-        }
-      }
-    ],
-    [
-      {
-        "termCodes": [
-          {
-            "code": "2183102",
-            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-            "display": "pexidartinib"
-          }
-        ],
-        "context": {
-          "code": "AllergyIntolerance",
-          "system": "fdpg.mii.synthea",
-          "version": "1.0.0",
-          "display": "AllergyIntolerance"
-        },
-        "timeRestriction": {
-          "beforeDate": "2023-10-01"
-        }
-      }
-    ],
-    [
-      {
-        "termCodes": [
-          {
-            "code": "357977",
-            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-            "display": "sunitinib"
-          }
-        ],
-        "context": {
-          "code": "AllergyIntolerance",
-          "system": "fdpg.mii.synthea",
-          "version": "1.0.0",
-          "display": "AllergyIntolerance"
-        },
-        "timeRestriction": {
-          "beforeDate": "2023-10-01"
-        }
-      }
-    ],
-    [
-      {
-        "termCodes": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "66071002",
-            "display": "Viral hepatitis type B (disorder)"
-          }
-        ],
-        "context": {
-          "code": "Diagnose",
-          "system": "fdpg.mii.synthea",
-          "version": "1.0.0",
-          "display": "Diagnose"
-        },
-        "timeRestriction": {
-          "beforeDate": "2023-10-01"
-        }
-      }
-    ],
-    [
-      {
-        "termCodes": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "50711007",
-            "display": " Viral hepatitis type C (disorder)"
-          }
-        ],
-        "context": {
-          "code": "Diagnose",
-          "system": "fdpg.mii.synthea",
-          "version": "1.0.0",
-          "display": "Diagnose"
-        },
-        "timeRestriction": {
-          "beforeDate": "2023-10-01"
-        }
-      }
-    ],
-    [
-      {
-        "termCodes": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "235856003",
-            "display": "Disorder of liver (disorder)"
-          }
-        ],
-        "context": {
-          "code": "Diagnose",
-          "system": "fdpg.mii.synthea",
-          "version": "1.0.0",
-          "display": "Diagnose"
-        },
-        "timeRestriction": {
-          "beforeDate": "2023-10-01"
-        }
-      }
-    ],
-    [
-      {
-        "termCodes": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "39621005",
-            "display": "Disorder of gallbladder (disorder)"
-          }
-        ],
-        "context": {
-          "code": "Diagnose",
-          "system": "fdpg.mii.synthea",
-          "version": "1.0.0",
-          "display": "Diagnose"
-        },
-        "timeRestriction": {
-          "beforeDate": "2023-10-01"
-        }
-      }
-    ],
-    [
-      {
-        "termCodes": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "233703007",
-            "display": " Interstitial lung disease (disorder)"
-          }
-        ],
-        "context": {
-          "code": "Diagnose",
-          "system": "fdpg.mii.synthea",
-          "version": "1.0.0",
-          "display": "Diagnose"
-        },
-        "timeRestriction": {
-          "beforeDate": "2023-10-01"
-        }
-      }
-    ],
-    [
-      {
-        "termCodes": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "417746004",
-            "display": "Traumatic injury (disorder)"
-          }
-        ],
-        "context": {
-          "code": "Diagnose",
-          "system": "fdpg.mii.synthea",
-          "version": "1.0.0",
-          "display": "Diagnose"
-        },
-        "timeRestriction": {
-          "beforeDate": "2023-10-01"
-        }
-      }
-    ],
-    [
-      {
-        "termCodes": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "363346000",
-            "display": "Malignant neoplastic disease (disorder)"
-          }
-        ],
-        "context": {
-          "code": "Diagnose",
-          "system": "fdpg.mii.synthea",
-          "version": "1.0.0",
-          "display": "Diagnose"
-        },
-        "timeRestriction": {
-          "beforeDate": "2023-10-01"
+          "value": 65,
+          "comparator": "lt"
         }
       }
     ],
@@ -273,6 +44,28 @@
           "display": "Prozedur"
         },
         "timeRestriction": {
+          "afterDate": "2023-10-01"
+        }
+      }
+    ]
+  ],
+  "exclusionCriteria": [
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "52448006",
+            "display": "Dementia (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
           "beforeDate": "2023-10-01"
         }
       }
@@ -282,18 +75,238 @@
         "termCodes": [
           {
             "system": "http://snomed.info/sct",
-            "code": "417746004",
-            "display": "Traumatic injury (disorder)"
+            "code": "58214004",
+            "display": "Schizophrenia (disorder)"
           }
         ],
         "context": {
-          "code": "Procedure",
+          "code": "Diagnose",
           "system": "fdpg.mii.synthea",
           "version": "1.0.0",
-          "display": "Prozedur"
+          "display": "Diagnose"
         },
         "timeRestriction": {
           "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "26929004",
+            "display": "Alzheimer's disease (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "32798002",
+            "display": "Parkinsonism (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "128613002",
+            "display": "Seizure disorder (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "127294003",
+            "display": "Traumatic or nontraumatic brain injury (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "428061005",
+            "display": "Malignant neoplasm of brain (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "230690007",
+            "display": "Cerebrovascular accident (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "45170000",
+            "display": "Encephalitis (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "266257000",
+            "display": "Transient ischemic attack (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "code": "29463-7",
+            "system": "http://loinc.org",
+            "display": "Body weight"
+          }
+        ],
+        "context": {
+          "code": "Laboruntersuchung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Laboruntersuchung"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01",
+          "afterDate": "2022-10-01"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "comparator": "gt",
+          "unit": {
+            "code": "kg",
+            "display": "kg"
+          },
+          "value": 136.078
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "code": "39156-5",
+            "system": "http://loinc.org",
+            "display": "Body mass index (BMI) [Ratio]"
+          }
+        ],
+        "context": {
+          "code": "Laboruntersuchung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Laboruntersuchung"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01",
+          "afterDate": "2022-10-01"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "comparator": "gt",
+          "unit": {
+            "code": "kg/m2",
+            "display": "kg/m2"
+          },
+          "value": 40.0
         }
       }
     ]

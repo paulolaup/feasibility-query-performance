@@ -200,7 +200,7 @@
       {
         "termCodes": [
           {
-            "system": "http: //snomed.info/sct",
+            "system": "http://snomed.info/sct",
             "code": "367336001",
             "display": "Chemotherapy (procedure)"
           }
@@ -221,7 +221,7 @@
       {
         "termCodes": [
           {
-            "system": "http: //snomed.info/sct",
+            "system": "http://snomed.info/sct",
             "code": "108290001",
             "display": "Radiation oncology AND/OR radiotherapy"
           }
