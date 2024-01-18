@@ -93,7 +93,7 @@ def run_single_query(query_path):
     query_result = result.stdout.decode("utf-8")
     if re.fullmatch(query_error_pattern, query_result) is not None:
         print(f"Failure: Query execution failed with message:\n{query_result}")
-        return None
+        return None, query_result
     else:
         time_elapsed = datetime.timedelta(seconds=(end - start))
         print(f"Success: Time elapsed: {time_elapsed}")

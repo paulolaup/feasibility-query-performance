@@ -157,7 +157,7 @@ def post_structured_query(query):
         return time_elapsed, response.text
     else:
         print(f"\t\t\tFailure: {response.status_code}. Reason: {response.reason}")
-        return None
+        return None, response.reason
 
 
 def generate_test_run_order(query_sets, num_pre_run_queries=None):
@@ -275,7 +275,7 @@ def run_test(sq_query_sets, cql_query_sets, project_name, rounds=None, num_pre_r
             print(f"Query [{test_name}]{query_name}")
             query = open(query_file_path, encoding='utf-8').read()
             execution_time, query_result = post_cql_query(query)
-            sq_result_sets[test_name][query_name].append({
+            cql_result_sets[test_name][query_name].append({
                 'time': execution_time,
                 'result': query_result
             })
