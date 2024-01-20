@@ -1,0 +1,6 @@
+{
+    "_query": "fhirPath",
+    "filter": [
+        "reverseResolve(AllergyIntolerance.patient).code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and code='1815'))"
+    ]
+}

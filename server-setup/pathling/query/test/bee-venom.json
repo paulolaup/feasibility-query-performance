@@ -1,0 +1,6 @@
+{
+    "_query": "fhirPath",
+    "filter": [
+        "reverseResolve(AllergyIntolerance.patient).code.coding.exists(system='http://snomed.info/sct' and code='288328004'))"
+    ]
+}

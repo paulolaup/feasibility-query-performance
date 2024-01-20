@@ -1,0 +1,6 @@
+{
+    "_query": "fhirPath",
+    "filter": [
+        "reverseResolve(MedicationAdministration.subject).medicationCodeableConcept.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and code='2045404'))"
+    ]
+}

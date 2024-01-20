@@ -1,0 +1,6 @@
+{
+    "_query": "fhirPath",
+    "filter": [
+        "reverseResolve(Procedure.subject).code.coding.exists(system='http://snomed.info/sct' and code='127788007'))"
+    ]
+}
