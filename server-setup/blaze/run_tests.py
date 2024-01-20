@@ -75,6 +75,14 @@ def generate_library_from_cql_query(query):
                 }
             ]
         },
+        "subjectCodeableConcept": {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/resource-types",
+                    "code": "Patient"
+                }
+            ]
+        },
         "content": [
             {
                 'contentType': "text/cql",
@@ -89,6 +97,14 @@ def generate_measure_for_library(library):
         'resourceType': "Measure",
         'url': str(uuid.uuid4()),
         'status': "active",
+        "subjectCodeableConcept": {
+            "coding": [
+                {
+                    "system": "http://hl7.org/fhir/resource-types",
+                    "code": "Patient"
+                }
+            ]
+        },
         'library': library['url'],
         'scoring': {
             'coding': [
@@ -110,7 +126,7 @@ def generate_measure_for_library(library):
                         ]
                     },
                     'criteria': {
-                        'language': "text/cql-identifier",
+                        'language': "text/cql",
                         'expression': "InInitialPopulation"
                     }
                 }
@@ -136,7 +152,7 @@ def post_cql_query(query):
 
         print("\t\t\tEvaluating measure")
         response = requests.get(url=f"{blaze_url}/Measure/$evaluate-measure?measure={measure['url']}&"
-                                    f"periodStart=2000&periodEnd=2200")
+                                    f"periodStart=1900&periodEnd=2100")
         if response.status_code != 200:
             raise Exception(f"Could not evaluate measure: {response.status_code}. Reason: {response.text}")
 
@@ -145,7 +161,7 @@ def post_cql_query(query):
         return time_elapsed, response.text
     except Exception as e:
         print(f"\t\t\tQuery answering failed: {e}")
-        return None
+        return None, response.text
 
 
 def post_structured_query(query):
@@ -156,8 +172,8 @@ def post_structured_query(query):
         print(f"\t\t\tSuccess: Time elapsed: {time_elapsed}")
         return time_elapsed, response.text
     else:
-        print(f"\t\t\tFailure: {response.status_code}. Reason: {response.reason}")
-        return None, response.reason
+        print(f"\t\t\tFailure: {response.status_code}. Reason: {response.text}")
+        return None, response.text
 
 
 def generate_test_run_order(query_sets, num_pre_run_queries=None):

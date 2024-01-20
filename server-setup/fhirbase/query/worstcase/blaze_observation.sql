@@ -1,0 +1,8 @@
+SELECT COUNT(DISTINCT (inclusion.id))
+FROM (SELECT o.resource #>> '{subject,id}' AS id
+       FROM observation o,
+            jsonb_array_elements(o.resource #> '{code,coding}') coding
+       WHERE coding ->> 'system' = 'http://loinc.org'
+         AND o.resource #> '{value,Quantity}' ->> 'system' = 'http://unitsofmeasure.org'
+         AND coding ->> 'code' = '753-4') inclusion
+;

@@ -1992,10 +1992,6 @@ define phenytoin8183Ref:
   from [Medication: Code '8183' from rxnorm] M
     return 'Medication/' + M.id
 
-define "aminobutyrate / phenobarbital / phenytoin1008991Ref":
-  from [Medication: Code '1008991' from rxnorm] M
-    return 'Medication/' + M.id
-
 define "calcium carbonate / phenytoin1009121Ref":
   from [Medication: Code '1009121' from rxnorm] M
     return 'Medication/' + M.id
@@ -2004,16 +2000,8 @@ define "pentobarbital / phenytoin1100448Ref":
   from [Medication: Code '1100448' from rxnorm] M
     return 'Medication/' + M.id
 
-define "phenobarbital / phenytoin689744Ref":
-  from [Medication: Code '689744' from rxnorm] M
-    return 'Medication/' + M.id
-
 define "mephobarbital / phenytoin817816Ref":
   from [Medication: Code '817816' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "mephobarbital / phenobarbital / phenytoin819182Ref":
-  from [Medication: Code '819182' from rxnorm] M
     return 'Medication/' + M.id
 
 define "pentobarbital sodium 390 MG/ML / phenytoin sodium 50 MG/ML Injectable Solution [Euthasol]1100453Ref":
