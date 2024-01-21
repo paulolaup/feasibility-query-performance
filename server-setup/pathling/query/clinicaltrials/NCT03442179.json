@@ -2,7 +2,7 @@
   "_query": "fhirPath",
   "filter": [
     "Patient.exists(birthDate < @1958-10-01)",
-    "Patient.reverseResolve(Procedure.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|73632009).exists() and performedPeriod.start > @2023-10-01)",
+    "Patient.reverseResolve(Procedure.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|73632009).anyTrue() and performedPeriod.start > @2023-10-01)",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|52448006).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|58214004).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|52448006).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
@@ -13,7 +13,7 @@
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|230690007).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|45170000).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|266257000).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
-    "Patient.reverseResolve(Observation.subject).where(code.coding.exists(system = 'http://loinc.org' and code='29463-7') and valueQuantity.exists(system = 'http://unitsofmeasure.org' and code= 'kg' and value > 136.078) and effectiveDateTime > @2023-09-01 and effectiveDateTime < @2023-10-01).empty()",
-    "Patient.reverseResolve(Observation.subject).where(code.coding.exists(system = 'http://loinc.org' and code='39156-5') and valueQuantity.exists(system = 'http://unitsofmeasure.org' and code= 'kg/m2' and value > 40.0) and effectiveDateTime > @2023-09-01 and effectiveDateTime < @2023-10-01).empty()"
+    "Patient.reverseResolve(Observation.subject).where(code.coding.exists(system = 'http://loinc.org' and code='29463-7') and valueQuantity.exists(system='http://unitsofmeasure.org' and code='kg' and value > 136.078) and effectiveDateTime > @2023-09-01 and effectiveDateTime < @2023-10-01).empty()",
+    "Patient.reverseResolve(Observation.subject).where(code.coding.exists(system = 'http://loinc.org' and code='39156-5') and valueQuantity.exists(system='http://unitsofmeasure.org' and code='kg/m2' and value > 40.0) and effectiveDateTime > @2023-09-01 and effectiveDateTime < @2023-10-01).empty()"
   ]
 }
