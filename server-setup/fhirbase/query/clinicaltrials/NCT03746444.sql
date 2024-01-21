@@ -1,12 +1,12 @@
 SELECT COUNT(DISTINCT (inclusion.id))
-FROM ((SELECT p.id FROM patient p WHERE (p.resource ->> 'birthDate')::timestamp <@ '[1957-10-01,2005-10-01)'::tsrange)
+FROM ((SELECT p.id FROM patient p WHERE (p.resource ->> 'birthDate')::timestamp <@ '(1957-10-01,2005-10-01)'::tsrange)
       INTERSECT
       (SELECT p.resource #>> '{subject,id}'
        FROM procedure p,
             jsonb_array_elements(p.resource #> '{code,coding}') coding
        WHERE coding ->> 'system' = 'http://snomed.info/sct'
          AND (coding ->> 'code' IN ('18831004', '699253003'))
-         AND (p.resource #>> '{performed,Period,start}')::timestamp <@ '[2022-10-01,2023-10-01)'::tsrange
+         AND (p.resource #>> '{performed,Period,start}')::timestamp <@ '(2022-10-01,2023-10-01)'::tsrange
          AND (p.resource #>> '{performed,Period,end}')::timestamp < '2023-10-01'::timestamp)) inclusion
 WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                             FROM condition c,
@@ -72,7 +72,8 @@ WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                                       '1187615007', '359789008', '68216000', '8435000', '52403007', '404908004',
                                       '1142107003', '64766004', '697969008', '235714007', '196987008', '444548001',
                                       '295046003', '86219005', '234020005', '241932006', '237877004')) AND
-                                    (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp) OR
+                                    (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp AND
+                                    (c.resource #> '{abatement,dateTime}' IS NULL OR (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp)) OR
                                    (coding ->> 'code' IN
                                     ('733137002', '733138007', '733139004', '14669001', '368951000119105', '722095005',
                                      '870589006', '722096006', '722278006', '1177174007', '88380005', '140031000119103',
@@ -123,7 +124,7 @@ WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                               AND quantity ->> 'system' = 'http://unitsofmeasure.org'
                               AND coding ->> 'code' = '39165-5'
                               AND quantity ->> 'code' = 'kg/m2'
-                              AND (quantity ->> 'value')::decimal > 30
+                              AND (quantity ->> 'value')::decimal > 30.0
                               AND (o.resource #>> '{effective,dateTime}')::timestamp <@
                                   '[2022-10-01,2023-10-01)'::tsrange)
                            UNION

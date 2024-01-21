@@ -16,7 +16,6 @@ aggregate_query_template = json.load(open(os.path.join('data', 'template', 'aggr
 headers = {
     'Content-Type': "application/fhir+json"
 }
-timeout = 1800  # 30 minutes
 
 
 def load_queries(path, file_pattern):
@@ -92,7 +91,7 @@ def restart_containers(project):
     subprocess.run(['docker', 'compose', '--project-name', project, 'up', '--wait'])
 
 
-def run_test(query_sets, url, project_name, rounds=None, num_pre_run_queries=None):
+def run_test(query_sets, url, project_name, rounds=None, num_pre_run_queries=None, timeout=1800):
     if rounds is None:
         rounds = 1
     if num_pre_run_queries is None:
@@ -112,34 +111,49 @@ def run_test(query_sets, url, project_name, rounds=None, num_pre_run_queries=Non
         for test_name, query_name, query in pre_run_query_set:
             print(f"Query [{test_name}]{query_name}")
             # response = requests.post(url=f"{url}/Patient/_search", data=query, headers=headers)
-            response = requests.post(url=f"{url}/Patient/$aggregate",
-                                     json=generate_aggregate_request_body(query),
-                                     headers=headers,
-                                     timeout=timeout)
-            if response.status_code != 200:
+            try:
+                response = requests.post(url=f"{url}/Patient/$aggregate",
+                                         json=generate_aggregate_request_body(query),
+                                         headers=headers,
+                                         timeout=timeout)
+                if response.status_code != 200:
+                    print(f"Error while running pre-run query '{test_name}#{query_name}'")
+                    print(f"Status code: {response.status_code}. Reason:\n{response.text}")
+            except Exception as exc:
                 print(f"Error while running pre-run query '{test_name}#{query_name}'")
-                print(f"Status code: {response.status_code}. Reason:\n{response.text}")
+                print(f"Reason: {repr(exc)}")
 
         # Run queries
         print("Running queries")
         for test_name, query_name, query in query_set:
             print(f"Query [{test_name}]{query_name}")
             # response = requests.post(url=f"{url}/Patient/_search", data=query, headers=headers)
-            response = requests.post(url=f"{url}/Patient/$aggregate",
-                                     json=generate_aggregate_request_body(query),
-                                     headers=headers,
-                                     timeout=timeout)
-            if response.status_code == 200:
-                time_elapsed = response.elapsed
+            try:
+                response = requests.post(url=f"{url}/Patient/$aggregate",
+                                         json=generate_aggregate_request_body(query),
+                                         headers=headers,
+                                         timeout=timeout)
+                if response.status_code == 200:
+                    time_elapsed = response.elapsed
+                    result_sets[test_name][query_name].append({
+                        'time': time_elapsed,
+                        'result': response.text
+                    })
+                    print(f"Success: Time elapsed: {time_elapsed}")
+                    print(response.text)
+                else:
+                    result_sets[test_name][query_name].append({
+                        'time': None,
+                        'result': response.text
+                    })
+                    print(f"Failure: {response.status_code}. Reason:\n{response.text}")
+            except Exception as exc:
                 result_sets[test_name][query_name].append({
-                    'time': time_elapsed,
-                    'result': response.text
+                    'time': None,
+                    'result': repr(exc)
                 })
-                print(f"Success: Time elapsed: {time_elapsed}")
-                print(response.text)
-            else:
-                result_sets[test_name][query_name].append(None)
-                print(f"Failure: {response.status_code}. Reason:\n{response.text}")
+                print(f"Failure: {str(exc)}")
+
 
     # Generate report
     print("Processing results")
@@ -194,6 +208,7 @@ def configure_argparse():
     parser.add_argument('-f', '--file', default=os.path.join(result_path, 'result_fhirbase_' +
                                                              datetime.datetime.today().strftime('%Y-%m-%d#%H:%M:%S') +
                                                              '.json'), help='Output file for report')
+    parser.add_argument('-t', '--timeout', type=int, default=1800, help='Response time limit for requests')
     return parser
 
 
@@ -204,9 +219,10 @@ if __name__ == "__main__":
     base_url = args.url
     num_rounds = args.rounds
     num_pre_run_queries = args.num_pre_queries
+    request_timeout = args.timeout
 
     pathling_query_sets = load_queries(query_path, query_file_pattern)
     pathling_test_result = run_test(pathling_query_sets, base_url, pathling_project_name, num_rounds,
-                                    num_pre_run_queries)
+                                    num_pre_run_queries, request_timeout)
 
     json.dump(pathling_test_result, fp=open(args.file, mode='w+'), indent=2)

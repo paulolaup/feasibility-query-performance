@@ -135,45 +135,51 @@ def generate_measure_for_library(library):
     }
 
 
-def post_cql_query(query):
+def post_cql_query(query, timeout):
     library = generate_library_from_cql_query(query)
     measure = generate_measure_for_library(library)
 
     try:
         print("\t\t\tUploading Library resource")
-        response = requests.post(url=f"{blaze_url}/Library", data=json.dumps(library), headers=headers_cql)
+        response = requests.post(url=f"{blaze_url}/Library", data=json.dumps(library), headers=headers_cql,
+                                 timeout=timeout)
         if response.status_code not in [200, 201]:
             raise Exception(f"Could not upload Library resource: {response.status_code}. Reason: {response.text}")
 
         print("\t\t\tUploading Measure resource")
-        response = requests.post(url=f"{blaze_url}/Measure", data=json.dumps(measure), headers=headers_cql)
+        response = requests.post(url=f"{blaze_url}/Measure", data=json.dumps(measure), headers=headers_cql,
+                                 timeout=timeout)
         if response.status_code not in [200, 201]:
             raise Exception(f"Could not upload Measure resource: {response.status_code}. Reason: {response.text}")
 
         print("\t\t\tEvaluating measure")
         response = requests.get(url=f"{blaze_url}/Measure/$evaluate-measure?measure={measure['url']}&"
-                                    f"periodStart=1900&periodEnd=2100")
+                                    f"periodStart=1900&periodEnd=2100", timeout=timeout)
         if response.status_code != 200:
             raise Exception(f"Could not evaluate measure: {response.status_code}. Reason: {response.text}")
 
         time_elapsed = response.elapsed
         print(f"\t\t\tSuccess: Time elapsed: {time_elapsed}")
         return time_elapsed, response.text
-    except Exception as e:
-        print(f"\t\t\tQuery answering failed: {e}")
-        return None, response.text
+    except Exception as exc:
+        print(f"\t\t\tQuery answering failed: {repr(exc)}")
+        return None, repr(exc)
 
 
-def post_structured_query(query):
-    response = requests.post(url=f"{flare_url}/query/execute", data=query, headers=headers_sq)
+def post_structured_query(query, timeout):
+    try:
+        response = requests.post(url=f"{flare_url}/query/execute", data=query, headers=headers_sq, timeout=timeout)
 
-    if response.status_code == 200:
-        time_elapsed = response.elapsed
-        print(f"\t\t\tSuccess: Time elapsed: {time_elapsed}")
-        return time_elapsed, response.text
-    else:
-        print(f"\t\t\tFailure: {response.status_code}. Reason: {response.text}")
-        return None, response.text
+        if response.status_code == 200:
+            time_elapsed = response.elapsed
+            print(f"\t\t\tSuccess: Time elapsed: {time_elapsed}")
+            return time_elapsed, response.text
+        else:
+            print(f"\t\t\tFailure: {response.status_code}. Reason: {response.text}")
+            return None, response.text
+    except Exception as exc:
+        print(f"Failure: {repr(exc)}")
+        return None, repr(exc)
 
 
 def generate_test_run_order(query_sets, num_pre_run_queries=None):
@@ -234,7 +240,7 @@ def generate_report(result_sets, num_rounds, num_pre_queries):
     return report
 
 
-def run_test(sq_query_sets, cql_query_sets, project_name, rounds=None, num_pre_run_queries=None):
+def run_test(sq_query_sets, cql_query_sets, project_name, rounds=None, num_pre_run_queries=None, timeout=1800):
     if rounds is None:
         rounds = 1
     if num_pre_run_queries is None:
@@ -257,14 +263,14 @@ def run_test(sq_query_sets, cql_query_sets, project_name, rounds=None, num_pre_r
         for test_name, query_name, query_file_path in pre_run_query_set:
             print(f"Query [{test_name}]{query_name}")
             query = open(query_file_path, encoding='utf-8').read()
-            post_structured_query(query)
+            post_structured_query(query, timeout)
 
         # Run queries
         print("Running queries")
         for test_name, query_name, query_file_path in query_set:
             print(f"Query [{test_name}]{query_name}")
             query = open(query_file_path, encoding='utf-8').read()
-            execution_time, query_result = post_structured_query(query)
+            execution_time, query_result = post_structured_query(query, timeout)
             sq_result_sets[test_name][query_name].append({
                 'time': execution_time,
                 'result': query_result
@@ -283,14 +289,14 @@ def run_test(sq_query_sets, cql_query_sets, project_name, rounds=None, num_pre_r
         for test_name, query_name, query_file_path in pre_run_query_set:
             print(f"Query [{test_name}]{query_name}")
             query = open(query_file_path, encoding='utf-8').read()
-            post_cql_query(query)
+            post_cql_query(query, timeout)
 
         # Run queries
         print("Running queries")
         for test_name, query_name, query_file_path in query_set:
             print(f"Query [{test_name}]{query_name}")
             query = open(query_file_path, encoding='utf-8').read()
-            execution_time, query_result = post_cql_query(query)
+            execution_time, query_result = post_cql_query(query, timeout)
             cql_result_sets[test_name][query_name].append({
                 'time': execution_time,
                 'result': query_result
@@ -319,6 +325,7 @@ def configure_argparser():
                                                                 datetime.datetime.today().strftime(
                                                                     '%Y-%m-%d#%H:%M:%S') +
                                                                 '.json'), help='Output file for CQL report')
+    parser.add_argument('-t', '--timeout', type=int, default=1800, help='Response time limit for requests')
     return parser
 
 
@@ -328,11 +335,12 @@ if __name__ == "__main__":
 
     num_rounds = args.rounds
     num_pre_run_queries = args.num_pre_queries
+    request_timeout = args.timeout
 
     blaze_sq_query_sets, blaze_cql_query_sets = load_queries(query_path)
     blaze_sq_test_report, blaze_cql_test_report = run_test(blaze_sq_query_sets, blaze_cql_query_sets,
                                                            'feasibility-query-performance-blaze',
-                                                           num_rounds, num_pre_run_queries)
+                                                           num_rounds, num_pre_run_queries, request_timeout)
 
     json.dump(blaze_sq_test_report, fp=open(args.file_1, mode='w+'), indent=2)
     json.dump(blaze_cql_test_report, fp=open(args.file_2, mode='w+'), indent=2)

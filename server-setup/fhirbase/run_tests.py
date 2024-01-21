@@ -15,7 +15,6 @@ result_path = 'result'
 headers = {
     'Content-Type': "application/fhir+json"
 }
-timeout = 1800  # 30 minutes
 query_error_pattern = "^.*ERROR:.*$"
 
 
@@ -75,29 +74,33 @@ def calculate_avg(times):
     return total / cnt if cnt != 0 else None
 
 
-def run_single_query(query_path):
+def run_single_query(query_path, timeout):
     # prepared_query = query.replace('"', '\\"')
-    start = time.time()
-    # result = subprocess.run(['docker', 'exec', f'{fhirbase_project_name}-server-1', 'psql', '-U', 'postgres',
-    #                          '-d', 'fb', '-f', f'/fhirbase/{query_path}'],
-    #                         stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
-    result = subprocess.run(['psql', '-h', 'localhost', '-p', '9432', '-U', 'postgres',
-                             '-d', 'fb', '-f', f'{query_path}'],
-                            stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
-    end = time.time()
+    try:
+        start = time.time()
+        # result = subprocess.run(['docker', 'exec', f'{fhirbase_project_name}-server-1', 'psql', '-U', 'postgres',
+        #                          '-d', 'fb', '-f', f'/fhirbase/{query_path}'],
+        #                         stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
+        result = subprocess.run(['psql', '-h', 'localhost', '-p', '9432', '-U', 'postgres',
+                                 '-d', 'fb', '-f', f'{query_path}'],
+                                stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
+        end = time.time()
 
-    if result.returncode != 0:
-        print(f"Process finished with unexpected return code {result.returncode}")
-        print(f"Error log:\n{result.stderr.decode('utf-8')}")
+        if result.returncode != 0:
+            print(f"Process finished with unexpected return code {result.returncode}")
+            print(f"Error log:\n{result.stderr.decode('utf-8')}")
 
-    query_result = result.stdout.decode("utf-8")
-    if re.fullmatch(query_error_pattern, query_result) is not None:
-        print(f"Failure: Query execution failed with message:\n{query_result}")
-        return None, query_result
-    else:
-        time_elapsed = datetime.timedelta(seconds=(end - start))
-        print(f"Success: Time elapsed: {time_elapsed}")
-        return time_elapsed, query_result
+        query_result = result.stdout.decode("utf-8")
+        if re.fullmatch(query_error_pattern, query_result) is not None:
+            print(f"Failure: Query execution failed with message:\n{query_result}")
+            return None, query_result
+        else:
+            time_elapsed = datetime.timedelta(seconds=(end - start))
+            print(f"Success: Time elapsed: {time_elapsed}")
+            return time_elapsed, query_result
+    except Exception as exc:
+        print(f"Failure: {repr(exc)}")
+        return None, repr(exc)
 
 
 def restart_containers(project):
@@ -106,7 +109,7 @@ def restart_containers(project):
     subprocess.run(['docker', 'compose', '--project-name', project, 'up', '--wait'])
 
 
-def run_test(query_sets, project_name, rounds=None, num_pre_run_queries=None):
+def run_test(query_sets, project_name, rounds=None, num_pre_run_queries=None, timeout=1800):
     if rounds is None:
         rounds = 1
     if num_pre_run_queries is None:
@@ -125,13 +128,13 @@ def run_test(query_sets, project_name, rounds=None, num_pre_run_queries=None):
         print("Running pre-run queries")
         for test_name, query_name, query_file_path in pre_run_query_set:
             print(f"Query [{test_name}]{query_name}")
-            run_single_query(query_file_path)
+            run_single_query(query_file_path, timeout)
 
         # Run queries
         print("Running queries")
         for test_name, query_name, query_file_path in query_set:
             print(f"Query [{test_name}]{query_name}")
-            execution_time, query_result = run_single_query(query_file_path)
+            execution_time, query_result = run_single_query(query_file_path, timeout)
             result_sets[test_name][query_name].append({
                 'time': execution_time,
                 'result': query_result
@@ -196,6 +199,7 @@ def configure_argparser():
     parser.add_argument('-f', '--file', default=os.path.join(result_path, 'result_fhirbase_' +
                                                              datetime.datetime.today().strftime('%Y-%m-%d#%H:%M:%S') +
                                                              '.json'), help='Output file for report')
+    parser.add_argument('-t', '--timeout', type=int, default=1800, help='Response time limit for requests')
     return parser
 
 
@@ -205,9 +209,10 @@ if __name__ == "__main__":
 
     num_rounds = args.rounds
     num_pre_run_queries = args.num_pre_queries
+    query_timeout = args.timeout
 
     fhirbase_query_sets = load_queries(query_path, query_file_pattern)
     fhirbase_test_result = run_test(fhirbase_query_sets, fhirbase_project_name, num_rounds,
-                                    num_pre_run_queries)
+                                    num_pre_run_queries, query_timeout)
 
     json.dump(fhirbase_test_result, fp=open(args.file, mode='w+'), indent=2)

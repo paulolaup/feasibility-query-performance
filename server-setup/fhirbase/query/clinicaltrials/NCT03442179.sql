@@ -3034,4 +3034,4 @@ WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                                 AND (quantity ->> 'value')::decimal > 136.078) OR (coding ->> 'code' = '39156-5'
                                 AND quantity ->> 'code' = 'kg/m2'
                                 AND (quantity ->> 'value')::decimal > 40.0))
-                              AND (o.resource #>> '{effective,dateTime}')::timestamp <@ '[2023-09-01,2023-10-01)'::tsrange))
+                              AND (o.resource #>> '{effective,dateTime}')::timestamp <@ '(2023-09-01,2023-10-01)'::tsrange))

@@ -46,7 +46,7 @@ def determine_run_plans(test_config):
     return plans
 
 
-def run_blaze(plans, base_dir):
+def run_blaze(plans, base_dir, timeout):
     print("Running tests for Blaze")
     blaze_setup_location = setup_location['blaze']
     os.makedirs(os.path.join(base_dir, 'blaze'), exist_ok=True)
@@ -67,12 +67,12 @@ def run_blaze(plans, base_dir):
         report_file_path_1 = os.path.join(base_dir, 'blaze', f"run_{plan['num_patients']}_sq.json")
         report_file_path_2 = os.path.join(base_dir, 'blaze', f"run_{plan['num_patients']}_cql.json")
         subprocess.run(['python3', test_script_name, '-r', str(plan['num_rounds']), '-p', str(plan['num_pre_queries']),
-                        '-f1', report_file_path_1, '-f2', report_file_path_2])
+                        '-f1', report_file_path_1, '-f2', report_file_path_2, '-t', str(timeout)])
     subprocess.run(['bash', 'remove_with_flare.sh'])
     os.chdir(prev_cwd)
 
 
-def run_pathling(plans, base_dir):
+def run_pathling(plans, base_dir, timeout):
     print("Running tests for Pathling")
     pathling_setup_location = setup_location['pathling']
     os.makedirs(os.path.join(base_dir, 'pathling'), exist_ok=True)
@@ -92,12 +92,12 @@ def run_pathling(plans, base_dir):
         print("Running tests")
         report_file_path = os.path.join(base_dir, 'pathling', f"run_{plan['num_patients']}.json")
         subprocess.run(['python3', test_script_name, '-r', str(plan['num_rounds']), '-p', str(plan['num_pre_queries']),
-                        '-u', 'http://localhost:8080/fhir', '-f', report_file_path])
+                        '-u', 'http://localhost:8080/fhir', '-f', report_file_path, '-t', str(timeout)])
     subprocess.run(['bash', shutdown_script_name])
     os.chdir(prev_cwd)
 
 
-def run_fhirbase(plans, base_dir):
+def run_fhirbase(plans, base_dir, timeout):
     print("Running tests for Fhirbase")
     fhirbase_setup_location = setup_location['fhirbase']
     os.makedirs(os.path.join(base_dir, 'fhirbase'), exist_ok=True)
@@ -117,7 +117,7 @@ def run_fhirbase(plans, base_dir):
         print("Running tests")
         report_file_path = os.path.join(base_dir, 'fhirbase', f"run_{plan['num_patients']}.json")
         subprocess.run(['python3', test_script_name, '-r', str(plan['num_rounds']), '-p', str(plan['num_pre_queries']),
-                        '-f', report_file_path])
+                        '-f', report_file_path, '-t', str(timeout)])
     subprocess.run(['bash', shutdown_script_name])
     os.chdir(prev_cwd)
 
@@ -130,9 +130,10 @@ if __name__ == "__main__":
 
     # Determine run plans from config
     run_plans = determine_run_plans(config)
+    request_timeout = config.get('timeout', 1800)
 
     # Perform tests
     output_dir = os.path.abspath(dir_path)
-    run_blaze(run_plans, output_dir)
-    # run_pathling(run_plans, output_dir)
-    # run_fhirbase(run_plans, output_dir)
+    run_blaze(run_plans, output_dir, request_timeout)
+    run_pathling(run_plans, output_dir, request_timeout)
+    run_fhirbase(run_plans, output_dir, request_timeout)

@@ -1,6 +1,6 @@
 {
   "_query": "fhirPath",
   "filter": [
-    "reverseResolve(Procedure.subject).code.coding.subsumedBy(system=http://snomed.info/sct|77477000).exists()"
+    "reverseResolve(Procedure.subject).code.coding.subsumedBy(http://snomed.info/sct|77477000).anyTrue()"
   ]
 }

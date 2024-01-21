@@ -3,5 +3,6 @@
   "num_patients_per_run": [1000],
   "num_rounds": 1,
   "num_pre_queries": 4,
-  "data_dir_path": "/home/confi/Data/test_1k"
+  "data_dir_path": "/home/confi/Data/test_1k",
+  "timeout": 900
 }
