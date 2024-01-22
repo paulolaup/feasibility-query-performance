@@ -9,6 +9,3 @@
 
 /server-setup/*/result/*
 !/server-setup/*/result/README.md
-
-/server-setup/blaze/ontology/*
-!/server-setup/blaze/ontology/README.md
