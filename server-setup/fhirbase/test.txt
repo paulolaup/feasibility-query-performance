@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "rounds": 1,
+    "pre_queries": 0
+  },
+  "results": {
+    "test": {
+      "hemoglobin": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "diabetes-mellitus": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "gender-female": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "bee-venom": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "aspirin": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "ct-scan": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      }
+    },
+    "worstcase": {
+      "blaze_procedure": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "blaze_observation": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "blaze_medicationadministration": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "blaze_condition": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "blaze_allergyintolerance": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      }
+    },
+    "clinicaltrials": {
+      "NCT03746444": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "NCT04271878": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "NCT02648698": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "NCT03442179": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "NCT02096133": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "NCT04806269": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "NCT02401815": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "NCT04475159": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "NCT00101244": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      },
+      "NCT01475955": {
+        "avg": "None",
+        "times": [
+          "None"
+        ],
+        "results": [
+          "FileNotFoundError(2, 'No such file or directory')"
+        ]
+      }
+    }
+  }
+}
