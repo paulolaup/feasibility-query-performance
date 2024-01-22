@@ -1,8 +1,8 @@
 {
-  "num_patients_per_archive": 1000,
-  "num_patients_per_run": [1000],
-  "num_rounds": 1,
-  "num_pre_queries": 4,
-  "data_dir_path": "/home/confi/Data/test_1k",
+  "num_patients_per_archive": 10000,
+  "num_patients_per_run": [10000, 50000, 100000],
+  "num_rounds": 10,
+  "num_pre_queries": 5,
+  "data_dir_path": "/run/media/confi/Expansion/data/fhir-server-analysis/run_100k",
   "timeout": 900
 }
