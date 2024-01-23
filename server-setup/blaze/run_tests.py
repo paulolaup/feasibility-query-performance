@@ -168,7 +168,7 @@ def post_cql_query(query, timeout):
 
 def post_structured_query(query, timeout):
     try:
-        response = requests.post(url=f"{flare_url}/query/execute", data=query, headers=headers_sq, timeout=timeout)
+        response = requests.post(url=f"{flare_url}/query/execute", json=json.loads(query), headers=headers_sq, timeout=timeout)
 
         if response.status_code == 200:
             time_elapsed = response.elapsed

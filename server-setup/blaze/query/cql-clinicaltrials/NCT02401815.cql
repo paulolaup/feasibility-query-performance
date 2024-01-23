@@ -29,13 +29,11 @@ define "Criterion 3":
 
 define "Criterion 4":
   exists (from [AllergyIntolerance: Code '2183102' from rxnorm] A
-    where ToDate(A.reaction.onset as dateTime) in Interval[@1900-01-01T, @2023-10-01] or
-      A.reaction.onset overlaps Interval[@1900-01-01T, @2023-10-01])
+    where ToDate(A.recordedDate as dateTime) in Interval[@1900-01-01T, @2023-10-01])
 
 define "Criterion 5":
   exists (from [AllergyIntolerance: Code '357977' from rxnorm] A
-    where ToDate(A.reaction.onset as dateTime) in Interval[@1900-01-01T, @2023-10-01] or
-      A.reaction.onset overlaps Interval[@1900-01-01T, @2023-10-01])
+    where ToDate(A.reaction.onset as dateTime) in Interval[@1900-01-01T, @2023-10-01])
 
 define "Criterion 6":
   exists (from [Condition: Code '66071002' from snomed] C

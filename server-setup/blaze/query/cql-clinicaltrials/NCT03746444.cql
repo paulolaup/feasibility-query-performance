@@ -59,28 +59,23 @@ define "Criterion 5":
 
 define "Criterion 6":
   exists (from [AllergyIntolerance: Code '8782' from rxnorm] A
-    where ToDate(A.reaction.onset as dateTime) in Interval[@1900-01-01T, @2023-10-01] or
-      A.reaction.onset overlaps Interval[@1900-01-01T, @2023-10-01])
+    where ToDate(A.recordedDate as dateTime) in Interval[@1900-01-01T, @2023-10-01])
 
 define "Criterion 7":
   exists (from [AllergyIntolerance: Code '4337' from rxnorm] A
-    where ToDate(A.reaction.onset as dateTime) in Interval[@1900-01-01T, @2023-10-01] or
-      A.reaction.onset overlaps Interval[@1900-01-01T, @2023-10-01])
+    where ToDate(A.recordedDate as dateTime) in Interval[@1900-01-01T, @2023-10-01])
 
 define "Criterion 8":
   exists (from [AllergyIntolerance: Code '68139' from rxnorm] A
-    where ToDate(A.reaction.onset as dateTime) in Interval[@1900-01-01T, @2023-10-01] or
-      A.reaction.onset overlaps Interval[@1900-01-01T, @2023-10-01])
+    where ToDate(A.recordedDate as dateTime) in Interval[@1900-01-01T, @2023-10-01])
 
 define "Criterion 9":
   exists (from [AllergyIntolerance: Code '36453' from rxnorm] A
-    where ToDate(A.reaction.onset as dateTime) in Interval[@1900-01-01T, @2023-10-01] or
-      A.reaction.onset overlaps Interval[@1900-01-01T, @2023-10-01])
+    where ToDate(A.recordedDate as dateTime) in Interval[@1900-01-01T, @2023-10-01])
 
 define "Criterion 10":
   exists (from [AllergyIntolerance: Code '1815' from rxnorm] A
-    where ToDate(A.reaction.onset as dateTime) in Interval[@1900-01-01T, @2023-10-01] or
-      A.reaction.onset overlaps Interval[@1900-01-01T, @2023-10-01])
+    where ToDate(A.recordedDate as dateTime) in Interval[@1900-01-01T, @2023-10-01])
 
 define Exclusion:
   "Criterion 3" or

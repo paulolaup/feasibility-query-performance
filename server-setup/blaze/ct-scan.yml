@@ -1,0 +1,5 @@
+library: query/cql-single/hemoglobin.cql
+group:
+- type: Patient
+  population:
+  - expression: InInitialPopulation

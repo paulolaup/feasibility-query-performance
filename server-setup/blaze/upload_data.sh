@@ -12,10 +12,17 @@ export $(grep -v '^#' .env | xargs -d '\n')
 
 echo "Decompressing data at ${compressed_data_path}"
 mkdir "$DATA_PATH/temp"
-pigz -dc "$compressed_data_path" | tar -xf - -C "$DATA_PATH/temp"
+mkdir "$DATA_PATH/temp/patients"
+pigz -dc "$compressed_data_path" | tar -xf - -C "$DATA_PATH/temp/patients"
+
+#echo "Separating organization adn practitioner information"
+#mkdir "$DATA_PATH/temp/other"
+#mv "$DATA_PATH/temp/patients/output/fhir/hospitalInformation"* "$DATA_PATH/temp/other"
+#mv "$DATA_PATH/temp/patients/output/fhir/practitionerInformation"* "$DATA_PATH/temp/other"
 
 echo "Uploading data"
-blazectl --server "http://localhost:$BLAZE_PORT/fhir" upload "$DATA_PATH/temp"
+#blazectl --server "https://localhost:$BLAZE_PORT/fhir" upload "$DATA_PATH/temp/other"
+blazectl --server "http://localhost:$BLAZE_PORT/fhir" upload "$DATA_PATH/temp/patients"
 
 echo "Removing temporary data"
 rm -r "$DATA_PATH/temp"
