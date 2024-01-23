@@ -8,8 +8,7 @@ FROM ((SELECT p.id
             jsonb_array_elements(c.resource #> '{code,coding}') coding
        WHERE coding ->> 'system' = 'http://snomed.info/sct'
          AND (coding ->> 'code' IN ('371073003', '1217211002'))
-         AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp
-         AND (c.resource #> '{abatement,dateTime}' IS NULL OR (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp))
+         AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp)
       INTERSECT
       (SELECT o.resource #>> '{subject,id}'
        FROM observation o,
@@ -328,5 +327,4 @@ WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                                                     '448079003', '429271009', '233813006', '10785007', '75570004',
                                                     '1187256004', '421508002', '59786004', '38729007', '51577008',
                                                     '233764003', '707364007', '233757000', '195959009'))
-                              AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp
-                              AND (c.resource #> '{abatement,dateTime}' IS NULL OR (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp)))
+                              AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp))

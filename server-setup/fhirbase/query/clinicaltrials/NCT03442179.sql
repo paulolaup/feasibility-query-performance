@@ -373,8 +373,7 @@ WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                                    ('88032003', '12237911000119109', '12237951000119105', '64009001', '195200006',
                                     '230716006', '444172003', '266257000', '426814001', '1208871009', '710575003',
                                     '230717002'))
-                              AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp
-                              AND (c.resource #> '{abatement,dateTime}' IS NULL OR (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp))
+                              AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp)
                            UNION
                            (SELECT o.resource #>> '{subject,id}'
                             FROM observation o,

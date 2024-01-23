@@ -72,8 +72,7 @@ WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                                       '1187615007', '359789008', '68216000', '8435000', '52403007', '404908004',
                                       '1142107003', '64766004', '697969008', '235714007', '196987008', '444548001',
                                       '295046003', '86219005', '234020005', '241932006', '237877004')) AND
-                                    (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp AND
-                                    (c.resource #> '{abatement,dateTime}' IS NULL OR (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp)) OR
+                                    (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp) OR
                                    (coding ->> 'code' IN
                                     ('733137002', '733138007', '733139004', '14669001', '368951000119105', '722095005',
                                      '870589006', '722096006', '722278006', '1177174007', '88380005', '140031000119103',
