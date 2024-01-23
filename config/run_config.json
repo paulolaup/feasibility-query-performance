@@ -4,5 +4,5 @@
   "num_rounds": 1,
   "num_pre_queries": 0,
   "data_dir_path": "/home/confi/Data/test_1k_refs",
-  "timeout": 900
+  "timeout": 300
 }

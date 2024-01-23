@@ -33,7 +33,7 @@ define "Criterion 4":
 
 define "Criterion 5":
   exists (from [AllergyIntolerance: Code '357977' from rxnorm] A
-    where ToDate(A.reaction.onset as dateTime) in Interval[@1900-01-01T, @2023-10-01])
+    where ToDate(A.recordedDate as dateTime) in Interval[@1900-01-01T, @2023-10-01])
 
 define "Criterion 6":
   exists (from [Condition: Code '66071002' from snomed] C
@@ -336,7 +336,7 @@ define "Criterion 14":
       P.performed overlaps Interval[@1900-01-01T, @2023-10-01])
 
 define Exclusion:
-  "Criterion 2" or
+  "Criterion 2" and
   "Criterion 3" or
   "Criterion 4" or
   "Criterion 5" or

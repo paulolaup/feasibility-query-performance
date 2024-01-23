@@ -1,5 +1,5 @@
 SELECT COUNT(DISTINCT(inclusion.id))
-FROM ((SELECT p.id FROM patient p)) AS inclusion
+FROM ((SELECT p.id FROM patient p WHERE (p.resource ->> 'birthDate')::timestamp < '2005-10-01'::timestamp)) AS inclusion
 WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                             FROM condition c,
                                  jsonb_array_elements(c.resource #> '{code,coding}') coding
