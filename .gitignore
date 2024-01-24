@@ -7,5 +7,7 @@
 !/server-setup/*/data/README.md
 !/server-setup/fhirbase/data/ndjson/README.md
 
+!/server-setup/pathling/data/template
+
 /server-setup/*/result/*
 !/server-setup/*/result/README.md

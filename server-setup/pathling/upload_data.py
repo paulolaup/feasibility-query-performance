@@ -34,7 +34,7 @@ def upload_archive(archive_path):
     (output, err) = p.communicate()
     p_status = p.wait()
 
-    bundle_files = glob.glob(pathname='**/*.json', root_dir=temp_dir, recursive=True)
+    bundle_files = glob.glob(pathname='data/temp/**/*.json', recursive=True)
     bundle_chunks = list(chunks(bundle_files, max_block_size))
     for chunk in bundle_chunks:
         if not os.path.exists(block_dir):
@@ -42,12 +42,11 @@ def upload_archive(archive_path):
 
         # Move files in chunk
         for bundle_file in chunk:
-            os.renames(os.path.join(temp_dir, bundle_file), os.path.join(block_dir, bundle_file))
+            os.renames(bundle_file, os.path.join(block_dir, os.path.basename(bundle_file)))
 
         # Create NDJSON files and request
         print("Creating NDJSON bundles")
-        decompressed_data_path = os.path.join(block_dir, 'output', 'fhir')
-        convert_fhir_bundles_to_ndjson(decompressed_data_path, ndjson_dir)
+        convert_fhir_bundles_to_ndjson(block_dir, ndjson_dir)
 
         # Upload data
         request_file_path = os.path.join(ndjson_dir, 'request.json')
@@ -109,7 +108,7 @@ if __name__ == "__main__":
 
     if os.path.isdir(compressed_data_path):
         print(f"Reading directory @ {compressed_data_path}")
-        for file_path in glob.glob(pathname='*.*', root_dir=compressed_data_path, recursive=True):
+        for file_path in glob.glob(pathname=os.path.join(compressed_data_path, '**/*.*'), recursive=True):
             upload_archive(os.path.join(compressed_data_path, file_path))
     elif os.path.isfile(compressed_data_path):
         print(f"Reading archive @ {compressed_data_path}")
