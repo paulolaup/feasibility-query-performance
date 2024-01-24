@@ -1,12 +1,13 @@
 {
   "_query": "fhirPath",
   "filter": [
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|77386006).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|372130007).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|315276005).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
+    "Patient.birthDate < @2005-10-01",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|77386006).anyTrue() and onsetDateTime < @2023-10-01).not()",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|372130007).anyTrue() and onsetDateTime < @2023-10-01).not()",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|315276005).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|418470004).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "Patient.reverseResolve(AllergyIntolerance.patient).exists(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and (code='8516' or code='448' or code='797541' or code='393540')) and recordedDate < @2023-10-01).not()",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|88594005).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).not()",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|88594005).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|88594005).anyTrue() and onsetDateTime > @2022-10-01 and onsetDateTime < @2023-10-01).count() < 2"
   ]
 }

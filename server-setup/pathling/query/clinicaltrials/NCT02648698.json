@@ -2,7 +2,7 @@
   "_query": "fhirPath",
   "filter": [
     "Patient.exists(birthDate.exists($this < @2005-10-01 and $this > @1973-10-01) and gender = 'female')",
-    "Patient.reverseResolve(Condition.subject).where(code.coding.subsumedBy(http://snomed.info/sct|237072009).anyTrue() and onsetDateTime < @2023-10-01 and (abatementDateTime.empty() or abatementDateTime > @2023-10-01)).empty()",
+    "Patient.reverseResolve(Condition.subject).where(code.coding.subsumedBy(http://snomed.info/sct|237072009).anyTrue() and onsetDateTime < @2023-10-01).empty()",
     "Patient.reverseResolve(Procedure.subject).where(code.coding.subsumedBy(http://snomed.info/sct|297279009).anyTrue() and performedPeriod.end.exists($this < @2023-10-01 and $this > @2023-09-01)).empty()",
     "Patient.reverseResolve(AllergyIntolerance.patient).exists(code.coding.exists(system='http://www.nlm.nih.gov/research/umls/rxnorm' and (code='82122' or code='10612')) and recordedDate < @2023-10-01).not()"
   ]

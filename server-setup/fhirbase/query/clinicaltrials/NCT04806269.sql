@@ -45,9 +45,7 @@ FROM ((SELECT p.id
                                                                                       '62278002', '57777000',
                                                                                       '30985009', '73869005',
                                                                                       '190244006', '69329005')))
-         AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp
-         AND (c.resource #> '{abatement,dateTime}' IS NULL OR
-              (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp))) inclusion
+         AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp)) inclusion
 WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                             FROM condition c,
                                  jsonb_array_elements(c.resource #> '{code,coding}') coding
@@ -112,6 +110,4 @@ WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                                     '81898007', '719823007', '71908006', '195083004', '59272004', '195060002',
                                     '251175005', '251181002', '6624005', '251180001', '184004', '74390002',
                                     '773587008'))
-                              AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp
-                              AND (c.resource #> '{abatement,dateTime}' IS NULL
-                                  OR (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp)))
+                              AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp))

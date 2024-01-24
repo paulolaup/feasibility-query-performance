@@ -27,6 +27,59 @@
           "comparator": "gt"
         }
       }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "code": "424144002",
+            "system": "http://snomed.info/sct",
+            "display": "Gegenw\u00c3\u00a4rtiges chronologisches Alter"
+          }
+        ],
+        "context": {
+          "code": "Patient",
+          "system": "fdpg.mii.cds",
+          "version": "1.0.0",
+          "display": "Patient"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "unit": {
+            "code": "a",
+            "display": "a"
+          },
+          "value": 50,
+          "comparator": "lt"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "code": "263495000",
+            "system": "http://snomed.info/sct",
+            "display": "Geschlecht"
+          }
+        ],
+        "context": {
+          "code": "Patient",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Patient"
+        },
+        "valueFilter": {
+          "type": "concept",
+          "selectedConcepts": [
+            {
+              "code": "female",
+              "system": "http://hl7.org/fhir/administrative-gender",
+              "display": "Female"
+            }
+          ]
+        }
+      }
     ]
   ],
   "exclusionCriteria": [

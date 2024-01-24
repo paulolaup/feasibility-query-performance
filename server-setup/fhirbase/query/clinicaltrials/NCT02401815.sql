@@ -26,10 +26,7 @@ FROM ((SELECT p.id FROM patient p WHERE (p.resource ->> 'birthDate')::timestamp 
                                   '35381000119101', '80997009', '38720006', '43990006', '102875003', '169539002',
                                   '64254006', '199322008', '65147003', '199318003', '417006004', '237236005',
                                   '237237001', '83074005', '169568001', '58532003', '237245006', '169548007'))
-                            AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp
-                            AND (c.resource #> '{abatement,dateTime}' IS NULL OR
-                                 (c.resource #>> '{abatement,dateTime}')::timestamp >
-                                 '2023-10-01'::timestamp)))) AS inclusion
+                            AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp))) AS inclusion
 WHERE inclusion.id NOT IN ((SELECT ai.resource #>> '{patient,id}'
                             FROM allergyintolerance ai,
                                  jsonb_array_elements(ai.resource #> '{code,coding}') coding
@@ -2410,9 +2407,7 @@ WHERE inclusion.id NOT IN ((SELECT ai.resource #>> '{patient,id}'
                                          '11823721000119102', '11785921000119107', '262526004', '725077001',
                                          '275461003',
                                          '710298005', '209808000', '262924006'))
-                                     AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp
-                                     AND (c.resource #> '{abatement,dateTime}' IS NULL OR
-                                          (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp))
+                                     AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp)
                                 OR (coding ->> 'code' IN
                                     ('404810003', '281566005', '403901001', '254654004', '413389003', '1255644001',
                                      '1255645000', '783771003', '1255643007', '822969007', '822970008', '764856008',
@@ -3414,10 +3409,7 @@ WHERE inclusion.id NOT IN ((SELECT ai.resource #>> '{patient,id}'
                                      '424954002', '780817000', '698048006', '370511006', '253005002', '1260094000',
                                      '403889000', '1254783002', '403904009', '402912009', '766759009', '190818004',
                                      '717922007', '405843009', '404081005', '1197280002') AND
-                                    (c.resource #>> '{onset,dateTime}')::timestamp <@ '[2022-10-01,2023-10-01)'::tsrange
-                                 AND (c.resource #> '{abatement,dateTime}' IS NULL OR
-                                      (c.resource #>> '{abatement,dateTime}')::timestamp >
-                                      '2023-10-01'::timestamp)))
+                                    (c.resource #>> '{onset,dateTime}')::timestamp <@ '[2022-10-01,2023-10-01)'::tsrange))
                             UNION
                             (SELECT p.resource #>> '{subject,id}'
                              FROM procedure p,

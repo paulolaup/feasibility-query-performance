@@ -6617,8 +6617,7 @@ define "Criterion 821":
 
 define "Criterion 822":
   exists (from [AllergyIntolerance: Code '37333' from rxnorm] A
-    where ToDate(A.reaction.onset as dateTime) in Interval[@1900-01-01T, @2023-10-01] or
-      A.reaction.onset overlaps Interval[@1900-01-01T, @2023-10-01])
+    where ToDate(A.recordedDate as dateTime) in Interval[@1900-01-01T, @2023-10-01])
 
 define Exclusion:
   "Criterion 8" or

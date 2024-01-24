@@ -240,8 +240,8 @@ define "Criterion 13":
 define "Criterion 14":
   exists (from [Observation: Code '39156-5' from loinc] O
     where O.value.as(Quantity) as Quantity > 40.0 'kg/m2' and
-      (ToDate(O.effective as dateTime) in Interval[@2022-10-01, @2023-10-01] or
-      O.effective overlaps Interval[@2022-10-01, @2023-10-01]))
+      (ToDate(O.effective as dateTime) in Interval[@2023-09-01, @2023-10-01] or
+      O.effective overlaps Interval[@2023-09-01, @2023-10-01]))
 
 define Exclusion:
   "Criterion 3" or

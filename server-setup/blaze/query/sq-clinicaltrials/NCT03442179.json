@@ -267,7 +267,7 @@
         },
         "timeRestriction": {
           "beforeDate": "2023-10-01",
-          "afterDate": "2022-10-01"
+          "afterDate": "2023-09-01"
         },
         "valueFilter": {
           "type": "quantity-comparator",
@@ -297,7 +297,7 @@
         },
         "timeRestriction": {
           "beforeDate": "2023-10-01",
-          "afterDate": "2022-10-01"
+          "afterDate": "2023-09-01"
         },
         "valueFilter": {
           "type": "quantity-comparator",

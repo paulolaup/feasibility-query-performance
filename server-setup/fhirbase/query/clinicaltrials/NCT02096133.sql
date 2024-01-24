@@ -84,8 +84,7 @@ WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                                     '35381000119101', '80997009', '38720006', '43990006', '102875003', '169539002',
                                     '64254006', '199322008', '65147003', '199318003', '417006004', '237236005',
                                     '237237001', '83074005', '169568001', '58532003', '237245006', '169548007'))
-                              AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp
-                              AND (c.resource #> '{abatement,dateTime}' IS NULL OR (c.resource #>> '{abatement,dateTime}')::timestamp > '2023-10-01'::timestamp))
+                              AND (c.resource #>> '{onset,dateTime}')::timestamp < '2023-10-01'::timestamp)
                            UNION
                            (SELECT ma.resource #>> '{subject,id}'
                             FROM medicationadministration ma,
