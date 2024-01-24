@@ -8,3206 +8,6 @@ codesystem snomed: 'http://snomed.info/sct'
 
 context Unfiltered
 
-define "{4 (amoxicillin 500 MG Oral Capsule) / 2 (clarithromycin 500 MG Oral Tablet) / 2 (omeprazole 20 MG Delayed Release Oral Capsule) } Pack [Omeclamox]1291987Ref":
-  from [Medication: Code '1291987' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{56 (amoxicillin 500 MG Oral Capsule) / 28 (clarithromycin 500 MG Oral Tablet) / 28 (vonoprazan 20 MG Oral Tablet) } Pack [Voquezna 14 Day TriplePak 20;500;500]2604804Ref":
-  from [Medication: Code '2604804' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{4 (amoxicillin 500 MG Oral Capsule [Trimox]) / 2 (clarithromycin 500 MG Oral Tablet [Biaxin]) / 2 (lansoprazole 30 MG Delayed Release Oral Capsule [Prevacid]) } Pack [Prevpac]757969Ref":
-  from [Medication: Code '757969' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{4 (amoxicillin 500 MG Oral Capsule) / 2 (clarithromycin 500 MG Oral Tablet) / 2 (omeprazole 20 MG Delayed Release Oral Capsule) } Pack1291986Ref":
-  from [Medication: Code '1291986' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{56 (amoxicillin 500 MG Oral Capsule) / 28 (clarithromycin 500 MG Oral Tablet) / 28 (vonoprazan 20 MG Oral Tablet) } Pack2604803Ref":
-  from [Medication: Code '2604803' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{4 (amoxicillin 500 MG Oral Capsule) / 2 (clarithromycin 500 MG Oral Tablet) / 2 (lansoprazole 30 MG Delayed Release Oral Capsule) } Pack757968Ref":
-  from [Medication: Code '757968' from rxnorm] M
-    return 'Medication/' + M.id
-
-define clarithromycin21212Ref:
-  from [Medication: Code '21212' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 50 MG/ML Oral Suspension [Biaxin]205860Ref":
-  from [Medication: Code '205860' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 250 MG Oral Tablet [Biaxin]205863Ref":
-  from [Medication: Code '205863' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 500 MG Oral Tablet [Biaxin]205866Ref":
-  from [Medication: Code '205866' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR clarithromycin 500 MG Extended Release Oral Tablet [Biaxin]685543Ref":
-  from [Medication: Code '685543' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 250 MG [Biaxin]541947Ref":
-  from [Medication: Code '541947' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 50 MG/ML [Biaxin]566749Ref":
-  from [Medication: Code '566749' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 500 MG [Biaxin]566754Ref":
-  from [Medication: Code '566754' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 250 MG Oral Tablet197516Ref":
-  from [Medication: Code '197516' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 500 MG Oral Tablet197517Ref":
-  from [Medication: Code '197517' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 25 MG/ML Oral Suspension240741Ref":
-  from [Medication: Code '240741' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 50 MG/ML Injectable Suspension251854Ref":
-  from [Medication: Code '251854' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 50 MG/ML Oral Suspension309322Ref":
-  from [Medication: Code '309322' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR clarithromycin 500 MG Extended Release Oral Tablet359385Ref":
-  from [Medication: Code '359385' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 1000 MG Extended Release Oral Tablet597455Ref":
-  from [Medication: Code '597455' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 25 MG/ML315693Ref":
-  from [Medication: Code '315693' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 250 MG315694Ref":
-  from [Medication: Code '315694' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 500 MG315695Ref":
-  from [Medication: Code '315695' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 50 MG/ML317626Ref":
-  from [Medication: Code '317626' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clarithromycin 1000 MG597454Ref":
-  from [Medication: Code '597454' from rxnorm] M
-    return 'Medication/' + M.id
-
-define erythromycin4053Ref:
-  from [Medication: Code '4053' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "bromhexine / erythromycin1006885Ref":
-  from [Medication: Code '1006885' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin / sulfisoxazole113588Ref":
-  from [Medication: Code '113588' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin / isotretinoin392494Ref":
-  from [Medication: Code '392494' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin / tretinoin392508Ref":
-  from [Medication: Code '392508' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin / zinc acetate392531Ref":
-  from [Medication: Code '392531' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "benzoyl peroxide / erythromycin392556Ref":
-  from [Medication: Code '392556' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin lactobionate 500 MG Injection [Erythrocin]1668267Ref":
-  from [Medication: Code '1668267' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 250 MG Delayed Release Oral Tablet [Ery-Tab]206075Ref":
-  from [Medication: Code '206075' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 333 MG Delayed Release Oral Tablet [Ery-Tab]206078Ref":
-  from [Medication: Code '206078' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 500 MG Delayed Release Oral Tablet [Ery-Tab]206080Ref":
-  from [Medication: Code '206080' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.02 MG/MG Topical Gel [Emgel]206211Ref":
-  from [Medication: Code '206211' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.02 MG/MG Topical Gel [Erygel]206212Ref":
-  from [Medication: Code '206212' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 20 MG/ML Topical Solution [Theramycin]206228Ref":
-  from [Medication: Code '206228' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "benzoyl peroxide 0.05 MG/MG / erythromycin 0.03 MG/MG Topical Gel [Benzamycin]213082Ref":
-  from [Medication: Code '213082' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.005 MG/MG Ophthalmic Ointment [Eyemycin]584534Ref":
-  from [Medication: Code '584534' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 40 MG/ML Oral Suspension [EryPed]686402Ref":
-  from [Medication: Code '686402' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 80 MG/ML Oral Suspension [EryPed]686420Ref":
-  from [Medication: Code '686420' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin stearate 250 MG Oral Tablet [Erythrocin Stearate]750839Ref":
-  from [Medication: Code '750839' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin stearate 500 MG Oral Tablet [Erythrocin Stearate]750841Ref":
-  from [Medication: Code '750841' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 20 MG/ML Medicated Pad [Emcin Clear]798115Ref":
-  from [Medication: Code '798115' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 20 MG/ML Medicated Pad [Ery]798133Ref":
-  from [Medication: Code '798133' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 40 MG/ML Oral Suspension [E.E.S.]863603Ref":
-  from [Medication: Code '863603' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 400 MG Oral Tablet [E.E.S.]863606Ref":
-  from [Medication: Code '863606' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.0053 MG/ML Topical Solution [Maracyn]890957Ref":
-  from [Medication: Code '890957' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin lactobionate 500 MG [Erythrocin]1720314Ref":
-  from [Medication: Code '1720314' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 250 MG [Ery-Tab]566951Ref":
-  from [Medication: Code '566951' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 333 MG [Ery-Tab]566954Ref":
-  from [Medication: Code '566954' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 500 MG [Ery-Tab]566956Ref":
-  from [Medication: Code '566956' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.02 MG/MG [Emgel]567074Ref":
-  from [Medication: Code '567074' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.02 MG/MG [Erygel]567075Ref":
-  from [Medication: Code '567075' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 20 MG/ML [Theramycin]567090Ref":
-  from [Medication: Code '567090' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "benzoyl peroxide 0.05 MG/MG / erythromycin 0.03 MG/MG [Benzamycin]573012Ref":
-  from [Medication: Code '573012' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.005 MG/MG [Eyemycin]584532Ref":
-  from [Medication: Code '584532' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 40 MG/ML [EryPed]686401Ref":
-  from [Medication: Code '686401' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 80 MG/ML [EryPed]686419Ref":
-  from [Medication: Code '686419' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin stearate 250 MG [Erythrocin Stearate]750837Ref":
-  from [Medication: Code '750837' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin stearate 500 MG [Erythrocin Stearate]750840Ref":
-  from [Medication: Code '750840' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 20 MG/ML [Emcin Clear]798113Ref":
-  from [Medication: Code '798113' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 20 MG/ML [Ery]798131Ref":
-  from [Medication: Code '798131' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 40 MG/ML [E.E.S.]863601Ref":
-  from [Medication: Code '863601' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 400 MG [E.E.S.]863604Ref":
-  from [Medication: Code '863604' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.0053 MG/ML [Maracyn]890955Ref":
-  from [Medication: Code '890955' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 20 MG/ML Topical Lotion103518Ref":
-  from [Medication: Code '103518' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 40 MG/ML / zinc acetate 12 MG/ML Topical Solution106307Ref":
-  from [Medication: Code '106307' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.02 MG/MG / isotretinoin 0.0005 MG/MG Topical Gel153371Ref":
-  from [Medication: Code '153371' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin lactobionate 500 MG Injection1668264Ref":
-  from [Medication: Code '1668264' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 500 MG Oral Tablet197650Ref":
-  from [Medication: Code '197650' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "benzoyl peroxide 0.05 MG/MG / erythromycin 0.03 MG/MG Topical Gel244374Ref":
-  from [Medication: Code '244374' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.04 MG/MG Topical Gel250697Ref":
-  from [Medication: Code '250697' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.005 MG/MG Ophthalmic Ointment310149Ref":
-  from [Medication: Code '310149' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 15 MG/ML Topical Solution310150Ref":
-  from [Medication: Code '310150' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.02 MG/MG Topical Gel310152Ref":
-  from [Medication: Code '310152' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 250 MG Delayed Release Oral Capsule310154Ref":
-  from [Medication: Code '310154' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 250 MG Delayed Release Oral Tablet310155Ref":
-  from [Medication: Code '310155' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 500 MG Delayed Release Oral Tablet310157Ref":
-  from [Medication: Code '310157' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 25 MG/ML Oral Suspension313968Ref":
-  from [Medication: Code '313968' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 333 MG Delayed Release Oral Tablet315090Ref":
-  from [Medication: Code '315090' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 20 MG/ML Topical Solution318202Ref":
-  from [Medication: Code '318202' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.005 MG/MG Topical Ointment349148Ref":
-  from [Medication: Code '349148' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 40 MG/ML / tretinoin 0.25 MG/ML Topical Solution389251Ref":
-  from [Medication: Code '389251' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 100 MG/ML Oral Suspension425351Ref":
-  from [Medication: Code '425351' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin estolate 500 MG Oral Tablet486912Ref":
-  from [Medication: Code '486912' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin estolate 250 MG Oral Capsule486955Ref":
-  from [Medication: Code '486955' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin estolate 25 MG/ML Oral Suspension486960Ref":
-  from [Medication: Code '486960' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 50 MG/ML Oral Suspension597193Ref":
-  from [Medication: Code '597193' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin estolate 50 MG/ML Oral Suspension597194Ref":
-  from [Medication: Code '597194' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 250 MG Oral Tablet598006Ref":
-  from [Medication: Code '598006' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 250 MG Oral Capsule598008Ref":
-  from [Medication: Code '598008' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 200 MG Chewable Tablet686350Ref":
-  from [Medication: Code '686350' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin stearate 250 MG Oral Tablet686355Ref":
-  from [Medication: Code '686355' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 40 MG/ML Oral Suspension686400Ref":
-  from [Medication: Code '686400' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 400 MG Oral Tablet686405Ref":
-  from [Medication: Code '686405' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin stearate 500 MG Oral Tablet686406Ref":
-  from [Medication: Code '686406' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 80 MG/ML Oral Suspension686418Ref":
-  from [Medication: Code '686418' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 20 MG/ML Medicated Pad797452Ref":
-  from [Medication: Code '797452' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.0053 MG/ML Topical Solution890953Ref":
-  from [Medication: Code '890953' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin lactobionate 500 MG1668262Ref":
-  from [Medication: Code '1668262' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 25 MG/ML315875Ref":
-  from [Medication: Code '315875' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 333 MG315876Ref":
-  from [Medication: Code '315876' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 500 MG315877Ref":
-  from [Medication: Code '315877' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 250 MG317364Ref":
-  from [Medication: Code '317364' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.005 MG/MG328349Ref":
-  from [Medication: Code '328349' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 50 MG/ML328353Ref":
-  from [Medication: Code '328353' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 40 MG/ML328354Ref":
-  from [Medication: Code '328354' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.03 MG/MG329378Ref":
-  from [Medication: Code '329378' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 15 MG/ML329729Ref":
-  from [Medication: Code '329729' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 20 MG/ML329730Ref":
-  from [Medication: Code '329730' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 100 MG/ML329731Ref":
-  from [Medication: Code '329731' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.04 MG/MG339992Ref":
-  from [Medication: Code '339992' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.02 MG/MG340095Ref":
-  from [Medication: Code '340095' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin estolate 500 MG486911Ref":
-  from [Medication: Code '486911' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin estolate 250 MG486953Ref":
-  from [Medication: Code '486953' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin estolate 50 MG/ML486956Ref":
-  from [Medication: Code '486956' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin estolate 25 MG/ML486959Ref":
-  from [Medication: Code '486959' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin stearate 500 MG487139Ref":
-  from [Medication: Code '487139' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin stearate 250 MG487143Ref":
-  from [Medication: Code '487143' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 200 MG686349Ref":
-  from [Medication: Code '686349' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 40 MG/ML686382Ref":
-  from [Medication: Code '686382' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 400 MG686404Ref":
-  from [Medication: Code '686404' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin ethylsuccinate 80 MG/ML686417Ref":
-  from [Medication: Code '686417' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "erythromycin 0.0053 MG/ML890952Ref":
-  from [Medication: Code '890952' from rxnorm] M
-    return 'Medication/' + M.id
-
-define troleandomycin10864Ref:
-  from [Medication: Code '10864' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "troleandomycin 250 MG Oral Capsule198337Ref":
-  from [Medication: Code '198337' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "troleandomycin 250 MG328768Ref":
-  from [Medication: Code '328768' from rxnorm] M
-    return 'Medication/' + M.id
-
-define itraconazole28031Ref:
-  from [Medication: Code '28031' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole / secnidazole1008830Ref":
-  from [Medication: Code '1008830' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 10 MG/ML Oral Solution [Sporanox]152854Ref":
-  from [Medication: Code '152854' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 65 MG Oral Capsule [Tolsura]2106648Ref":
-  from [Medication: Code '2106648' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 100 MG Oral Capsule [Sporanox]833164Ref":
-  from [Medication: Code '833164' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 65 MG [Tolsura]2106644Ref":
-  from [Medication: Code '2106644' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 10 MG/ML [Sporanox]545186Ref":
-  from [Medication: Code '545186' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 100 MG [Sporanox]833162Ref":
-  from [Medication: Code '833162' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 65 MG Oral Capsule2106642Ref":
-  from [Medication: Code '2106642' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 100 MG Oral Capsule311204Ref":
-  from [Medication: Code '311204' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 10 MG/ML Injectable Solution311205Ref":
-  from [Medication: Code '311205' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 10 MG/ML Oral Solution348506Ref":
-  from [Medication: Code '348506' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 200 MG Oral Tablet992413Ref":
-  from [Medication: Code '992413' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 65 MG2106641Ref":
-  from [Medication: Code '2106641' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 10 MG/ML316113Ref":
-  from [Medication: Code '316113' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 100 MG317394Ref":
-  from [Medication: Code '317394' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "itraconazole 200 MG992412Ref":
-  from [Medication: Code '992412' from rxnorm] M
-    return 'Medication/' + M.id
-
-define ketoconazole6135Ref:
-  from [Medication: Code '6135' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "hydrocortisone / ketoconazole1008033Ref":
-  from [Medication: Code '1008033' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole / secnidazole1008066Ref":
-  from [Medication: Code '1008066' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chloroxylenol / ketoconazole1091891Ref":
-  from [Medication: Code '1091891' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole / lactate / salicylic acid1371360Ref":
-  from [Medication: Code '1371360' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine / ketoconazole1371364Ref":
-  from [Medication: Code '1371364' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "acetic acid / chlorhexidine / ketoconazole1439947Ref":
-  from [Medication: Code '1439947' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine / ketoconazole / salicyloyl phytosphingosine1484769Ref":
-  from [Medication: Code '1484769' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole / phytosphingosine1534845Ref":
-  from [Medication: Code '1534845' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine / hydrocortisone / ketoconazole1648131Ref":
-  from [Medication: Code '1648131' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole / salicylic acid2669487Ref":
-  from [Medication: Code '2669487' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Topical Spray [Pharmaseb]1092591Ref":
-  from [Medication: Code '1092591' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Topical Solution [Pharmaseb]1092678Ref":
-  from [Medication: Code '1092678' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Medicated Pad [Pharmaseb]1092680Ref":
-  from [Medication: Code '1092680' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chloroxylenol 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo [Pharmaseb]1092683Ref":
-  from [Medication: Code '1092683' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 1 MG/ML Topical Solution [T8 Keto Flush]1297965Ref":
-  from [Medication: Code '1297965' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 20 MG/ML Topical Foam [Ketodan]1300272Ref":
-  from [Medication: Code '1300272' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo [Vital-Ketodine]1424021Ref":
-  from [Medication: Code '1424021' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "acetic acid 20 MG/ML / chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo [Mal-A-Ket]1439953Ref":
-  from [Medication: Code '1439953' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 23 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo [Ketochlor]1482662Ref":
-  from [Medication: Code '1482662' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML Topical Solution [Keto-C]1797511Ref":
-  from [Medication: Code '1797511' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Topical Spray [Keto-C]1797515Ref":
-  from [Medication: Code '1797515' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo [Keto-C]1798546Ref":
-  from [Medication: Code '1798546' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine 0.02 MG/MG / ketoconazole 0.01 MG/MG Medicated Pad [Keto-C]1994337Ref":
-  from [Medication: Code '1994337' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 20 MG/ML Medicated Shampoo [Nizoral]206978Ref":
-  from [Medication: Code '206978' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Pad [Mal-A-Ket Wipes]2532527Ref":
-  from [Medication: Code '2532527' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "levoketoconazole 150 MG Oral Tablet [Recorlev]2588854Ref":
-  from [Medication: Code '2588854' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "hydrocortisone 10 MG/ML / ketoconazole 1.5 MG/ML Otic Solution [Malacetic]2639748Ref":
-  from [Medication: Code '2639748' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 20 MG/ML Topical Cream [Kuric]604651Ref":
-  from [Medication: Code '604651' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 10 MG/ML Medicated Shampoo [Nizoral]608844Ref":
-  from [Medication: Code '608844' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 0.02 MG/MG Topical Gel [Xolegel]664961Ref":
-  from [Medication: Code '664961' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 20 MG/ML Topical Foam [Extina]729768Ref":
-  from [Medication: Code '729768' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML [Pharmaseb]1092589Ref":
-  from [Medication: Code '1092589' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chloroxylenol 20 MG/ML / ketoconazole 10 MG/ML [Pharmaseb]1092681Ref":
-  from [Medication: Code '1092681' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 1 MG/ML [T8 Keto Flush]1297962Ref":
-  from [Medication: Code '1297962' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 20 MG/ML [Ketodan]1300269Ref":
-  from [Medication: Code '1300269' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML [Vital-Ketodine]1424018Ref":
-  from [Medication: Code '1424018' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "acetic acid 20 MG/ML / chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML [Mal-A-Ket]1439950Ref":
-  from [Medication: Code '1439950' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 23 MG/ML / ketoconazole 10 MG/ML [Ketochlor]1482659Ref":
-  from [Medication: Code '1482659' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML [Keto-C]1797508Ref":
-  from [Medication: Code '1797508' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML [Keto-C]1797513Ref":
-  from [Medication: Code '1797513' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine 0.02 MG/MG / ketoconazole 0.01 MG/MG [Keto-C]1994334Ref":
-  from [Medication: Code '1994334' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "hydrocortisone 10 MG/ML / ketoconazole 1.5 MG/ML [Malacetic]2003647Ref":
-  from [Medication: Code '2003647' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML [Mal-A-Ket Wipes]2532523Ref":
-  from [Medication: Code '2532523' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "levoketoconazole 150 MG [Recorlev]2588850Ref":
-  from [Medication: Code '2588850' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 20 MG/ML [Nizoral]564507Ref":
-  from [Medication: Code '564507' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 20 MG/ML [Kuric]604649Ref":
-  from [Medication: Code '604649' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 10 MG/ML [Nizoral]608843Ref":
-  from [Medication: Code '608843' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 0.02 MG/MG [Xolegel]664959Ref":
-  from [Medication: Code '664959' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 20 MG/ML [Extina]729766Ref":
-  from [Medication: Code '729766' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 20 MG/ML Medicated Shampoo106336Ref":
-  from [Medication: Code '106336' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chloroxylenol 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo1091892Ref":
-  from [Medication: Code '1091892' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Topical Solution1092209Ref":
-  from [Medication: Code '1092209' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Medicated Pad1092217Ref":
-  from [Medication: Code '1092217' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Topical Spray1092587Ref":
-  from [Medication: Code '1092587' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 1 MG/ML Topical Solution1297960Ref":
-  from [Medication: Code '1297960' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Topical Spray1371365Ref":
-  from [Medication: Code '1371365' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo1424016Ref":
-  from [Medication: Code '1424016' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "acetic acid 20 MG/ML / chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo1439948Ref":
-  from [Medication: Code '1439948' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 23 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo1482657Ref":
-  from [Medication: Code '1482657' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML / salicyloyl phytosphingosine 0.5 MG/ML Medicated Shampoo1484770Ref":
-  from [Medication: Code '1484770' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 3 MG/ML / ketoconazole 3 MG/ML Topical Solution1485182Ref":
-  from [Medication: Code '1485182' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML / salicyloyl phytosphingosine 0.2 MG/ML Topical Solution1495165Ref":
-  from [Medication: Code '1495165' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML / salicyloyl phytosphingosine 0.2 MG/ML Topical Spray1495199Ref":
-  from [Medication: Code '1495199' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 1 MG/ML / phytosphingosine 0.1 MG/ML Topical Solution1534846Ref":
-  from [Medication: Code '1534846' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 10 MG/ML / ketoconazole 2.5 MG/ML Medicated Shampoo1537189Ref":
-  from [Medication: Code '1537189' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 10 MG/ML / ketoconazole 2.5 MG/ML Topical Spray1537336Ref":
-  from [Medication: Code '1537336' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "hydrocortisone 0.01 MG/MG / ketoconazole 0.0015 MG/MG Otic Ointment1606353Ref":
-  from [Medication: Code '1606353' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / hydrocortisone 10 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo1648132Ref":
-  from [Medication: Code '1648132' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML / salicyloyl phytosphingosine 0.5 MG/ML Topical Foam1732122Ref":
-  from [Medication: Code '1732122' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML / salicyloyl phytosphingosine 0.4 MG/ML Medicated Pad1739988Ref":
-  from [Medication: Code '1739988' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML Topical Solution1797506Ref":
-  from [Medication: Code '1797506' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Pad1798297Ref":
-  from [Medication: Code '1798297' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Topical Lotion1805285Ref":
-  from [Medication: Code '1805285' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 200 MG Oral Tablet197853Ref":
-  from [Medication: Code '197853' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine 0.02 MG/MG / ketoconazole 0.01 MG/MG Medicated Pad1994333Ref":
-  from [Medication: Code '1994333' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 20 MG/ML Topical Cream203088Ref":
-  from [Medication: Code '203088' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 10 MG/ML Medicated Shampoo240812Ref":
-  from [Medication: Code '240812' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML Otic Solution2458971Ref":
-  from [Medication: Code '2458971' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Topical Foam2538834Ref":
-  from [Medication: Code '2538834' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "levoketoconazole 150 MG Oral Tablet2588848Ref":
-  from [Medication: Code '2588848' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML Medicated Pad2604934Ref":
-  from [Medication: Code '2604934' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 2 MG/ML Otic Solution2609847Ref":
-  from [Medication: Code '2609847' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "hydrocortisone 10 MG/ML / ketoconazole 1.5 MG/ML Otic Solution2639745Ref":
-  from [Medication: Code '2639745' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chlorhexidine gluconate 20 MG/ML / hydrocortisone 5 MG/ML / ketoconazole 10 MG/ML Topical Spray2663929Ref":
-  from [Medication: Code '2663929' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 1 MG/ML / salicylic acid 1.5 MG/ML Otic Solution2669490Ref":
-  from [Medication: Code '2669490' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 0.02 MG/MG Topical Gel647253Ref":
-  from [Medication: Code '647253' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 20 MG/ML Topical Foam728550Ref":
-  from [Medication: Code '728550' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 3 MG/ML1092207Ref":
-  from [Medication: Code '1092207' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 1 MG/ML1297958Ref":
-  from [Medication: Code '1297958' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 2 MG/ML1495161Ref":
-  from [Medication: Code '1495161' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 2.5 MG/ML1537188Ref":
-  from [Medication: Code '1537188' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 0.0015 MG/MG1606350Ref":
-  from [Medication: Code '1606350' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 1.5 MG/ML2003642Ref":
-  from [Medication: Code '2003642' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "levoketoconazole 150 MG2588847Ref":
-  from [Medication: Code '2588847' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 200 MG317396Ref":
-  from [Medication: Code '317396' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 20 MG/ML330469Ref":
-  from [Medication: Code '330469' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 10 MG/ML335100Ref":
-  from [Medication: Code '335100' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 0.02 MG/MG402681Ref":
-  from [Medication: Code '402681' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ketoconazole 0.01 MG/MG402917Ref":
-  from [Medication: Code '402917' from rxnorm] M
-    return 'Medication/' + M.id
-
-define voriconazole121243Ref:
-  from [Medication: Code '121243' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 50 MG Oral Tablet [Vfend]352218Ref":
-  from [Medication: Code '352218' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 200 MG Oral Tablet [Vfend]352219Ref":
-  from [Medication: Code '352219' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 200 MG Injection [Vfend]352220Ref":
-  from [Medication: Code '352220' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 40 MG/ML Oral Suspension [Vfend]546624Ref":
-  from [Medication: Code '546624' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 40 MG/ML [Vfend]546622Ref":
-  from [Medication: Code '546622' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 50 MG [Vfend]575939Ref":
-  from [Medication: Code '575939' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 200 MG [Vfend]575940Ref":
-  from [Medication: Code '575940' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 200 MG Oral Tablet349434Ref":
-  from [Medication: Code '349434' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 50 MG Oral Tablet349435Ref":
-  from [Medication: Code '349435' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 200 MG Injection351209Ref":
-  from [Medication: Code '351209' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 40 MG/ML Oral Suspension465355Ref":
-  from [Medication: Code '465355' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 200 MG350637Ref":
-  from [Medication: Code '350637' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 50 MG350643Ref":
-  from [Medication: Code '350643' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "voriconazole 40 MG/ML477139Ref":
-  from [Medication: Code '477139' from rxnorm] M
-    return 'Medication/' + M.id
-
-define nefazodone31565Ref:
-  from [Medication: Code '31565' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "nefazodone hydrochloride 100 MG Oral Tablet1098649Ref":
-  from [Medication: Code '1098649' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "nefazodone hydrochloride 150 MG Oral Tablet1098666Ref":
-  from [Medication: Code '1098666' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "nefazodone hydrochloride 200 MG Oral Tablet1098670Ref":
-  from [Medication: Code '1098670' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "nefazodone hydrochloride 250 MG Oral Tablet1098674Ref":
-  from [Medication: Code '1098674' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "nefazodone hydrochloride 50 MG Oral Tablet1098678Ref":
-  from [Medication: Code '1098678' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "nefazodone hydrochloride 300 MG Oral Tablet1098710Ref":
-  from [Medication: Code '1098710' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "nefazodone hydrochloride 100 MG1098648Ref":
-  from [Medication: Code '1098648' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "nefazodone hydrochloride 150 MG1098665Ref":
-  from [Medication: Code '1098665' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "nefazodone hydrochloride 200 MG1098669Ref":
-  from [Medication: Code '1098669' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "nefazodone hydrochloride 250 MG1098673Ref":
-  from [Medication: Code '1098673' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "nefazodone hydrochloride 50 MG1098677Ref":
-  from [Medication: Code '1098677' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "nefazodone hydrochloride 300 MG1098709Ref":
-  from [Medication: Code '1098709' from rxnorm] M
-    return 'Medication/' + M.id
-
-define fluvoxamine42355Ref:
-  from [Medication: Code '42355' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR fluvoxamine maleate 100 MG Extended Release Oral Capsule903873Ref":
-  from [Medication: Code '903873' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR fluvoxamine maleate 150 MG Extended Release Oral Capsule903879Ref":
-  from [Medication: Code '903879' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "fluvoxamine maleate 100 MG Oral Tablet903884Ref":
-  from [Medication: Code '903884' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "fluvoxamine maleate 25 MG Oral Tablet903887Ref":
-  from [Medication: Code '903887' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "fluvoxamine maleate 50 MG Oral Tablet903891Ref":
-  from [Medication: Code '903891' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "fluvoxamine maleate 100 MG903872Ref":
-  from [Medication: Code '903872' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "fluvoxamine maleate 150 MG903878Ref":
-  from [Medication: Code '903878' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "fluvoxamine maleate 25 MG903886Ref":
-  from [Medication: Code '903886' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "fluvoxamine maleate 50 MG903890Ref":
-  from [Medication: Code '903890' from rxnorm] M
-    return 'Medication/' + M.id
-
-define verapamil11170Ref:
-  from [Medication: Code '11170' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "isosorbide dinitrate / verapamil1007711Ref":
-  from [Medication: Code '1007711' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "hydrochlorothiazide / triamterene / verapamil1007929Ref":
-  from [Medication: Code '1007929' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "quinidine / verapamil1007942Ref":
-  from [Medication: Code '1007942' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "hydrochlorothiazide / verapamil1007974Ref":
-  from [Medication: Code '1007974' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "trandolapril / verapamil214866Ref":
-  from [Medication: Code '214866' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 100 MG Extended Release Oral Capsule [Verelan]897586Ref":
-  from [Medication: Code '897586' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 200 MG Extended Release Oral Capsule [Verelan]897592Ref":
-  from [Medication: Code '897592' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 300 MG Extended Release Oral Capsule [Verelan]897598Ref":
-  from [Medication: Code '897598' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 120 MG Extended Release Oral Capsule [Verelan]897614Ref":
-  from [Medication: Code '897614' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 180 MG Extended Release Oral Capsule [Verelan]897620Ref":
-  from [Medication: Code '897620' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 240 MG Extended Release Oral Capsule [Verelan]897626Ref":
-  from [Medication: Code '897626' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 360 MG Extended Release Oral Capsule [Verelan]897632Ref":
-  from [Medication: Code '897632' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 120 MG Extended Release Oral Tablet [Calan]897661Ref":
-  from [Medication: Code '897661' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 180 MG Extended Release Oral Tablet [Calan]897676Ref":
-  from [Medication: Code '897676' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 240 MG Extended Release Oral Tablet [Calan]897680Ref":
-  from [Medication: Code '897680' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 80 MG Oral Tablet [Calan]897685Ref":
-  from [Medication: Code '897685' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 120 MG Extended Release Oral Tablet [Isoptin]897693Ref":
-  from [Medication: Code '897693' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 180 MG Extended Release Oral Tablet [Isoptin]897700Ref":
-  from [Medication: Code '897700' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 240 MG Extended Release Oral Tablet [Isoptin]897714Ref":
-  from [Medication: Code '897714' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR trandolapril 2 MG / verapamil hydrochloride 180 MG Extended Release Oral Tablet [Tarka]897785Ref":
-  from [Medication: Code '897785' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR trandolapril 2 MG / verapamil hydrochloride 240 MG Extended Release Oral Tablet [Tarka]897846Ref":
-  from [Medication: Code '897846' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR trandolapril 4 MG / verapamil hydrochloride 240 MG Extended Release Oral Tablet [Tarka]897855Ref":
-  from [Medication: Code '897855' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 100 MG [Verelan]897585Ref":
-  from [Medication: Code '897585' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 200 MG [Verelan]897591Ref":
-  from [Medication: Code '897591' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 300 MG [Verelan]897597Ref":
-  from [Medication: Code '897597' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 120 MG [Verelan]897613Ref":
-  from [Medication: Code '897613' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 180 MG [Verelan]897619Ref":
-  from [Medication: Code '897619' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 240 MG [Verelan]897625Ref":
-  from [Medication: Code '897625' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 360 MG [Verelan]897631Ref":
-  from [Medication: Code '897631' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 120 MG [Calan]897660Ref":
-  from [Medication: Code '897660' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 180 MG [Calan]897675Ref":
-  from [Medication: Code '897675' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 240 MG [Calan]897679Ref":
-  from [Medication: Code '897679' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 80 MG [Calan]897684Ref":
-  from [Medication: Code '897684' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 120 MG [Isoptin]897692Ref":
-  from [Medication: Code '897692' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 180 MG [Isoptin]897699Ref":
-  from [Medication: Code '897699' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 240 MG [Isoptin]897713Ref":
-  from [Medication: Code '897713' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "trandolapril 2 MG / verapamil hydrochloride 180 MG [Tarka]897784Ref":
-  from [Medication: Code '897784' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "trandolapril 2 MG / verapamil hydrochloride 240 MG [Tarka]897845Ref":
-  from [Medication: Code '897845' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "trandolapril 4 MG / verapamil hydrochloride 240 MG [Tarka]897854Ref":
-  from [Medication: Code '897854' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "2 ML verapamil hydrochloride 2.5 MG/ML Injection1665057Ref":
-  from [Medication: Code '1665057' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "4 ML verapamil hydrochloride 2.5 MG/ML Injection1665061Ref":
-  from [Medication: Code '1665061' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR trandolapril 2 MG / verapamil hydrochloride 180 MG Extended Release Oral Capsule411759Ref":
-  from [Medication: Code '411759' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 100 MG Extended Release Oral Capsule897584Ref":
-  from [Medication: Code '897584' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 200 MG Extended Release Oral Capsule897590Ref":
-  from [Medication: Code '897590' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 300 MG Extended Release Oral Capsule897596Ref":
-  from [Medication: Code '897596' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 120 MG Extended Release Oral Capsule897612Ref":
-  from [Medication: Code '897612' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 180 MG Extended Release Oral Capsule897618Ref":
-  from [Medication: Code '897618' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 240 MG Extended Release Oral Capsule897624Ref":
-  from [Medication: Code '897624' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR verapamil hydrochloride 360 MG Extended Release Oral Capsule897630Ref":
-  from [Medication: Code '897630' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 180 MG Extended Release Oral Tablet897640Ref":
-  from [Medication: Code '897640' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 240 MG Extended Release Oral Tablet897649Ref":
-  from [Medication: Code '897649' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 120 MG Extended Release Oral Tablet897659Ref":
-  from [Medication: Code '897659' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 120 MG Oral Tablet897666Ref":
-  from [Medication: Code '897666' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 80 MG Oral Tablet897683Ref":
-  from [Medication: Code '897683' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 40 MG Oral Tablet897722Ref":
-  from [Medication: Code '897722' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR trandolapril 1 MG / verapamil hydrochloride 240 MG Extended Release Oral Tablet897781Ref":
-  from [Medication: Code '897781' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR trandolapril 2 MG / verapamil hydrochloride 180 MG Extended Release Oral Tablet897783Ref":
-  from [Medication: Code '897783' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR trandolapril 2 MG / verapamil hydrochloride 240 MG Extended Release Oral Tablet897844Ref":
-  from [Medication: Code '897844' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR trandolapril 4 MG / verapamil hydrochloride 240 MG Extended Release Oral Tablet897853Ref":
-  from [Medication: Code '897853' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "4 ML verapamil hydrochloride 2.5 MG/ML Prefilled Syringe898316Ref":
-  from [Medication: Code '898316' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 180 MG Oral Capsule898340Ref":
-  from [Medication: Code '898340' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 160 MG Oral Tablet901438Ref":
-  from [Medication: Code '901438' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 240 MG Oral Tablet901446Ref":
-  from [Medication: Code '901446' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 8 MG/ML Oral Solution901450Ref":
-  from [Medication: Code '901450' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 100 MG897583Ref":
-  from [Medication: Code '897583' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 200 MG897589Ref":
-  from [Medication: Code '897589' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 300 MG897595Ref":
-  from [Medication: Code '897595' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 120 MG897611Ref":
-  from [Medication: Code '897611' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 180 MG897617Ref":
-  from [Medication: Code '897617' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 240 MG897623Ref":
-  from [Medication: Code '897623' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 360 MG897629Ref":
-  from [Medication: Code '897629' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 80 MG897682Ref":
-  from [Medication: Code '897682' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 2.5 MG/ML897705Ref":
-  from [Medication: Code '897705' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 40 MG897718Ref":
-  from [Medication: Code '897718' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 160 MG901437Ref":
-  from [Medication: Code '901437' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "verapamil hydrochloride 8 MG/ML901449Ref":
-  from [Medication: Code '901449' from rxnorm] M
-    return 'Medication/' + M.id
-
-define diltiazem3443Ref:
-  from [Medication: Code '3443' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem / hydrochlorothiazide1007083Ref":
-  from [Medication: Code '1007083' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem / enalapril214507Ref":
-  from [Medication: Code '214507' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 420 MG Extended Release Oral Tablet [Matzim]1091623Ref":
-  from [Medication: Code '1091623' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Tablet [Matzim]1091629Ref":
-  from [Medication: Code '1091629' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Tablet [Matzim]1091632Ref":
-  from [Medication: Code '1091632' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Tablet [Matzim]1091635Ref":
-  from [Medication: Code '1091635' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Tablet [Matzim]1091638Ref":
-  from [Medication: Code '1091638' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Tiadylt]1988308Ref":
-  from [Medication: Code '1988308' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule [Tiadylt]1988311Ref":
-  from [Medication: Code '1988311' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Tiadylt]1988316Ref":
-  from [Medication: Code '1988316' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule [Tiadylt]1988319Ref":
-  from [Medication: Code '1988319' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Capsule [Tiadylt]1988324Ref":
-  from [Medication: Code '1988324' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 420 MG Extended Release Oral Capsule [Tiadylt]1988330Ref":
-  from [Medication: Code '1988330' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Capsule [Cardizem]830798Ref":
-  from [Medication: Code '830798' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule [Cardizem]830803Ref":
-  from [Medication: Code '830803' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Cardizem]830839Ref":
-  from [Medication: Code '830839' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule [Cardizem]830847Ref":
-  from [Medication: Code '830847' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Cardizem]830863Ref":
-  from [Medication: Code '830863' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Tablet [Cardizem]830876Ref":
-  from [Medication: Code '830876' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Tablet [Cardizem]830878Ref":
-  from [Medication: Code '830878' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Tablet [Cardizem]830880Ref":
-  from [Medication: Code '830880' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Tablet [Cardizem]830883Ref":
-  from [Medication: Code '830883' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Tablet [Cardizem]830898Ref":
-  from [Medication: Code '830898' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 420 MG Extended Release Oral Tablet [Cardizem]830902Ref":
-  from [Medication: Code '830902' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 120 MG Oral Tablet [Cardizem]831055Ref":
-  from [Medication: Code '831055' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Tiazac]831193Ref":
-  from [Medication: Code '831193' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Taztia]831196Ref":
-  from [Medication: Code '831196' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Dilt]831215Ref":
-  from [Medication: Code '831215' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Cartia]831226Ref":
-  from [Medication: Code '831226' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule [Tiazac]831244Ref":
-  from [Medication: Code '831244' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule [Taztia]831248Ref":
-  from [Medication: Code '831248' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule [Dilt]831252Ref":
-  from [Medication: Code '831252' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule [Cartia]831255Ref":
-  from [Medication: Code '831255' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Dilt]831285Ref":
-  from [Medication: Code '831285' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Tiazac]831296Ref":
-  from [Medication: Code '831296' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Taztia]831300Ref":
-  from [Medication: Code '831300' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Cartia]831309Ref":
-  from [Medication: Code '831309' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule [Tiazac]831323Ref":
-  from [Medication: Code '831323' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule [Taztia]831325Ref":
-  from [Medication: Code '831325' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule [Cartia]831338Ref":
-  from [Medication: Code '831338' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Capsule [Tiazac]831347Ref":
-  from [Medication: Code '831347' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Capsule [Taztia]831349Ref":
-  from [Medication: Code '831349' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 420 MG Extended Release Oral Capsule [Tiazac]831360Ref":
-  from [Medication: Code '831360' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 30 MG Oral Tablet [Cardizem]833219Ref":
-  from [Medication: Code '833219' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Diltzac]833704Ref":
-  from [Medication: Code '833704' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule [Diltzac]833705Ref":
-  from [Medication: Code '833705' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 60 MG Oral Tablet [Cardizem]834393Ref":
-  from [Medication: Code '834393' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Diltzac]848524Ref":
-  from [Medication: Code '848524' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 420 MG [Matzim]1091621Ref":
-  from [Medication: Code '1091621' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 240 MG [Matzim]1091628Ref":
-  from [Medication: Code '1091628' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 180 MG [Matzim]1091631Ref":
-  from [Medication: Code '1091631' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 300 MG [Matzim]1091634Ref":
-  from [Medication: Code '1091634' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 360 MG [Matzim]1091637Ref":
-  from [Medication: Code '1091637' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 120 MG [Tiadylt]1988304Ref":
-  from [Medication: Code '1988304' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 180 MG [Tiadylt]1988310Ref":
-  from [Medication: Code '1988310' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 240 MG [Tiadylt]1988315Ref":
-  from [Medication: Code '1988315' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 300 MG [Tiadylt]1988318Ref":
-  from [Medication: Code '1988318' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 360 MG [Tiadylt]1988323Ref":
-  from [Medication: Code '1988323' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 420 MG [Tiadylt]1988329Ref":
-  from [Medication: Code '1988329' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 360 MG [Cardizem]830796Ref":
-  from [Medication: Code '830796' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 300 MG [Cardizem]830802Ref":
-  from [Medication: Code '830802' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 240 MG [Cardizem]830838Ref":
-  from [Medication: Code '830838' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 180 MG [Cardizem]830846Ref":
-  from [Medication: Code '830846' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 120 MG [Cardizem]830862Ref":
-  from [Medication: Code '830862' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 60 MG [Cardizem]830866Ref":
-  from [Medication: Code '830866' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 420 MG [Cardizem]830901Ref":
-  from [Medication: Code '830901' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 120 MG [Diltzac]831171Ref":
-  from [Medication: Code '831171' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 120 MG [Tiazac]831192Ref":
-  from [Medication: Code '831192' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 120 MG [Taztia]831195Ref":
-  from [Medication: Code '831195' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 120 MG [Dilt]831214Ref":
-  from [Medication: Code '831214' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 120 MG [Cartia]831225Ref":
-  from [Medication: Code '831225' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 180 MG [Cartia]831241Ref":
-  from [Medication: Code '831241' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 180 MG [Tiazac]831243Ref":
-  from [Medication: Code '831243' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 180 MG [Taztia]831247Ref":
-  from [Medication: Code '831247' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 180 MG [Dilt]831251Ref":
-  from [Medication: Code '831251' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 240 MG [Diltzac]831281Ref":
-  from [Medication: Code '831281' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 240 MG [Dilt]831284Ref":
-  from [Medication: Code '831284' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 240 MG [Cartia]831287Ref":
-  from [Medication: Code '831287' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 240 MG [Tiazac]831295Ref":
-  from [Medication: Code '831295' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 240 MG [Taztia]831299Ref":
-  from [Medication: Code '831299' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 300 MG [Diltzac]831318Ref":
-  from [Medication: Code '831318' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 300 MG [Cartia]831320Ref":
-  from [Medication: Code '831320' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 300 MG [Tiazac]831322Ref":
-  from [Medication: Code '831322' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 300 MG [Taztia]831324Ref":
-  from [Medication: Code '831324' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 360 MG [Tiazac]831346Ref":
-  from [Medication: Code '831346' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 360 MG [Taztia]831348Ref":
-  from [Medication: Code '831348' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 420 MG [Tiazac]831356Ref":
-  from [Medication: Code '831356' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 30 MG [Cardizem]833218Ref":
-  from [Medication: Code '833218' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "5 ML diltiazem hydrochloride 5 MG/ML Injection1791229Ref":
-  from [Medication: Code '1791229' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "10 ML diltiazem hydrochloride 5 MG/ML Injection1791232Ref":
-  from [Medication: Code '1791232' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "25 ML diltiazem hydrochloride 5 MG/ML Injection1791233Ref":
-  from [Medication: Code '1791233' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 100 MG Injection1791240Ref":
-  from [Medication: Code '1791240' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "125 ML diltiazem hydrochloride 1 MG/ML Injection2586034Ref":
-  from [Medication: Code '2586034' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "250 ML diltiazem hydrochloride 1 MG/ML Injection2586036Ref":
-  from [Medication: Code '2586036' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Capsule830795Ref":
-  from [Medication: Code '830795' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule830801Ref":
-  from [Medication: Code '830801' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule830837Ref":
-  from [Medication: Code '830837' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule830845Ref":
-  from [Medication: Code '830845' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule830861Ref":
-  from [Medication: Code '830861' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR diltiazem hydrochloride 60 MG Extended Release Oral Capsule830865Ref":
-  from [Medication: Code '830865' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR diltiazem hydrochloride 90 MG Extended Release Oral Capsule830869Ref":
-  from [Medication: Code '830869' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule830872Ref":
-  from [Medication: Code '830872' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Tablet830874Ref":
-  from [Medication: Code '830874' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Tablet830877Ref":
-  from [Medication: Code '830877' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Tablet830879Ref":
-  from [Medication: Code '830879' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Tablet830882Ref":
-  from [Medication: Code '830882' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Tablet830897Ref":
-  from [Medication: Code '830897' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 420 MG Extended Release Oral Tablet830900Ref":
-  from [Medication: Code '830900' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 60 MG Oral Capsule831012Ref":
-  from [Medication: Code '831012' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 120 MG Oral Tablet831054Ref":
-  from [Medication: Code '831054' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 90 MG Oral Tablet831102Ref":
-  from [Medication: Code '831102' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 60 MG Oral Tablet831103Ref":
-  from [Medication: Code '831103' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR diltiazem hydrochloride 420 MG Extended Release Oral Capsule831359Ref":
-  from [Medication: Code '831359' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 30 MG Oral Tablet833217Ref":
-  from [Medication: Code '833217' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 180 MG / enalapril maleate 5 MG Extended Release Oral Tablet833237Ref":
-  from [Medication: Code '833237' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR diltiazem hydrochloride 60 MG Extended Release Oral Tablet833707Ref":
-  from [Medication: Code '833707' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem malate 240 MG Oral Tablet849860Ref":
-  from [Medication: Code '849860' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 1 MG/ML2586033Ref":
-  from [Medication: Code '2586033' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 360 MG830794Ref":
-  from [Medication: Code '830794' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 300 MG830800Ref":
-  from [Medication: Code '830800' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 240 MG830836Ref":
-  from [Medication: Code '830836' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 180 MG830844Ref":
-  from [Medication: Code '830844' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 120 MG830860Ref":
-  from [Medication: Code '830860' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 60 MG830864Ref":
-  from [Medication: Code '830864' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 90 MG830868Ref":
-  from [Medication: Code '830868' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 420 MG830899Ref":
-  from [Medication: Code '830899' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 5 MG/ML833194Ref":
-  from [Medication: Code '833194' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 30 MG833216Ref":
-  from [Medication: Code '833216' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 200 MG833715Ref":
-  from [Medication: Code '833715' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem malate 240 MG849859Ref":
-  from [Medication: Code '849859' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "diltiazem hydrochloride 100 MG849867Ref":
-  from [Medication: Code '849867' from rxnorm] M
-    return 'Medication/' + M.id
-
-define phenytoin8183Ref:
-  from [Medication: Code '8183' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "calcium carbonate / phenytoin1009121Ref":
-  from [Medication: Code '1009121' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "pentobarbital / phenytoin1100448Ref":
-  from [Medication: Code '1100448' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "mephobarbital / phenytoin817816Ref":
-  from [Medication: Code '817816' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "pentobarbital sodium 390 MG/ML / phenytoin sodium 50 MG/ML Injectable Solution [Euthasol]1100453Ref":
-  from [Medication: Code '1100453' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin 25 MG/ML Oral Suspension [Dilantin]1313884Ref":
-  from [Medication: Code '1313884' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin 50 MG Chewable Tablet [Dilantin]1313887Ref":
-  from [Medication: Code '1313887' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "pentobarbital sodium 390 MG/ML / phenytoin sodium 50 MG/ML Injectable Solution [Euthaphen]2626485Ref":
-  from [Medication: Code '2626485' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 100 MG Extended Release Oral Capsule [Dilantin]855673Ref":
-  from [Medication: Code '855673' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 200 MG Extended Release Oral Capsule [Phenytek]855863Ref":
-  from [Medication: Code '855863' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 30 MG Extended Release Oral Capsule [Dilantin]855871Ref":
-  from [Medication: Code '855871' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 300 MG Extended Release Oral Capsule [Phenytek]855875Ref":
-  from [Medication: Code '855875' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "pentobarbital sodium 390 MG/ML / phenytoin sodium 50 MG/ML [Euthasol]1100451Ref":
-  from [Medication: Code '1100451' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin 25 MG/ML [Dilantin]1313883Ref":
-  from [Medication: Code '1313883' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin 50 MG [Dilantin]1313886Ref":
-  from [Medication: Code '1313886' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "pentobarbital sodium 390 MG/ML / phenytoin sodium 50 MG/ML [Euthaphen]2626482Ref":
-  from [Medication: Code '2626482' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 100 MG [Dilantin]855672Ref":
-  from [Medication: Code '855672' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 200 MG [Phenytek]855862Ref":
-  from [Medication: Code '855862' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 30 MG [Dilantin]855870Ref":
-  from [Medication: Code '855870' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 300 MG [Phenytek]855874Ref":
-  from [Medication: Code '855874' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "pentobarbital sodium 390 MG/ML / phenytoin sodium 50 MG/ML Injectable Solution1100449Ref":
-  from [Medication: Code '1100449' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin 25 MG/ML Oral Suspension1313112Ref":
-  from [Medication: Code '1313112' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin 50 MG Chewable Tablet1313885Ref":
-  from [Medication: Code '1313885' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin 6 MG/ML Oral Suspension1313888Ref":
-  from [Medication: Code '1313888' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin 18 MG/ML Oral Suspension1313890Ref":
-  from [Medication: Code '1313890' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "2 ML phenytoin sodium 50 MG/ML Injection1670351Ref":
-  from [Medication: Code '1670351' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "5 ML phenytoin sodium 50 MG/ML Injection1670353Ref":
-  from [Medication: Code '1670353' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 100 MG Extended Release Oral Capsule855671Ref":
-  from [Medication: Code '855671' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 100 MG Oral Capsule855675Ref":
-  from [Medication: Code '855675' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 200 MG Extended Release Oral Capsule855861Ref":
-  from [Medication: Code '855861' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 30 MG Extended Release Oral Capsule855869Ref":
-  from [Medication: Code '855869' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 300 MG Extended Release Oral Capsule855873Ref":
-  from [Medication: Code '855873' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "2 ML phenytoin sodium 50 MG/ML Cartridge855911Ref":
-  from [Medication: Code '855911' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 100 MG Oral Tablet855930Ref":
-  from [Medication: Code '855930' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 25 MG Oral Capsule855936Ref":
-  from [Medication: Code '855936' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 300 MG Oral Capsule855945Ref":
-  from [Medication: Code '855945' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 50 MG Oral Capsule855946Ref":
-  from [Medication: Code '855946' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin 25 MG/ML1313111Ref":
-  from [Medication: Code '1313111' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin 18 MG/ML1313889Ref":
-  from [Medication: Code '1313889' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin 50 MG316513Ref":
-  from [Medication: Code '316513' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin 6 MG/ML316514Ref":
-  from [Medication: Code '316514' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 100 MG855670Ref":
-  from [Medication: Code '855670' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 200 MG855860Ref":
-  from [Medication: Code '855860' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 30 MG855868Ref":
-  from [Medication: Code '855868' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 300 MG855872Ref":
-  from [Medication: Code '855872' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 50 MG855882Ref":
-  from [Medication: Code '855882' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 50 MG/ML855888Ref":
-  from [Medication: Code '855888' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenytoin sodium 25 MG855935Ref":
-  from [Medication: Code '855935' from rxnorm] M
-    return 'Medication/' + M.id
-
-define carbamazepine2002Ref:
-  from [Medication: Code '2002' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 200 MG Oral Tablet [Epitol]211817Ref":
-  from [Medication: Code '211817' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "20 ML carbamazepine 10 MG/ML Injection [Carnexiv]2119862Ref":
-  from [Medication: Code '2119862' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 20 MG/ML Oral Suspension [Tegretol]308971Ref":
-  from [Medication: Code '308971' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 200 MG Oral Tablet [Tegretol]308972Ref":
-  from [Medication: Code '308972' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 100 MG Chewable Tablet [Tegretol]308974Ref":
-  from [Medication: Code '308974' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 200 MG Extended Release Oral Capsule [Carbatrol]308977Ref":
-  from [Medication: Code '308977' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 300 MG Extended Release Oral Capsule [Carbatrol]313931Ref":
-  from [Medication: Code '313931' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 100 MG Extended Release Oral Capsule [Carbatrol]404742Ref":
-  from [Medication: Code '404742' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 100 MG Extended Release Oral Capsule [Equetro]672908Ref":
-  from [Medication: Code '672908' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 300 MG Extended Release Oral Capsule [Equetro]672909Ref":
-  from [Medication: Code '672909' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 200 MG Extended Release Oral Capsule [Equetro]672910Ref":
-  from [Medication: Code '672910' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 100 MG Extended Release Oral Tablet [Tegretol]866303Ref":
-  from [Medication: Code '866303' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 200 MG Extended Release Oral Tablet [Tegretol]866305Ref":
-  from [Medication: Code '866305' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 400 MG Extended Release Oral Tablet [Tegretol]866307Ref":
-  from [Medication: Code '866307' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 10 MG/ML [Carnexiv]2119861Ref":
-  from [Medication: Code '2119861' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 20 MG/ML [Tegretol]485053Ref":
-  from [Medication: Code '485053' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 400 MG [Tegretol]563866Ref":
-  from [Medication: Code '563866' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 200 MG [Tegretol]565987Ref":
-  from [Medication: Code '565987' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 200 MG [Carbatrol]571790Ref":
-  from [Medication: Code '571790' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 200 MG [Epitol]572150Ref":
-  from [Medication: Code '572150' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 100 MG [Tegretol]575098Ref":
-  from [Medication: Code '575098' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 300 MG [Carbatrol]575199Ref":
-  from [Medication: Code '575199' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 100 MG [Carbatrol]576621Ref":
-  from [Medication: Code '576621' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 100 MG [Equetro]583136Ref":
-  from [Medication: Code '583136' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 200 MG [Equetro]583139Ref":
-  from [Medication: Code '583139' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 300 MG [Equetro]583141Ref":
-  from [Medication: Code '583141' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 125 MG Rectal Suppository103941Ref":
-  from [Medication: Code '103941' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 250 MG Rectal Suppository103942Ref":
-  from [Medication: Code '103942' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 400 MG Oral Tablet141952Ref":
-  from [Medication: Code '141952' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 100 MG Oral Tablet197441Ref":
-  from [Medication: Code '197441' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 200 MG Chewable Tablet197442Ref":
-  from [Medication: Code '197442' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 100 MG Extended Release Oral Tablet199378Ref":
-  from [Medication: Code '199378' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 300 MG Extended Release Oral Capsule200131Ref":
-  from [Medication: Code '200131' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 200 MG Extended Release Oral Capsule200133Ref":
-  from [Medication: Code '200133' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "20 ML carbamazepine 10 MG/ML Injection2119860Ref":
-  from [Medication: Code '2119860' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 100 MG Chewable Tablet308973Ref":
-  from [Medication: Code '308973' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 20 MG/ML Oral Suspension308976Ref":
-  from [Medication: Code '308976' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 200 MG Oral Tablet308979Ref":
-  from [Medication: Code '308979' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 100 MG Extended Release Oral Capsule388311Ref":
-  from [Medication: Code '388311' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 200 MG Extended Release Oral Tablet402505Ref":
-  from [Medication: Code '402505' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "12 HR carbamazepine 400 MG Extended Release Oral Tablet402506Ref":
-  from [Medication: Code '402506' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 10 MG/ML2119859Ref":
-  from [Medication: Code '2119859' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 100 MG315563Ref":
-  from [Medication: Code '315563' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 20 MG/ML315564Ref":
-  from [Medication: Code '315564' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 200 MG315565Ref":
-  from [Medication: Code '315565' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 300 MG315566Ref":
-  from [Medication: Code '315566' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 400 MG315567Ref":
-  from [Medication: Code '315567' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 125 MG331282Ref":
-  from [Medication: Code '331282' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carbamazepine 250 MG331283Ref":
-  from [Medication: Code '331283' from rxnorm] M
-    return 'Medication/' + M.id
-
-define phenobarbital8134Ref:
-  from [Medication: Code '8134' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "belladonna alkaloids / kaolin / phenobarbital1006892Ref":
-  from [Medication: Code '1006892' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "homatropine / phenobarbital1007147Ref":
-  from [Medication: Code '1007147' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ouabain / phenobarbital1007218Ref":
-  from [Medication: Code '1007218' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "guaifenesin / phenobarbital / theophylline1007302Ref":
-  from [Medication: Code '1007302' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "pentaerythritol / phenobarbital1007330Ref":
-  from [Medication: Code '1007330' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "anisotropine / phenobarbital1007368Ref":
-  from [Medication: Code '1007368' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "aminophylline / papaverine / phenobarbital1007450Ref":
-  from [Medication: Code '1007450' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxyphencyclimine / phenobarbital1007464Ref":
-  from [Medication: Code '1007464' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "belladonna alkaloids / phenobarbital1007608Ref":
-  from [Medication: Code '1007608' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "mannitol / phenobarbital1007648Ref":
-  from [Medication: Code '1007648' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "estrogens, conjugated (USP) / phenobarbital1007811Ref":
-  from [Medication: Code '1007811' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital / propantheline1007816Ref":
-  from [Medication: Code '1007816' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "belladonna extract, USP / phenobarbital1008045Ref":
-  from [Medication: Code '1008045' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "liver,desiccated / phenobarbital1008144Ref":
-  from [Medication: Code '1008144' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "adiphenine / phenobarbital1008360Ref":
-  from [Medication: Code '1008360' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "glycopyrronium / phenobarbital1008436Ref":
-  from [Medication: Code '1008436' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital / pipenzolate1008613Ref":
-  from [Medication: Code '1008613' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "belladonna alkaloids / caffeine / ergotamine / phenobarbital1008619Ref":
-  from [Medication: Code '1008619' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dehydrocholate / homatropine / phenobarbital1008814Ref":
-  from [Medication: Code '1008814' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "amphetamine / phenobarbital1008860Ref":
-  from [Medication: Code '1008860' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "caffeine / phenobarbital1008949Ref":
-  from [Medication: Code '1008949' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "aminobutyrate / phenobarbital / phenytoin1008991Ref":
-  from [Medication: Code '1008991' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "aspirin / papaverine / phenobarbital1009038Ref":
-  from [Medication: Code '1009038' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ergotamine / levorotatory alkaloids of belladonna / phenobarbital1009102Ref":
-  from [Medication: Code '1009102' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "belladonna alkaloids / ergotamine / phenobarbital1032187Ref":
-  from [Medication: Code '1032187' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine / phenobarbital214263Ref":
-  from [Medication: Code '214263' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ephedrine / phenobarbital / theophylline214542Ref":
-  from [Medication: Code '214542' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "hyoscyamine / phenobarbital261418Ref":
-  from [Medication: Code '261418' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "difebarbamate / febarbamate / phenobarbital37882Ref":
-  from [Medication: Code '37882' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "aprobarbital / butabarbital / phenobarbital689245Ref":
-  from [Medication: Code '689245' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine / hyoscyamine / phenobarbital / scopolamine689606Ref":
-  from [Medication: Code '689606' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine / kaolin / phenobarbital689608Ref":
-  from [Medication: Code '689608' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital / phenytoin689744Ref":
-  from [Medication: Code '689744' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital / potassium iodide / sodium bicarbonate / theobromine689745Ref":
-  from [Medication: Code '689745' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital / sodium nitrite689746Ref":
-  from [Medication: Code '689746' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "acetaminophen / phenobarbital689794Ref":
-  from [Medication: Code '689794' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "benzocaine / calcium carbonate / magnesium carbonate / phenobarbital690250Ref":
-  from [Medication: Code '690250' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dicyclomine / phenobarbital690679Ref":
-  from [Medication: Code '690679' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "aminophylline / ephedrine / guaifenesin / phenobarbital690788Ref":
-  from [Medication: Code '690788' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "aminophylline / ephedrine / phenobarbital690789Ref":
-  from [Medication: Code '690789' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "aminophylline / ephedrine / phenobarbital / potassium iodide690790Ref":
-  from [Medication: Code '690790' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "aminophylline / phenobarbital690792Ref":
-  from [Medication: Code '690792' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "butabarbital / phenobarbital / secobarbital690828Ref":
-  from [Medication: Code '690828' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "calcium carbonate / magnesium hydroxide / phenobarbital691014Ref":
-  from [Medication: Code '691014' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "calcium carbonate / phenobarbital691018Ref":
-  from [Medication: Code '691018' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "calcium gluconate / niacinamide / phenobarbital691028Ref":
-  from [Medication: Code '691028' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dyphylline / ephedrine / guaifenesin / phenobarbital691072Ref":
-  from [Medication: Code '691072' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ephedrine / guaifenesin / phenobarbital / theophylline691226Ref":
-  from [Medication: Code '691226' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ephedrine / phenobarbital691231Ref":
-  from [Medication: Code '691231' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ephedrine / phenobarbital / potassium iodide / theophylline691232Ref":
-  from [Medication: Code '691232' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ergotamine / hyoscyamine / phenobarbital691251Ref":
-  from [Medication: Code '691251' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "niacin / niacinamide / phenobarbital691444Ref":
-  from [Medication: Code '691444' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "aspirin / phenobarbital812525Ref":
-  from [Medication: Code '812525' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "mephobarbital / phenobarbital / phenytoin819182Ref":
-  from [Medication: Code '819182' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine sulfate 0.00388 MG/ML / hyoscyamine sulfate 0.0207 MG/ML / phenobarbital 3.24 MG/ML / scopolamine hydrobromide 0.0013 MG/ML Oral Solution [Donnatal]1046924Ref":
-  from [Medication: Code '1046924' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine sulfate 0.0194 MG / hyoscyamine sulfate 0.1037 MG / phenobarbital 16.2 MG / scopolamine hydrobromide 0.0065 MG Oral Tablet [Donnatal]1046978Ref":
-  from [Medication: Code '1046978' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine sulfate 0.0582 MG / hyoscyamine sulfate 0.311 MG / phenobarbital 48.6 MG / scopolamine hydrobromide 0.0195 MG Extended Release Oral Tablet [Donnatal]1046999Ref":
-  from [Medication: Code '1046999' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine sulfate 0.0194 MG / hyoscyamine sulfate 0.1037 MG / phenobarbital 16.2 MG / scopolamine hydrobromide 0.0065 MG Oral Tablet [Phenohytro]1739887Ref":
-  from [Medication: Code '1739887' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine sulfate 0.00388 MG/ML / hyoscyamine sulfate 0.0207 MG/ML / phenobarbital 3.24 MG/ML / scopolamine hydrobromide 0.0013 MG/ML Oral Solution [Phenohytro]2048017Ref":
-  from [Medication: Code '2048017' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 30 MG Oral Tablet [Nobatol]2559719Ref":
-  from [Medication: Code '2559719' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 60 MG Oral Tablet [Nobatol]2559721Ref":
-  from [Medication: Code '2559721' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital sodium 100 MG Injection [Sezaby]2624724Ref":
-  from [Medication: Code '2624724' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine sulfate 0.0194 MG / hyoscyamine sulfate 0.1037 MG / phenobarbital 16.2 MG / scopolamine hydrobromide 0.0065 MG [Donnatal]1046809Ref":
-  from [Medication: Code '1046809' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine sulfate 0.00388 MG/ML / hyoscyamine sulfate 0.0207 MG/ML / phenobarbital 3.24 MG/ML / scopolamine hydrobromide 0.0013 MG/ML [Donnatal]1046923Ref":
-  from [Medication: Code '1046923' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine sulfate 0.0582 MG / hyoscyamine sulfate 0.311 MG / phenobarbital 48.6 MG / scopolamine hydrobromide 0.0195 MG [Donnatal]1046998Ref":
-  from [Medication: Code '1046998' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine sulfate 0.0194 MG / hyoscyamine sulfate 0.1037 MG / phenobarbital 16.2 MG / scopolamine hydrobromide 0.0065 MG [Phenohytro]1739883Ref":
-  from [Medication: Code '1739883' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine sulfate 0.00388 MG/ML / hyoscyamine sulfate 0.0207 MG/ML / phenobarbital 3.24 MG/ML / scopolamine hydrobromide 0.0013 MG/ML [Phenohytro]2118008Ref":
-  from [Medication: Code '2118008' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 30 MG [Nobatol]2559715Ref":
-  from [Medication: Code '2559715' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 60 MG [Nobatol]2559720Ref":
-  from [Medication: Code '2559720' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital sodium 100 MG [Sezaby]2624721Ref":
-  from [Medication: Code '2624721' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine sulfate 0.00388 MG/ML / hyoscyamine sulfate 0.0207 MG/ML / phenobarbital 3.24 MG/ML / scopolamine hydrobromide 0.0013 MG/ML Oral Solution1046787Ref":
-  from [Medication: Code '1046787' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine sulfate 0.0194 MG / hyoscyamine sulfate 0.1037 MG / phenobarbital 16.2 MG / scopolamine hydrobromide 0.0065 MG Oral Tablet1046815Ref":
-  from [Medication: Code '1046815' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "atropine sulfate 0.0582 MG / hyoscyamine sulfate 0.311 MG / phenobarbital 48.6 MG / scopolamine hydrobromide 0.0195 MG Extended Release Oral Tablet1046997Ref":
-  from [Medication: Code '1046997' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 10 MG/ML Injectable Solution1091265Ref":
-  from [Medication: Code '1091265' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "belladonna alkaloids 0.2 MG / ergotamine tartrate 0.6 MG / phenobarbital 40 MG Oral Tablet1294394Ref":
-  from [Medication: Code '1294394' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 100 MG Oral Tablet198083Ref":
-  from [Medication: Code '198083' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 16 MG Oral Capsule198084Ref":
-  from [Medication: Code '198084' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 16 MG Oral Tablet198085Ref":
-  from [Medication: Code '198085' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 16.2 MG Oral Tablet198086Ref":
-  from [Medication: Code '198086' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 60 MG Oral Tablet198089Ref":
-  from [Medication: Code '198089' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 65 MG/ML Injectable Solution198368Ref":
-  from [Medication: Code '198368' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 97.2 MG Oral Tablet199164Ref":
-  from [Medication: Code '199164' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 32.4 MG Oral Tablet199167Ref":
-  from [Medication: Code '199167' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 64.8 MG Oral Tablet199168Ref":
-  from [Medication: Code '199168' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 200 MG/ML Injectable Solution199964Ref":
-  from [Medication: Code '199964' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 15 MG/ML Injectable Solution251325Ref":
-  from [Medication: Code '251325' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital sodium 100 MG Injection2624719Ref":
-  from [Medication: Code '2624719' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "1 ML phenobarbital sodium 130 MG/ML Injection2671204Ref":
-  from [Medication: Code '2671204' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "1 ML phenobarbital sodium 65 MG/ML Injection2671207Ref":
-  from [Medication: Code '2671207' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 30 MG/ML Injectable Solution282462Ref":
-  from [Medication: Code '282462' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 60 MG/ML Injectable Solution282463Ref":
-  from [Medication: Code '282463' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "belladonna alkaloids 0.13 MG / phenobarbital 16.2 MG Oral Tablet308589Ref":
-  from [Medication: Code '308589' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 15 MG Oral Tablet312357Ref":
-  from [Medication: Code '312357' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 30 MG Oral Tablet312362Ref":
-  from [Medication: Code '312362' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 32 MG Oral Tablet312363Ref":
-  from [Medication: Code '312363' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 90 MG Oral Tablet312368Ref":
-  from [Medication: Code '312368' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 130 MG/ML Injectable Solution312370Ref":
-  from [Medication: Code '312370' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 4 MG/ML Oral Solution702519Ref":
-  from [Medication: Code '702519' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 3 MG/ML Oral Solution756143Ref":
-  from [Medication: Code '756143' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "belladonna alkaloids 0.026 MG/ML / phenobarbital 3.24 MG/ML Oral Solution756260Ref":
-  from [Medication: Code '756260' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 10 MG/ML1091264Ref":
-  from [Medication: Code '1091264' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital sodium 100 MG2624717Ref":
-  from [Medication: Code '2624717' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital sodium 130 MG/ML2671203Ref":
-  from [Medication: Code '2671203' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital sodium 65 MG/ML2671206Ref":
-  from [Medication: Code '2671206' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 100 MG316475Ref":
-  from [Medication: Code '316475' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 15 MG316476Ref":
-  from [Medication: Code '316476' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 15 MG/ML316477Ref":
-  from [Medication: Code '316477' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 16 MG316478Ref":
-  from [Medication: Code '316478' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 16.2 MG316479Ref":
-  from [Medication: Code '316479' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 3 MG/ML316480Ref":
-  from [Medication: Code '316480' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 3.24 MG/ML316481Ref":
-  from [Medication: Code '316481' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 30 MG316483Ref":
-  from [Medication: Code '316483' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 4 MG/ML316484Ref":
-  from [Medication: Code '316484' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 90 MG316488Ref":
-  from [Medication: Code '316488' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 32 MG317461Ref":
-  from [Medication: Code '317461' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 60 MG317463Ref":
-  from [Medication: Code '317463' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 30 MG/ML328565Ref":
-  from [Medication: Code '328565' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 60 MG/ML328567Ref":
-  from [Medication: Code '328567' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 65 MG/ML328569Ref":
-  from [Medication: Code '328569' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 130 MG/ML328572Ref":
-  from [Medication: Code '328572' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 64.8 MG329220Ref":
-  from [Medication: Code '329220' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 32.4 MG331416Ref":
-  from [Medication: Code '331416' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 97.2 MG331417Ref":
-  from [Medication: Code '331417' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 200 MG/ML332311Ref":
-  from [Medication: Code '332311' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 48.6 MG336053Ref":
-  from [Medication: Code '336053' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "phenobarbital 40 MG336345Ref":
-  from [Medication: Code '336345' from rxnorm] M
-    return 'Medication/' + M.id
-
-define rifampin9384Ref:
-  from [Medication: Code '9384' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "isoniazid / rifampin106876Ref":
-  from [Medication: Code '106876' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "isoniazid / pyrazinamide / rifampin214662Ref":
-  from [Medication: Code '214662' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethambutol / isoniazid / rifampin814321Ref":
-  from [Medication: Code '814321' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin / trimethoprim818205Ref":
-  from [Medication: Code '818205' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 150 MG Oral Capsule [Rifadin]201867Ref":
-  from [Medication: Code '201867' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 300 MG Oral Capsule [Rifadin]201868Ref":
-  from [Medication: Code '201868' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "isoniazid 50 MG / pyrazinamide 300 MG / rifampin 120 MG Oral Tablet [Rifater]206698Ref":
-  from [Medication: Code '206698' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "isoniazid 150 MG / rifampin 300 MG Oral Capsule [Rifamate]206702Ref":
-  from [Medication: Code '206702' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 600 MG Injection [Rifadin]207436Ref":
-  from [Medication: Code '207436' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 600 MG [Rifadin]1863367Ref":
-  from [Medication: Code '1863367' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 300 MG [Rifadin]563142Ref":
-  from [Medication: Code '563142' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 150 MG [Rifadin]566037Ref":
-  from [Medication: Code '566037' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "isoniazid 50 MG / pyrazinamide 300 MG / rifampin 120 MG [Rifater]567511Ref":
-  from [Medication: Code '567511' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "isoniazid 150 MG / rifampin 300 MG [Rifamate]567515Ref":
-  from [Medication: Code '567515' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 150 MG Oral Capsule198201Ref":
-  from [Medication: Code '198201' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 300 MG Oral Capsule198202Ref":
-  from [Medication: Code '198202' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "isoniazid 150 MG / rifampin 300 MG Oral Capsule198203Ref":
-  from [Medication: Code '198203' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "isoniazid 50 MG / pyrazinamide 300 MG / rifampin 120 MG Oral Tablet198384Ref":
-  from [Medication: Code '198384' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "isoniazid 100 MG / rifampin 150 MG Oral Tablet199755Ref":
-  from [Medication: Code '199755' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "isoniazid 150 MG / rifampin 300 MG Oral Tablet199756Ref":
-  from [Medication: Code '199756' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 20 MG/ML Oral Suspension246297Ref":
-  from [Medication: Code '246297' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 600 MG Injection312821Ref":
-  from [Medication: Code '312821' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 150 MG316641Ref":
-  from [Medication: Code '316641' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 300 MG316642Ref":
-  from [Medication: Code '316642' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 600 MG323964Ref":
-  from [Medication: Code '323964' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 20 MG/ML333249Ref":
-  from [Medication: Code '333249' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifampin 120 MG335921Ref":
-  from [Medication: Code '335921' from rxnorm] M
-    return 'Medication/' + M.id
-
-define rifabutin55672Ref:
-  from [Medication: Code '55672' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "amoxicillin / omeprazole / rifabutin2262025Ref":
-  from [Medication: Code '2262025' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifabutin 150 MG Oral Capsule [Mycobutin]103899Ref":
-  from [Medication: Code '103899' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "amoxicillin 250 MG / omeprazole 10 MG / rifabutin 12.5 MG Delayed Release Oral Capsule [Talicia]2262032Ref":
-  from [Medication: Code '2262032' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "amoxicillin 250 MG / omeprazole 10 MG / rifabutin 12.5 MG [Talicia]2262028Ref":
-  from [Medication: Code '2262028' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifabutin 150 MG [Mycobutin]563439Ref":
-  from [Medication: Code '563439' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifabutin 150 MG Oral Capsule198200Ref":
-  from [Medication: Code '198200' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "amoxicillin 250 MG / omeprazole 10 MG / rifabutin 12.5 MG Delayed Release Oral Capsule2262026Ref":
-  from [Medication: Code '2262026' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifabutin 12.5 MG2262021Ref":
-  from [Medication: Code '2262021' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifabutin 150 MG316640Ref":
-  from [Medication: Code '316640' from rxnorm] M
-    return 'Medication/' + M.id
-
-define rifapentine35617Ref:
-  from [Medication: Code '35617' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifapentine 150 MG Oral Tablet [Priftin]261101Ref":
-  from [Medication: Code '261101' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifapentine 150 MG [Priftin]574349Ref":
-  from [Medication: Code '574349' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifapentine 150 MG Oral Tablet242671Ref":
-  from [Medication: Code '242671' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "rifapentine 150 MG332427Ref":
-  from [Medication: Code '332427' from rxnorm] M
-    return 'Medication/' + M.id
-
-define modafinil30125Ref:
-  from [Medication: Code '30125' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "modafinil 200 MG Oral Tablet [Provigil]213471Ref":
-  from [Medication: Code '213471' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "modafinil 100 MG Oral Tablet [Provigil]226426Ref":
-  from [Medication: Code '226426' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "modafinil 200 MG [Provigil]573359Ref":
-  from [Medication: Code '573359' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "modafinil 100 MG [Provigil]573988Ref":
-  from [Medication: Code '573988' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "modafinil 200 MG Oral Tablet205324Ref":
-  from [Medication: Code '205324' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "modafinil 100 MG Oral Tablet260218Ref":
-  from [Medication: Code '260218' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "modafinil 100 MG316313Ref":
-  from [Medication: Code '316313' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "modafinil 200 MG316314Ref":
-  from [Medication: Code '316314' from rxnorm] M
-    return 'Medication/' + M.id
-
-define oxcarbazepine32624Ref:
-  from [Medication: Code '32624' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR oxcarbazepine 150 MG Extended Release Oral Tablet [Oxtellar]1365660Ref":
-  from [Medication: Code '1365660' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR oxcarbazepine 300 MG Extended Release Oral Tablet [Oxtellar]1365847Ref":
-  from [Medication: Code '1365847' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR oxcarbazepine 600 MG Extended Release Oral Tablet [Oxtellar]1365850Ref":
-  from [Medication: Code '1365850' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 150 MG Oral Tablet [Trileptal]261356Ref":
-  from [Medication: Code '261356' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 300 MG Oral Tablet [Trileptal]261360Ref":
-  from [Medication: Code '261360' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 600 MG Oral Tablet [Trileptal]262090Ref":
-  from [Medication: Code '262090' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 60 MG/ML Oral Suspension [Trileptal]351992Ref":
-  from [Medication: Code '351992' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 150 MG [Oxtellar]1365656Ref":
-  from [Medication: Code '1365656' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 300 MG [Oxtellar]1365846Ref":
-  from [Medication: Code '1365846' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 600 MG [Oxtellar]1365849Ref":
-  from [Medication: Code '1365849' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 150 MG [Trileptal]574575Ref":
-  from [Medication: Code '574575' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 300 MG [Trileptal]574579Ref":
-  from [Medication: Code '574579' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 600 MG [Trileptal]574672Ref":
-  from [Medication: Code '574672' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 60 MG/ML [Trileptal]575736Ref":
-  from [Medication: Code '575736' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR oxcarbazepine 150 MG Extended Release Oral Tablet1365653Ref":
-  from [Medication: Code '1365653' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR oxcarbazepine 300 MG Extended Release Oral Tablet1365842Ref":
-  from [Medication: Code '1365842' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "24 HR oxcarbazepine 600 MG Extended Release Oral Tablet1365844Ref":
-  from [Medication: Code '1365844' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 60 MG/ML Oral Suspension283536Ref":
-  from [Medication: Code '283536' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 150 MG Oral Tablet312136Ref":
-  from [Medication: Code '312136' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 300 MG Oral Tablet312137Ref":
-  from [Medication: Code '312137' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 600 MG Oral Tablet312138Ref":
-  from [Medication: Code '312138' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 300 MG330392Ref":
-  from [Medication: Code '330392' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 600 MG330393Ref":
-  from [Medication: Code '330393' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 150 MG330866Ref":
-  from [Medication: Code '330866' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "oxcarbazepine 60 MG/ML332278Ref":
-  from [Medication: Code '332278' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "bitter orange oil1314580Ref":
-  from [Medication: Code '1314580' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "grapefruit juice1431224Ref":
-  from [Medication: Code '1431224' from rxnorm] M
-    return 'Medication/' + M.id
-
 context Patient
 
 define "Criterion 1":
@@ -3284,3217 +84,1611 @@ define "Criterion 9":
       P.performed overlaps Interval[@2023-09-01, @2023-10-01])
 
 define "Criterion 10":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{4 (amoxicillin 500 MG Oral Capsule) / 2 (clarithromycin 500 MG Oral Tablet) / 2 (omeprazole 20 MG Delayed Release Oral Capsule) } Pack [Omeclamox]1291987Ref")
-
+  exists [MedicationAdministration: code in Code '1291987' from rxnorm]
 define "Criterion 11":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{56 (amoxicillin 500 MG Oral Capsule) / 28 (clarithromycin 500 MG Oral Tablet) / 28 (vonoprazan 20 MG Oral Tablet) } Pack [Voquezna 14 Day TriplePak 20;500;500]2604804Ref")
-
+  exists [MedicationAdministration: code in Code '2604804' from rxnorm]
 define "Criterion 12":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{4 (amoxicillin 500 MG Oral Capsule [Trimox]) / 2 (clarithromycin 500 MG Oral Tablet [Biaxin]) / 2 (lansoprazole 30 MG Delayed Release Oral Capsule [Prevacid]) } Pack [Prevpac]757969Ref")
-
+  exists [MedicationAdministration: code in Code '757969' from rxnorm]
 define "Criterion 13":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{4 (amoxicillin 500 MG Oral Capsule) / 2 (clarithromycin 500 MG Oral Tablet) / 2 (omeprazole 20 MG Delayed Release Oral Capsule) } Pack1291986Ref")
-
+  exists [MedicationAdministration: code in Code '1291986' from rxnorm]
 define "Criterion 14":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{56 (amoxicillin 500 MG Oral Capsule) / 28 (clarithromycin 500 MG Oral Tablet) / 28 (vonoprazan 20 MG Oral Tablet) } Pack2604803Ref")
-
+  exists [MedicationAdministration: code in Code '2604803' from rxnorm]
 define "Criterion 15":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{4 (amoxicillin 500 MG Oral Capsule) / 2 (clarithromycin 500 MG Oral Tablet) / 2 (lansoprazole 30 MG Delayed Release Oral Capsule) } Pack757968Ref")
-
+  exists [MedicationAdministration: code in Code '757968' from rxnorm]
 define "Criterion 16":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in clarithromycin21212Ref)
-
+  exists [MedicationAdministration: code in Code '21212' from rxnorm]
 define "Criterion 17":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 50 MG/ML Oral Suspension [Biaxin]205860Ref")
-
+  exists [MedicationAdministration: code in Code '205860' from rxnorm]
 define "Criterion 18":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 250 MG Oral Tablet [Biaxin]205863Ref")
-
+  exists [MedicationAdministration: code in Code '205863' from rxnorm]
 define "Criterion 19":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 500 MG Oral Tablet [Biaxin]205866Ref")
-
+  exists [MedicationAdministration: code in Code '205866' from rxnorm]
 define "Criterion 20":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR clarithromycin 500 MG Extended Release Oral Tablet [Biaxin]685543Ref")
-
+  exists [MedicationAdministration: code in Code '685543' from rxnorm]
 define "Criterion 21":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 250 MG [Biaxin]541947Ref")
-
+  exists [MedicationAdministration: code in Code '541947' from rxnorm]
 define "Criterion 22":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 50 MG/ML [Biaxin]566749Ref")
-
+  exists [MedicationAdministration: code in Code '566749' from rxnorm]
 define "Criterion 23":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 500 MG [Biaxin]566754Ref")
-
+  exists [MedicationAdministration: code in Code '566754' from rxnorm]
 define "Criterion 24":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 250 MG Oral Tablet197516Ref")
-
+  exists [MedicationAdministration: code in Code '197516' from rxnorm]
 define "Criterion 25":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 500 MG Oral Tablet197517Ref")
-
+  exists [MedicationAdministration: code in Code '197517' from rxnorm]
 define "Criterion 26":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 25 MG/ML Oral Suspension240741Ref")
-
+  exists [MedicationAdministration: code in Code '240741' from rxnorm]
 define "Criterion 27":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 50 MG/ML Injectable Suspension251854Ref")
-
+  exists [MedicationAdministration: code in Code '251854' from rxnorm]
 define "Criterion 28":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 50 MG/ML Oral Suspension309322Ref")
-
+  exists [MedicationAdministration: code in Code '309322' from rxnorm]
 define "Criterion 29":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR clarithromycin 500 MG Extended Release Oral Tablet359385Ref")
-
+  exists [MedicationAdministration: code in Code '359385' from rxnorm]
 define "Criterion 30":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 1000 MG Extended Release Oral Tablet597455Ref")
-
+  exists [MedicationAdministration: code in Code '597455' from rxnorm]
 define "Criterion 31":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 25 MG/ML315693Ref")
-
+  exists [MedicationAdministration: code in Code '315693' from rxnorm]
 define "Criterion 32":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 250 MG315694Ref")
-
+  exists [MedicationAdministration: code in Code '315694' from rxnorm]
 define "Criterion 33":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 500 MG315695Ref")
-
+  exists [MedicationAdministration: code in Code '315695' from rxnorm]
 define "Criterion 34":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 50 MG/ML317626Ref")
-
+  exists [MedicationAdministration: code in Code '317626' from rxnorm]
 define "Criterion 35":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clarithromycin 1000 MG597454Ref")
-
+  exists [MedicationAdministration: code in Code '597454' from rxnorm]
 define "Criterion 36":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in erythromycin4053Ref)
-
+  exists [MedicationAdministration: code in Code '4053' from rxnorm]
 define "Criterion 37":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "bromhexine / erythromycin1006885Ref")
-
+  exists [MedicationAdministration: code in Code '1006885' from rxnorm]
 define "Criterion 38":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin / sulfisoxazole113588Ref")
-
+  exists [MedicationAdministration: code in Code '113588' from rxnorm]
 define "Criterion 39":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin / isotretinoin392494Ref")
-
+  exists [MedicationAdministration: code in Code '392494' from rxnorm]
 define "Criterion 40":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin / tretinoin392508Ref")
-
+  exists [MedicationAdministration: code in Code '392508' from rxnorm]
 define "Criterion 41":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin / zinc acetate392531Ref")
-
+  exists [MedicationAdministration: code in Code '392531' from rxnorm]
 define "Criterion 42":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "benzoyl peroxide / erythromycin392556Ref")
-
+  exists [MedicationAdministration: code in Code '392556' from rxnorm]
 define "Criterion 43":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin lactobionate 500 MG Injection [Erythrocin]1668267Ref")
-
+  exists [MedicationAdministration: code in Code '1668267' from rxnorm]
 define "Criterion 44":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 250 MG Delayed Release Oral Tablet [Ery-Tab]206075Ref")
-
+  exists [MedicationAdministration: code in Code '206075' from rxnorm]
 define "Criterion 45":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 333 MG Delayed Release Oral Tablet [Ery-Tab]206078Ref")
-
+  exists [MedicationAdministration: code in Code '206078' from rxnorm]
 define "Criterion 46":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 500 MG Delayed Release Oral Tablet [Ery-Tab]206080Ref")
-
+  exists [MedicationAdministration: code in Code '206080' from rxnorm]
 define "Criterion 47":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.02 MG/MG Topical Gel [Emgel]206211Ref")
-
+  exists [MedicationAdministration: code in Code '206211' from rxnorm]
 define "Criterion 48":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.02 MG/MG Topical Gel [Erygel]206212Ref")
-
+  exists [MedicationAdministration: code in Code '206212' from rxnorm]
 define "Criterion 49":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 20 MG/ML Topical Solution [Theramycin]206228Ref")
-
+  exists [MedicationAdministration: code in Code '206228' from rxnorm]
 define "Criterion 50":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "benzoyl peroxide 0.05 MG/MG / erythromycin 0.03 MG/MG Topical Gel [Benzamycin]213082Ref")
-
+  exists [MedicationAdministration: code in Code '213082' from rxnorm]
 define "Criterion 51":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.005 MG/MG Ophthalmic Ointment [Eyemycin]584534Ref")
-
+  exists [MedicationAdministration: code in Code '584534' from rxnorm]
 define "Criterion 52":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 40 MG/ML Oral Suspension [EryPed]686402Ref")
-
+  exists [MedicationAdministration: code in Code '686402' from rxnorm]
 define "Criterion 53":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 80 MG/ML Oral Suspension [EryPed]686420Ref")
-
+  exists [MedicationAdministration: code in Code '686420' from rxnorm]
 define "Criterion 54":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin stearate 250 MG Oral Tablet [Erythrocin Stearate]750839Ref")
-
+  exists [MedicationAdministration: code in Code '750839' from rxnorm]
 define "Criterion 55":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin stearate 500 MG Oral Tablet [Erythrocin Stearate]750841Ref")
-
+  exists [MedicationAdministration: code in Code '750841' from rxnorm]
 define "Criterion 56":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 20 MG/ML Medicated Pad [Emcin Clear]798115Ref")
-
+  exists [MedicationAdministration: code in Code '798115' from rxnorm]
 define "Criterion 57":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 20 MG/ML Medicated Pad [Ery]798133Ref")
-
+  exists [MedicationAdministration: code in Code '798133' from rxnorm]
 define "Criterion 58":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 40 MG/ML Oral Suspension [E.E.S.]863603Ref")
-
+  exists [MedicationAdministration: code in Code '863603' from rxnorm]
 define "Criterion 59":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 400 MG Oral Tablet [E.E.S.]863606Ref")
-
+  exists [MedicationAdministration: code in Code '863606' from rxnorm]
 define "Criterion 60":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.0053 MG/ML Topical Solution [Maracyn]890957Ref")
-
+  exists [MedicationAdministration: code in Code '890957' from rxnorm]
 define "Criterion 61":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin lactobionate 500 MG [Erythrocin]1720314Ref")
-
+  exists [MedicationAdministration: code in Code '1720314' from rxnorm]
 define "Criterion 62":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 250 MG [Ery-Tab]566951Ref")
-
+  exists [MedicationAdministration: code in Code '566951' from rxnorm]
 define "Criterion 63":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 333 MG [Ery-Tab]566954Ref")
-
+  exists [MedicationAdministration: code in Code '566954' from rxnorm]
 define "Criterion 64":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 500 MG [Ery-Tab]566956Ref")
-
+  exists [MedicationAdministration: code in Code '566956' from rxnorm]
 define "Criterion 65":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.02 MG/MG [Emgel]567074Ref")
-
+  exists [MedicationAdministration: code in Code '567074' from rxnorm]
 define "Criterion 66":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.02 MG/MG [Erygel]567075Ref")
-
+  exists [MedicationAdministration: code in Code '567075' from rxnorm]
 define "Criterion 67":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 20 MG/ML [Theramycin]567090Ref")
-
+  exists [MedicationAdministration: code in Code '567090' from rxnorm]
 define "Criterion 68":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "benzoyl peroxide 0.05 MG/MG / erythromycin 0.03 MG/MG [Benzamycin]573012Ref")
-
+  exists [MedicationAdministration: code in Code '573012' from rxnorm]
 define "Criterion 69":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.005 MG/MG [Eyemycin]584532Ref")
-
+  exists [MedicationAdministration: code in Code '584532' from rxnorm]
 define "Criterion 70":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 40 MG/ML [EryPed]686401Ref")
-
+  exists [MedicationAdministration: code in Code '686401' from rxnorm]
 define "Criterion 71":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 80 MG/ML [EryPed]686419Ref")
-
+  exists [MedicationAdministration: code in Code '686419' from rxnorm]
 define "Criterion 72":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin stearate 250 MG [Erythrocin Stearate]750837Ref")
-
+  exists [MedicationAdministration: code in Code '750837' from rxnorm]
 define "Criterion 73":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin stearate 500 MG [Erythrocin Stearate]750840Ref")
-
+  exists [MedicationAdministration: code in Code '750840' from rxnorm]
 define "Criterion 74":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 20 MG/ML [Emcin Clear]798113Ref")
-
+  exists [MedicationAdministration: code in Code '798113' from rxnorm]
 define "Criterion 75":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 20 MG/ML [Ery]798131Ref")
-
+  exists [MedicationAdministration: code in Code '798131' from rxnorm]
 define "Criterion 76":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 40 MG/ML [E.E.S.]863601Ref")
-
+  exists [MedicationAdministration: code in Code '863601' from rxnorm]
 define "Criterion 77":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 400 MG [E.E.S.]863604Ref")
-
+  exists [MedicationAdministration: code in Code '863604' from rxnorm]
 define "Criterion 78":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.0053 MG/ML [Maracyn]890955Ref")
-
+  exists [MedicationAdministration: code in Code '890955' from rxnorm]
 define "Criterion 79":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 20 MG/ML Topical Lotion103518Ref")
-
+  exists [MedicationAdministration: code in Code '103518' from rxnorm]
 define "Criterion 80":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 40 MG/ML / zinc acetate 12 MG/ML Topical Solution106307Ref")
-
+  exists [MedicationAdministration: code in Code '106307' from rxnorm]
 define "Criterion 81":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.02 MG/MG / isotretinoin 0.0005 MG/MG Topical Gel153371Ref")
-
+  exists [MedicationAdministration: code in Code '153371' from rxnorm]
 define "Criterion 82":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin lactobionate 500 MG Injection1668264Ref")
-
+  exists [MedicationAdministration: code in Code '1668264' from rxnorm]
 define "Criterion 83":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 500 MG Oral Tablet197650Ref")
-
+  exists [MedicationAdministration: code in Code '197650' from rxnorm]
 define "Criterion 84":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "benzoyl peroxide 0.05 MG/MG / erythromycin 0.03 MG/MG Topical Gel244374Ref")
-
+  exists [MedicationAdministration: code in Code '244374' from rxnorm]
 define "Criterion 85":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.04 MG/MG Topical Gel250697Ref")
-
+  exists [MedicationAdministration: code in Code '250697' from rxnorm]
 define "Criterion 86":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.005 MG/MG Ophthalmic Ointment310149Ref")
-
+  exists [MedicationAdministration: code in Code '310149' from rxnorm]
 define "Criterion 87":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 15 MG/ML Topical Solution310150Ref")
-
+  exists [MedicationAdministration: code in Code '310150' from rxnorm]
 define "Criterion 88":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.02 MG/MG Topical Gel310152Ref")
-
+  exists [MedicationAdministration: code in Code '310152' from rxnorm]
 define "Criterion 89":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 250 MG Delayed Release Oral Capsule310154Ref")
-
+  exists [MedicationAdministration: code in Code '310154' from rxnorm]
 define "Criterion 90":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 250 MG Delayed Release Oral Tablet310155Ref")
-
+  exists [MedicationAdministration: code in Code '310155' from rxnorm]
 define "Criterion 91":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 500 MG Delayed Release Oral Tablet310157Ref")
-
+  exists [MedicationAdministration: code in Code '310157' from rxnorm]
 define "Criterion 92":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 25 MG/ML Oral Suspension313968Ref")
-
+  exists [MedicationAdministration: code in Code '313968' from rxnorm]
 define "Criterion 93":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 333 MG Delayed Release Oral Tablet315090Ref")
-
+  exists [MedicationAdministration: code in Code '315090' from rxnorm]
 define "Criterion 94":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 20 MG/ML Topical Solution318202Ref")
-
+  exists [MedicationAdministration: code in Code '318202' from rxnorm]
 define "Criterion 95":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.005 MG/MG Topical Ointment349148Ref")
-
+  exists [MedicationAdministration: code in Code '349148' from rxnorm]
 define "Criterion 96":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 40 MG/ML / tretinoin 0.25 MG/ML Topical Solution389251Ref")
-
+  exists [MedicationAdministration: code in Code '389251' from rxnorm]
 define "Criterion 97":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 100 MG/ML Oral Suspension425351Ref")
-
+  exists [MedicationAdministration: code in Code '425351' from rxnorm]
 define "Criterion 98":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin estolate 500 MG Oral Tablet486912Ref")
-
+  exists [MedicationAdministration: code in Code '486912' from rxnorm]
 define "Criterion 99":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin estolate 250 MG Oral Capsule486955Ref")
-
+  exists [MedicationAdministration: code in Code '486955' from rxnorm]
 define "Criterion 100":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin estolate 25 MG/ML Oral Suspension486960Ref")
-
+  exists [MedicationAdministration: code in Code '486960' from rxnorm]
 define "Criterion 101":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 50 MG/ML Oral Suspension597193Ref")
-
+  exists [MedicationAdministration: code in Code '597193' from rxnorm]
 define "Criterion 102":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin estolate 50 MG/ML Oral Suspension597194Ref")
-
+  exists [MedicationAdministration: code in Code '597194' from rxnorm]
 define "Criterion 103":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 250 MG Oral Tablet598006Ref")
-
+  exists [MedicationAdministration: code in Code '598006' from rxnorm]
 define "Criterion 104":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 250 MG Oral Capsule598008Ref")
-
+  exists [MedicationAdministration: code in Code '598008' from rxnorm]
 define "Criterion 105":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 200 MG Chewable Tablet686350Ref")
-
+  exists [MedicationAdministration: code in Code '686350' from rxnorm]
 define "Criterion 106":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin stearate 250 MG Oral Tablet686355Ref")
-
+  exists [MedicationAdministration: code in Code '686355' from rxnorm]
 define "Criterion 107":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 40 MG/ML Oral Suspension686400Ref")
-
+  exists [MedicationAdministration: code in Code '686400' from rxnorm]
 define "Criterion 108":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 400 MG Oral Tablet686405Ref")
-
+  exists [MedicationAdministration: code in Code '686405' from rxnorm]
 define "Criterion 109":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin stearate 500 MG Oral Tablet686406Ref")
-
+  exists [MedicationAdministration: code in Code '686406' from rxnorm]
 define "Criterion 110":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 80 MG/ML Oral Suspension686418Ref")
-
+  exists [MedicationAdministration: code in Code '686418' from rxnorm]
 define "Criterion 111":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 20 MG/ML Medicated Pad797452Ref")
-
+  exists [MedicationAdministration: code in Code '797452' from rxnorm]
 define "Criterion 112":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.0053 MG/ML Topical Solution890953Ref")
-
+  exists [MedicationAdministration: code in Code '890953' from rxnorm]
 define "Criterion 113":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin lactobionate 500 MG1668262Ref")
-
+  exists [MedicationAdministration: code in Code '1668262' from rxnorm]
 define "Criterion 114":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 25 MG/ML315875Ref")
-
+  exists [MedicationAdministration: code in Code '315875' from rxnorm]
 define "Criterion 115":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 333 MG315876Ref")
-
+  exists [MedicationAdministration: code in Code '315876' from rxnorm]
 define "Criterion 116":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 500 MG315877Ref")
-
+  exists [MedicationAdministration: code in Code '315877' from rxnorm]
 define "Criterion 117":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 250 MG317364Ref")
-
+  exists [MedicationAdministration: code in Code '317364' from rxnorm]
 define "Criterion 118":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.005 MG/MG328349Ref")
-
+  exists [MedicationAdministration: code in Code '328349' from rxnorm]
 define "Criterion 119":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 50 MG/ML328353Ref")
-
+  exists [MedicationAdministration: code in Code '328353' from rxnorm]
 define "Criterion 120":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 40 MG/ML328354Ref")
-
+  exists [MedicationAdministration: code in Code '328354' from rxnorm]
 define "Criterion 121":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.03 MG/MG329378Ref")
-
+  exists [MedicationAdministration: code in Code '329378' from rxnorm]
 define "Criterion 122":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 15 MG/ML329729Ref")
-
+  exists [MedicationAdministration: code in Code '329729' from rxnorm]
 define "Criterion 123":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 20 MG/ML329730Ref")
-
+  exists [MedicationAdministration: code in Code '329730' from rxnorm]
 define "Criterion 124":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 100 MG/ML329731Ref")
-
+  exists [MedicationAdministration: code in Code '329731' from rxnorm]
 define "Criterion 125":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.04 MG/MG339992Ref")
-
+  exists [MedicationAdministration: code in Code '339992' from rxnorm]
 define "Criterion 126":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.02 MG/MG340095Ref")
-
+  exists [MedicationAdministration: code in Code '340095' from rxnorm]
 define "Criterion 127":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin estolate 500 MG486911Ref")
-
+  exists [MedicationAdministration: code in Code '486911' from rxnorm]
 define "Criterion 128":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin estolate 250 MG486953Ref")
-
+  exists [MedicationAdministration: code in Code '486953' from rxnorm]
 define "Criterion 129":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin estolate 50 MG/ML486956Ref")
-
+  exists [MedicationAdministration: code in Code '486956' from rxnorm]
 define "Criterion 130":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin estolate 25 MG/ML486959Ref")
-
+  exists [MedicationAdministration: code in Code '486959' from rxnorm]
 define "Criterion 131":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin stearate 500 MG487139Ref")
-
+  exists [MedicationAdministration: code in Code '487139' from rxnorm]
 define "Criterion 132":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin stearate 250 MG487143Ref")
-
+  exists [MedicationAdministration: code in Code '487143' from rxnorm]
 define "Criterion 133":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 200 MG686349Ref")
-
+  exists [MedicationAdministration: code in Code '686349' from rxnorm]
 define "Criterion 134":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 40 MG/ML686382Ref")
-
+  exists [MedicationAdministration: code in Code '686382' from rxnorm]
 define "Criterion 135":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 400 MG686404Ref")
-
+  exists [MedicationAdministration: code in Code '686404' from rxnorm]
 define "Criterion 136":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin ethylsuccinate 80 MG/ML686417Ref")
-
+  exists [MedicationAdministration: code in Code '686417' from rxnorm]
 define "Criterion 137":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "erythromycin 0.0053 MG/ML890952Ref")
-
+  exists [MedicationAdministration: code in Code '890952' from rxnorm]
 define "Criterion 138":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in troleandomycin10864Ref)
-
+  exists [MedicationAdministration: code in Code '10864' from rxnorm]
 define "Criterion 139":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "troleandomycin 250 MG Oral Capsule198337Ref")
-
+  exists [MedicationAdministration: code in Code '198337' from rxnorm]
 define "Criterion 140":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "troleandomycin 250 MG328768Ref")
-
+  exists [MedicationAdministration: code in Code '328768' from rxnorm]
 define "Criterion 141":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in itraconazole28031Ref)
-
+  exists [MedicationAdministration: code in Code '28031' from rxnorm]
 define "Criterion 142":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole / secnidazole1008830Ref")
-
+  exists [MedicationAdministration: code in Code '1008830' from rxnorm]
 define "Criterion 143":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 10 MG/ML Oral Solution [Sporanox]152854Ref")
-
+  exists [MedicationAdministration: code in Code '152854' from rxnorm]
 define "Criterion 144":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 65 MG Oral Capsule [Tolsura]2106648Ref")
-
+  exists [MedicationAdministration: code in Code '2106648' from rxnorm]
 define "Criterion 145":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 100 MG Oral Capsule [Sporanox]833164Ref")
-
+  exists [MedicationAdministration: code in Code '833164' from rxnorm]
 define "Criterion 146":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 65 MG [Tolsura]2106644Ref")
-
+  exists [MedicationAdministration: code in Code '2106644' from rxnorm]
 define "Criterion 147":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 10 MG/ML [Sporanox]545186Ref")
-
+  exists [MedicationAdministration: code in Code '545186' from rxnorm]
 define "Criterion 148":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 100 MG [Sporanox]833162Ref")
-
+  exists [MedicationAdministration: code in Code '833162' from rxnorm]
 define "Criterion 149":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 65 MG Oral Capsule2106642Ref")
-
+  exists [MedicationAdministration: code in Code '2106642' from rxnorm]
 define "Criterion 150":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 100 MG Oral Capsule311204Ref")
-
+  exists [MedicationAdministration: code in Code '311204' from rxnorm]
 define "Criterion 151":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 10 MG/ML Injectable Solution311205Ref")
-
+  exists [MedicationAdministration: code in Code '311205' from rxnorm]
 define "Criterion 152":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 10 MG/ML Oral Solution348506Ref")
-
+  exists [MedicationAdministration: code in Code '348506' from rxnorm]
 define "Criterion 153":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 200 MG Oral Tablet992413Ref")
-
+  exists [MedicationAdministration: code in Code '992413' from rxnorm]
 define "Criterion 154":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 65 MG2106641Ref")
-
+  exists [MedicationAdministration: code in Code '2106641' from rxnorm]
 define "Criterion 155":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 10 MG/ML316113Ref")
-
+  exists [MedicationAdministration: code in Code '316113' from rxnorm]
 define "Criterion 156":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 100 MG317394Ref")
-
+  exists [MedicationAdministration: code in Code '317394' from rxnorm]
 define "Criterion 157":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "itraconazole 200 MG992412Ref")
-
+  exists [MedicationAdministration: code in Code '992412' from rxnorm]
 define "Criterion 158":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in ketoconazole6135Ref)
-
+  exists [MedicationAdministration: code in Code '6135' from rxnorm]
 define "Criterion 159":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "hydrocortisone / ketoconazole1008033Ref")
-
+  exists [MedicationAdministration: code in Code '1008033' from rxnorm]
 define "Criterion 160":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole / secnidazole1008066Ref")
-
+  exists [MedicationAdministration: code in Code '1008066' from rxnorm]
 define "Criterion 161":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chloroxylenol / ketoconazole1091891Ref")
-
+  exists [MedicationAdministration: code in Code '1091891' from rxnorm]
 define "Criterion 162":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole / lactate / salicylic acid1371360Ref")
-
+  exists [MedicationAdministration: code in Code '1371360' from rxnorm]
 define "Criterion 163":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine / ketoconazole1371364Ref")
-
+  exists [MedicationAdministration: code in Code '1371364' from rxnorm]
 define "Criterion 164":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "acetic acid / chlorhexidine / ketoconazole1439947Ref")
-
+  exists [MedicationAdministration: code in Code '1439947' from rxnorm]
 define "Criterion 165":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine / ketoconazole / salicyloyl phytosphingosine1484769Ref")
-
+  exists [MedicationAdministration: code in Code '1484769' from rxnorm]
 define "Criterion 166":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole / phytosphingosine1534845Ref")
-
+  exists [MedicationAdministration: code in Code '1534845' from rxnorm]
 define "Criterion 167":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine / hydrocortisone / ketoconazole1648131Ref")
-
+  exists [MedicationAdministration: code in Code '1648131' from rxnorm]
 define "Criterion 168":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole / salicylic acid2669487Ref")
-
+  exists [MedicationAdministration: code in Code '2669487' from rxnorm]
 define "Criterion 169":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Topical Spray [Pharmaseb]1092591Ref")
-
+  exists [MedicationAdministration: code in Code '1092591' from rxnorm]
 define "Criterion 170":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Topical Solution [Pharmaseb]1092678Ref")
-
+  exists [MedicationAdministration: code in Code '1092678' from rxnorm]
 define "Criterion 171":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Medicated Pad [Pharmaseb]1092680Ref")
-
+  exists [MedicationAdministration: code in Code '1092680' from rxnorm]
 define "Criterion 172":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chloroxylenol 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo [Pharmaseb]1092683Ref")
-
+  exists [MedicationAdministration: code in Code '1092683' from rxnorm]
 define "Criterion 173":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 1 MG/ML Topical Solution [T8 Keto Flush]1297965Ref")
-
+  exists [MedicationAdministration: code in Code '1297965' from rxnorm]
 define "Criterion 174":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 20 MG/ML Topical Foam [Ketodan]1300272Ref")
-
+  exists [MedicationAdministration: code in Code '1300272' from rxnorm]
 define "Criterion 175":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo [Vital-Ketodine]1424021Ref")
-
+  exists [MedicationAdministration: code in Code '1424021' from rxnorm]
 define "Criterion 176":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "acetic acid 20 MG/ML / chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo [Mal-A-Ket]1439953Ref")
-
+  exists [MedicationAdministration: code in Code '1439953' from rxnorm]
 define "Criterion 177":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 23 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo [Ketochlor]1482662Ref")
-
+  exists [MedicationAdministration: code in Code '1482662' from rxnorm]
 define "Criterion 178":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML Topical Solution [Keto-C]1797511Ref")
-
+  exists [MedicationAdministration: code in Code '1797511' from rxnorm]
 define "Criterion 179":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Topical Spray [Keto-C]1797515Ref")
-
+  exists [MedicationAdministration: code in Code '1797515' from rxnorm]
 define "Criterion 180":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo [Keto-C]1798546Ref")
-
+  exists [MedicationAdministration: code in Code '1798546' from rxnorm]
 define "Criterion 181":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine 0.02 MG/MG / ketoconazole 0.01 MG/MG Medicated Pad [Keto-C]1994337Ref")
-
+  exists [MedicationAdministration: code in Code '1994337' from rxnorm]
 define "Criterion 182":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 20 MG/ML Medicated Shampoo [Nizoral]206978Ref")
-
+  exists [MedicationAdministration: code in Code '206978' from rxnorm]
 define "Criterion 183":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Pad [Mal-A-Ket Wipes]2532527Ref")
-
+  exists [MedicationAdministration: code in Code '2532527' from rxnorm]
 define "Criterion 184":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "levoketoconazole 150 MG Oral Tablet [Recorlev]2588854Ref")
-
+  exists [MedicationAdministration: code in Code '2588854' from rxnorm]
 define "Criterion 185":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "hydrocortisone 10 MG/ML / ketoconazole 1.5 MG/ML Otic Solution [Malacetic]2639748Ref")
-
+  exists [MedicationAdministration: code in Code '2639748' from rxnorm]
 define "Criterion 186":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 20 MG/ML Topical Cream [Kuric]604651Ref")
-
+  exists [MedicationAdministration: code in Code '604651' from rxnorm]
 define "Criterion 187":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 10 MG/ML Medicated Shampoo [Nizoral]608844Ref")
-
+  exists [MedicationAdministration: code in Code '608844' from rxnorm]
 define "Criterion 188":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 0.02 MG/MG Topical Gel [Xolegel]664961Ref")
-
+  exists [MedicationAdministration: code in Code '664961' from rxnorm]
 define "Criterion 189":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 20 MG/ML Topical Foam [Extina]729768Ref")
-
+  exists [MedicationAdministration: code in Code '729768' from rxnorm]
 define "Criterion 190":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML [Pharmaseb]1092589Ref")
-
+  exists [MedicationAdministration: code in Code '1092589' from rxnorm]
 define "Criterion 191":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chloroxylenol 20 MG/ML / ketoconazole 10 MG/ML [Pharmaseb]1092681Ref")
-
+  exists [MedicationAdministration: code in Code '1092681' from rxnorm]
 define "Criterion 192":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 1 MG/ML [T8 Keto Flush]1297962Ref")
-
+  exists [MedicationAdministration: code in Code '1297962' from rxnorm]
 define "Criterion 193":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 20 MG/ML [Ketodan]1300269Ref")
-
+  exists [MedicationAdministration: code in Code '1300269' from rxnorm]
 define "Criterion 194":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML [Vital-Ketodine]1424018Ref")
-
+  exists [MedicationAdministration: code in Code '1424018' from rxnorm]
 define "Criterion 195":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "acetic acid 20 MG/ML / chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML [Mal-A-Ket]1439950Ref")
-
+  exists [MedicationAdministration: code in Code '1439950' from rxnorm]
 define "Criterion 196":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 23 MG/ML / ketoconazole 10 MG/ML [Ketochlor]1482659Ref")
-
+  exists [MedicationAdministration: code in Code '1482659' from rxnorm]
 define "Criterion 197":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML [Keto-C]1797508Ref")
-
+  exists [MedicationAdministration: code in Code '1797508' from rxnorm]
 define "Criterion 198":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML [Keto-C]1797513Ref")
-
+  exists [MedicationAdministration: code in Code '1797513' from rxnorm]
 define "Criterion 199":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine 0.02 MG/MG / ketoconazole 0.01 MG/MG [Keto-C]1994334Ref")
-
+  exists [MedicationAdministration: code in Code '1994334' from rxnorm]
 define "Criterion 200":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "hydrocortisone 10 MG/ML / ketoconazole 1.5 MG/ML [Malacetic]2003647Ref")
-
+  exists [MedicationAdministration: code in Code '2003647' from rxnorm]
 define "Criterion 201":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML [Mal-A-Ket Wipes]2532523Ref")
-
+  exists [MedicationAdministration: code in Code '2532523' from rxnorm]
 define "Criterion 202":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "levoketoconazole 150 MG [Recorlev]2588850Ref")
-
+  exists [MedicationAdministration: code in Code '2588850' from rxnorm]
 define "Criterion 203":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 20 MG/ML [Nizoral]564507Ref")
-
+  exists [MedicationAdministration: code in Code '564507' from rxnorm]
 define "Criterion 204":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 20 MG/ML [Kuric]604649Ref")
-
+  exists [MedicationAdministration: code in Code '604649' from rxnorm]
 define "Criterion 205":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 10 MG/ML [Nizoral]608843Ref")
-
+  exists [MedicationAdministration: code in Code '608843' from rxnorm]
 define "Criterion 206":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 0.02 MG/MG [Xolegel]664959Ref")
-
+  exists [MedicationAdministration: code in Code '664959' from rxnorm]
 define "Criterion 207":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 20 MG/ML [Extina]729766Ref")
-
+  exists [MedicationAdministration: code in Code '729766' from rxnorm]
 define "Criterion 208":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 20 MG/ML Medicated Shampoo106336Ref")
-
+  exists [MedicationAdministration: code in Code '106336' from rxnorm]
 define "Criterion 209":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chloroxylenol 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo1091892Ref")
-
+  exists [MedicationAdministration: code in Code '1091892' from rxnorm]
 define "Criterion 210":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Topical Solution1092209Ref")
-
+  exists [MedicationAdministration: code in Code '1092209' from rxnorm]
 define "Criterion 211":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Medicated Pad1092217Ref")
-
+  exists [MedicationAdministration: code in Code '1092217' from rxnorm]
 define "Criterion 212":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chloroxylenol 3 MG/ML / ketoconazole 3 MG/ML Topical Spray1092587Ref")
-
+  exists [MedicationAdministration: code in Code '1092587' from rxnorm]
 define "Criterion 213":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 1 MG/ML Topical Solution1297960Ref")
-
+  exists [MedicationAdministration: code in Code '1297960' from rxnorm]
 define "Criterion 214":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Topical Spray1371365Ref")
-
+  exists [MedicationAdministration: code in Code '1371365' from rxnorm]
 define "Criterion 215":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo1424016Ref")
-
+  exists [MedicationAdministration: code in Code '1424016' from rxnorm]
 define "Criterion 216":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "acetic acid 20 MG/ML / chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo1439948Ref")
-
+  exists [MedicationAdministration: code in Code '1439948' from rxnorm]
 define "Criterion 217":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 23 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo1482657Ref")
-
+  exists [MedicationAdministration: code in Code '1482657' from rxnorm]
 define "Criterion 218":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML / salicyloyl phytosphingosine 0.5 MG/ML Medicated Shampoo1484770Ref")
-
+  exists [MedicationAdministration: code in Code '1484770' from rxnorm]
 define "Criterion 219":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 3 MG/ML / ketoconazole 3 MG/ML Topical Solution1485182Ref")
-
+  exists [MedicationAdministration: code in Code '1485182' from rxnorm]
 define "Criterion 220":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML / salicyloyl phytosphingosine 0.2 MG/ML Topical Solution1495165Ref")
-
+  exists [MedicationAdministration: code in Code '1495165' from rxnorm]
 define "Criterion 221":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML / salicyloyl phytosphingosine 0.2 MG/ML Topical Spray1495199Ref")
-
+  exists [MedicationAdministration: code in Code '1495199' from rxnorm]
 define "Criterion 222":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 1 MG/ML / phytosphingosine 0.1 MG/ML Topical Solution1534846Ref")
-
+  exists [MedicationAdministration: code in Code '1534846' from rxnorm]
 define "Criterion 223":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 10 MG/ML / ketoconazole 2.5 MG/ML Medicated Shampoo1537189Ref")
-
+  exists [MedicationAdministration: code in Code '1537189' from rxnorm]
 define "Criterion 224":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 10 MG/ML / ketoconazole 2.5 MG/ML Topical Spray1537336Ref")
-
+  exists [MedicationAdministration: code in Code '1537336' from rxnorm]
 define "Criterion 225":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "hydrocortisone 0.01 MG/MG / ketoconazole 0.0015 MG/MG Otic Ointment1606353Ref")
-
+  exists [MedicationAdministration: code in Code '1606353' from rxnorm]
 define "Criterion 226":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / hydrocortisone 10 MG/ML / ketoconazole 10 MG/ML Medicated Shampoo1648132Ref")
-
+  exists [MedicationAdministration: code in Code '1648132' from rxnorm]
 define "Criterion 227":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML / salicyloyl phytosphingosine 0.5 MG/ML Topical Foam1732122Ref")
-
+  exists [MedicationAdministration: code in Code '1732122' from rxnorm]
 define "Criterion 228":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML / salicyloyl phytosphingosine 0.4 MG/ML Medicated Pad1739988Ref")
-
+  exists [MedicationAdministration: code in Code '1739988' from rxnorm]
 define "Criterion 229":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML Topical Solution1797506Ref")
-
+  exists [MedicationAdministration: code in Code '1797506' from rxnorm]
 define "Criterion 230":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Medicated Pad1798297Ref")
-
+  exists [MedicationAdministration: code in Code '1798297' from rxnorm]
 define "Criterion 231":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Topical Lotion1805285Ref")
-
+  exists [MedicationAdministration: code in Code '1805285' from rxnorm]
 define "Criterion 232":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 200 MG Oral Tablet197853Ref")
-
+  exists [MedicationAdministration: code in Code '197853' from rxnorm]
 define "Criterion 233":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine 0.02 MG/MG / ketoconazole 0.01 MG/MG Medicated Pad1994333Ref")
-
+  exists [MedicationAdministration: code in Code '1994333' from rxnorm]
 define "Criterion 234":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 20 MG/ML Topical Cream203088Ref")
-
+  exists [MedicationAdministration: code in Code '203088' from rxnorm]
 define "Criterion 235":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 10 MG/ML Medicated Shampoo240812Ref")
-
+  exists [MedicationAdministration: code in Code '240812' from rxnorm]
 define "Criterion 236":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML Otic Solution2458971Ref")
-
+  exists [MedicationAdministration: code in Code '2458971' from rxnorm]
 define "Criterion 237":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / ketoconazole 10 MG/ML Topical Foam2538834Ref")
-
+  exists [MedicationAdministration: code in Code '2538834' from rxnorm]
 define "Criterion 238":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "levoketoconazole 150 MG Oral Tablet2588848Ref")
-
+  exists [MedicationAdministration: code in Code '2588848' from rxnorm]
 define "Criterion 239":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 2 MG/ML / ketoconazole 2 MG/ML Medicated Pad2604934Ref")
-
+  exists [MedicationAdministration: code in Code '2604934' from rxnorm]
 define "Criterion 240":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 2 MG/ML Otic Solution2609847Ref")
-
+  exists [MedicationAdministration: code in Code '2609847' from rxnorm]
 define "Criterion 241":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "hydrocortisone 10 MG/ML / ketoconazole 1.5 MG/ML Otic Solution2639745Ref")
-
+  exists [MedicationAdministration: code in Code '2639745' from rxnorm]
 define "Criterion 242":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chlorhexidine gluconate 20 MG/ML / hydrocortisone 5 MG/ML / ketoconazole 10 MG/ML Topical Spray2663929Ref")
-
+  exists [MedicationAdministration: code in Code '2663929' from rxnorm]
 define "Criterion 243":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 1 MG/ML / salicylic acid 1.5 MG/ML Otic Solution2669490Ref")
-
+  exists [MedicationAdministration: code in Code '2669490' from rxnorm]
 define "Criterion 244":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 0.02 MG/MG Topical Gel647253Ref")
-
+  exists [MedicationAdministration: code in Code '647253' from rxnorm]
 define "Criterion 245":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 20 MG/ML Topical Foam728550Ref")
-
+  exists [MedicationAdministration: code in Code '728550' from rxnorm]
 define "Criterion 246":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 3 MG/ML1092207Ref")
-
+  exists [MedicationAdministration: code in Code '1092207' from rxnorm]
 define "Criterion 247":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 1 MG/ML1297958Ref")
-
+  exists [MedicationAdministration: code in Code '1297958' from rxnorm]
 define "Criterion 248":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 2 MG/ML1495161Ref")
-
+  exists [MedicationAdministration: code in Code '1495161' from rxnorm]
 define "Criterion 249":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 2.5 MG/ML1537188Ref")
-
+  exists [MedicationAdministration: code in Code '1537188' from rxnorm]
 define "Criterion 250":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 0.0015 MG/MG1606350Ref")
-
+  exists [MedicationAdministration: code in Code '1606350' from rxnorm]
 define "Criterion 251":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 1.5 MG/ML2003642Ref")
-
+  exists [MedicationAdministration: code in Code '2003642' from rxnorm]
 define "Criterion 252":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "levoketoconazole 150 MG2588847Ref")
-
+  exists [MedicationAdministration: code in Code '2588847' from rxnorm]
 define "Criterion 253":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 200 MG317396Ref")
-
+  exists [MedicationAdministration: code in Code '317396' from rxnorm]
 define "Criterion 254":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 20 MG/ML330469Ref")
-
+  exists [MedicationAdministration: code in Code '330469' from rxnorm]
 define "Criterion 255":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 10 MG/ML335100Ref")
-
+  exists [MedicationAdministration: code in Code '335100' from rxnorm]
 define "Criterion 256":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 0.02 MG/MG402681Ref")
-
+  exists [MedicationAdministration: code in Code '402681' from rxnorm]
 define "Criterion 257":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ketoconazole 0.01 MG/MG402917Ref")
-
+  exists [MedicationAdministration: code in Code '402917' from rxnorm]
 define "Criterion 258":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in voriconazole121243Ref)
-
+  exists [MedicationAdministration: code in Code '121243' from rxnorm]
 define "Criterion 259":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 50 MG Oral Tablet [Vfend]352218Ref")
-
+  exists [MedicationAdministration: code in Code '352218' from rxnorm]
 define "Criterion 260":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 200 MG Oral Tablet [Vfend]352219Ref")
-
+  exists [MedicationAdministration: code in Code '352219' from rxnorm]
 define "Criterion 261":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 200 MG Injection [Vfend]352220Ref")
-
+  exists [MedicationAdministration: code in Code '352220' from rxnorm]
 define "Criterion 262":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 40 MG/ML Oral Suspension [Vfend]546624Ref")
-
+  exists [MedicationAdministration: code in Code '546624' from rxnorm]
 define "Criterion 263":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 40 MG/ML [Vfend]546622Ref")
-
+  exists [MedicationAdministration: code in Code '546622' from rxnorm]
 define "Criterion 264":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 50 MG [Vfend]575939Ref")
-
+  exists [MedicationAdministration: code in Code '575939' from rxnorm]
 define "Criterion 265":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 200 MG [Vfend]575940Ref")
-
+  exists [MedicationAdministration: code in Code '575940' from rxnorm]
 define "Criterion 266":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 200 MG Oral Tablet349434Ref")
-
+  exists [MedicationAdministration: code in Code '349434' from rxnorm]
 define "Criterion 267":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 50 MG Oral Tablet349435Ref")
-
+  exists [MedicationAdministration: code in Code '349435' from rxnorm]
 define "Criterion 268":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 200 MG Injection351209Ref")
-
+  exists [MedicationAdministration: code in Code '351209' from rxnorm]
 define "Criterion 269":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 40 MG/ML Oral Suspension465355Ref")
-
+  exists [MedicationAdministration: code in Code '465355' from rxnorm]
 define "Criterion 270":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 200 MG350637Ref")
-
+  exists [MedicationAdministration: code in Code '350637' from rxnorm]
 define "Criterion 271":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 50 MG350643Ref")
-
+  exists [MedicationAdministration: code in Code '350643' from rxnorm]
 define "Criterion 272":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "voriconazole 40 MG/ML477139Ref")
-
+  exists [MedicationAdministration: code in Code '477139' from rxnorm]
 define "Criterion 273":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in nefazodone31565Ref)
-
+  exists [MedicationAdministration: code in Code '31565' from rxnorm]
 define "Criterion 274":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "nefazodone hydrochloride 100 MG Oral Tablet1098649Ref")
-
+  exists [MedicationAdministration: code in Code '1098649' from rxnorm]
 define "Criterion 275":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "nefazodone hydrochloride 150 MG Oral Tablet1098666Ref")
-
+  exists [MedicationAdministration: code in Code '1098666' from rxnorm]
 define "Criterion 276":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "nefazodone hydrochloride 200 MG Oral Tablet1098670Ref")
-
+  exists [MedicationAdministration: code in Code '1098670' from rxnorm]
 define "Criterion 277":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "nefazodone hydrochloride 250 MG Oral Tablet1098674Ref")
-
+  exists [MedicationAdministration: code in Code '1098674' from rxnorm]
 define "Criterion 278":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "nefazodone hydrochloride 50 MG Oral Tablet1098678Ref")
-
+  exists [MedicationAdministration: code in Code '1098678' from rxnorm]
 define "Criterion 279":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "nefazodone hydrochloride 300 MG Oral Tablet1098710Ref")
-
+  exists [MedicationAdministration: code in Code '1098710' from rxnorm]
 define "Criterion 280":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "nefazodone hydrochloride 100 MG1098648Ref")
-
+  exists [MedicationAdministration: code in Code '1098648' from rxnorm]
 define "Criterion 281":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "nefazodone hydrochloride 150 MG1098665Ref")
-
+  exists [MedicationAdministration: code in Code '1098665' from rxnorm]
 define "Criterion 282":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "nefazodone hydrochloride 200 MG1098669Ref")
-
+  exists [MedicationAdministration: code in Code '1098669' from rxnorm]
 define "Criterion 283":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "nefazodone hydrochloride 250 MG1098673Ref")
-
+  exists [MedicationAdministration: code in Code '1098673' from rxnorm]
 define "Criterion 284":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "nefazodone hydrochloride 50 MG1098677Ref")
-
+  exists [MedicationAdministration: code in Code '1098677' from rxnorm]
 define "Criterion 285":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "nefazodone hydrochloride 300 MG1098709Ref")
-
+  exists [MedicationAdministration: code in Code '1098709' from rxnorm]
 define "Criterion 286":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in fluvoxamine42355Ref)
-
+  exists [MedicationAdministration: code in Code '42355' from rxnorm]
 define "Criterion 287":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR fluvoxamine maleate 100 MG Extended Release Oral Capsule903873Ref")
-
+  exists [MedicationAdministration: code in Code '903873' from rxnorm]
 define "Criterion 288":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR fluvoxamine maleate 150 MG Extended Release Oral Capsule903879Ref")
-
+  exists [MedicationAdministration: code in Code '903879' from rxnorm]
 define "Criterion 289":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "fluvoxamine maleate 100 MG Oral Tablet903884Ref")
-
+  exists [MedicationAdministration: code in Code '903884' from rxnorm]
 define "Criterion 290":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "fluvoxamine maleate 25 MG Oral Tablet903887Ref")
-
+  exists [MedicationAdministration: code in Code '903887' from rxnorm]
 define "Criterion 291":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "fluvoxamine maleate 50 MG Oral Tablet903891Ref")
-
+  exists [MedicationAdministration: code in Code '903891' from rxnorm]
 define "Criterion 292":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "fluvoxamine maleate 100 MG903872Ref")
-
+  exists [MedicationAdministration: code in Code '903872' from rxnorm]
 define "Criterion 293":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "fluvoxamine maleate 150 MG903878Ref")
-
+  exists [MedicationAdministration: code in Code '903878' from rxnorm]
 define "Criterion 294":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "fluvoxamine maleate 25 MG903886Ref")
-
+  exists [MedicationAdministration: code in Code '903886' from rxnorm]
 define "Criterion 295":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "fluvoxamine maleate 50 MG903890Ref")
-
+  exists [MedicationAdministration: code in Code '903890' from rxnorm]
 define "Criterion 296":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in verapamil11170Ref)
-
+  exists [MedicationAdministration: code in Code '11170' from rxnorm]
 define "Criterion 297":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "isosorbide dinitrate / verapamil1007711Ref")
-
+  exists [MedicationAdministration: code in Code '1007711' from rxnorm]
 define "Criterion 298":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "hydrochlorothiazide / triamterene / verapamil1007929Ref")
-
+  exists [MedicationAdministration: code in Code '1007929' from rxnorm]
 define "Criterion 299":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "quinidine / verapamil1007942Ref")
-
+  exists [MedicationAdministration: code in Code '1007942' from rxnorm]
 define "Criterion 300":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "hydrochlorothiazide / verapamil1007974Ref")
-
+  exists [MedicationAdministration: code in Code '1007974' from rxnorm]
 define "Criterion 301":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "trandolapril / verapamil214866Ref")
-
+  exists [MedicationAdministration: code in Code '214866' from rxnorm]
 define "Criterion 302":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 100 MG Extended Release Oral Capsule [Verelan]897586Ref")
-
+  exists [MedicationAdministration: code in Code '897586' from rxnorm]
 define "Criterion 303":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 200 MG Extended Release Oral Capsule [Verelan]897592Ref")
-
+  exists [MedicationAdministration: code in Code '897592' from rxnorm]
 define "Criterion 304":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 300 MG Extended Release Oral Capsule [Verelan]897598Ref")
-
+  exists [MedicationAdministration: code in Code '897598' from rxnorm]
 define "Criterion 305":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 120 MG Extended Release Oral Capsule [Verelan]897614Ref")
-
+  exists [MedicationAdministration: code in Code '897614' from rxnorm]
 define "Criterion 306":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 180 MG Extended Release Oral Capsule [Verelan]897620Ref")
-
+  exists [MedicationAdministration: code in Code '897620' from rxnorm]
 define "Criterion 307":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 240 MG Extended Release Oral Capsule [Verelan]897626Ref")
-
+  exists [MedicationAdministration: code in Code '897626' from rxnorm]
 define "Criterion 308":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 360 MG Extended Release Oral Capsule [Verelan]897632Ref")
-
+  exists [MedicationAdministration: code in Code '897632' from rxnorm]
 define "Criterion 309":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 120 MG Extended Release Oral Tablet [Calan]897661Ref")
-
+  exists [MedicationAdministration: code in Code '897661' from rxnorm]
 define "Criterion 310":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 180 MG Extended Release Oral Tablet [Calan]897676Ref")
-
+  exists [MedicationAdministration: code in Code '897676' from rxnorm]
 define "Criterion 311":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 240 MG Extended Release Oral Tablet [Calan]897680Ref")
-
+  exists [MedicationAdministration: code in Code '897680' from rxnorm]
 define "Criterion 312":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 80 MG Oral Tablet [Calan]897685Ref")
-
+  exists [MedicationAdministration: code in Code '897685' from rxnorm]
 define "Criterion 313":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 120 MG Extended Release Oral Tablet [Isoptin]897693Ref")
-
+  exists [MedicationAdministration: code in Code '897693' from rxnorm]
 define "Criterion 314":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 180 MG Extended Release Oral Tablet [Isoptin]897700Ref")
-
+  exists [MedicationAdministration: code in Code '897700' from rxnorm]
 define "Criterion 315":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 240 MG Extended Release Oral Tablet [Isoptin]897714Ref")
-
+  exists [MedicationAdministration: code in Code '897714' from rxnorm]
 define "Criterion 316":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR trandolapril 2 MG / verapamil hydrochloride 180 MG Extended Release Oral Tablet [Tarka]897785Ref")
-
+  exists [MedicationAdministration: code in Code '897785' from rxnorm]
 define "Criterion 317":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR trandolapril 2 MG / verapamil hydrochloride 240 MG Extended Release Oral Tablet [Tarka]897846Ref")
-
+  exists [MedicationAdministration: code in Code '897846' from rxnorm]
 define "Criterion 318":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR trandolapril 4 MG / verapamil hydrochloride 240 MG Extended Release Oral Tablet [Tarka]897855Ref")
-
+  exists [MedicationAdministration: code in Code '897855' from rxnorm]
 define "Criterion 319":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 100 MG [Verelan]897585Ref")
-
+  exists [MedicationAdministration: code in Code '897585' from rxnorm]
 define "Criterion 320":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 200 MG [Verelan]897591Ref")
-
+  exists [MedicationAdministration: code in Code '897591' from rxnorm]
 define "Criterion 321":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 300 MG [Verelan]897597Ref")
-
+  exists [MedicationAdministration: code in Code '897597' from rxnorm]
 define "Criterion 322":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 120 MG [Verelan]897613Ref")
-
+  exists [MedicationAdministration: code in Code '897613' from rxnorm]
 define "Criterion 323":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 180 MG [Verelan]897619Ref")
-
+  exists [MedicationAdministration: code in Code '897619' from rxnorm]
 define "Criterion 324":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 240 MG [Verelan]897625Ref")
-
+  exists [MedicationAdministration: code in Code '897625' from rxnorm]
 define "Criterion 325":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 360 MG [Verelan]897631Ref")
-
+  exists [MedicationAdministration: code in Code '897631' from rxnorm]
 define "Criterion 326":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 120 MG [Calan]897660Ref")
-
+  exists [MedicationAdministration: code in Code '897660' from rxnorm]
 define "Criterion 327":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 180 MG [Calan]897675Ref")
-
+  exists [MedicationAdministration: code in Code '897675' from rxnorm]
 define "Criterion 328":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 240 MG [Calan]897679Ref")
-
+  exists [MedicationAdministration: code in Code '897679' from rxnorm]
 define "Criterion 329":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 80 MG [Calan]897684Ref")
-
+  exists [MedicationAdministration: code in Code '897684' from rxnorm]
 define "Criterion 330":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 120 MG [Isoptin]897692Ref")
-
+  exists [MedicationAdministration: code in Code '897692' from rxnorm]
 define "Criterion 331":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 180 MG [Isoptin]897699Ref")
-
+  exists [MedicationAdministration: code in Code '897699' from rxnorm]
 define "Criterion 332":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 240 MG [Isoptin]897713Ref")
-
+  exists [MedicationAdministration: code in Code '897713' from rxnorm]
 define "Criterion 333":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "trandolapril 2 MG / verapamil hydrochloride 180 MG [Tarka]897784Ref")
-
+  exists [MedicationAdministration: code in Code '897784' from rxnorm]
 define "Criterion 334":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "trandolapril 2 MG / verapamil hydrochloride 240 MG [Tarka]897845Ref")
-
+  exists [MedicationAdministration: code in Code '897845' from rxnorm]
 define "Criterion 335":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "trandolapril 4 MG / verapamil hydrochloride 240 MG [Tarka]897854Ref")
-
+  exists [MedicationAdministration: code in Code '897854' from rxnorm]
 define "Criterion 336":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "2 ML verapamil hydrochloride 2.5 MG/ML Injection1665057Ref")
-
+  exists [MedicationAdministration: code in Code '1665057' from rxnorm]
 define "Criterion 337":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "4 ML verapamil hydrochloride 2.5 MG/ML Injection1665061Ref")
-
+  exists [MedicationAdministration: code in Code '1665061' from rxnorm]
 define "Criterion 338":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR trandolapril 2 MG / verapamil hydrochloride 180 MG Extended Release Oral Capsule411759Ref")
-
+  exists [MedicationAdministration: code in Code '411759' from rxnorm]
 define "Criterion 339":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 100 MG Extended Release Oral Capsule897584Ref")
-
+  exists [MedicationAdministration: code in Code '897584' from rxnorm]
 define "Criterion 340":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 200 MG Extended Release Oral Capsule897590Ref")
-
+  exists [MedicationAdministration: code in Code '897590' from rxnorm]
 define "Criterion 341":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 300 MG Extended Release Oral Capsule897596Ref")
-
+  exists [MedicationAdministration: code in Code '897596' from rxnorm]
 define "Criterion 342":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 120 MG Extended Release Oral Capsule897612Ref")
-
+  exists [MedicationAdministration: code in Code '897612' from rxnorm]
 define "Criterion 343":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 180 MG Extended Release Oral Capsule897618Ref")
-
+  exists [MedicationAdministration: code in Code '897618' from rxnorm]
 define "Criterion 344":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 240 MG Extended Release Oral Capsule897624Ref")
-
+  exists [MedicationAdministration: code in Code '897624' from rxnorm]
 define "Criterion 345":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR verapamil hydrochloride 360 MG Extended Release Oral Capsule897630Ref")
-
+  exists [MedicationAdministration: code in Code '897630' from rxnorm]
 define "Criterion 346":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 180 MG Extended Release Oral Tablet897640Ref")
-
+  exists [MedicationAdministration: code in Code '897640' from rxnorm]
 define "Criterion 347":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 240 MG Extended Release Oral Tablet897649Ref")
-
+  exists [MedicationAdministration: code in Code '897649' from rxnorm]
 define "Criterion 348":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 120 MG Extended Release Oral Tablet897659Ref")
-
+  exists [MedicationAdministration: code in Code '897659' from rxnorm]
 define "Criterion 349":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 120 MG Oral Tablet897666Ref")
-
+  exists [MedicationAdministration: code in Code '897666' from rxnorm]
 define "Criterion 350":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 80 MG Oral Tablet897683Ref")
-
+  exists [MedicationAdministration: code in Code '897683' from rxnorm]
 define "Criterion 351":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 40 MG Oral Tablet897722Ref")
-
+  exists [MedicationAdministration: code in Code '897722' from rxnorm]
 define "Criterion 352":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR trandolapril 1 MG / verapamil hydrochloride 240 MG Extended Release Oral Tablet897781Ref")
-
+  exists [MedicationAdministration: code in Code '897781' from rxnorm]
 define "Criterion 353":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR trandolapril 2 MG / verapamil hydrochloride 180 MG Extended Release Oral Tablet897783Ref")
-
+  exists [MedicationAdministration: code in Code '897783' from rxnorm]
 define "Criterion 354":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR trandolapril 2 MG / verapamil hydrochloride 240 MG Extended Release Oral Tablet897844Ref")
-
+  exists [MedicationAdministration: code in Code '897844' from rxnorm]
 define "Criterion 355":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR trandolapril 4 MG / verapamil hydrochloride 240 MG Extended Release Oral Tablet897853Ref")
-
+  exists [MedicationAdministration: code in Code '897853' from rxnorm]
 define "Criterion 356":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "4 ML verapamil hydrochloride 2.5 MG/ML Prefilled Syringe898316Ref")
-
+  exists [MedicationAdministration: code in Code '898316' from rxnorm]
 define "Criterion 357":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 180 MG Oral Capsule898340Ref")
-
+  exists [MedicationAdministration: code in Code '898340' from rxnorm]
 define "Criterion 358":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 160 MG Oral Tablet901438Ref")
-
+  exists [MedicationAdministration: code in Code '901438' from rxnorm]
 define "Criterion 359":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 240 MG Oral Tablet901446Ref")
-
+  exists [MedicationAdministration: code in Code '901446' from rxnorm]
 define "Criterion 360":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 8 MG/ML Oral Solution901450Ref")
-
+  exists [MedicationAdministration: code in Code '901450' from rxnorm]
 define "Criterion 361":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 100 MG897583Ref")
-
+  exists [MedicationAdministration: code in Code '897583' from rxnorm]
 define "Criterion 362":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 200 MG897589Ref")
-
+  exists [MedicationAdministration: code in Code '897589' from rxnorm]
 define "Criterion 363":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 300 MG897595Ref")
-
+  exists [MedicationAdministration: code in Code '897595' from rxnorm]
 define "Criterion 364":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 120 MG897611Ref")
-
+  exists [MedicationAdministration: code in Code '897611' from rxnorm]
 define "Criterion 365":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 180 MG897617Ref")
-
+  exists [MedicationAdministration: code in Code '897617' from rxnorm]
 define "Criterion 366":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 240 MG897623Ref")
-
+  exists [MedicationAdministration: code in Code '897623' from rxnorm]
 define "Criterion 367":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 360 MG897629Ref")
-
+  exists [MedicationAdministration: code in Code '897629' from rxnorm]
 define "Criterion 368":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 80 MG897682Ref")
-
+  exists [MedicationAdministration: code in Code '897682' from rxnorm]
 define "Criterion 369":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 2.5 MG/ML897705Ref")
-
+  exists [MedicationAdministration: code in Code '897705' from rxnorm]
 define "Criterion 370":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 40 MG897718Ref")
-
+  exists [MedicationAdministration: code in Code '897718' from rxnorm]
 define "Criterion 371":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 160 MG901437Ref")
-
+  exists [MedicationAdministration: code in Code '901437' from rxnorm]
 define "Criterion 372":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "verapamil hydrochloride 8 MG/ML901449Ref")
-
+  exists [MedicationAdministration: code in Code '901449' from rxnorm]
 define "Criterion 373":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in diltiazem3443Ref)
-
+  exists [MedicationAdministration: code in Code '3443' from rxnorm]
 define "Criterion 374":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem / hydrochlorothiazide1007083Ref")
-
+  exists [MedicationAdministration: code in Code '1007083' from rxnorm]
 define "Criterion 375":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem / enalapril214507Ref")
-
+  exists [MedicationAdministration: code in Code '214507' from rxnorm]
 define "Criterion 376":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 420 MG Extended Release Oral Tablet [Matzim]1091623Ref")
-
+  exists [MedicationAdministration: code in Code '1091623' from rxnorm]
 define "Criterion 377":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Tablet [Matzim]1091629Ref")
-
+  exists [MedicationAdministration: code in Code '1091629' from rxnorm]
 define "Criterion 378":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Tablet [Matzim]1091632Ref")
-
+  exists [MedicationAdministration: code in Code '1091632' from rxnorm]
 define "Criterion 379":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Tablet [Matzim]1091635Ref")
-
+  exists [MedicationAdministration: code in Code '1091635' from rxnorm]
 define "Criterion 380":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Tablet [Matzim]1091638Ref")
-
+  exists [MedicationAdministration: code in Code '1091638' from rxnorm]
 define "Criterion 381":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Tiadylt]1988308Ref")
-
+  exists [MedicationAdministration: code in Code '1988308' from rxnorm]
 define "Criterion 382":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule [Tiadylt]1988311Ref")
-
+  exists [MedicationAdministration: code in Code '1988311' from rxnorm]
 define "Criterion 383":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Tiadylt]1988316Ref")
-
+  exists [MedicationAdministration: code in Code '1988316' from rxnorm]
 define "Criterion 384":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule [Tiadylt]1988319Ref")
-
+  exists [MedicationAdministration: code in Code '1988319' from rxnorm]
 define "Criterion 385":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Capsule [Tiadylt]1988324Ref")
-
+  exists [MedicationAdministration: code in Code '1988324' from rxnorm]
 define "Criterion 386":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 420 MG Extended Release Oral Capsule [Tiadylt]1988330Ref")
-
+  exists [MedicationAdministration: code in Code '1988330' from rxnorm]
 define "Criterion 387":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Capsule [Cardizem]830798Ref")
-
+  exists [MedicationAdministration: code in Code '830798' from rxnorm]
 define "Criterion 388":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule [Cardizem]830803Ref")
-
+  exists [MedicationAdministration: code in Code '830803' from rxnorm]
 define "Criterion 389":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Cardizem]830839Ref")
-
+  exists [MedicationAdministration: code in Code '830839' from rxnorm]
 define "Criterion 390":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule [Cardizem]830847Ref")
-
+  exists [MedicationAdministration: code in Code '830847' from rxnorm]
 define "Criterion 391":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Cardizem]830863Ref")
-
+  exists [MedicationAdministration: code in Code '830863' from rxnorm]
 define "Criterion 392":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Tablet [Cardizem]830876Ref")
-
+  exists [MedicationAdministration: code in Code '830876' from rxnorm]
 define "Criterion 393":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Tablet [Cardizem]830878Ref")
-
+  exists [MedicationAdministration: code in Code '830878' from rxnorm]
 define "Criterion 394":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Tablet [Cardizem]830880Ref")
-
+  exists [MedicationAdministration: code in Code '830880' from rxnorm]
 define "Criterion 395":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Tablet [Cardizem]830883Ref")
-
+  exists [MedicationAdministration: code in Code '830883' from rxnorm]
 define "Criterion 396":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Tablet [Cardizem]830898Ref")
-
+  exists [MedicationAdministration: code in Code '830898' from rxnorm]
 define "Criterion 397":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 420 MG Extended Release Oral Tablet [Cardizem]830902Ref")
-
+  exists [MedicationAdministration: code in Code '830902' from rxnorm]
 define "Criterion 398":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 120 MG Oral Tablet [Cardizem]831055Ref")
-
+  exists [MedicationAdministration: code in Code '831055' from rxnorm]
 define "Criterion 399":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Tiazac]831193Ref")
-
+  exists [MedicationAdministration: code in Code '831193' from rxnorm]
 define "Criterion 400":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Taztia]831196Ref")
-
+  exists [MedicationAdministration: code in Code '831196' from rxnorm]
 define "Criterion 401":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Dilt]831215Ref")
-
+  exists [MedicationAdministration: code in Code '831215' from rxnorm]
 define "Criterion 402":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Cartia]831226Ref")
-
+  exists [MedicationAdministration: code in Code '831226' from rxnorm]
 define "Criterion 403":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule [Tiazac]831244Ref")
-
+  exists [MedicationAdministration: code in Code '831244' from rxnorm]
 define "Criterion 404":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule [Taztia]831248Ref")
-
+  exists [MedicationAdministration: code in Code '831248' from rxnorm]
 define "Criterion 405":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule [Dilt]831252Ref")
-
+  exists [MedicationAdministration: code in Code '831252' from rxnorm]
 define "Criterion 406":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule [Cartia]831255Ref")
-
+  exists [MedicationAdministration: code in Code '831255' from rxnorm]
 define "Criterion 407":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Dilt]831285Ref")
-
+  exists [MedicationAdministration: code in Code '831285' from rxnorm]
 define "Criterion 408":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Tiazac]831296Ref")
-
+  exists [MedicationAdministration: code in Code '831296' from rxnorm]
 define "Criterion 409":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Taztia]831300Ref")
-
+  exists [MedicationAdministration: code in Code '831300' from rxnorm]
 define "Criterion 410":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Cartia]831309Ref")
-
+  exists [MedicationAdministration: code in Code '831309' from rxnorm]
 define "Criterion 411":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule [Tiazac]831323Ref")
-
+  exists [MedicationAdministration: code in Code '831323' from rxnorm]
 define "Criterion 412":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule [Taztia]831325Ref")
-
+  exists [MedicationAdministration: code in Code '831325' from rxnorm]
 define "Criterion 413":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule [Cartia]831338Ref")
-
+  exists [MedicationAdministration: code in Code '831338' from rxnorm]
 define "Criterion 414":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Capsule [Tiazac]831347Ref")
-
+  exists [MedicationAdministration: code in Code '831347' from rxnorm]
 define "Criterion 415":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Capsule [Taztia]831349Ref")
-
+  exists [MedicationAdministration: code in Code '831349' from rxnorm]
 define "Criterion 416":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 420 MG Extended Release Oral Capsule [Tiazac]831360Ref")
-
+  exists [MedicationAdministration: code in Code '831360' from rxnorm]
 define "Criterion 417":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 30 MG Oral Tablet [Cardizem]833219Ref")
-
+  exists [MedicationAdministration: code in Code '833219' from rxnorm]
 define "Criterion 418":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule [Diltzac]833704Ref")
-
+  exists [MedicationAdministration: code in Code '833704' from rxnorm]
 define "Criterion 419":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule [Diltzac]833705Ref")
-
+  exists [MedicationAdministration: code in Code '833705' from rxnorm]
 define "Criterion 420":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 60 MG Oral Tablet [Cardizem]834393Ref")
-
+  exists [MedicationAdministration: code in Code '834393' from rxnorm]
 define "Criterion 421":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule [Diltzac]848524Ref")
-
+  exists [MedicationAdministration: code in Code '848524' from rxnorm]
 define "Criterion 422":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 420 MG [Matzim]1091621Ref")
-
+  exists [MedicationAdministration: code in Code '1091621' from rxnorm]
 define "Criterion 423":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 240 MG [Matzim]1091628Ref")
-
+  exists [MedicationAdministration: code in Code '1091628' from rxnorm]
 define "Criterion 424":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 180 MG [Matzim]1091631Ref")
-
+  exists [MedicationAdministration: code in Code '1091631' from rxnorm]
 define "Criterion 425":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 300 MG [Matzim]1091634Ref")
-
+  exists [MedicationAdministration: code in Code '1091634' from rxnorm]
 define "Criterion 426":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 360 MG [Matzim]1091637Ref")
-
+  exists [MedicationAdministration: code in Code '1091637' from rxnorm]
 define "Criterion 427":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 120 MG [Tiadylt]1988304Ref")
-
+  exists [MedicationAdministration: code in Code '1988304' from rxnorm]
 define "Criterion 428":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 180 MG [Tiadylt]1988310Ref")
-
+  exists [MedicationAdministration: code in Code '1988310' from rxnorm]
 define "Criterion 429":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 240 MG [Tiadylt]1988315Ref")
-
+  exists [MedicationAdministration: code in Code '1988315' from rxnorm]
 define "Criterion 430":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 300 MG [Tiadylt]1988318Ref")
-
+  exists [MedicationAdministration: code in Code '1988318' from rxnorm]
 define "Criterion 431":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 360 MG [Tiadylt]1988323Ref")
-
+  exists [MedicationAdministration: code in Code '1988323' from rxnorm]
 define "Criterion 432":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 420 MG [Tiadylt]1988329Ref")
-
+  exists [MedicationAdministration: code in Code '1988329' from rxnorm]
 define "Criterion 433":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 360 MG [Cardizem]830796Ref")
-
+  exists [MedicationAdministration: code in Code '830796' from rxnorm]
 define "Criterion 434":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 300 MG [Cardizem]830802Ref")
-
+  exists [MedicationAdministration: code in Code '830802' from rxnorm]
 define "Criterion 435":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 240 MG [Cardizem]830838Ref")
-
+  exists [MedicationAdministration: code in Code '830838' from rxnorm]
 define "Criterion 436":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 180 MG [Cardizem]830846Ref")
-
+  exists [MedicationAdministration: code in Code '830846' from rxnorm]
 define "Criterion 437":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 120 MG [Cardizem]830862Ref")
-
+  exists [MedicationAdministration: code in Code '830862' from rxnorm]
 define "Criterion 438":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 60 MG [Cardizem]830866Ref")
-
+  exists [MedicationAdministration: code in Code '830866' from rxnorm]
 define "Criterion 439":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 420 MG [Cardizem]830901Ref")
-
+  exists [MedicationAdministration: code in Code '830901' from rxnorm]
 define "Criterion 440":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 120 MG [Diltzac]831171Ref")
-
+  exists [MedicationAdministration: code in Code '831171' from rxnorm]
 define "Criterion 441":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 120 MG [Tiazac]831192Ref")
-
+  exists [MedicationAdministration: code in Code '831192' from rxnorm]
 define "Criterion 442":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 120 MG [Taztia]831195Ref")
-
+  exists [MedicationAdministration: code in Code '831195' from rxnorm]
 define "Criterion 443":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 120 MG [Dilt]831214Ref")
-
+  exists [MedicationAdministration: code in Code '831214' from rxnorm]
 define "Criterion 444":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 120 MG [Cartia]831225Ref")
-
+  exists [MedicationAdministration: code in Code '831225' from rxnorm]
 define "Criterion 445":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 180 MG [Cartia]831241Ref")
-
+  exists [MedicationAdministration: code in Code '831241' from rxnorm]
 define "Criterion 446":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 180 MG [Tiazac]831243Ref")
-
+  exists [MedicationAdministration: code in Code '831243' from rxnorm]
 define "Criterion 447":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 180 MG [Taztia]831247Ref")
-
+  exists [MedicationAdministration: code in Code '831247' from rxnorm]
 define "Criterion 448":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 180 MG [Dilt]831251Ref")
-
+  exists [MedicationAdministration: code in Code '831251' from rxnorm]
 define "Criterion 449":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 240 MG [Diltzac]831281Ref")
-
+  exists [MedicationAdministration: code in Code '831281' from rxnorm]
 define "Criterion 450":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 240 MG [Dilt]831284Ref")
-
+  exists [MedicationAdministration: code in Code '831284' from rxnorm]
 define "Criterion 451":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 240 MG [Cartia]831287Ref")
-
+  exists [MedicationAdministration: code in Code '831287' from rxnorm]
 define "Criterion 452":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 240 MG [Tiazac]831295Ref")
-
+  exists [MedicationAdministration: code in Code '831295' from rxnorm]
 define "Criterion 453":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 240 MG [Taztia]831299Ref")
-
+  exists [MedicationAdministration: code in Code '831299' from rxnorm]
 define "Criterion 454":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 300 MG [Diltzac]831318Ref")
-
+  exists [MedicationAdministration: code in Code '831318' from rxnorm]
 define "Criterion 455":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 300 MG [Cartia]831320Ref")
-
+  exists [MedicationAdministration: code in Code '831320' from rxnorm]
 define "Criterion 456":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 300 MG [Tiazac]831322Ref")
-
+  exists [MedicationAdministration: code in Code '831322' from rxnorm]
 define "Criterion 457":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 300 MG [Taztia]831324Ref")
-
+  exists [MedicationAdministration: code in Code '831324' from rxnorm]
 define "Criterion 458":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 360 MG [Tiazac]831346Ref")
-
+  exists [MedicationAdministration: code in Code '831346' from rxnorm]
 define "Criterion 459":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 360 MG [Taztia]831348Ref")
-
+  exists [MedicationAdministration: code in Code '831348' from rxnorm]
 define "Criterion 460":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 420 MG [Tiazac]831356Ref")
-
+  exists [MedicationAdministration: code in Code '831356' from rxnorm]
 define "Criterion 461":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 30 MG [Cardizem]833218Ref")
-
+  exists [MedicationAdministration: code in Code '833218' from rxnorm]
 define "Criterion 462":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "5 ML diltiazem hydrochloride 5 MG/ML Injection1791229Ref")
-
+  exists [MedicationAdministration: code in Code '1791229' from rxnorm]
 define "Criterion 463":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "10 ML diltiazem hydrochloride 5 MG/ML Injection1791232Ref")
-
+  exists [MedicationAdministration: code in Code '1791232' from rxnorm]
 define "Criterion 464":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "25 ML diltiazem hydrochloride 5 MG/ML Injection1791233Ref")
-
+  exists [MedicationAdministration: code in Code '1791233' from rxnorm]
 define "Criterion 465":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 100 MG Injection1791240Ref")
-
+  exists [MedicationAdministration: code in Code '1791240' from rxnorm]
 define "Criterion 466":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "125 ML diltiazem hydrochloride 1 MG/ML Injection2586034Ref")
-
+  exists [MedicationAdministration: code in Code '2586034' from rxnorm]
 define "Criterion 467":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "250 ML diltiazem hydrochloride 1 MG/ML Injection2586036Ref")
-
+  exists [MedicationAdministration: code in Code '2586036' from rxnorm]
 define "Criterion 468":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Capsule830795Ref")
-
+  exists [MedicationAdministration: code in Code '830795' from rxnorm]
 define "Criterion 469":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Capsule830801Ref")
-
+  exists [MedicationAdministration: code in Code '830801' from rxnorm]
 define "Criterion 470":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Capsule830837Ref")
-
+  exists [MedicationAdministration: code in Code '830837' from rxnorm]
 define "Criterion 471":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Capsule830845Ref")
-
+  exists [MedicationAdministration: code in Code '830845' from rxnorm]
 define "Criterion 472":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule830861Ref")
-
+  exists [MedicationAdministration: code in Code '830861' from rxnorm]
 define "Criterion 473":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR diltiazem hydrochloride 60 MG Extended Release Oral Capsule830865Ref")
-
+  exists [MedicationAdministration: code in Code '830865' from rxnorm]
 define "Criterion 474":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR diltiazem hydrochloride 90 MG Extended Release Oral Capsule830869Ref")
-
+  exists [MedicationAdministration: code in Code '830869' from rxnorm]
 define "Criterion 475":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR diltiazem hydrochloride 120 MG Extended Release Oral Capsule830872Ref")
-
+  exists [MedicationAdministration: code in Code '830872' from rxnorm]
 define "Criterion 476":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 120 MG Extended Release Oral Tablet830874Ref")
-
+  exists [MedicationAdministration: code in Code '830874' from rxnorm]
 define "Criterion 477":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 180 MG Extended Release Oral Tablet830877Ref")
-
+  exists [MedicationAdministration: code in Code '830877' from rxnorm]
 define "Criterion 478":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 240 MG Extended Release Oral Tablet830879Ref")
-
+  exists [MedicationAdministration: code in Code '830879' from rxnorm]
 define "Criterion 479":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 300 MG Extended Release Oral Tablet830882Ref")
-
+  exists [MedicationAdministration: code in Code '830882' from rxnorm]
 define "Criterion 480":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 360 MG Extended Release Oral Tablet830897Ref")
-
+  exists [MedicationAdministration: code in Code '830897' from rxnorm]
 define "Criterion 481":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 420 MG Extended Release Oral Tablet830900Ref")
-
+  exists [MedicationAdministration: code in Code '830900' from rxnorm]
 define "Criterion 482":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 60 MG Oral Capsule831012Ref")
-
+  exists [MedicationAdministration: code in Code '831012' from rxnorm]
 define "Criterion 483":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 120 MG Oral Tablet831054Ref")
-
+  exists [MedicationAdministration: code in Code '831054' from rxnorm]
 define "Criterion 484":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 90 MG Oral Tablet831102Ref")
-
+  exists [MedicationAdministration: code in Code '831102' from rxnorm]
 define "Criterion 485":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 60 MG Oral Tablet831103Ref")
-
+  exists [MedicationAdministration: code in Code '831103' from rxnorm]
 define "Criterion 486":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR diltiazem hydrochloride 420 MG Extended Release Oral Capsule831359Ref")
-
+  exists [MedicationAdministration: code in Code '831359' from rxnorm]
 define "Criterion 487":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 30 MG Oral Tablet833217Ref")
-
+  exists [MedicationAdministration: code in Code '833217' from rxnorm]
 define "Criterion 488":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 180 MG / enalapril maleate 5 MG Extended Release Oral Tablet833237Ref")
-
+  exists [MedicationAdministration: code in Code '833237' from rxnorm]
 define "Criterion 489":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR diltiazem hydrochloride 60 MG Extended Release Oral Tablet833707Ref")
-
+  exists [MedicationAdministration: code in Code '833707' from rxnorm]
 define "Criterion 490":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem malate 240 MG Oral Tablet849860Ref")
-
+  exists [MedicationAdministration: code in Code '849860' from rxnorm]
 define "Criterion 491":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 1 MG/ML2586033Ref")
-
+  exists [MedicationAdministration: code in Code '2586033' from rxnorm]
 define "Criterion 492":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 360 MG830794Ref")
-
+  exists [MedicationAdministration: code in Code '830794' from rxnorm]
 define "Criterion 493":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 300 MG830800Ref")
-
+  exists [MedicationAdministration: code in Code '830800' from rxnorm]
 define "Criterion 494":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 240 MG830836Ref")
-
+  exists [MedicationAdministration: code in Code '830836' from rxnorm]
 define "Criterion 495":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 180 MG830844Ref")
-
+  exists [MedicationAdministration: code in Code '830844' from rxnorm]
 define "Criterion 496":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 120 MG830860Ref")
-
+  exists [MedicationAdministration: code in Code '830860' from rxnorm]
 define "Criterion 497":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 60 MG830864Ref")
-
+  exists [MedicationAdministration: code in Code '830864' from rxnorm]
 define "Criterion 498":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 90 MG830868Ref")
-
+  exists [MedicationAdministration: code in Code '830868' from rxnorm]
 define "Criterion 499":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 420 MG830899Ref")
-
+  exists [MedicationAdministration: code in Code '830899' from rxnorm]
 define "Criterion 500":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 5 MG/ML833194Ref")
-
+  exists [MedicationAdministration: code in Code '833194' from rxnorm]
 define "Criterion 501":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 30 MG833216Ref")
-
+  exists [MedicationAdministration: code in Code '833216' from rxnorm]
 define "Criterion 502":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 200 MG833715Ref")
-
+  exists [MedicationAdministration: code in Code '833715' from rxnorm]
 define "Criterion 503":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem malate 240 MG849859Ref")
-
+  exists [MedicationAdministration: code in Code '849859' from rxnorm]
 define "Criterion 504":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "diltiazem hydrochloride 100 MG849867Ref")
-
+  exists [MedicationAdministration: code in Code '849867' from rxnorm]
 define "Criterion 505":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in phenytoin8183Ref)
-
+  exists [MedicationAdministration: code in Code '8183' from rxnorm]
 define "Criterion 506":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "aminobutyrate / phenobarbital / phenytoin1008991Ref")
-
+  exists [MedicationAdministration: code in Code '1008991' from rxnorm]
 define "Criterion 507":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "calcium carbonate / phenytoin1009121Ref")
-
+  exists [MedicationAdministration: code in Code '1009121' from rxnorm]
 define "Criterion 508":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "pentobarbital / phenytoin1100448Ref")
-
+  exists [MedicationAdministration: code in Code '1100448' from rxnorm]
 define "Criterion 509":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital / phenytoin689744Ref")
-
+  exists [MedicationAdministration: code in Code '689744' from rxnorm]
 define "Criterion 510":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "mephobarbital / phenytoin817816Ref")
-
+  exists [MedicationAdministration: code in Code '817816' from rxnorm]
 define "Criterion 511":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "mephobarbital / phenobarbital / phenytoin819182Ref")
-
+  exists [MedicationAdministration: code in Code '819182' from rxnorm]
 define "Criterion 512":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "pentobarbital sodium 390 MG/ML / phenytoin sodium 50 MG/ML Injectable Solution [Euthasol]1100453Ref")
-
+  exists [MedicationAdministration: code in Code '1100453' from rxnorm]
 define "Criterion 513":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin 25 MG/ML Oral Suspension [Dilantin]1313884Ref")
-
+  exists [MedicationAdministration: code in Code '1313884' from rxnorm]
 define "Criterion 514":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin 50 MG Chewable Tablet [Dilantin]1313887Ref")
-
+  exists [MedicationAdministration: code in Code '1313887' from rxnorm]
 define "Criterion 515":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "pentobarbital sodium 390 MG/ML / phenytoin sodium 50 MG/ML Injectable Solution [Euthaphen]2626485Ref")
-
+  exists [MedicationAdministration: code in Code '2626485' from rxnorm]
 define "Criterion 516":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 100 MG Extended Release Oral Capsule [Dilantin]855673Ref")
-
+  exists [MedicationAdministration: code in Code '855673' from rxnorm]
 define "Criterion 517":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 200 MG Extended Release Oral Capsule [Phenytek]855863Ref")
-
+  exists [MedicationAdministration: code in Code '855863' from rxnorm]
 define "Criterion 518":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 30 MG Extended Release Oral Capsule [Dilantin]855871Ref")
-
+  exists [MedicationAdministration: code in Code '855871' from rxnorm]
 define "Criterion 519":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 300 MG Extended Release Oral Capsule [Phenytek]855875Ref")
-
+  exists [MedicationAdministration: code in Code '855875' from rxnorm]
 define "Criterion 520":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "pentobarbital sodium 390 MG/ML / phenytoin sodium 50 MG/ML [Euthasol]1100451Ref")
-
+  exists [MedicationAdministration: code in Code '1100451' from rxnorm]
 define "Criterion 521":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin 25 MG/ML [Dilantin]1313883Ref")
-
+  exists [MedicationAdministration: code in Code '1313883' from rxnorm]
 define "Criterion 522":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin 50 MG [Dilantin]1313886Ref")
-
+  exists [MedicationAdministration: code in Code '1313886' from rxnorm]
 define "Criterion 523":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "pentobarbital sodium 390 MG/ML / phenytoin sodium 50 MG/ML [Euthaphen]2626482Ref")
-
+  exists [MedicationAdministration: code in Code '2626482' from rxnorm]
 define "Criterion 524":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 100 MG [Dilantin]855672Ref")
-
+  exists [MedicationAdministration: code in Code '855672' from rxnorm]
 define "Criterion 525":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 200 MG [Phenytek]855862Ref")
-
+  exists [MedicationAdministration: code in Code '855862' from rxnorm]
 define "Criterion 526":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 30 MG [Dilantin]855870Ref")
-
+  exists [MedicationAdministration: code in Code '855870' from rxnorm]
 define "Criterion 527":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 300 MG [Phenytek]855874Ref")
-
+  exists [MedicationAdministration: code in Code '855874' from rxnorm]
 define "Criterion 528":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "pentobarbital sodium 390 MG/ML / phenytoin sodium 50 MG/ML Injectable Solution1100449Ref")
-
+  exists [MedicationAdministration: code in Code '1100449' from rxnorm]
 define "Criterion 529":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin 25 MG/ML Oral Suspension1313112Ref")
-
+  exists [MedicationAdministration: code in Code '1313112' from rxnorm]
 define "Criterion 530":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin 50 MG Chewable Tablet1313885Ref")
-
+  exists [MedicationAdministration: code in Code '1313885' from rxnorm]
 define "Criterion 531":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin 6 MG/ML Oral Suspension1313888Ref")
-
+  exists [MedicationAdministration: code in Code '1313888' from rxnorm]
 define "Criterion 532":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin 18 MG/ML Oral Suspension1313890Ref")
-
+  exists [MedicationAdministration: code in Code '1313890' from rxnorm]
 define "Criterion 533":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "2 ML phenytoin sodium 50 MG/ML Injection1670351Ref")
-
+  exists [MedicationAdministration: code in Code '1670351' from rxnorm]
 define "Criterion 534":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "5 ML phenytoin sodium 50 MG/ML Injection1670353Ref")
-
+  exists [MedicationAdministration: code in Code '1670353' from rxnorm]
 define "Criterion 535":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 100 MG Extended Release Oral Capsule855671Ref")
-
+  exists [MedicationAdministration: code in Code '855671' from rxnorm]
 define "Criterion 536":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 100 MG Oral Capsule855675Ref")
-
+  exists [MedicationAdministration: code in Code '855675' from rxnorm]
 define "Criterion 537":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 200 MG Extended Release Oral Capsule855861Ref")
-
+  exists [MedicationAdministration: code in Code '855861' from rxnorm]
 define "Criterion 538":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 30 MG Extended Release Oral Capsule855869Ref")
-
+  exists [MedicationAdministration: code in Code '855869' from rxnorm]
 define "Criterion 539":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 300 MG Extended Release Oral Capsule855873Ref")
-
+  exists [MedicationAdministration: code in Code '855873' from rxnorm]
 define "Criterion 540":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "2 ML phenytoin sodium 50 MG/ML Cartridge855911Ref")
-
+  exists [MedicationAdministration: code in Code '855911' from rxnorm]
 define "Criterion 541":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 100 MG Oral Tablet855930Ref")
-
+  exists [MedicationAdministration: code in Code '855930' from rxnorm]
 define "Criterion 542":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 25 MG Oral Capsule855936Ref")
-
+  exists [MedicationAdministration: code in Code '855936' from rxnorm]
 define "Criterion 543":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 300 MG Oral Capsule855945Ref")
-
+  exists [MedicationAdministration: code in Code '855945' from rxnorm]
 define "Criterion 544":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 50 MG Oral Capsule855946Ref")
-
+  exists [MedicationAdministration: code in Code '855946' from rxnorm]
 define "Criterion 545":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin 25 MG/ML1313111Ref")
-
+  exists [MedicationAdministration: code in Code '1313111' from rxnorm]
 define "Criterion 546":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin 18 MG/ML1313889Ref")
-
+  exists [MedicationAdministration: code in Code '1313889' from rxnorm]
 define "Criterion 547":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin 50 MG316513Ref")
-
+  exists [MedicationAdministration: code in Code '316513' from rxnorm]
 define "Criterion 548":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin 6 MG/ML316514Ref")
-
+  exists [MedicationAdministration: code in Code '316514' from rxnorm]
 define "Criterion 549":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 100 MG855670Ref")
-
+  exists [MedicationAdministration: code in Code '855670' from rxnorm]
 define "Criterion 550":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 200 MG855860Ref")
-
+  exists [MedicationAdministration: code in Code '855860' from rxnorm]
 define "Criterion 551":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 30 MG855868Ref")
-
+  exists [MedicationAdministration: code in Code '855868' from rxnorm]
 define "Criterion 552":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 300 MG855872Ref")
-
+  exists [MedicationAdministration: code in Code '855872' from rxnorm]
 define "Criterion 553":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 50 MG855882Ref")
-
+  exists [MedicationAdministration: code in Code '855882' from rxnorm]
 define "Criterion 554":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 50 MG/ML855888Ref")
-
+  exists [MedicationAdministration: code in Code '855888' from rxnorm]
 define "Criterion 555":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenytoin sodium 25 MG855935Ref")
-
+  exists [MedicationAdministration: code in Code '855935' from rxnorm]
 define "Criterion 556":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in carbamazepine2002Ref)
-
+  exists [MedicationAdministration: code in Code '2002' from rxnorm]
 define "Criterion 557":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 200 MG Oral Tablet [Epitol]211817Ref")
-
+  exists [MedicationAdministration: code in Code '211817' from rxnorm]
 define "Criterion 558":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "20 ML carbamazepine 10 MG/ML Injection [Carnexiv]2119862Ref")
-
+  exists [MedicationAdministration: code in Code '2119862' from rxnorm]
 define "Criterion 559":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 20 MG/ML Oral Suspension [Tegretol]308971Ref")
-
+  exists [MedicationAdministration: code in Code '308971' from rxnorm]
 define "Criterion 560":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 200 MG Oral Tablet [Tegretol]308972Ref")
-
+  exists [MedicationAdministration: code in Code '308972' from rxnorm]
 define "Criterion 561":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 100 MG Chewable Tablet [Tegretol]308974Ref")
-
+  exists [MedicationAdministration: code in Code '308974' from rxnorm]
 define "Criterion 562":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 200 MG Extended Release Oral Capsule [Carbatrol]308977Ref")
-
+  exists [MedicationAdministration: code in Code '308977' from rxnorm]
 define "Criterion 563":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 300 MG Extended Release Oral Capsule [Carbatrol]313931Ref")
-
+  exists [MedicationAdministration: code in Code '313931' from rxnorm]
 define "Criterion 564":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 100 MG Extended Release Oral Capsule [Carbatrol]404742Ref")
-
+  exists [MedicationAdministration: code in Code '404742' from rxnorm]
 define "Criterion 565":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 100 MG Extended Release Oral Capsule [Equetro]672908Ref")
-
+  exists [MedicationAdministration: code in Code '672908' from rxnorm]
 define "Criterion 566":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 300 MG Extended Release Oral Capsule [Equetro]672909Ref")
-
+  exists [MedicationAdministration: code in Code '672909' from rxnorm]
 define "Criterion 567":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 200 MG Extended Release Oral Capsule [Equetro]672910Ref")
-
+  exists [MedicationAdministration: code in Code '672910' from rxnorm]
 define "Criterion 568":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 100 MG Extended Release Oral Tablet [Tegretol]866303Ref")
-
+  exists [MedicationAdministration: code in Code '866303' from rxnorm]
 define "Criterion 569":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 200 MG Extended Release Oral Tablet [Tegretol]866305Ref")
-
+  exists [MedicationAdministration: code in Code '866305' from rxnorm]
 define "Criterion 570":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 400 MG Extended Release Oral Tablet [Tegretol]866307Ref")
-
+  exists [MedicationAdministration: code in Code '866307' from rxnorm]
 define "Criterion 571":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 10 MG/ML [Carnexiv]2119861Ref")
-
+  exists [MedicationAdministration: code in Code '2119861' from rxnorm]
 define "Criterion 572":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 20 MG/ML [Tegretol]485053Ref")
-
+  exists [MedicationAdministration: code in Code '485053' from rxnorm]
 define "Criterion 573":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 400 MG [Tegretol]563866Ref")
-
+  exists [MedicationAdministration: code in Code '563866' from rxnorm]
 define "Criterion 574":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 200 MG [Tegretol]565987Ref")
-
+  exists [MedicationAdministration: code in Code '565987' from rxnorm]
 define "Criterion 575":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 200 MG [Carbatrol]571790Ref")
-
+  exists [MedicationAdministration: code in Code '571790' from rxnorm]
 define "Criterion 576":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 200 MG [Epitol]572150Ref")
-
+  exists [MedicationAdministration: code in Code '572150' from rxnorm]
 define "Criterion 577":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 100 MG [Tegretol]575098Ref")
-
+  exists [MedicationAdministration: code in Code '575098' from rxnorm]
 define "Criterion 578":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 300 MG [Carbatrol]575199Ref")
-
+  exists [MedicationAdministration: code in Code '575199' from rxnorm]
 define "Criterion 579":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 100 MG [Carbatrol]576621Ref")
-
+  exists [MedicationAdministration: code in Code '576621' from rxnorm]
 define "Criterion 580":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 100 MG [Equetro]583136Ref")
-
+  exists [MedicationAdministration: code in Code '583136' from rxnorm]
 define "Criterion 581":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 200 MG [Equetro]583139Ref")
-
+  exists [MedicationAdministration: code in Code '583139' from rxnorm]
 define "Criterion 582":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 300 MG [Equetro]583141Ref")
-
+  exists [MedicationAdministration: code in Code '583141' from rxnorm]
 define "Criterion 583":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 125 MG Rectal Suppository103941Ref")
-
+  exists [MedicationAdministration: code in Code '103941' from rxnorm]
 define "Criterion 584":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 250 MG Rectal Suppository103942Ref")
-
+  exists [MedicationAdministration: code in Code '103942' from rxnorm]
 define "Criterion 585":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 400 MG Oral Tablet141952Ref")
-
+  exists [MedicationAdministration: code in Code '141952' from rxnorm]
 define "Criterion 586":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 100 MG Oral Tablet197441Ref")
-
+  exists [MedicationAdministration: code in Code '197441' from rxnorm]
 define "Criterion 587":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 200 MG Chewable Tablet197442Ref")
-
+  exists [MedicationAdministration: code in Code '197442' from rxnorm]
 define "Criterion 588":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 100 MG Extended Release Oral Tablet199378Ref")
-
+  exists [MedicationAdministration: code in Code '199378' from rxnorm]
 define "Criterion 589":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 300 MG Extended Release Oral Capsule200131Ref")
-
+  exists [MedicationAdministration: code in Code '200131' from rxnorm]
 define "Criterion 590":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 200 MG Extended Release Oral Capsule200133Ref")
-
+  exists [MedicationAdministration: code in Code '200133' from rxnorm]
 define "Criterion 591":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "20 ML carbamazepine 10 MG/ML Injection2119860Ref")
-
+  exists [MedicationAdministration: code in Code '2119860' from rxnorm]
 define "Criterion 592":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 100 MG Chewable Tablet308973Ref")
-
+  exists [MedicationAdministration: code in Code '308973' from rxnorm]
 define "Criterion 593":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 20 MG/ML Oral Suspension308976Ref")
-
+  exists [MedicationAdministration: code in Code '308976' from rxnorm]
 define "Criterion 594":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 200 MG Oral Tablet308979Ref")
-
+  exists [MedicationAdministration: code in Code '308979' from rxnorm]
 define "Criterion 595":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 100 MG Extended Release Oral Capsule388311Ref")
-
+  exists [MedicationAdministration: code in Code '388311' from rxnorm]
 define "Criterion 596":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 200 MG Extended Release Oral Tablet402505Ref")
-
+  exists [MedicationAdministration: code in Code '402505' from rxnorm]
 define "Criterion 597":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "12 HR carbamazepine 400 MG Extended Release Oral Tablet402506Ref")
-
+  exists [MedicationAdministration: code in Code '402506' from rxnorm]
 define "Criterion 598":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 10 MG/ML2119859Ref")
-
+  exists [MedicationAdministration: code in Code '2119859' from rxnorm]
 define "Criterion 599":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 100 MG315563Ref")
-
+  exists [MedicationAdministration: code in Code '315563' from rxnorm]
 define "Criterion 600":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 20 MG/ML315564Ref")
-
+  exists [MedicationAdministration: code in Code '315564' from rxnorm]
 define "Criterion 601":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 200 MG315565Ref")
-
+  exists [MedicationAdministration: code in Code '315565' from rxnorm]
 define "Criterion 602":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 300 MG315566Ref")
-
+  exists [MedicationAdministration: code in Code '315566' from rxnorm]
 define "Criterion 603":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 400 MG315567Ref")
-
+  exists [MedicationAdministration: code in Code '315567' from rxnorm]
 define "Criterion 604":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 125 MG331282Ref")
-
+  exists [MedicationAdministration: code in Code '331282' from rxnorm]
 define "Criterion 605":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carbamazepine 250 MG331283Ref")
-
+  exists [MedicationAdministration: code in Code '331283' from rxnorm]
 define "Criterion 606":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in phenobarbital8134Ref)
-
+  exists [MedicationAdministration: code in Code '8134' from rxnorm]
 define "Criterion 607":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "belladonna alkaloids / kaolin / phenobarbital1006892Ref")
-
+  exists [MedicationAdministration: code in Code '1006892' from rxnorm]
 define "Criterion 608":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "homatropine / phenobarbital1007147Ref")
-
+  exists [MedicationAdministration: code in Code '1007147' from rxnorm]
 define "Criterion 609":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ouabain / phenobarbital1007218Ref")
-
+  exists [MedicationAdministration: code in Code '1007218' from rxnorm]
 define "Criterion 610":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "guaifenesin / phenobarbital / theophylline1007302Ref")
-
+  exists [MedicationAdministration: code in Code '1007302' from rxnorm]
 define "Criterion 611":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "pentaerythritol / phenobarbital1007330Ref")
-
+  exists [MedicationAdministration: code in Code '1007330' from rxnorm]
 define "Criterion 612":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "anisotropine / phenobarbital1007368Ref")
-
+  exists [MedicationAdministration: code in Code '1007368' from rxnorm]
 define "Criterion 613":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "aminophylline / papaverine / phenobarbital1007450Ref")
-
+  exists [MedicationAdministration: code in Code '1007450' from rxnorm]
 define "Criterion 614":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxyphencyclimine / phenobarbital1007464Ref")
-
+  exists [MedicationAdministration: code in Code '1007464' from rxnorm]
 define "Criterion 615":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "belladonna alkaloids / phenobarbital1007608Ref")
-
+  exists [MedicationAdministration: code in Code '1007608' from rxnorm]
 define "Criterion 616":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "mannitol / phenobarbital1007648Ref")
-
+  exists [MedicationAdministration: code in Code '1007648' from rxnorm]
 define "Criterion 617":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "estrogens, conjugated (USP) / phenobarbital1007811Ref")
-
+  exists [MedicationAdministration: code in Code '1007811' from rxnorm]
 define "Criterion 618":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital / propantheline1007816Ref")
-
+  exists [MedicationAdministration: code in Code '1007816' from rxnorm]
 define "Criterion 619":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "belladonna extract, USP / phenobarbital1008045Ref")
-
+  exists [MedicationAdministration: code in Code '1008045' from rxnorm]
 define "Criterion 620":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "liver,desiccated / phenobarbital1008144Ref")
-
+  exists [MedicationAdministration: code in Code '1008144' from rxnorm]
 define "Criterion 621":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "adiphenine / phenobarbital1008360Ref")
-
+  exists [MedicationAdministration: code in Code '1008360' from rxnorm]
 define "Criterion 622":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "glycopyrronium / phenobarbital1008436Ref")
-
+  exists [MedicationAdministration: code in Code '1008436' from rxnorm]
 define "Criterion 623":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital / pipenzolate1008613Ref")
-
+  exists [MedicationAdministration: code in Code '1008613' from rxnorm]
 define "Criterion 624":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "belladonna alkaloids / caffeine / ergotamine / phenobarbital1008619Ref")
-
+  exists [MedicationAdministration: code in Code '1008619' from rxnorm]
 define "Criterion 625":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dehydrocholate / homatropine / phenobarbital1008814Ref")
-
+  exists [MedicationAdministration: code in Code '1008814' from rxnorm]
 define "Criterion 626":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "amphetamine / phenobarbital1008860Ref")
-
+  exists [MedicationAdministration: code in Code '1008860' from rxnorm]
 define "Criterion 627":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "caffeine / phenobarbital1008949Ref")
-
+  exists [MedicationAdministration: code in Code '1008949' from rxnorm]
 define "Criterion 628":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "aminobutyrate / phenobarbital / phenytoin1008991Ref")
-
+  exists [MedicationAdministration: code in Code '1008991' from rxnorm]
 define "Criterion 629":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "aspirin / papaverine / phenobarbital1009038Ref")
-
+  exists [MedicationAdministration: code in Code '1009038' from rxnorm]
 define "Criterion 630":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ergotamine / levorotatory alkaloids of belladonna / phenobarbital1009102Ref")
-
+  exists [MedicationAdministration: code in Code '1009102' from rxnorm]
 define "Criterion 631":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "belladonna alkaloids / ergotamine / phenobarbital1032187Ref")
-
+  exists [MedicationAdministration: code in Code '1032187' from rxnorm]
 define "Criterion 632":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine / phenobarbital214263Ref")
-
+  exists [MedicationAdministration: code in Code '214263' from rxnorm]
 define "Criterion 633":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ephedrine / phenobarbital / theophylline214542Ref")
-
+  exists [MedicationAdministration: code in Code '214542' from rxnorm]
 define "Criterion 634":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "hyoscyamine / phenobarbital261418Ref")
-
+  exists [MedicationAdministration: code in Code '261418' from rxnorm]
 define "Criterion 635":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "difebarbamate / febarbamate / phenobarbital37882Ref")
-
+  exists [MedicationAdministration: code in Code '37882' from rxnorm]
 define "Criterion 636":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "aprobarbital / butabarbital / phenobarbital689245Ref")
-
+  exists [MedicationAdministration: code in Code '689245' from rxnorm]
 define "Criterion 637":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine / hyoscyamine / phenobarbital / scopolamine689606Ref")
-
+  exists [MedicationAdministration: code in Code '689606' from rxnorm]
 define "Criterion 638":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine / kaolin / phenobarbital689608Ref")
-
+  exists [MedicationAdministration: code in Code '689608' from rxnorm]
 define "Criterion 639":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital / phenytoin689744Ref")
-
+  exists [MedicationAdministration: code in Code '689744' from rxnorm]
 define "Criterion 640":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital / potassium iodide / sodium bicarbonate / theobromine689745Ref")
-
+  exists [MedicationAdministration: code in Code '689745' from rxnorm]
 define "Criterion 641":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital / sodium nitrite689746Ref")
-
+  exists [MedicationAdministration: code in Code '689746' from rxnorm]
 define "Criterion 642":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "acetaminophen / phenobarbital689794Ref")
-
+  exists [MedicationAdministration: code in Code '689794' from rxnorm]
 define "Criterion 643":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "benzocaine / calcium carbonate / magnesium carbonate / phenobarbital690250Ref")
-
+  exists [MedicationAdministration: code in Code '690250' from rxnorm]
 define "Criterion 644":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dicyclomine / phenobarbital690679Ref")
-
+  exists [MedicationAdministration: code in Code '690679' from rxnorm]
 define "Criterion 645":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "aminophylline / ephedrine / guaifenesin / phenobarbital690788Ref")
-
+  exists [MedicationAdministration: code in Code '690788' from rxnorm]
 define "Criterion 646":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "aminophylline / ephedrine / phenobarbital690789Ref")
-
+  exists [MedicationAdministration: code in Code '690789' from rxnorm]
 define "Criterion 647":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "aminophylline / ephedrine / phenobarbital / potassium iodide690790Ref")
-
+  exists [MedicationAdministration: code in Code '690790' from rxnorm]
 define "Criterion 648":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "aminophylline / phenobarbital690792Ref")
-
+  exists [MedicationAdministration: code in Code '690792' from rxnorm]
 define "Criterion 649":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "butabarbital / phenobarbital / secobarbital690828Ref")
-
+  exists [MedicationAdministration: code in Code '690828' from rxnorm]
 define "Criterion 650":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "calcium carbonate / magnesium hydroxide / phenobarbital691014Ref")
-
+  exists [MedicationAdministration: code in Code '691014' from rxnorm]
 define "Criterion 651":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "calcium carbonate / phenobarbital691018Ref")
-
+  exists [MedicationAdministration: code in Code '691018' from rxnorm]
 define "Criterion 652":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "calcium gluconate / niacinamide / phenobarbital691028Ref")
-
+  exists [MedicationAdministration: code in Code '691028' from rxnorm]
 define "Criterion 653":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dyphylline / ephedrine / guaifenesin / phenobarbital691072Ref")
-
+  exists [MedicationAdministration: code in Code '691072' from rxnorm]
 define "Criterion 654":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ephedrine / guaifenesin / phenobarbital / theophylline691226Ref")
-
+  exists [MedicationAdministration: code in Code '691226' from rxnorm]
 define "Criterion 655":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ephedrine / phenobarbital691231Ref")
-
+  exists [MedicationAdministration: code in Code '691231' from rxnorm]
 define "Criterion 656":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ephedrine / phenobarbital / potassium iodide / theophylline691232Ref")
-
+  exists [MedicationAdministration: code in Code '691232' from rxnorm]
 define "Criterion 657":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ergotamine / hyoscyamine / phenobarbital691251Ref")
-
+  exists [MedicationAdministration: code in Code '691251' from rxnorm]
 define "Criterion 658":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "niacin / niacinamide / phenobarbital691444Ref")
-
+  exists [MedicationAdministration: code in Code '691444' from rxnorm]
 define "Criterion 659":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "aspirin / phenobarbital812525Ref")
-
+  exists [MedicationAdministration: code in Code '812525' from rxnorm]
 define "Criterion 660":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "mephobarbital / phenobarbital / phenytoin819182Ref")
-
+  exists [MedicationAdministration: code in Code '819182' from rxnorm]
 define "Criterion 661":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine sulfate 0.00388 MG/ML / hyoscyamine sulfate 0.0207 MG/ML / phenobarbital 3.24 MG/ML / scopolamine hydrobromide 0.0013 MG/ML Oral Solution [Donnatal]1046924Ref")
-
+  exists [MedicationAdministration: code in Code '1046924' from rxnorm]
 define "Criterion 662":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine sulfate 0.0194 MG / hyoscyamine sulfate 0.1037 MG / phenobarbital 16.2 MG / scopolamine hydrobromide 0.0065 MG Oral Tablet [Donnatal]1046978Ref")
-
+  exists [MedicationAdministration: code in Code '1046978' from rxnorm]
 define "Criterion 663":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine sulfate 0.0582 MG / hyoscyamine sulfate 0.311 MG / phenobarbital 48.6 MG / scopolamine hydrobromide 0.0195 MG Extended Release Oral Tablet [Donnatal]1046999Ref")
-
+  exists [MedicationAdministration: code in Code '1046999' from rxnorm]
 define "Criterion 664":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine sulfate 0.0194 MG / hyoscyamine sulfate 0.1037 MG / phenobarbital 16.2 MG / scopolamine hydrobromide 0.0065 MG Oral Tablet [Phenohytro]1739887Ref")
-
+  exists [MedicationAdministration: code in Code '1739887' from rxnorm]
 define "Criterion 665":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine sulfate 0.00388 MG/ML / hyoscyamine sulfate 0.0207 MG/ML / phenobarbital 3.24 MG/ML / scopolamine hydrobromide 0.0013 MG/ML Oral Solution [Phenohytro]2048017Ref")
-
+  exists [MedicationAdministration: code in Code '2048017' from rxnorm]
 define "Criterion 666":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 30 MG Oral Tablet [Nobatol]2559719Ref")
-
+  exists [MedicationAdministration: code in Code '2559719' from rxnorm]
 define "Criterion 667":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 60 MG Oral Tablet [Nobatol]2559721Ref")
-
+  exists [MedicationAdministration: code in Code '2559721' from rxnorm]
 define "Criterion 668":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital sodium 100 MG Injection [Sezaby]2624724Ref")
-
+  exists [MedicationAdministration: code in Code '2624724' from rxnorm]
 define "Criterion 669":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine sulfate 0.0194 MG / hyoscyamine sulfate 0.1037 MG / phenobarbital 16.2 MG / scopolamine hydrobromide 0.0065 MG [Donnatal]1046809Ref")
-
+  exists [MedicationAdministration: code in Code '1046809' from rxnorm]
 define "Criterion 670":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine sulfate 0.00388 MG/ML / hyoscyamine sulfate 0.0207 MG/ML / phenobarbital 3.24 MG/ML / scopolamine hydrobromide 0.0013 MG/ML [Donnatal]1046923Ref")
-
+  exists [MedicationAdministration: code in Code '1046923' from rxnorm]
 define "Criterion 671":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine sulfate 0.0582 MG / hyoscyamine sulfate 0.311 MG / phenobarbital 48.6 MG / scopolamine hydrobromide 0.0195 MG [Donnatal]1046998Ref")
-
+  exists [MedicationAdministration: code in Code '1046998' from rxnorm]
 define "Criterion 672":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine sulfate 0.0194 MG / hyoscyamine sulfate 0.1037 MG / phenobarbital 16.2 MG / scopolamine hydrobromide 0.0065 MG [Phenohytro]1739883Ref")
-
+  exists [MedicationAdministration: code in Code '1739883' from rxnorm]
 define "Criterion 673":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine sulfate 0.00388 MG/ML / hyoscyamine sulfate 0.0207 MG/ML / phenobarbital 3.24 MG/ML / scopolamine hydrobromide 0.0013 MG/ML [Phenohytro]2118008Ref")
-
+  exists [MedicationAdministration: code in Code '2118008' from rxnorm]
 define "Criterion 674":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 30 MG [Nobatol]2559715Ref")
-
+  exists [MedicationAdministration: code in Code '2559715' from rxnorm]
 define "Criterion 675":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 60 MG [Nobatol]2559720Ref")
-
+  exists [MedicationAdministration: code in Code '2559720' from rxnorm]
 define "Criterion 676":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital sodium 100 MG [Sezaby]2624721Ref")
-
+  exists [MedicationAdministration: code in Code '2624721' from rxnorm]
 define "Criterion 677":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine sulfate 0.00388 MG/ML / hyoscyamine sulfate 0.0207 MG/ML / phenobarbital 3.24 MG/ML / scopolamine hydrobromide 0.0013 MG/ML Oral Solution1046787Ref")
-
+  exists [MedicationAdministration: code in Code '1046787' from rxnorm]
 define "Criterion 678":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine sulfate 0.0194 MG / hyoscyamine sulfate 0.1037 MG / phenobarbital 16.2 MG / scopolamine hydrobromide 0.0065 MG Oral Tablet1046815Ref")
-
+  exists [MedicationAdministration: code in Code '1046815' from rxnorm]
 define "Criterion 679":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "atropine sulfate 0.0582 MG / hyoscyamine sulfate 0.311 MG / phenobarbital 48.6 MG / scopolamine hydrobromide 0.0195 MG Extended Release Oral Tablet1046997Ref")
-
+  exists [MedicationAdministration: code in Code '1046997' from rxnorm]
 define "Criterion 680":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 10 MG/ML Injectable Solution1091265Ref")
-
+  exists [MedicationAdministration: code in Code '1091265' from rxnorm]
 define "Criterion 681":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "belladonna alkaloids 0.2 MG / ergotamine tartrate 0.6 MG / phenobarbital 40 MG Oral Tablet1294394Ref")
-
+  exists [MedicationAdministration: code in Code '1294394' from rxnorm]
 define "Criterion 682":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 100 MG Oral Tablet198083Ref")
-
+  exists [MedicationAdministration: code in Code '198083' from rxnorm]
 define "Criterion 683":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 16 MG Oral Capsule198084Ref")
-
+  exists [MedicationAdministration: code in Code '198084' from rxnorm]
 define "Criterion 684":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 16 MG Oral Tablet198085Ref")
-
+  exists [MedicationAdministration: code in Code '198085' from rxnorm]
 define "Criterion 685":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 16.2 MG Oral Tablet198086Ref")
-
+  exists [MedicationAdministration: code in Code '198086' from rxnorm]
 define "Criterion 686":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 60 MG Oral Tablet198089Ref")
-
+  exists [MedicationAdministration: code in Code '198089' from rxnorm]
 define "Criterion 687":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 65 MG/ML Injectable Solution198368Ref")
-
+  exists [MedicationAdministration: code in Code '198368' from rxnorm]
 define "Criterion 688":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 97.2 MG Oral Tablet199164Ref")
-
+  exists [MedicationAdministration: code in Code '199164' from rxnorm]
 define "Criterion 689":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 32.4 MG Oral Tablet199167Ref")
-
+  exists [MedicationAdministration: code in Code '199167' from rxnorm]
 define "Criterion 690":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 64.8 MG Oral Tablet199168Ref")
-
+  exists [MedicationAdministration: code in Code '199168' from rxnorm]
 define "Criterion 691":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 200 MG/ML Injectable Solution199964Ref")
-
+  exists [MedicationAdministration: code in Code '199964' from rxnorm]
 define "Criterion 692":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 15 MG/ML Injectable Solution251325Ref")
-
+  exists [MedicationAdministration: code in Code '251325' from rxnorm]
 define "Criterion 693":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital sodium 100 MG Injection2624719Ref")
-
+  exists [MedicationAdministration: code in Code '2624719' from rxnorm]
 define "Criterion 694":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "1 ML phenobarbital sodium 130 MG/ML Injection2671204Ref")
-
+  exists [MedicationAdministration: code in Code '2671204' from rxnorm]
 define "Criterion 695":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "1 ML phenobarbital sodium 65 MG/ML Injection2671207Ref")
-
+  exists [MedicationAdministration: code in Code '2671207' from rxnorm]
 define "Criterion 696":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 30 MG/ML Injectable Solution282462Ref")
-
+  exists [MedicationAdministration: code in Code '282462' from rxnorm]
 define "Criterion 697":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 60 MG/ML Injectable Solution282463Ref")
-
+  exists [MedicationAdministration: code in Code '282463' from rxnorm]
 define "Criterion 698":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "belladonna alkaloids 0.13 MG / phenobarbital 16.2 MG Oral Tablet308589Ref")
-
+  exists [MedicationAdministration: code in Code '308589' from rxnorm]
 define "Criterion 699":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 15 MG Oral Tablet312357Ref")
-
+  exists [MedicationAdministration: code in Code '312357' from rxnorm]
 define "Criterion 700":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 30 MG Oral Tablet312362Ref")
-
+  exists [MedicationAdministration: code in Code '312362' from rxnorm]
 define "Criterion 701":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 32 MG Oral Tablet312363Ref")
-
+  exists [MedicationAdministration: code in Code '312363' from rxnorm]
 define "Criterion 702":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 90 MG Oral Tablet312368Ref")
-
+  exists [MedicationAdministration: code in Code '312368' from rxnorm]
 define "Criterion 703":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 130 MG/ML Injectable Solution312370Ref")
-
+  exists [MedicationAdministration: code in Code '312370' from rxnorm]
 define "Criterion 704":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 4 MG/ML Oral Solution702519Ref")
-
+  exists [MedicationAdministration: code in Code '702519' from rxnorm]
 define "Criterion 705":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 3 MG/ML Oral Solution756143Ref")
-
+  exists [MedicationAdministration: code in Code '756143' from rxnorm]
 define "Criterion 706":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "belladonna alkaloids 0.026 MG/ML / phenobarbital 3.24 MG/ML Oral Solution756260Ref")
-
+  exists [MedicationAdministration: code in Code '756260' from rxnorm]
 define "Criterion 707":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 10 MG/ML1091264Ref")
-
+  exists [MedicationAdministration: code in Code '1091264' from rxnorm]
 define "Criterion 708":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital sodium 100 MG2624717Ref")
-
+  exists [MedicationAdministration: code in Code '2624717' from rxnorm]
 define "Criterion 709":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital sodium 130 MG/ML2671203Ref")
-
+  exists [MedicationAdministration: code in Code '2671203' from rxnorm]
 define "Criterion 710":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital sodium 65 MG/ML2671206Ref")
-
+  exists [MedicationAdministration: code in Code '2671206' from rxnorm]
 define "Criterion 711":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 100 MG316475Ref")
-
+  exists [MedicationAdministration: code in Code '316475' from rxnorm]
 define "Criterion 712":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 15 MG316476Ref")
-
+  exists [MedicationAdministration: code in Code '316476' from rxnorm]
 define "Criterion 713":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 15 MG/ML316477Ref")
-
+  exists [MedicationAdministration: code in Code '316477' from rxnorm]
 define "Criterion 714":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 16 MG316478Ref")
-
+  exists [MedicationAdministration: code in Code '316478' from rxnorm]
 define "Criterion 715":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 16.2 MG316479Ref")
-
+  exists [MedicationAdministration: code in Code '316479' from rxnorm]
 define "Criterion 716":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 3 MG/ML316480Ref")
-
+  exists [MedicationAdministration: code in Code '316480' from rxnorm]
 define "Criterion 717":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 3.24 MG/ML316481Ref")
-
+  exists [MedicationAdministration: code in Code '316481' from rxnorm]
 define "Criterion 718":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 30 MG316483Ref")
-
+  exists [MedicationAdministration: code in Code '316483' from rxnorm]
 define "Criterion 719":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 4 MG/ML316484Ref")
-
+  exists [MedicationAdministration: code in Code '316484' from rxnorm]
 define "Criterion 720":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 90 MG316488Ref")
-
+  exists [MedicationAdministration: code in Code '316488' from rxnorm]
 define "Criterion 721":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 32 MG317461Ref")
-
+  exists [MedicationAdministration: code in Code '317461' from rxnorm]
 define "Criterion 722":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 60 MG317463Ref")
-
+  exists [MedicationAdministration: code in Code '317463' from rxnorm]
 define "Criterion 723":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 30 MG/ML328565Ref")
-
+  exists [MedicationAdministration: code in Code '328565' from rxnorm]
 define "Criterion 724":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 60 MG/ML328567Ref")
-
+  exists [MedicationAdministration: code in Code '328567' from rxnorm]
 define "Criterion 725":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 65 MG/ML328569Ref")
-
+  exists [MedicationAdministration: code in Code '328569' from rxnorm]
 define "Criterion 726":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 130 MG/ML328572Ref")
-
+  exists [MedicationAdministration: code in Code '328572' from rxnorm]
 define "Criterion 727":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 64.8 MG329220Ref")
-
+  exists [MedicationAdministration: code in Code '329220' from rxnorm]
 define "Criterion 728":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 32.4 MG331416Ref")
-
+  exists [MedicationAdministration: code in Code '331416' from rxnorm]
 define "Criterion 729":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 97.2 MG331417Ref")
-
+  exists [MedicationAdministration: code in Code '331417' from rxnorm]
 define "Criterion 730":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 200 MG/ML332311Ref")
-
+  exists [MedicationAdministration: code in Code '332311' from rxnorm]
 define "Criterion 731":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 48.6 MG336053Ref")
-
+  exists [MedicationAdministration: code in Code '336053' from rxnorm]
 define "Criterion 732":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "phenobarbital 40 MG336345Ref")
-
+  exists [MedicationAdministration: code in Code '336345' from rxnorm]
 define "Criterion 733":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in rifampin9384Ref)
-
+  exists [MedicationAdministration: code in Code '9384' from rxnorm]
 define "Criterion 734":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "isoniazid / rifampin106876Ref")
-
+  exists [MedicationAdministration: code in Code '106876' from rxnorm]
 define "Criterion 735":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "isoniazid / pyrazinamide / rifampin214662Ref")
-
+  exists [MedicationAdministration: code in Code '214662' from rxnorm]
 define "Criterion 736":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethambutol / isoniazid / rifampin814321Ref")
-
+  exists [MedicationAdministration: code in Code '814321' from rxnorm]
 define "Criterion 737":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin / trimethoprim818205Ref")
-
+  exists [MedicationAdministration: code in Code '818205' from rxnorm]
 define "Criterion 738":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 150 MG Oral Capsule [Rifadin]201867Ref")
-
+  exists [MedicationAdministration: code in Code '201867' from rxnorm]
 define "Criterion 739":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 300 MG Oral Capsule [Rifadin]201868Ref")
-
+  exists [MedicationAdministration: code in Code '201868' from rxnorm]
 define "Criterion 740":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "isoniazid 50 MG / pyrazinamide 300 MG / rifampin 120 MG Oral Tablet [Rifater]206698Ref")
-
+  exists [MedicationAdministration: code in Code '206698' from rxnorm]
 define "Criterion 741":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "isoniazid 150 MG / rifampin 300 MG Oral Capsule [Rifamate]206702Ref")
-
+  exists [MedicationAdministration: code in Code '206702' from rxnorm]
 define "Criterion 742":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 600 MG Injection [Rifadin]207436Ref")
-
+  exists [MedicationAdministration: code in Code '207436' from rxnorm]
 define "Criterion 743":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 600 MG [Rifadin]1863367Ref")
-
+  exists [MedicationAdministration: code in Code '1863367' from rxnorm]
 define "Criterion 744":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 300 MG [Rifadin]563142Ref")
-
+  exists [MedicationAdministration: code in Code '563142' from rxnorm]
 define "Criterion 745":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 150 MG [Rifadin]566037Ref")
-
+  exists [MedicationAdministration: code in Code '566037' from rxnorm]
 define "Criterion 746":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "isoniazid 50 MG / pyrazinamide 300 MG / rifampin 120 MG [Rifater]567511Ref")
-
+  exists [MedicationAdministration: code in Code '567511' from rxnorm]
 define "Criterion 747":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "isoniazid 150 MG / rifampin 300 MG [Rifamate]567515Ref")
-
+  exists [MedicationAdministration: code in Code '567515' from rxnorm]
 define "Criterion 748":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 150 MG Oral Capsule198201Ref")
-
+  exists [MedicationAdministration: code in Code '198201' from rxnorm]
 define "Criterion 749":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 300 MG Oral Capsule198202Ref")
-
+  exists [MedicationAdministration: code in Code '198202' from rxnorm]
 define "Criterion 750":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "isoniazid 150 MG / rifampin 300 MG Oral Capsule198203Ref")
-
+  exists [MedicationAdministration: code in Code '198203' from rxnorm]
 define "Criterion 751":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "isoniazid 50 MG / pyrazinamide 300 MG / rifampin 120 MG Oral Tablet198384Ref")
-
+  exists [MedicationAdministration: code in Code '198384' from rxnorm]
 define "Criterion 752":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "isoniazid 100 MG / rifampin 150 MG Oral Tablet199755Ref")
-
+  exists [MedicationAdministration: code in Code '199755' from rxnorm]
 define "Criterion 753":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "isoniazid 150 MG / rifampin 300 MG Oral Tablet199756Ref")
-
+  exists [MedicationAdministration: code in Code '199756' from rxnorm]
 define "Criterion 754":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 20 MG/ML Oral Suspension246297Ref")
-
+  exists [MedicationAdministration: code in Code '246297' from rxnorm]
 define "Criterion 755":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 600 MG Injection312821Ref")
-
+  exists [MedicationAdministration: code in Code '312821' from rxnorm]
 define "Criterion 756":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 150 MG316641Ref")
-
+  exists [MedicationAdministration: code in Code '316641' from rxnorm]
 define "Criterion 757":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 300 MG316642Ref")
-
+  exists [MedicationAdministration: code in Code '316642' from rxnorm]
 define "Criterion 758":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 600 MG323964Ref")
-
+  exists [MedicationAdministration: code in Code '323964' from rxnorm]
 define "Criterion 759":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 20 MG/ML333249Ref")
-
+  exists [MedicationAdministration: code in Code '333249' from rxnorm]
 define "Criterion 760":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifampin 120 MG335921Ref")
-
+  exists [MedicationAdministration: code in Code '335921' from rxnorm]
 define "Criterion 761":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in rifabutin55672Ref)
-
+  exists [MedicationAdministration: code in Code '55672' from rxnorm]
 define "Criterion 762":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "amoxicillin / omeprazole / rifabutin2262025Ref")
-
+  exists [MedicationAdministration: code in Code '2262025' from rxnorm]
 define "Criterion 763":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifabutin 150 MG Oral Capsule [Mycobutin]103899Ref")
-
+  exists [MedicationAdministration: code in Code '103899' from rxnorm]
 define "Criterion 764":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "amoxicillin 250 MG / omeprazole 10 MG / rifabutin 12.5 MG Delayed Release Oral Capsule [Talicia]2262032Ref")
-
+  exists [MedicationAdministration: code in Code '2262032' from rxnorm]
 define "Criterion 765":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "amoxicillin 250 MG / omeprazole 10 MG / rifabutin 12.5 MG [Talicia]2262028Ref")
-
+  exists [MedicationAdministration: code in Code '2262028' from rxnorm]
 define "Criterion 766":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifabutin 150 MG [Mycobutin]563439Ref")
-
+  exists [MedicationAdministration: code in Code '563439' from rxnorm]
 define "Criterion 767":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifabutin 150 MG Oral Capsule198200Ref")
-
+  exists [MedicationAdministration: code in Code '198200' from rxnorm]
 define "Criterion 768":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "amoxicillin 250 MG / omeprazole 10 MG / rifabutin 12.5 MG Delayed Release Oral Capsule2262026Ref")
-
+  exists [MedicationAdministration: code in Code '2262026' from rxnorm]
 define "Criterion 769":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifabutin 12.5 MG2262021Ref")
-
+  exists [MedicationAdministration: code in Code '2262021' from rxnorm]
 define "Criterion 770":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifabutin 150 MG316640Ref")
-
+  exists [MedicationAdministration: code in Code '316640' from rxnorm]
 define "Criterion 771":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in rifapentine35617Ref)
-
+  exists [MedicationAdministration: code in Code '35617' from rxnorm]
 define "Criterion 772":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifapentine 150 MG Oral Tablet [Priftin]261101Ref")
-
+  exists [MedicationAdministration: code in Code '261101' from rxnorm]
 define "Criterion 773":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifapentine 150 MG [Priftin]574349Ref")
-
+  exists [MedicationAdministration: code in Code '574349' from rxnorm]
 define "Criterion 774":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifapentine 150 MG Oral Tablet242671Ref")
-
+  exists [MedicationAdministration: code in Code '242671' from rxnorm]
 define "Criterion 775":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "rifapentine 150 MG332427Ref")
-
+  exists [MedicationAdministration: code in Code '332427' from rxnorm]
 define "Criterion 776":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in modafinil30125Ref)
-
+  exists [MedicationAdministration: code in Code '30125' from rxnorm]
 define "Criterion 777":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "modafinil 200 MG Oral Tablet [Provigil]213471Ref")
-
+  exists [MedicationAdministration: code in Code '213471' from rxnorm]
 define "Criterion 778":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "modafinil 100 MG Oral Tablet [Provigil]226426Ref")
-
+  exists [MedicationAdministration: code in Code '226426' from rxnorm]
 define "Criterion 779":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "modafinil 200 MG [Provigil]573359Ref")
-
+  exists [MedicationAdministration: code in Code '573359' from rxnorm]
 define "Criterion 780":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "modafinil 100 MG [Provigil]573988Ref")
-
+  exists [MedicationAdministration: code in Code '573988' from rxnorm]
 define "Criterion 781":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "modafinil 200 MG Oral Tablet205324Ref")
-
+  exists [MedicationAdministration: code in Code '205324' from rxnorm]
 define "Criterion 782":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "modafinil 100 MG Oral Tablet260218Ref")
-
+  exists [MedicationAdministration: code in Code '260218' from rxnorm]
 define "Criterion 783":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "modafinil 100 MG316313Ref")
-
+  exists [MedicationAdministration: code in Code '316313' from rxnorm]
 define "Criterion 784":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "modafinil 200 MG316314Ref")
-
+  exists [MedicationAdministration: code in Code '316314' from rxnorm]
 define "Criterion 785":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in oxcarbazepine32624Ref)
-
+  exists [MedicationAdministration: code in Code '32624' from rxnorm]
 define "Criterion 786":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR oxcarbazepine 150 MG Extended Release Oral Tablet [Oxtellar]1365660Ref")
-
+  exists [MedicationAdministration: code in Code '1365660' from rxnorm]
 define "Criterion 787":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR oxcarbazepine 300 MG Extended Release Oral Tablet [Oxtellar]1365847Ref")
-
+  exists [MedicationAdministration: code in Code '1365847' from rxnorm]
 define "Criterion 788":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR oxcarbazepine 600 MG Extended Release Oral Tablet [Oxtellar]1365850Ref")
-
+  exists [MedicationAdministration: code in Code '1365850' from rxnorm]
 define "Criterion 789":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 150 MG Oral Tablet [Trileptal]261356Ref")
-
+  exists [MedicationAdministration: code in Code '261356' from rxnorm]
 define "Criterion 790":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 300 MG Oral Tablet [Trileptal]261360Ref")
-
+  exists [MedicationAdministration: code in Code '261360' from rxnorm]
 define "Criterion 791":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 600 MG Oral Tablet [Trileptal]262090Ref")
-
+  exists [MedicationAdministration: code in Code '262090' from rxnorm]
 define "Criterion 792":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 60 MG/ML Oral Suspension [Trileptal]351992Ref")
-
+  exists [MedicationAdministration: code in Code '351992' from rxnorm]
 define "Criterion 793":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 150 MG [Oxtellar]1365656Ref")
-
+  exists [MedicationAdministration: code in Code '1365656' from rxnorm]
 define "Criterion 794":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 300 MG [Oxtellar]1365846Ref")
-
+  exists [MedicationAdministration: code in Code '1365846' from rxnorm]
 define "Criterion 795":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 600 MG [Oxtellar]1365849Ref")
-
+  exists [MedicationAdministration: code in Code '1365849' from rxnorm]
 define "Criterion 796":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 150 MG [Trileptal]574575Ref")
-
+  exists [MedicationAdministration: code in Code '574575' from rxnorm]
 define "Criterion 797":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 300 MG [Trileptal]574579Ref")
-
+  exists [MedicationAdministration: code in Code '574579' from rxnorm]
 define "Criterion 798":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 600 MG [Trileptal]574672Ref")
-
+  exists [MedicationAdministration: code in Code '574672' from rxnorm]
 define "Criterion 799":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 60 MG/ML [Trileptal]575736Ref")
-
+  exists [MedicationAdministration: code in Code '575736' from rxnorm]
 define "Criterion 800":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR oxcarbazepine 150 MG Extended Release Oral Tablet1365653Ref")
-
+  exists [MedicationAdministration: code in Code '1365653' from rxnorm]
 define "Criterion 801":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR oxcarbazepine 300 MG Extended Release Oral Tablet1365842Ref")
-
+  exists [MedicationAdministration: code in Code '1365842' from rxnorm]
 define "Criterion 802":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "24 HR oxcarbazepine 600 MG Extended Release Oral Tablet1365844Ref")
-
+  exists [MedicationAdministration: code in Code '1365844' from rxnorm]
 define "Criterion 803":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 60 MG/ML Oral Suspension283536Ref")
-
+  exists [MedicationAdministration: code in Code '283536' from rxnorm]
 define "Criterion 804":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 150 MG Oral Tablet312136Ref")
-
+  exists [MedicationAdministration: code in Code '312136' from rxnorm]
 define "Criterion 805":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 300 MG Oral Tablet312137Ref")
-
+  exists [MedicationAdministration: code in Code '312137' from rxnorm]
 define "Criterion 806":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 600 MG Oral Tablet312138Ref")
-
+  exists [MedicationAdministration: code in Code '312138' from rxnorm]
 define "Criterion 807":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 300 MG330392Ref")
-
+  exists [MedicationAdministration: code in Code '330392' from rxnorm]
 define "Criterion 808":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 600 MG330393Ref")
-
+  exists [MedicationAdministration: code in Code '330393' from rxnorm]
 define "Criterion 809":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 150 MG330866Ref")
-
+  exists [MedicationAdministration: code in Code '330866' from rxnorm]
 define "Criterion 810":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "oxcarbazepine 60 MG/ML332278Ref")
-
+  exists [MedicationAdministration: code in Code '332278' from rxnorm]
 define "Criterion 811":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "bitter orange oil1314580Ref")
-
+  exists [MedicationAdministration: code in Code '1314580' from rxnorm]
 define "Criterion 812":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "grapefruit juice1431224Ref")
-
+  exists [MedicationAdministration: code in Code '1431224' from rxnorm]
 define "Criterion 813":
   exists (from [Condition: Code '94225005' from snomed] C
     where ToDate(C.onset as dateTime) in Interval[@1900-01-01T, @2023-10-01] or

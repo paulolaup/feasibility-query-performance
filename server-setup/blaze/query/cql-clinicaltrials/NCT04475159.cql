@@ -8,854 +8,6 @@ codesystem snomed: 'http://snomed.info/sct'
 
 context Unfiltered
 
-define "{24 (ethinyl estradiol 0.01 MG / norethindrone acetate 1 MG Oral Tablet) / 2 (ethinyl estradiol 0.01 MG Oral Tablet) / 2 (ferrous fumarate 75 MG Oral Tablet) } Pack [Lo Loestrin Fe 28 Day]1037185Ref":
-  from [Medication: Code '1037185' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Cyclafem 1/35 28 Day]1047040Ref":
-  from [Medication: Code '1047040' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Cyclafem 7/7/7 28 Day]1047041Ref":
-  from [Medication: Code '1047041' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Briellyn 28 Day]1094543Ref":
-  from [Medication: Code '1094543' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Balziva 28 Day]1095362Ref":
-  from [Medication: Code '1095362' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.025 MG / norethindrone 0.8 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Generess Fe 28]1099897Ref":
-  from [Medication: Code '1099897' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Dasetta 7/7/7 28 Day]1235867Ref":
-  from [Medication: Code '1235867' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Philith 28 Day]1235874Ref":
-  from [Medication: Code '1235874' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Alyacen 1/35]1242786Ref":
-  from [Medication: Code '1242786' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Alyacen 7/7/7]1242787Ref":
-  from [Medication: Code '1242787' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Chewable Tablet) / 7 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Femcon Fe 28 Day]1244908Ref":
-  from [Medication: Code '1244908' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack [Femhrt 0.5/2.5 28 Day]1251335Ref":
-  from [Medication: Code '1251335' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Dasetta 1/35 28 Day]1300538Ref":
-  from [Medication: Code '1300538' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Wera 28 Day]1300911Ref":
-  from [Medication: Code '1300911' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Junel Fe 1/20 28 Day]1358765Ref":
-  from [Medication: Code '1358765' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Loestrin Fe 1/20 28 Day]1358770Ref":
-  from [Medication: Code '1358770' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Microgestin Fe 1/20 28 Day]1358775Ref":
-  from [Medication: Code '1358775' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) } Pack [Junel 1/20 21 Day]1358780Ref":
-  from [Medication: Code '1358780' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) } Pack [Loestrin 1/20 21 Day]1358781Ref":
-  from [Medication: Code '1358781' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) } Pack [Microgestin 1/20 21 Day]1359020Ref":
-  from [Medication: Code '1359020' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Junel Fe 1.5/30 28 Day]1359025Ref":
-  from [Medication: Code '1359025' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Loestrin Fe 1.5/30 28 Day]1359026Ref":
-  from [Medication: Code '1359026' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Microgestin Fe 1.5/30 28 Day]1359027Ref":
-  from [Medication: Code '1359027' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack [Junel 1.5/30 21 Day]1359030Ref":
-  from [Medication: Code '1359030' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack [Loestrin 1.5/30 21 Day]1359031Ref":
-  from [Medication: Code '1359031' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack [Microgestin 1.5/30 21 Day]1359032Ref":
-  from [Medication: Code '1359032' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Loestrin 24 Fe 28 Day]1359118Ref":
-  from [Medication: Code '1359118' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet) } Pack [Activella 0.5/0.1 28 Day]1359125Ref":
-  from [Medication: Code '1359125' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack [Activella 1/0.5 28 Day]1359128Ref":
-  from [Medication: Code '1359128' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack [Mimvey]1359129Ref":
-  from [Medication: Code '1359129' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{5 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Estrostep Fe 28 Day]1359133Ref":
-  from [Medication: Code '1359133' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{5 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Tilia Fe]1359134Ref":
-  from [Medication: Code '1359134' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{5 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Tri-Legest 28 Day]1359135Ref":
-  from [Medication: Code '1359135' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Gildagia]1367691Ref":
-  from [Medication: Code '1367691' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Jencycla 28 Day]1422896Ref":
-  from [Medication: Code '1422896' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Minastrin 24 Fe Chewable 28 Day]1426601Ref":
-  from [Medication: Code '1426601' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Pirmella 1/35 28 Day]1427300Ref":
-  from [Medication: Code '1427300' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Pirmella 7/7/7 28 Day]1427301Ref":
-  from [Medication: Code '1427301' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Lyza]1430383Ref":
-  from [Medication: Code '1430383' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Larin Fe 1/20]1440183Ref":
-  from [Medication: Code '1440183' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Larin Fe 1.5/30]1440937Ref":
-  from [Medication: Code '1440937' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Chewable Tablet) / 7 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Zenchent Fe 28 Day]1483558Ref":
-  from [Medication: Code '1483558' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Vyfemla 28 Day]1485332Ref":
-  from [Medication: Code '1485332' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Chewable Tablet) / 7 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Wymzya Fe 28 Day]1486452Ref":
-  from [Medication: Code '1486452' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Lomedia 24 Fe]1486801Ref":
-  from [Medication: Code '1486801' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) } Pack [Larin 1/20]1487086Ref":
-  from [Medication: Code '1487086' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{1 (1.5 ML leuprolide acetate 7.5 MG/ML Prefilled Syringe [Lupron]) / 90 (norethindrone acetate 5 MG Oral Tablet) } Pack [Lupaneta Pack 3-Month]1488617Ref":
-  from [Medication: Code '1488617' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{1 (1 ML leuprolide acetate 3.75 MG/ML Prefilled Syringe [Lupron]) / 30 (norethindrone acetate 5 MG Oral Tablet) } Pack [Lupaneta Pack 1-Month]1488619Ref":
-  from [Medication: Code '1488619' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Norlyroc 28 Day]1495092Ref":
-  from [Medication: Code '1495092' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack [Larin 1.5/30]1537209Ref":
-  from [Medication: Code '1537209' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet) } Pack [Mimvey Lo 28 Day]1539190Ref":
-  from [Medication: Code '1539190' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Deblitane 28 Day]1539953Ref":
-  from [Medication: Code '1539953' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Sharobel 28 Day]1539955Ref":
-  from [Medication: Code '1539955' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Tarina Fe 1/20 28 Day]1550536Ref":
-  from [Medication: Code '1550536' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet) } Pack [Lopreeza 0.5/0.1 28 Day]1550964Ref":
-  from [Medication: Code '1550964' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack [Lopreeza 1/0.5 28 Day]1550965Ref":
-  from [Medication: Code '1550965' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Larin 24 Fe 1/20]1605091Ref":
-  from [Medication: Code '1605091' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.025 MG / norethindrone 0.8 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Layolis Fe 28]1650201Ref":
-  from [Medication: Code '1650201' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Junel Fe 24 1/20 28 Day]1652084Ref":
-  from [Medication: Code '1652084' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Microgestin 24 Fe 28 Day]1721965Ref":
-  from [Medication: Code '1721965' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Blisovi 24 Fe 1/20 28 Day]1722680Ref":
-  from [Medication: Code '1722680' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Blisovi 21 Fe 1/20 28 Day Pack]1724801Ref":
-  from [Medication: Code '1724801' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.025 MG / norethindrone 0.8 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Kaitlib Fe 28 Day]1727521Ref":
-  from [Medication: Code '1727521' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Blisovi 21 Fe 1.5/30 28 Day Pack]1729516Ref":
-  from [Medication: Code '1729516' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet) } Pack [Amabelz 0.5/0.1 28 Day]1806683Ref":
-  from [Medication: Code '1806683' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack [Amabelz 1/0.5 28 Day]1806684Ref":
-  from [Medication: Code '1806684' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Capsule) / 4 (ferrous fumarate 75 MG Oral Capsule) } Pack [Taytulla 28 Day]1809905Ref":
-  from [Medication: Code '1809905' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Norlyda 28 Day]1811763Ref":
-  from [Medication: Code '1811763' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Cyonanz 28 Day]1856398Ref":
-  from [Medication: Code '1856398' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Nylia 1/35 28 Day]1856402Ref":
-  from [Medication: Code '1856402' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Nylia 7/7/7 28 Day]1856424Ref":
-  from [Medication: Code '1856424' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Chewable Tablet) / 7 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Nexesta Fe 28 Day]1869047Ref":
-  from [Medication: Code '1869047' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Mibelas 24 Fe Chewable 28 Day]1873704Ref":
-  from [Medication: Code '1873704' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Aurovela Fe 1/20 28 Day]1926946Ref":
-  from [Medication: Code '1926946' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) } Pack [Aurovela 1/20 21 Day]1927366Ref":
-  from [Medication: Code '1927366' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Aurovela Fe 24 1/20 28 Day]1927957Ref":
-  from [Medication: Code '1927957' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack [Aurovela 1.5/30 21 Day]1928007Ref":
-  from [Medication: Code '1928007' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Melodetta 24 Fe Chewable 28 Day]1944656Ref":
-  from [Medication: Code '1944656' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Aurovela Fe 1.5/30 28 Day]1986791Ref":
-  from [Medication: Code '1986791' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Hailey 24 Fe 28 Day]1989507Ref":
-  from [Medication: Code '1989507' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Hailey Fe 1/20 28 Day]1989873Ref":
-  from [Medication: Code '1989873' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Tulana 28 Day]2043465Ref":
-  from [Medication: Code '2043465' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack [Hailey 1.5/30 21 Day]2047760Ref":
-  from [Medication: Code '2047760' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Incassia 28 Day]2052064Ref":
-  from [Medication: Code '2052064' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Hailey Fe 1.5/30 28 Day]2099508Ref":
-  from [Medication: Code '2099508' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Tarina 24 FE 1/20 28 Day]2107008Ref":
-  from [Medication: Code '2107008' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Charlotte 24 Fe Chewable 28 Day]2280761Ref":
-  from [Medication: Code '2280761' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (elagolix 300 MG / estradiol 1 MG / norethindrone 0.5 MG Oral Capsule) / 28 (elagolix 300 MG Oral Capsule) } Pack [Oriahnn 28 Day Kit]2371768Ref":
-  from [Medication: Code '2371768' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Lyleq 28 Day]2397128Ref":
-  from [Medication: Code '2397128' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Capsule) / 4 (ferrous fumarate 75 MG Oral Capsule) } Pack [Gemmily 28 Day]2463741Ref":
-  from [Medication: Code '2463741' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Capsule) / 4 (ferrous fumarate 75 MG Oral Capsule) } Pack [Taysofy 28 Day]2566439Ref":
-  from [Medication: Code '2566439' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Capsule) / 4 (ferrous fumarate 75 MG Oral Capsule) } Pack [Merzee 28 Day]2595466Ref":
-  from [Medication: Code '2595466' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Finzala 24 Fe Chewable 28 Day]2608695Ref":
-  from [Medication: Code '2608695' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Rhuzdah 28 Day]2624207Ref":
-  from [Medication: Code '2624207' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Emzahh 28 Day]2626828Ref":
-  from [Medication: Code '2626828' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet) } Pack [Etyqa 0.5/0.1 28 Day]2642136Ref":
-  from [Medication: Code '2642136' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack [Etyqa 1/0.5 28 Day]2642137Ref":
-  from [Medication: Code '2642137' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Camila 28 Day]748962Ref":
-  from [Medication: Code '748962' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Nora-BE 28 Day]748977Ref":
-  from [Medication: Code '748977' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Ortho Micronor 28 Day]748987Ref":
-  from [Medication: Code '748987' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{12 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Leena 28 Day]749148Ref":
-  from [Medication: Code '749148' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Ovcon 35 28 Day]749737Ref":
-  from [Medication: Code '749737' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Ortho-Novum 7/7/7 28 Day]749853Ref":
-  from [Medication: Code '749853' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Ortho-Novum 1/35 28 Day]749859Ref":
-  from [Medication: Code '749859' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Brevicon 28 Day]749880Ref":
-  from [Medication: Code '749880' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Necon 7/7/7 28 Day]750264Ref":
-  from [Medication: Code '750264' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{12 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Aranelle 28]750267Ref":
-  from [Medication: Code '750267' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Nortrel 0.5/35 28 Day]751868Ref":
-  from [Medication: Code '751868' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Nortrel 1/35 28 Day]751870Ref":
-  from [Medication: Code '751870' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) } Pack [Nortrel 1/35 21 Day]751871Ref":
-  from [Medication: Code '751871' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Necon 0.5/35 28 Day]751875Ref":
-  from [Medication: Code '751875' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Necon 1/35 28 Day]751879Ref":
-  from [Medication: Code '751879' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Zenchent 28 Day]753536Ref":
-  from [Medication: Code '753536' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Nortrel 7/7/7 28 Day]762007Ref":
-  from [Medication: Code '762007' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Errin 28 Day]831533Ref":
-  from [Medication: Code '831533' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Heather 28 Day]977836Ref":
-  from [Medication: Code '977836' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.01 MG / norethindrone acetate 1 MG Oral Tablet) / 2 (ethinyl estradiol 0.01 MG Oral Tablet) / 2 (ferrous fumarate 75 MG Oral Tablet) } Pack1037184Ref":
-  from [Medication: Code '1037184' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Chewable Tablet) / 7 (ferrous fumarate 75 MG Chewable Tablet) } Pack1095224Ref":
-  from [Medication: Code '1095224' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack1251334Ref":
-  from [Medication: Code '1251334' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG Oral Tablet) } Pack1251336Ref":
-  from [Medication: Code '1251336' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack1358763Ref":
-  from [Medication: Code '1358763' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) } Pack1358776Ref":
-  from [Medication: Code '1358776' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack1359023Ref":
-  from [Medication: Code '1359023' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack1359028Ref":
-  from [Medication: Code '1359028' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack1359117Ref":
-  from [Medication: Code '1359117' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet) } Pack1359124Ref":
-  from [Medication: Code '1359124' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack1359127Ref":
-  from [Medication: Code '1359127' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{5 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack1359132Ref":
-  from [Medication: Code '1359132' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Capsule) / 4 (ferrous fumarate 75 MG Oral Capsule) } Pack1421461Ref":
-  from [Medication: Code '1421461' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack1426600Ref":
-  from [Medication: Code '1426600' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{1 (1.5 ML leuprolide acetate 7.5 MG/ML Prefilled Syringe) / 90 (norethindrone acetate 5 MG Oral Tablet) } Pack1488616Ref":
-  from [Medication: Code '1488616' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{1 (1 ML leuprolide acetate 3.75 MG/ML Prefilled Syringe) / 30 (norethindrone acetate 5 MG Oral Tablet) } Pack1488618Ref":
-  from [Medication: Code '1488618' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{24 (ethinyl estradiol 0.025 MG / norethindrone 0.8 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Chewable Tablet) } Pack1607990Ref":
-  from [Medication: Code '1607990' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (elagolix 300 MG / estradiol 1 MG / norethindrone 0.5 MG Oral Capsule) / 28 (elagolix 300 MG Oral Capsule) } Pack2371767Ref":
-  from [Medication: Code '2371767' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{28 (norethindrone 0.35 MG Oral Tablet) } Pack748961Ref":
-  from [Medication: Code '748961' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack749736Ref":
-  from [Medication: Code '749736' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack749852Ref":
-  from [Medication: Code '749852' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack749858Ref":
-  from [Medication: Code '749858' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) } Pack749869Ref":
-  from [Medication: Code '749869' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack749879Ref":
-  from [Medication: Code '749879' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{12 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack823777Ref":
-  from [Medication: Code '823777' from rxnorm] M
-    return 'Medication/' + M.id
-
-define norethindrone7514Ref:
-  from [Medication: Code '7514' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "estradiol / estriol / norethindrone1007941Ref":
-  from [Medication: Code '1007941' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "mestranol / norethindrone154643Ref":
-  from [Medication: Code '154643' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "estradiol / norethindrone214551Ref":
-  from [Medication: Code '214551' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "elagolix / estradiol / norethindrone2371763Ref":
-  from [Medication: Code '2371763' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "estradiol / norethindrone / relugolix2556806Ref":
-  from [Medication: Code '2556806' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol / norethindrone384410Ref":
-  from [Medication: Code '384410' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone acetate 5 MG Oral Tablet [Aygestin]1000407Ref":
-  from [Medication: Code '1000407' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG Oral Tablet [Jinteli]1090996Ref":
-  from [Medication: Code '1090996' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG Oral Tablet [Femhrt]1251325Ref":
-  from [Medication: Code '1251325' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG Oral Tablet [Femhrt]1251327Ref":
-  from [Medication: Code '1251327' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "84 HR estradiol 0.00208 MG/HR / norethindrone acetate 0.00583 MG/HR Transdermal System [Combipatch]1251495Ref":
-  from [Medication: Code '1251495' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "84 HR estradiol 0.00208 MG/HR / norethindrone acetate 0.0104 MG/HR Transdermal System [Combipatch]1251501Ref":
-  from [Medication: Code '1251501' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG Oral Tablet [Jevantique]1722245Ref":
-  from [Medication: Code '1722245' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG Oral Tablet [Fyavolv]1736654Ref":
-  from [Medication: Code '1736654' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG Oral Tablet [Fyavolv]1736656Ref":
-  from [Medication: Code '1736656' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "estradiol 1 MG / norethindrone acetate 0.5 MG / relugolix 40 MG Oral Tablet [Myfembree]2556800Ref":
-  from [Medication: Code '2556800' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone acetate 5 MG [Aygestin]1000406Ref":
-  from [Medication: Code '1000406' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG [Jinteli]1090994Ref":
-  from [Medication: Code '1090994' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG [Femhrt]1251324Ref":
-  from [Medication: Code '1251324' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG [Femhrt]1251326Ref":
-  from [Medication: Code '1251326' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "estradiol 0.00208 MG/HR / norethindrone acetate 0.00583 MG/HR [Combipatch]1251494Ref":
-  from [Medication: Code '1251494' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "estradiol 0.00208 MG/HR / norethindrone acetate 0.0104 MG/HR [Combipatch]1251500Ref":
-  from [Medication: Code '1251500' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG [Jevantique]1722244Ref":
-  from [Medication: Code '1722244' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG [Fyavolv]1736650Ref":
-  from [Medication: Code '1736650' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG [Fyavolv]1736655Ref":
-  from [Medication: Code '1736655' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "estradiol 1 MG / norethindrone acetate 0.5 MG [Myfembree]2556798Ref":
-  from [Medication: Code '2556798' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone acetate 5 MG Oral Tablet1000405Ref":
-  from [Medication: Code '1000405' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.01 MG / norethindrone acetate 1 MG Oral Tablet1037183Ref":
-  from [Medication: Code '1037183' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG Oral Tablet1090992Ref":
-  from [Medication: Code '1090992' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.025 MG / norethindrone 0.8 MG Chewable Tablet1099638Ref":
-  from [Medication: Code '1099638' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG Oral Tablet1251323Ref":
-  from [Medication: Code '1251323' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "84 HR estradiol 0.00208 MG/HR / norethindrone acetate 0.00583 MG/HR Transdermal System1251493Ref":
-  from [Medication: Code '1251493' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "84 HR estradiol 0.00208 MG/HR / norethindrone acetate 0.0104 MG/HR Transdermal System1251499Ref":
-  from [Medication: Code '1251499' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet1358762Ref":
-  from [Medication: Code '1358762' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet1359022Ref":
-  from [Medication: Code '1359022' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet1359123Ref":
-  from [Medication: Code '1359123' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet1359126Ref":
-  from [Medication: Code '1359126' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet1359130Ref":
-  from [Medication: Code '1359130' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet1359131Ref":
-  from [Medication: Code '1359131' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone enanthate 200 MG/ML Injectable Solution1359235Ref":
-  from [Medication: Code '1359235' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone acetate 1 MG Oral Tablet1359294Ref":
-  from [Medication: Code '1359294' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Capsule1421459Ref":
-  from [Medication: Code '1421459' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet1426288Ref":
-  from [Medication: Code '1426288' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone 0.35 MG Oral Tablet198042Ref":
-  from [Medication: Code '198042' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "mestranol 0.05 MG / norethindrone 1 MG Oral Tablet198043Ref":
-  from [Medication: Code '198043' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "elagolix 300 MG / estradiol 1 MG / norethindrone 0.5 MG Oral Capsule2371764Ref":
-  from [Medication: Code '2371764' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet238015Ref":
-  from [Medication: Code '238015' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "estradiol 2 MG / norethindrone 1 MG Oral Tablet249869Ref":
-  from [Medication: Code '249869' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "estradiol 2 MG / norethindrone 0.7 MG Oral Tablet250838Ref":
-  from [Medication: Code '250838' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "estradiol 1 MG / norethindrone acetate 0.5 MG / relugolix 40 MG Oral Tablet2556799Ref":
-  from [Medication: Code '2556799' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet310463Ref":
-  from [Medication: Code '310463' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet312033Ref":
-  from [Medication: Code '312033' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.05 MG / norethindrone 1 MG Oral Tablet312124Ref":
-  from [Medication: Code '312124' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet392662Ref":
-  from [Medication: Code '392662' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Chewable Tablet433718Ref":
-  from [Medication: Code '433718' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone acetate 5 MG1000404Ref":
-  from [Medication: Code '1000404' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone acetate 1 MG1037182Ref":
-  from [Medication: Code '1037182' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone 0.8 MG1099637Ref":
-  from [Medication: Code '1099637' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone acetate 0.5 MG1251322Ref":
-  from [Medication: Code '1251322' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone acetate 0.00583 MG/HR1251492Ref":
-  from [Medication: Code '1251492' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone acetate 0.0104 MG/HR1251498Ref":
-  from [Medication: Code '1251498' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone acetate 1.5 MG1359021Ref":
-  from [Medication: Code '1359021' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone acetate 0.1 MG1359122Ref":
-  from [Medication: Code '1359122' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone enanthate 200 MG/ML1359234Ref":
-  from [Medication: Code '1359234' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone 0.35 MG316385Ref":
-  from [Medication: Code '316385' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone 1 MG316386Ref":
-  from [Medication: Code '316386' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone 0.5 MG317443Ref":
-  from [Medication: Code '317443' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone 0.4 MG317656Ref":
-  from [Medication: Code '317656' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone 0.7 MG334693Ref":
-  from [Medication: Code '334693' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "norethindrone 0.75 MG393545Ref":
-  from [Medication: Code '393545' from rxnorm] M
-    return 'Medication/' + M.id
-
 context Patient
 
 define "Criterion 1":
@@ -885,853 +37,429 @@ define "Criterion 6":
   Patient.gender = 'male'
 
 define "Criterion 7":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.01 MG / norethindrone acetate 1 MG Oral Tablet) / 2 (ethinyl estradiol 0.01 MG Oral Tablet) / 2 (ferrous fumarate 75 MG Oral Tablet) } Pack [Lo Loestrin Fe 28 Day]1037185Ref")
-
+  exists [MedicationAdministration: code in Code '1037185' from rxnorm]
 define "Criterion 8":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Cyclafem 1/35 28 Day]1047040Ref")
-
+  exists [MedicationAdministration: code in Code '1047040' from rxnorm]
 define "Criterion 9":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Cyclafem 7/7/7 28 Day]1047041Ref")
-
+  exists [MedicationAdministration: code in Code '1047041' from rxnorm]
 define "Criterion 10":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Briellyn 28 Day]1094543Ref")
-
+  exists [MedicationAdministration: code in Code '1094543' from rxnorm]
 define "Criterion 11":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Balziva 28 Day]1095362Ref")
-
+  exists [MedicationAdministration: code in Code '1095362' from rxnorm]
 define "Criterion 12":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.025 MG / norethindrone 0.8 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Generess Fe 28]1099897Ref")
-
+  exists [MedicationAdministration: code in Code '1099897' from rxnorm]
 define "Criterion 13":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Dasetta 7/7/7 28 Day]1235867Ref")
-
+  exists [MedicationAdministration: code in Code '1235867' from rxnorm]
 define "Criterion 14":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Philith 28 Day]1235874Ref")
-
+  exists [MedicationAdministration: code in Code '1235874' from rxnorm]
 define "Criterion 15":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Alyacen 1/35]1242786Ref")
-
+  exists [MedicationAdministration: code in Code '1242786' from rxnorm]
 define "Criterion 16":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Alyacen 7/7/7]1242787Ref")
-
+  exists [MedicationAdministration: code in Code '1242787' from rxnorm]
 define "Criterion 17":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Chewable Tablet) / 7 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Femcon Fe 28 Day]1244908Ref")
-
+  exists [MedicationAdministration: code in Code '1244908' from rxnorm]
 define "Criterion 18":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack [Femhrt 0.5/2.5 28 Day]1251335Ref")
-
+  exists [MedicationAdministration: code in Code '1251335' from rxnorm]
 define "Criterion 19":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Dasetta 1/35 28 Day]1300538Ref")
-
+  exists [MedicationAdministration: code in Code '1300538' from rxnorm]
 define "Criterion 20":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Wera 28 Day]1300911Ref")
-
+  exists [MedicationAdministration: code in Code '1300911' from rxnorm]
 define "Criterion 21":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Junel Fe 1/20 28 Day]1358765Ref")
-
+  exists [MedicationAdministration: code in Code '1358765' from rxnorm]
 define "Criterion 22":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Loestrin Fe 1/20 28 Day]1358770Ref")
-
+  exists [MedicationAdministration: code in Code '1358770' from rxnorm]
 define "Criterion 23":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Microgestin Fe 1/20 28 Day]1358775Ref")
-
+  exists [MedicationAdministration: code in Code '1358775' from rxnorm]
 define "Criterion 24":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) } Pack [Junel 1/20 21 Day]1358780Ref")
-
+  exists [MedicationAdministration: code in Code '1358780' from rxnorm]
 define "Criterion 25":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) } Pack [Loestrin 1/20 21 Day]1358781Ref")
-
+  exists [MedicationAdministration: code in Code '1358781' from rxnorm]
 define "Criterion 26":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) } Pack [Microgestin 1/20 21 Day]1359020Ref")
-
+  exists [MedicationAdministration: code in Code '1359020' from rxnorm]
 define "Criterion 27":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Junel Fe 1.5/30 28 Day]1359025Ref")
-
+  exists [MedicationAdministration: code in Code '1359025' from rxnorm]
 define "Criterion 28":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Loestrin Fe 1.5/30 28 Day]1359026Ref")
-
+  exists [MedicationAdministration: code in Code '1359026' from rxnorm]
 define "Criterion 29":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Microgestin Fe 1.5/30 28 Day]1359027Ref")
-
+  exists [MedicationAdministration: code in Code '1359027' from rxnorm]
 define "Criterion 30":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack [Junel 1.5/30 21 Day]1359030Ref")
-
+  exists [MedicationAdministration: code in Code '1359030' from rxnorm]
 define "Criterion 31":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack [Loestrin 1.5/30 21 Day]1359031Ref")
-
+  exists [MedicationAdministration: code in Code '1359031' from rxnorm]
 define "Criterion 32":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack [Microgestin 1.5/30 21 Day]1359032Ref")
-
+  exists [MedicationAdministration: code in Code '1359032' from rxnorm]
 define "Criterion 33":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Loestrin 24 Fe 28 Day]1359118Ref")
-
+  exists [MedicationAdministration: code in Code '1359118' from rxnorm]
 define "Criterion 34":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet) } Pack [Activella 0.5/0.1 28 Day]1359125Ref")
-
+  exists [MedicationAdministration: code in Code '1359125' from rxnorm]
 define "Criterion 35":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack [Activella 1/0.5 28 Day]1359128Ref")
-
+  exists [MedicationAdministration: code in Code '1359128' from rxnorm]
 define "Criterion 36":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack [Mimvey]1359129Ref")
-
+  exists [MedicationAdministration: code in Code '1359129' from rxnorm]
 define "Criterion 37":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{5 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Estrostep Fe 28 Day]1359133Ref")
-
+  exists [MedicationAdministration: code in Code '1359133' from rxnorm]
 define "Criterion 38":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{5 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Tilia Fe]1359134Ref")
-
+  exists [MedicationAdministration: code in Code '1359134' from rxnorm]
 define "Criterion 39":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{5 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Tri-Legest 28 Day]1359135Ref")
-
+  exists [MedicationAdministration: code in Code '1359135' from rxnorm]
 define "Criterion 40":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Gildagia]1367691Ref")
-
+  exists [MedicationAdministration: code in Code '1367691' from rxnorm]
 define "Criterion 41":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Jencycla 28 Day]1422896Ref")
-
+  exists [MedicationAdministration: code in Code '1422896' from rxnorm]
 define "Criterion 42":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Minastrin 24 Fe Chewable 28 Day]1426601Ref")
-
+  exists [MedicationAdministration: code in Code '1426601' from rxnorm]
 define "Criterion 43":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Pirmella 1/35 28 Day]1427300Ref")
-
+  exists [MedicationAdministration: code in Code '1427300' from rxnorm]
 define "Criterion 44":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Pirmella 7/7/7 28 Day]1427301Ref")
-
+  exists [MedicationAdministration: code in Code '1427301' from rxnorm]
 define "Criterion 45":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Lyza]1430383Ref")
-
+  exists [MedicationAdministration: code in Code '1430383' from rxnorm]
 define "Criterion 46":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Larin Fe 1/20]1440183Ref")
-
+  exists [MedicationAdministration: code in Code '1440183' from rxnorm]
 define "Criterion 47":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Larin Fe 1.5/30]1440937Ref")
-
+  exists [MedicationAdministration: code in Code '1440937' from rxnorm]
 define "Criterion 48":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Chewable Tablet) / 7 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Zenchent Fe 28 Day]1483558Ref")
-
+  exists [MedicationAdministration: code in Code '1483558' from rxnorm]
 define "Criterion 49":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Vyfemla 28 Day]1485332Ref")
-
+  exists [MedicationAdministration: code in Code '1485332' from rxnorm]
 define "Criterion 50":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Chewable Tablet) / 7 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Wymzya Fe 28 Day]1486452Ref")
-
+  exists [MedicationAdministration: code in Code '1486452' from rxnorm]
 define "Criterion 51":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Lomedia 24 Fe]1486801Ref")
-
+  exists [MedicationAdministration: code in Code '1486801' from rxnorm]
 define "Criterion 52":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) } Pack [Larin 1/20]1487086Ref")
-
+  exists [MedicationAdministration: code in Code '1487086' from rxnorm]
 define "Criterion 53":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{1 (1.5 ML leuprolide acetate 7.5 MG/ML Prefilled Syringe [Lupron]) / 90 (norethindrone acetate 5 MG Oral Tablet) } Pack [Lupaneta Pack 3-Month]1488617Ref")
-
+  exists [MedicationAdministration: code in Code '1488617' from rxnorm]
 define "Criterion 54":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{1 (1 ML leuprolide acetate 3.75 MG/ML Prefilled Syringe [Lupron]) / 30 (norethindrone acetate 5 MG Oral Tablet) } Pack [Lupaneta Pack 1-Month]1488619Ref")
-
+  exists [MedicationAdministration: code in Code '1488619' from rxnorm]
 define "Criterion 55":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Norlyroc 28 Day]1495092Ref")
-
+  exists [MedicationAdministration: code in Code '1495092' from rxnorm]
 define "Criterion 56":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack [Larin 1.5/30]1537209Ref")
-
+  exists [MedicationAdministration: code in Code '1537209' from rxnorm]
 define "Criterion 57":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet) } Pack [Mimvey Lo 28 Day]1539190Ref")
-
+  exists [MedicationAdministration: code in Code '1539190' from rxnorm]
 define "Criterion 58":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Deblitane 28 Day]1539953Ref")
-
+  exists [MedicationAdministration: code in Code '1539953' from rxnorm]
 define "Criterion 59":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Sharobel 28 Day]1539955Ref")
-
+  exists [MedicationAdministration: code in Code '1539955' from rxnorm]
 define "Criterion 60":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Tarina Fe 1/20 28 Day]1550536Ref")
-
+  exists [MedicationAdministration: code in Code '1550536' from rxnorm]
 define "Criterion 61":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet) } Pack [Lopreeza 0.5/0.1 28 Day]1550964Ref")
-
+  exists [MedicationAdministration: code in Code '1550964' from rxnorm]
 define "Criterion 62":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack [Lopreeza 1/0.5 28 Day]1550965Ref")
-
+  exists [MedicationAdministration: code in Code '1550965' from rxnorm]
 define "Criterion 63":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Larin 24 Fe 1/20]1605091Ref")
-
+  exists [MedicationAdministration: code in Code '1605091' from rxnorm]
 define "Criterion 64":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.025 MG / norethindrone 0.8 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Layolis Fe 28]1650201Ref")
-
+  exists [MedicationAdministration: code in Code '1650201' from rxnorm]
 define "Criterion 65":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Junel Fe 24 1/20 28 Day]1652084Ref")
-
+  exists [MedicationAdministration: code in Code '1652084' from rxnorm]
 define "Criterion 66":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Microgestin 24 Fe 28 Day]1721965Ref")
-
+  exists [MedicationAdministration: code in Code '1721965' from rxnorm]
 define "Criterion 67":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Blisovi 24 Fe 1/20 28 Day]1722680Ref")
-
+  exists [MedicationAdministration: code in Code '1722680' from rxnorm]
 define "Criterion 68":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Blisovi 21 Fe 1/20 28 Day Pack]1724801Ref")
-
+  exists [MedicationAdministration: code in Code '1724801' from rxnorm]
 define "Criterion 69":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.025 MG / norethindrone 0.8 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Kaitlib Fe 28 Day]1727521Ref")
-
+  exists [MedicationAdministration: code in Code '1727521' from rxnorm]
 define "Criterion 70":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Blisovi 21 Fe 1.5/30 28 Day Pack]1729516Ref")
-
+  exists [MedicationAdministration: code in Code '1729516' from rxnorm]
 define "Criterion 71":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet) } Pack [Amabelz 0.5/0.1 28 Day]1806683Ref")
-
+  exists [MedicationAdministration: code in Code '1806683' from rxnorm]
 define "Criterion 72":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack [Amabelz 1/0.5 28 Day]1806684Ref")
-
+  exists [MedicationAdministration: code in Code '1806684' from rxnorm]
 define "Criterion 73":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Capsule) / 4 (ferrous fumarate 75 MG Oral Capsule) } Pack [Taytulla 28 Day]1809905Ref")
-
+  exists [MedicationAdministration: code in Code '1809905' from rxnorm]
 define "Criterion 74":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Norlyda 28 Day]1811763Ref")
-
+  exists [MedicationAdministration: code in Code '1811763' from rxnorm]
 define "Criterion 75":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Cyonanz 28 Day]1856398Ref")
-
+  exists [MedicationAdministration: code in Code '1856398' from rxnorm]
 define "Criterion 76":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Nylia 1/35 28 Day]1856402Ref")
-
+  exists [MedicationAdministration: code in Code '1856402' from rxnorm]
 define "Criterion 77":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Nylia 7/7/7 28 Day]1856424Ref")
-
+  exists [MedicationAdministration: code in Code '1856424' from rxnorm]
 define "Criterion 78":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Chewable Tablet) / 7 (ferrous fumarate 75 MG Chewable Tablet) } Pack [Nexesta Fe 28 Day]1869047Ref")
-
+  exists [MedicationAdministration: code in Code '1869047' from rxnorm]
 define "Criterion 79":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Mibelas 24 Fe Chewable 28 Day]1873704Ref")
-
+  exists [MedicationAdministration: code in Code '1873704' from rxnorm]
 define "Criterion 80":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Aurovela Fe 1/20 28 Day]1926946Ref")
-
+  exists [MedicationAdministration: code in Code '1926946' from rxnorm]
 define "Criterion 81":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) } Pack [Aurovela 1/20 21 Day]1927366Ref")
-
+  exists [MedicationAdministration: code in Code '1927366' from rxnorm]
 define "Criterion 82":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Aurovela Fe 24 1/20 28 Day]1927957Ref")
-
+  exists [MedicationAdministration: code in Code '1927957' from rxnorm]
 define "Criterion 83":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack [Aurovela 1.5/30 21 Day]1928007Ref")
-
+  exists [MedicationAdministration: code in Code '1928007' from rxnorm]
 define "Criterion 84":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Melodetta 24 Fe Chewable 28 Day]1944656Ref")
-
+  exists [MedicationAdministration: code in Code '1944656' from rxnorm]
 define "Criterion 85":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Aurovela Fe 1.5/30 28 Day]1986791Ref")
-
+  exists [MedicationAdministration: code in Code '1986791' from rxnorm]
 define "Criterion 86":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Hailey 24 Fe 28 Day]1989507Ref")
-
+  exists [MedicationAdministration: code in Code '1989507' from rxnorm]
 define "Criterion 87":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Hailey Fe 1/20 28 Day]1989873Ref")
-
+  exists [MedicationAdministration: code in Code '1989873' from rxnorm]
 define "Criterion 88":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Tulana 28 Day]2043465Ref")
-
+  exists [MedicationAdministration: code in Code '2043465' from rxnorm]
 define "Criterion 89":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack [Hailey 1.5/30 21 Day]2047760Ref")
-
+  exists [MedicationAdministration: code in Code '2047760' from rxnorm]
 define "Criterion 90":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Incassia 28 Day]2052064Ref")
-
+  exists [MedicationAdministration: code in Code '2052064' from rxnorm]
 define "Criterion 91":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack [Hailey Fe 1.5/30 28 Day]2099508Ref")
-
+  exists [MedicationAdministration: code in Code '2099508' from rxnorm]
 define "Criterion 92":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Tarina 24 FE 1/20 28 Day]2107008Ref")
-
+  exists [MedicationAdministration: code in Code '2107008' from rxnorm]
 define "Criterion 93":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Charlotte 24 Fe Chewable 28 Day]2280761Ref")
-
+  exists [MedicationAdministration: code in Code '2280761' from rxnorm]
 define "Criterion 94":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (elagolix 300 MG / estradiol 1 MG / norethindrone 0.5 MG Oral Capsule) / 28 (elagolix 300 MG Oral Capsule) } Pack [Oriahnn 28 Day Kit]2371768Ref")
-
+  exists [MedicationAdministration: code in Code '2371768' from rxnorm]
 define "Criterion 95":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Lyleq 28 Day]2397128Ref")
-
+  exists [MedicationAdministration: code in Code '2397128' from rxnorm]
 define "Criterion 96":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Capsule) / 4 (ferrous fumarate 75 MG Oral Capsule) } Pack [Gemmily 28 Day]2463741Ref")
-
+  exists [MedicationAdministration: code in Code '2463741' from rxnorm]
 define "Criterion 97":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Capsule) / 4 (ferrous fumarate 75 MG Oral Capsule) } Pack [Taysofy 28 Day]2566439Ref")
-
+  exists [MedicationAdministration: code in Code '2566439' from rxnorm]
 define "Criterion 98":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Capsule) / 4 (ferrous fumarate 75 MG Oral Capsule) } Pack [Merzee 28 Day]2595466Ref")
-
+  exists [MedicationAdministration: code in Code '2595466' from rxnorm]
 define "Criterion 99":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack [Finzala 24 Fe Chewable 28 Day]2608695Ref")
-
+  exists [MedicationAdministration: code in Code '2608695' from rxnorm]
 define "Criterion 100":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Rhuzdah 28 Day]2624207Ref")
-
+  exists [MedicationAdministration: code in Code '2624207' from rxnorm]
 define "Criterion 101":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Emzahh 28 Day]2626828Ref")
-
+  exists [MedicationAdministration: code in Code '2626828' from rxnorm]
 define "Criterion 102":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet) } Pack [Etyqa 0.5/0.1 28 Day]2642136Ref")
-
+  exists [MedicationAdministration: code in Code '2642136' from rxnorm]
 define "Criterion 103":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack [Etyqa 1/0.5 28 Day]2642137Ref")
-
+  exists [MedicationAdministration: code in Code '2642137' from rxnorm]
 define "Criterion 104":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Camila 28 Day]748962Ref")
-
+  exists [MedicationAdministration: code in Code '748962' from rxnorm]
 define "Criterion 105":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Nora-BE 28 Day]748977Ref")
-
+  exists [MedicationAdministration: code in Code '748977' from rxnorm]
 define "Criterion 106":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Ortho Micronor 28 Day]748987Ref")
-
+  exists [MedicationAdministration: code in Code '748987' from rxnorm]
 define "Criterion 107":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{12 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Leena 28 Day]749148Ref")
-
+  exists [MedicationAdministration: code in Code '749148' from rxnorm]
 define "Criterion 108":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Ovcon 35 28 Day]749737Ref")
-
+  exists [MedicationAdministration: code in Code '749737' from rxnorm]
 define "Criterion 109":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Ortho-Novum 7/7/7 28 Day]749853Ref")
-
+  exists [MedicationAdministration: code in Code '749853' from rxnorm]
 define "Criterion 110":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Ortho-Novum 1/35 28 Day]749859Ref")
-
+  exists [MedicationAdministration: code in Code '749859' from rxnorm]
 define "Criterion 111":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Brevicon 28 Day]749880Ref")
-
+  exists [MedicationAdministration: code in Code '749880' from rxnorm]
 define "Criterion 112":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Necon 7/7/7 28 Day]750264Ref")
-
+  exists [MedicationAdministration: code in Code '750264' from rxnorm]
 define "Criterion 113":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{12 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Aranelle 28]750267Ref")
-
+  exists [MedicationAdministration: code in Code '750267' from rxnorm]
 define "Criterion 114":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Nortrel 0.5/35 28 Day]751868Ref")
-
+  exists [MedicationAdministration: code in Code '751868' from rxnorm]
 define "Criterion 115":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Nortrel 1/35 28 Day]751870Ref")
-
+  exists [MedicationAdministration: code in Code '751870' from rxnorm]
 define "Criterion 116":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) } Pack [Nortrel 1/35 21 Day]751871Ref")
-
+  exists [MedicationAdministration: code in Code '751871' from rxnorm]
 define "Criterion 117":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Necon 0.5/35 28 Day]751875Ref")
-
+  exists [MedicationAdministration: code in Code '751875' from rxnorm]
 define "Criterion 118":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Necon 1/35 28 Day]751879Ref")
-
+  exists [MedicationAdministration: code in Code '751879' from rxnorm]
 define "Criterion 119":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Zenchent 28 Day]753536Ref")
-
+  exists [MedicationAdministration: code in Code '753536' from rxnorm]
 define "Criterion 120":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Nortrel 7/7/7 28 Day]762007Ref")
-
+  exists [MedicationAdministration: code in Code '762007' from rxnorm]
 define "Criterion 121":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Errin 28 Day]831533Ref")
-
+  exists [MedicationAdministration: code in Code '831533' from rxnorm]
 define "Criterion 122":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Heather 28 Day]977836Ref")
-
+  exists [MedicationAdministration: code in Code '977836' from rxnorm]
 define "Criterion 123":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.01 MG / norethindrone acetate 1 MG Oral Tablet) / 2 (ethinyl estradiol 0.01 MG Oral Tablet) / 2 (ferrous fumarate 75 MG Oral Tablet) } Pack1037184Ref")
-
+  exists [MedicationAdministration: code in Code '1037184' from rxnorm]
 define "Criterion 124":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Chewable Tablet) / 7 (ferrous fumarate 75 MG Chewable Tablet) } Pack1095224Ref")
-
+  exists [MedicationAdministration: code in Code '1095224' from rxnorm]
 define "Criterion 125":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack1251334Ref")
-
+  exists [MedicationAdministration: code in Code '1251334' from rxnorm]
 define "Criterion 126":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG Oral Tablet) } Pack1251336Ref")
-
+  exists [MedicationAdministration: code in Code '1251336' from rxnorm]
 define "Criterion 127":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack1358763Ref")
-
+  exists [MedicationAdministration: code in Code '1358763' from rxnorm]
 define "Criterion 128":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) } Pack1358776Ref")
-
+  exists [MedicationAdministration: code in Code '1358776' from rxnorm]
 define "Criterion 129":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack1359023Ref")
-
+  exists [MedicationAdministration: code in Code '1359023' from rxnorm]
 define "Criterion 130":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet) } Pack1359028Ref")
-
+  exists [MedicationAdministration: code in Code '1359028' from rxnorm]
 define "Criterion 131":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack1359117Ref")
-
+  exists [MedicationAdministration: code in Code '1359117' from rxnorm]
 define "Criterion 132":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet) } Pack1359124Ref")
-
+  exists [MedicationAdministration: code in Code '1359124' from rxnorm]
 define "Criterion 133":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet) } Pack1359127Ref")
-
+  exists [MedicationAdministration: code in Code '1359127' from rxnorm]
 define "Criterion 134":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{5 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral Tablet) } Pack1359132Ref")
-
+  exists [MedicationAdministration: code in Code '1359132' from rxnorm]
 define "Criterion 135":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Capsule) / 4 (ferrous fumarate 75 MG Oral Capsule) } Pack1421461Ref")
-
+  exists [MedicationAdministration: code in Code '1421461' from rxnorm]
 define "Criterion 136":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Oral Tablet) } Pack1426600Ref")
-
+  exists [MedicationAdministration: code in Code '1426600' from rxnorm]
 define "Criterion 137":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{1 (1.5 ML leuprolide acetate 7.5 MG/ML Prefilled Syringe) / 90 (norethindrone acetate 5 MG Oral Tablet) } Pack1488616Ref")
-
+  exists [MedicationAdministration: code in Code '1488616' from rxnorm]
 define "Criterion 138":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{1 (1 ML leuprolide acetate 3.75 MG/ML Prefilled Syringe) / 30 (norethindrone acetate 5 MG Oral Tablet) } Pack1488618Ref")
-
+  exists [MedicationAdministration: code in Code '1488618' from rxnorm]
 define "Criterion 139":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{24 (ethinyl estradiol 0.025 MG / norethindrone 0.8 MG Chewable Tablet) / 4 (ferrous fumarate 75 MG Chewable Tablet) } Pack1607990Ref")
-
+  exists [MedicationAdministration: code in Code '1607990' from rxnorm]
 define "Criterion 140":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (elagolix 300 MG / estradiol 1 MG / norethindrone 0.5 MG Oral Capsule) / 28 (elagolix 300 MG Oral Capsule) } Pack2371767Ref")
-
+  exists [MedicationAdministration: code in Code '2371767' from rxnorm]
 define "Criterion 141":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{28 (norethindrone 0.35 MG Oral Tablet) } Pack748961Ref")
-
+  exists [MedicationAdministration: code in Code '748961' from rxnorm]
 define "Criterion 142":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack749736Ref")
-
+  exists [MedicationAdministration: code in Code '749736' from rxnorm]
 define "Criterion 143":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{7 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack749852Ref")
-
+  exists [MedicationAdministration: code in Code '749852' from rxnorm]
 define "Criterion 144":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack749858Ref")
-
+  exists [MedicationAdministration: code in Code '749858' from rxnorm]
 define "Criterion 145":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) } Pack749869Ref")
-
+  exists [MedicationAdministration: code in Code '749869' from rxnorm]
 define "Criterion 146":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack749879Ref")
-
+  exists [MedicationAdministration: code in Code '749879' from rxnorm]
 define "Criterion 147":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{12 (ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack823777Ref")
-
+  exists [MedicationAdministration: code in Code '823777' from rxnorm]
 define "Criterion 148":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in norethindrone7514Ref)
-
+  exists [MedicationAdministration: code in Code '7514' from rxnorm]
 define "Criterion 149":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "estradiol / estriol / norethindrone1007941Ref")
-
+  exists [MedicationAdministration: code in Code '1007941' from rxnorm]
 define "Criterion 150":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "mestranol / norethindrone154643Ref")
-
+  exists [MedicationAdministration: code in Code '154643' from rxnorm]
 define "Criterion 151":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "estradiol / norethindrone214551Ref")
-
+  exists [MedicationAdministration: code in Code '214551' from rxnorm]
 define "Criterion 152":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "elagolix / estradiol / norethindrone2371763Ref")
-
+  exists [MedicationAdministration: code in Code '2371763' from rxnorm]
 define "Criterion 153":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "estradiol / norethindrone / relugolix2556806Ref")
-
+  exists [MedicationAdministration: code in Code '2556806' from rxnorm]
 define "Criterion 154":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol / norethindrone384410Ref")
-
+  exists [MedicationAdministration: code in Code '384410' from rxnorm]
 define "Criterion 155":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone acetate 5 MG Oral Tablet [Aygestin]1000407Ref")
-
+  exists [MedicationAdministration: code in Code '1000407' from rxnorm]
 define "Criterion 156":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG Oral Tablet [Jinteli]1090996Ref")
-
+  exists [MedicationAdministration: code in Code '1090996' from rxnorm]
 define "Criterion 157":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG Oral Tablet [Femhrt]1251325Ref")
-
+  exists [MedicationAdministration: code in Code '1251325' from rxnorm]
 define "Criterion 158":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG Oral Tablet [Femhrt]1251327Ref")
-
+  exists [MedicationAdministration: code in Code '1251327' from rxnorm]
 define "Criterion 159":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "84 HR estradiol 0.00208 MG/HR / norethindrone acetate 0.00583 MG/HR Transdermal System [Combipatch]1251495Ref")
-
+  exists [MedicationAdministration: code in Code '1251495' from rxnorm]
 define "Criterion 160":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "84 HR estradiol 0.00208 MG/HR / norethindrone acetate 0.0104 MG/HR Transdermal System [Combipatch]1251501Ref")
-
+  exists [MedicationAdministration: code in Code '1251501' from rxnorm]
 define "Criterion 161":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG Oral Tablet [Jevantique]1722245Ref")
-
+  exists [MedicationAdministration: code in Code '1722245' from rxnorm]
 define "Criterion 162":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG Oral Tablet [Fyavolv]1736654Ref")
-
+  exists [MedicationAdministration: code in Code '1736654' from rxnorm]
 define "Criterion 163":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG Oral Tablet [Fyavolv]1736656Ref")
-
+  exists [MedicationAdministration: code in Code '1736656' from rxnorm]
 define "Criterion 164":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "estradiol 1 MG / norethindrone acetate 0.5 MG / relugolix 40 MG Oral Tablet [Myfembree]2556800Ref")
-
+  exists [MedicationAdministration: code in Code '2556800' from rxnorm]
 define "Criterion 165":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone acetate 5 MG [Aygestin]1000406Ref")
-
+  exists [MedicationAdministration: code in Code '1000406' from rxnorm]
 define "Criterion 166":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG [Jinteli]1090994Ref")
-
+  exists [MedicationAdministration: code in Code '1090994' from rxnorm]
 define "Criterion 167":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG [Femhrt]1251324Ref")
-
+  exists [MedicationAdministration: code in Code '1251324' from rxnorm]
 define "Criterion 168":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG [Femhrt]1251326Ref")
-
+  exists [MedicationAdministration: code in Code '1251326' from rxnorm]
 define "Criterion 169":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "estradiol 0.00208 MG/HR / norethindrone acetate 0.00583 MG/HR [Combipatch]1251494Ref")
-
+  exists [MedicationAdministration: code in Code '1251494' from rxnorm]
 define "Criterion 170":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "estradiol 0.00208 MG/HR / norethindrone acetate 0.0104 MG/HR [Combipatch]1251500Ref")
-
+  exists [MedicationAdministration: code in Code '1251500' from rxnorm]
 define "Criterion 171":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG [Jevantique]1722244Ref")
-
+  exists [MedicationAdministration: code in Code '1722244' from rxnorm]
 define "Criterion 172":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG [Fyavolv]1736650Ref")
-
+  exists [MedicationAdministration: code in Code '1736650' from rxnorm]
 define "Criterion 173":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG [Fyavolv]1736655Ref")
-
+  exists [MedicationAdministration: code in Code '1736655' from rxnorm]
 define "Criterion 174":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "estradiol 1 MG / norethindrone acetate 0.5 MG [Myfembree]2556798Ref")
-
+  exists [MedicationAdministration: code in Code '2556798' from rxnorm]
 define "Criterion 175":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone acetate 5 MG Oral Tablet1000405Ref")
-
+  exists [MedicationAdministration: code in Code '1000405' from rxnorm]
 define "Criterion 176":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.01 MG / norethindrone acetate 1 MG Oral Tablet1037183Ref")
-
+  exists [MedicationAdministration: code in Code '1037183' from rxnorm]
 define "Criterion 177":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.005 MG / norethindrone acetate 1 MG Oral Tablet1090992Ref")
-
+  exists [MedicationAdministration: code in Code '1090992' from rxnorm]
 define "Criterion 178":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.025 MG / norethindrone 0.8 MG Chewable Tablet1099638Ref")
-
+  exists [MedicationAdministration: code in Code '1099638' from rxnorm]
 define "Criterion 179":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.0025 MG / norethindrone acetate 0.5 MG Oral Tablet1251323Ref")
-
+  exists [MedicationAdministration: code in Code '1251323' from rxnorm]
 define "Criterion 180":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "84 HR estradiol 0.00208 MG/HR / norethindrone acetate 0.00583 MG/HR Transdermal System1251493Ref")
-
+  exists [MedicationAdministration: code in Code '1251493' from rxnorm]
 define "Criterion 181":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "84 HR estradiol 0.00208 MG/HR / norethindrone acetate 0.0104 MG/HR Transdermal System1251499Ref")
-
+  exists [MedicationAdministration: code in Code '1251499' from rxnorm]
 define "Criterion 182":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet1358762Ref")
-
+  exists [MedicationAdministration: code in Code '1358762' from rxnorm]
 define "Criterion 183":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.03 MG / norethindrone acetate 1.5 MG Oral Tablet1359022Ref")
-
+  exists [MedicationAdministration: code in Code '1359022' from rxnorm]
 define "Criterion 184":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "estradiol 0.5 MG / norethindrone acetate 0.1 MG Oral Tablet1359123Ref")
-
+  exists [MedicationAdministration: code in Code '1359123' from rxnorm]
 define "Criterion 185":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "estradiol 1 MG / norethindrone acetate 0.5 MG Oral Tablet1359126Ref")
-
+  exists [MedicationAdministration: code in Code '1359126' from rxnorm]
 define "Criterion 186":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet1359130Ref")
-
+  exists [MedicationAdministration: code in Code '1359130' from rxnorm]
 define "Criterion 187":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet1359131Ref")
-
+  exists [MedicationAdministration: code in Code '1359131' from rxnorm]
 define "Criterion 188":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone enanthate 200 MG/ML Injectable Solution1359235Ref")
-
+  exists [MedicationAdministration: code in Code '1359235' from rxnorm]
 define "Criterion 189":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone acetate 1 MG Oral Tablet1359294Ref")
-
+  exists [MedicationAdministration: code in Code '1359294' from rxnorm]
 define "Criterion 190":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Capsule1421459Ref")
-
+  exists [MedicationAdministration: code in Code '1421459' from rxnorm]
 define "Criterion 191":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Chewable Tablet1426288Ref")
-
+  exists [MedicationAdministration: code in Code '1426288' from rxnorm]
 define "Criterion 192":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone 0.35 MG Oral Tablet198042Ref")
-
+  exists [MedicationAdministration: code in Code '198042' from rxnorm]
 define "Criterion 193":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "mestranol 0.05 MG / norethindrone 1 MG Oral Tablet198043Ref")
-
+  exists [MedicationAdministration: code in Code '198043' from rxnorm]
 define "Criterion 194":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "elagolix 300 MG / estradiol 1 MG / norethindrone 0.5 MG Oral Capsule2371764Ref")
-
+  exists [MedicationAdministration: code in Code '2371764' from rxnorm]
 define "Criterion 195":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Oral Tablet238015Ref")
-
+  exists [MedicationAdministration: code in Code '238015' from rxnorm]
 define "Criterion 196":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "estradiol 2 MG / norethindrone 1 MG Oral Tablet249869Ref")
-
+  exists [MedicationAdministration: code in Code '249869' from rxnorm]
 define "Criterion 197":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "estradiol 2 MG / norethindrone 0.7 MG Oral Tablet250838Ref")
-
+  exists [MedicationAdministration: code in Code '250838' from rxnorm]
 define "Criterion 198":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "estradiol 1 MG / norethindrone acetate 0.5 MG / relugolix 40 MG Oral Tablet2556799Ref")
-
+  exists [MedicationAdministration: code in Code '2556799' from rxnorm]
 define "Criterion 199":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.035 MG / norethindrone 0.5 MG Oral Tablet310463Ref")
-
+  exists [MedicationAdministration: code in Code '310463' from rxnorm]
 define "Criterion 200":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.035 MG / norethindrone 1 MG Oral Tablet312033Ref")
-
+  exists [MedicationAdministration: code in Code '312033' from rxnorm]
 define "Criterion 201":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.05 MG / norethindrone 1 MG Oral Tablet312124Ref")
-
+  exists [MedicationAdministration: code in Code '312124' from rxnorm]
 define "Criterion 202":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.035 MG / norethindrone 0.75 MG Oral Tablet392662Ref")
-
+  exists [MedicationAdministration: code in Code '392662' from rxnorm]
 define "Criterion 203":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ethinyl estradiol 0.035 MG / norethindrone 0.4 MG Chewable Tablet433718Ref")
-
+  exists [MedicationAdministration: code in Code '433718' from rxnorm]
 define "Criterion 204":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone acetate 5 MG1000404Ref")
-
+  exists [MedicationAdministration: code in Code '1000404' from rxnorm]
 define "Criterion 205":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone acetate 1 MG1037182Ref")
-
+  exists [MedicationAdministration: code in Code '1037182' from rxnorm]
 define "Criterion 206":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone 0.8 MG1099637Ref")
-
+  exists [MedicationAdministration: code in Code '1099637' from rxnorm]
 define "Criterion 207":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone acetate 0.5 MG1251322Ref")
-
+  exists [MedicationAdministration: code in Code '1251322' from rxnorm]
 define "Criterion 208":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone acetate 0.00583 MG/HR1251492Ref")
-
+  exists [MedicationAdministration: code in Code '1251492' from rxnorm]
 define "Criterion 209":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone acetate 0.0104 MG/HR1251498Ref")
-
+  exists [MedicationAdministration: code in Code '1251498' from rxnorm]
 define "Criterion 210":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone acetate 1.5 MG1359021Ref")
-
+  exists [MedicationAdministration: code in Code '1359021' from rxnorm]
 define "Criterion 211":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone acetate 0.1 MG1359122Ref")
-
+  exists [MedicationAdministration: code in Code '1359122' from rxnorm]
 define "Criterion 212":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone enanthate 200 MG/ML1359234Ref")
-
+  exists [MedicationAdministration: code in Code '1359234' from rxnorm]
 define "Criterion 213":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone 0.35 MG316385Ref")
-
+  exists [MedicationAdministration: code in Code '316385' from rxnorm]
 define "Criterion 214":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone 1 MG316386Ref")
-
+  exists [MedicationAdministration: code in Code '316386' from rxnorm]
 define "Criterion 215":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone 0.5 MG317443Ref")
-
+  exists [MedicationAdministration: code in Code '317443' from rxnorm]
 define "Criterion 216":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone 0.4 MG317656Ref")
-
+  exists [MedicationAdministration: code in Code '317656' from rxnorm]
 define "Criterion 217":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone 0.7 MG334693Ref")
-
+  exists [MedicationAdministration: code in Code '334693' from rxnorm]
 define "Criterion 218":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "norethindrone 0.75 MG393545Ref")
-
+  exists [MedicationAdministration: code in Code '393545' from rxnorm]
 define "Criterion 219":
   exists (from [Condition: Code '363406005' from snomed] C
     where ToDate(C.onset as dateTime) in Interval[@1900-01-01T, @2023-10-01] or

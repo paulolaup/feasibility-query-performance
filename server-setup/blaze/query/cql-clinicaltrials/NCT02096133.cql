@@ -7,582 +7,6 @@ codesystem snomed: 'http://snomed.info/sct'
 
 context Unfiltered
 
-define "{49 (dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 12 Day Taper]1998481Ref":
-  from [Medication: Code '1998481' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 6 Day Taper]1998482Ref":
-  from [Medication: Code '1998482' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack [HiDex 6-Day Taper]2118829Ref":
-  from [Medication: Code '2118829' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{27 (dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 7-Day Taper]2118835Ref":
-  from [Medication: Code '2118835' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{39 (dexamethasone 1.5 MG Oral Tablet) } Pack [Dxevo 11 Day Taper]2121735Ref":
-  from [Medication: Code '2121735' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{25 (dexamethasone 1.5 MG Oral Tablet) } Pack [Zcort 7 Day Taper]2387356Ref":
-  from [Medication: Code '2387356' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{12 (dexamethasone 0.75 MG Oral Tablet [Decadron]) } Pack [Decadron 5-12]795716Ref":
-  from [Medication: Code '795716' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{35 (dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak TaperPak Junior 10 Day]797022Ref":
-  from [Medication: Code '797022' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{51 (dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak TaperPak 13 Day]797023Ref":
-  from [Medication: Code '797023' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak TaperPak 6 Day]847225Ref":
-  from [Medication: Code '847225' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{27 (dexamethasone 1.5 MG Oral Tablet) } Pack1869595Ref":
-  from [Medication: Code '1869595' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{49 (dexamethasone 1.5 MG Oral Tablet) } Pack1943550Ref":
-  from [Medication: Code '1943550' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{39 (dexamethasone 1.5 MG Oral Tablet) } Pack2121587Ref":
-  from [Medication: Code '2121587' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{25 (dexamethasone 1.5 MG Oral Tablet) } Pack2387355Ref":
-  from [Medication: Code '2387355' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{51 (dexamethasone 1.5 MG Oral Tablet) } Pack759481Ref":
-  from [Medication: Code '759481' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{12 (dexamethasone 0.75 MG Oral Tablet) } Pack759696Ref":
-  from [Medication: Code '759696' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{35 (dexamethasone 1.5 MG Oral Tablet) } Pack759697Ref":
-  from [Medication: Code '759697' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack846192Ref":
-  from [Medication: Code '846192' from rxnorm] M
-    return 'Medication/' + M.id
-
-define dexamethasone3264Ref:
-  from [Medication: Code '3264' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "astemizole / dexamethasone1007105Ref":
-  from [Medication: Code '1007105' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clioquinol / dexamethasone1007256Ref":
-  from [Medication: Code '1007256' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / oxytetracycline1007423Ref":
-  from [Medication: Code '1007423' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / hypromellose1007483Ref":
-  from [Medication: Code '1007483' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / dobesilic acid / lidocaine1007628Ref":
-  from [Medication: Code '1007628' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clotrimazole / dexamethasone1007854Ref":
-  from [Medication: Code '1007854' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "clemastine / dexamethasone1008217Ref":
-  from [Medication: Code '1008217' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / phenylephrine1008930Ref":
-  from [Medication: Code '1008930' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / sodium phosphate1009150Ref":
-  from [Medication: Code '1009150' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / neomycin / thiabendazole1009387Ref":
-  from [Medication: Code '1009387' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / lidocaine214478Ref":
-  from [Medication: Code '214478' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / neomycin216524Ref":
-  from [Medication: Code '216524' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / neomycin / polymyxin B216525Ref":
-  from [Medication: Code '216525' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ciprofloxacin / dexamethasone465397Ref":
-  from [Medication: Code '465397' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / tramazoline687304Ref":
-  from [Medication: Code '687304' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / theophylline813683Ref":
-  from [Medication: Code '813683' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / indomethacin814504Ref":
-  from [Medication: Code '814504' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "chloramphenicol / dexamethasone815833Ref":
-  from [Medication: Code '815833' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / terfenadine818139Ref":
-  from [Medication: Code '818139' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carisoprodol / dexamethasone / ibuprofen820465Ref":
-  from [Medication: Code '820465' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "cyproheptadine / dexamethasone821542Ref":
-  from [Medication: Code '821542' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "carisoprodol / dexamethasone / tenoxicam822000Ref":
-  from [Medication: Code '822000' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone / tobramycin883815Ref":
-  from [Medication: Code '883815' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML / neomycin 3.2 MG/ML / thiabendazole 40 MG/ML Topical Solution [Tresaderm]1009392Ref":
-  from [Medication: Code '1009392' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.5 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension [Tobradex]1011080Ref":
-  from [Medication: Code '1011080' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 2 MG/ML Injectable Solution [Dexium]1049386Ref":
-  from [Medication: Code '1049386' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.5 MG Oral Tablet [Decadron]105392Ref":
-  from [Medication: Code '105392' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 2 MG/ML Injectable Solution [Dexasone]1087757Ref":
-  from [Medication: Code '1087757' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 3 MG/ML Injectable Solution [Dexium]1087919Ref":
-  from [Medication: Code '1087919' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "0.005 ML dexamethasone 103.4 MG/ML Injection [Dexycu]2045409Ref":
-  from [Medication: Code '2045409' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML Ophthalmic Suspension [Maxidex]205669Ref":
-  from [Medication: Code '205669' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 4 MG Oral Tablet [Decadron]205712Ref":
-  from [Medication: Code '205712' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 6 MG Oral Tablet [Decadron]205717Ref":
-  from [Medication: Code '205717' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML / neomycin 3.5 MG/ML / polymyxin B 10000 UNT/ML Ophthalmic Suspension [Maxitrol]208591Ref":
-  from [Medication: Code '208591' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG Ophthalmic Ointment [Maxitrol]208601Ref":
-  from [Medication: Code '208601' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG Ophthalmic Ointment [Poly-Dex]208602Ref":
-  from [Medication: Code '208602' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension [Tobradex]208813Ref":
-  from [Medication: Code '208813' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.001 MG/MG / tobramycin 0.003 MG/MG Ophthalmic Ointment [Tobradex]208821Ref":
-  from [Medication: Code '208821' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.4 MG Drug Implant [Dextenza]2108020Ref":
-  from [Medication: Code '2108020' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 20 MG Oral Tablet [Hemady]2286261Ref":
-  from [Medication: Code '2286261' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.75 MG Oral Tablet [Decadron]343040Ref":
-  from [Medication: Code '343040' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ciprofloxacin 3 MG/ML / dexamethasone 1 MG/ML Otic Suspension [Ciprodex]404630Ref":
-  from [Medication: Code '404630' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.7 MG Drug Implant [Ozurdex]854181Ref":
-  from [Medication: Code '854181' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML / neomycin 3.2 MG/ML / thiabendazole 40 MG/ML [Tresaderm]1009390Ref":
-  from [Medication: Code '1009390' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.5 MG/ML / tobramycin 3 MG/ML [Tobradex]1011079Ref":
-  from [Medication: Code '1011079' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 2 MG/ML [Dexium]1049384Ref":
-  from [Medication: Code '1049384' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 2 MG/ML [Dexasone]1087756Ref":
-  from [Medication: Code '1087756' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 3 MG/ML [Dexium]1087918Ref":
-  from [Medication: Code '1087918' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 103.4 MG/ML [Dexycu]2045406Ref":
-  from [Medication: Code '2045406' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.4 MG [Dextenza]2108017Ref":
-  from [Medication: Code '2108017' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 20 MG [Hemady]2286257Ref":
-  from [Medication: Code '2286257' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ciprofloxacin 3 MG/ML / dexamethasone 1 MG/ML [Ciprodex]545158Ref":
-  from [Medication: Code '545158' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.5 MG [Decadron]564044Ref":
-  from [Medication: Code '564044' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML [Maxidex]566561Ref":
-  from [Medication: Code '566561' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 4 MG [Decadron]566603Ref":
-  from [Medication: Code '566603' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 6 MG [Decadron]566608Ref":
-  from [Medication: Code '566608' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML / neomycin 3.5 MG/ML / polymyxin B 10000 UNT/ML [Maxitrol]569262Ref":
-  from [Medication: Code '569262' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG [Maxitrol]569272Ref":
-  from [Medication: Code '569272' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG [Poly-Dex]569273Ref":
-  from [Medication: Code '569273' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML / tobramycin 3 MG/ML [Tobradex]569462Ref":
-  from [Medication: Code '569462' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.001 MG/MG / tobramycin 0.003 MG/MG [Tobradex]569470Ref":
-  from [Medication: Code '569470' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.75 MG [Decadron]575233Ref":
-  from [Medication: Code '575233' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.7 MG [Ozurdex]854179Ref":
-  from [Medication: Code '854179' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML / neomycin 3.2 MG/ML / thiabendazole 40 MG/ML Topical Solution1009388Ref":
-  from [Medication: Code '1009388' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone sodium phosphate 4 MG/ML Injectable Solution1049400Ref":
-  from [Medication: Code '1049400' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone phosphate 4 MG/ML Injectable Solution1116927Ref":
-  from [Medication: Code '1116927' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone sodium phosphate 0.4 MG/ML Injectable Solution1249712Ref":
-  from [Medication: Code '1249712' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone acetate 8 MG/ML Injectable Suspension1374372Ref":
-  from [Medication: Code '1374372' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "1 ML dexamethasone phosphate 10 MG/ML Injection1812079Ref":
-  from [Medication: Code '1812079' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "1 ML dexamethasone phosphate 4 MG/ML Prefilled Syringe1812095Ref":
-  from [Medication: Code '1812095' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "1 ML dexamethasone phosphate 4 MG/ML Injection1812194Ref":
-  from [Medication: Code '1812194' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.25 MG Oral Tablet197576Ref":
-  from [Medication: Code '197576' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.5 MG Oral Tablet197577Ref":
-  from [Medication: Code '197577' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG Oral Tablet197579Ref":
-  from [Medication: Code '197579' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1.5 MG Oral Tablet197580Ref":
-  from [Medication: Code '197580' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 2 MG Oral Tablet197581Ref":
-  from [Medication: Code '197581' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 4 MG Oral Tablet197582Ref":
-  from [Medication: Code '197582' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 6 MG Oral Tablet197583Ref":
-  from [Medication: Code '197583' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "0.005 ML dexamethasone 103.4 MG/ML Injection2045404Ref":
-  from [Medication: Code '2045404' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "1 ML dexamethasone phosphate 10 MG/ML Prefilled Syringe2099700Ref":
-  from [Medication: Code '2099700' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.4 MG Drug Implant2108015Ref":
-  from [Medication: Code '2108015' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 20 MG Oral Tablet2261802Ref":
-  from [Medication: Code '2261802' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone phosphate 1 MG/ML Ophthalmic Solution226343Ref":
-  from [Medication: Code '226343' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML / hypromellose 5 MG/ML Ophthalmic Solution227142Ref":
-  from [Medication: Code '227142' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.02 MG/ACTUAT / tramazoline 0.12 MG/ACTUAT Nasal Spray248175Ref":
-  from [Medication: Code '248175' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG Ophthalmic Ointment309679Ref":
-  from [Medication: Code '309679' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML / neomycin 3.5 MG/ML / polymyxin B 10000 UNT/ML Ophthalmic Suspension309680Ref":
-  from [Medication: Code '309680' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.001 MG/MG / tobramycin 0.003 MG/MG Ophthalmic Ointment309682Ref":
-  from [Medication: Code '309682' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension309683Ref":
-  from [Medication: Code '309683' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML Oral Solution309684Ref":
-  from [Medication: Code '309684' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.1 MG/ML Oral Solution309686Ref":
-  from [Medication: Code '309686' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML Ophthalmic Suspension309692Ref":
-  from [Medication: Code '309692' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone phosphate 10 MG/ML Injectable Solution309696Ref":
-  from [Medication: Code '309696' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.75 MG Oral Tablet343033Ref":
-  from [Medication: Code '343033' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML Topical Solution388755Ref":
-  from [Medication: Code '388755' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "ciprofloxacin 3 MG/ML / dexamethasone 1 MG/ML Otic Suspension403908Ref":
-  from [Medication: Code '403908' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 2 MG/ML Injectable Solution435681Ref":
-  from [Medication: Code '435681' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.5 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension849115Ref":
-  from [Medication: Code '849115' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.7 MG Drug Implant854177Ref":
-  from [Medication: Code '854177' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 3 MG/ML Injectable Solution880649Ref":
-  from [Medication: Code '880649' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone sodium phosphate 4 MG/ML1049399Ref":
-  from [Medication: Code '1049399' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone phosphate 4 MG/ML1116926Ref":
-  from [Medication: Code '1116926' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone sodium phosphate 0.4 MG/ML1249711Ref":
-  from [Medication: Code '1249711' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone acetate 8 MG/ML1374371Ref":
-  from [Medication: Code '1374371' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone phosphate 10 MG/ML1812078Ref":
-  from [Medication: Code '1812078' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 103.4 MG/ML2045403Ref":
-  from [Medication: Code '2045403' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 20 MG2261801Ref":
-  from [Medication: Code '2261801' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone phosphate 1 MG/ML2265538Ref":
-  from [Medication: Code '2265538' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.1 MG/ML315773Ref":
-  from [Medication: Code '315773' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.25 MG315774Ref":
-  from [Medication: Code '315774' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.5 MG315775Ref":
-  from [Medication: Code '315775' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG315776Ref":
-  from [Medication: Code '315776' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1.5 MG315777Ref":
-  from [Medication: Code '315777' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 4 MG315778Ref":
-  from [Medication: Code '315778' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 6 MG315779Ref":
-  from [Medication: Code '315779' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 2 MG317346Ref":
-  from [Medication: Code '317346' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 1 MG/ML317629Ref":
-  from [Medication: Code '317629' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 3 MG/ML332981Ref":
-  from [Medication: Code '332981' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.4 MG332984Ref":
-  from [Medication: Code '332984' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.02 MG/ACTUAT335766Ref":
-  from [Medication: Code '335766' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.001 MG/MG339981Ref":
-  from [Medication: Code '339981' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.75 MG345816Ref":
-  from [Medication: Code '345816' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.5 MG/ML438889Ref":
-  from [Medication: Code '438889' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 2 MG/ML451789Ref":
-  from [Medication: Code '451789' from rxnorm] M
-    return 'Medication/' + M.id
-
-define "dexamethasone 0.7 MG854175Ref":
-  from [Medication: Code '854175' from rxnorm] M
-    return 'Medication/' + M.id
-
 context Patient
 
 define "Criterion 1":
@@ -651,581 +75,293 @@ define "Criterion 7":
       C.onset overlaps Interval[@1900-01-01T, @2023-10-01])
 
 define "Criterion 8":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{49 (dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 12 Day Taper]1998481Ref")
-
+  exists [MedicationAdministration: code in Code '1998481' from rxnorm]
 define "Criterion 9":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 6 Day Taper]1998482Ref")
-
+  exists [MedicationAdministration: code in Code '1998482' from rxnorm]
 define "Criterion 10":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack [HiDex 6-Day Taper]2118829Ref")
-
+  exists [MedicationAdministration: code in Code '2118829' from rxnorm]
 define "Criterion 11":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{27 (dexamethasone 1.5 MG Oral Tablet) } Pack [TaperDex 7-Day Taper]2118835Ref")
-
+  exists [MedicationAdministration: code in Code '2118835' from rxnorm]
 define "Criterion 12":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{39 (dexamethasone 1.5 MG Oral Tablet) } Pack [Dxevo 11 Day Taper]2121735Ref")
-
+  exists [MedicationAdministration: code in Code '2121735' from rxnorm]
 define "Criterion 13":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{25 (dexamethasone 1.5 MG Oral Tablet) } Pack [Zcort 7 Day Taper]2387356Ref")
-
+  exists [MedicationAdministration: code in Code '2387356' from rxnorm]
 define "Criterion 14":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{12 (dexamethasone 0.75 MG Oral Tablet [Decadron]) } Pack [Decadron 5-12]795716Ref")
-
+  exists [MedicationAdministration: code in Code '795716' from rxnorm]
 define "Criterion 15":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{35 (dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak TaperPak Junior 10 Day]797022Ref")
-
+  exists [MedicationAdministration: code in Code '797022' from rxnorm]
 define "Criterion 16":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{51 (dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak TaperPak 13 Day]797023Ref")
-
+  exists [MedicationAdministration: code in Code '797023' from rxnorm]
 define "Criterion 17":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack [DexPak TaperPak 6 Day]847225Ref")
-
+  exists [MedicationAdministration: code in Code '847225' from rxnorm]
 define "Criterion 18":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{27 (dexamethasone 1.5 MG Oral Tablet) } Pack1869595Ref")
-
+  exists [MedicationAdministration: code in Code '1869595' from rxnorm]
 define "Criterion 19":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{49 (dexamethasone 1.5 MG Oral Tablet) } Pack1943550Ref")
-
+  exists [MedicationAdministration: code in Code '1943550' from rxnorm]
 define "Criterion 20":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{39 (dexamethasone 1.5 MG Oral Tablet) } Pack2121587Ref")
-
+  exists [MedicationAdministration: code in Code '2121587' from rxnorm]
 define "Criterion 21":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{25 (dexamethasone 1.5 MG Oral Tablet) } Pack2387355Ref")
-
+  exists [MedicationAdministration: code in Code '2387355' from rxnorm]
 define "Criterion 22":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{51 (dexamethasone 1.5 MG Oral Tablet) } Pack759481Ref")
-
+  exists [MedicationAdministration: code in Code '759481' from rxnorm]
 define "Criterion 23":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{12 (dexamethasone 0.75 MG Oral Tablet) } Pack759696Ref")
-
+  exists [MedicationAdministration: code in Code '759696' from rxnorm]
 define "Criterion 24":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{35 (dexamethasone 1.5 MG Oral Tablet) } Pack759697Ref")
-
+  exists [MedicationAdministration: code in Code '759697' from rxnorm]
 define "Criterion 25":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "{21 (dexamethasone 1.5 MG Oral Tablet) } Pack846192Ref")
-
+  exists [MedicationAdministration: code in Code '846192' from rxnorm]
 define "Criterion 26":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in dexamethasone3264Ref)
-
+  exists [MedicationAdministration: code in Code '3264' from rxnorm]
 define "Criterion 27":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "astemizole / dexamethasone1007105Ref")
-
+  exists [MedicationAdministration: code in Code '1007105' from rxnorm]
 define "Criterion 28":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clioquinol / dexamethasone1007256Ref")
-
+  exists [MedicationAdministration: code in Code '1007256' from rxnorm]
 define "Criterion 29":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / oxytetracycline1007423Ref")
-
+  exists [MedicationAdministration: code in Code '1007423' from rxnorm]
 define "Criterion 30":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / hypromellose1007483Ref")
-
+  exists [MedicationAdministration: code in Code '1007483' from rxnorm]
 define "Criterion 31":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / dobesilic acid / lidocaine1007628Ref")
-
+  exists [MedicationAdministration: code in Code '1007628' from rxnorm]
 define "Criterion 32":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clotrimazole / dexamethasone1007854Ref")
-
+  exists [MedicationAdministration: code in Code '1007854' from rxnorm]
 define "Criterion 33":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "clemastine / dexamethasone1008217Ref")
-
+  exists [MedicationAdministration: code in Code '1008217' from rxnorm]
 define "Criterion 34":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / phenylephrine1008930Ref")
-
+  exists [MedicationAdministration: code in Code '1008930' from rxnorm]
 define "Criterion 35":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / sodium phosphate1009150Ref")
-
+  exists [MedicationAdministration: code in Code '1009150' from rxnorm]
 define "Criterion 36":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / neomycin / thiabendazole1009387Ref")
-
+  exists [MedicationAdministration: code in Code '1009387' from rxnorm]
 define "Criterion 37":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / lidocaine214478Ref")
-
+  exists [MedicationAdministration: code in Code '214478' from rxnorm]
 define "Criterion 38":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / neomycin216524Ref")
-
+  exists [MedicationAdministration: code in Code '216524' from rxnorm]
 define "Criterion 39":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / neomycin / polymyxin B216525Ref")
-
+  exists [MedicationAdministration: code in Code '216525' from rxnorm]
 define "Criterion 40":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ciprofloxacin / dexamethasone465397Ref")
-
+  exists [MedicationAdministration: code in Code '465397' from rxnorm]
 define "Criterion 41":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / tramazoline687304Ref")
-
+  exists [MedicationAdministration: code in Code '687304' from rxnorm]
 define "Criterion 42":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / theophylline813683Ref")
-
+  exists [MedicationAdministration: code in Code '813683' from rxnorm]
 define "Criterion 43":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / indomethacin814504Ref")
-
+  exists [MedicationAdministration: code in Code '814504' from rxnorm]
 define "Criterion 44":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "chloramphenicol / dexamethasone815833Ref")
-
+  exists [MedicationAdministration: code in Code '815833' from rxnorm]
 define "Criterion 45":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / terfenadine818139Ref")
-
+  exists [MedicationAdministration: code in Code '818139' from rxnorm]
 define "Criterion 46":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carisoprodol / dexamethasone / ibuprofen820465Ref")
-
+  exists [MedicationAdministration: code in Code '820465' from rxnorm]
 define "Criterion 47":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "cyproheptadine / dexamethasone821542Ref")
-
+  exists [MedicationAdministration: code in Code '821542' from rxnorm]
 define "Criterion 48":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "carisoprodol / dexamethasone / tenoxicam822000Ref")
-
+  exists [MedicationAdministration: code in Code '822000' from rxnorm]
 define "Criterion 49":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone / tobramycin883815Ref")
-
+  exists [MedicationAdministration: code in Code '883815' from rxnorm]
 define "Criterion 50":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML / neomycin 3.2 MG/ML / thiabendazole 40 MG/ML Topical Solution [Tresaderm]1009392Ref")
-
+  exists [MedicationAdministration: code in Code '1009392' from rxnorm]
 define "Criterion 51":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.5 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension [Tobradex]1011080Ref")
-
+  exists [MedicationAdministration: code in Code '1011080' from rxnorm]
 define "Criterion 52":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 2 MG/ML Injectable Solution [Dexium]1049386Ref")
-
+  exists [MedicationAdministration: code in Code '1049386' from rxnorm]
 define "Criterion 53":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.5 MG Oral Tablet [Decadron]105392Ref")
-
+  exists [MedicationAdministration: code in Code '105392' from rxnorm]
 define "Criterion 54":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 2 MG/ML Injectable Solution [Dexasone]1087757Ref")
-
+  exists [MedicationAdministration: code in Code '1087757' from rxnorm]
 define "Criterion 55":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 3 MG/ML Injectable Solution [Dexium]1087919Ref")
-
+  exists [MedicationAdministration: code in Code '1087919' from rxnorm]
 define "Criterion 56":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "0.005 ML dexamethasone 103.4 MG/ML Injection [Dexycu]2045409Ref")
-
+  exists [MedicationAdministration: code in Code '2045409' from rxnorm]
 define "Criterion 57":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML Ophthalmic Suspension [Maxidex]205669Ref")
-
+  exists [MedicationAdministration: code in Code '205669' from rxnorm]
 define "Criterion 58":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 4 MG Oral Tablet [Decadron]205712Ref")
-
+  exists [MedicationAdministration: code in Code '205712' from rxnorm]
 define "Criterion 59":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 6 MG Oral Tablet [Decadron]205717Ref")
-
+  exists [MedicationAdministration: code in Code '205717' from rxnorm]
 define "Criterion 60":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML / neomycin 3.5 MG/ML / polymyxin B 10000 UNT/ML Ophthalmic Suspension [Maxitrol]208591Ref")
-
+  exists [MedicationAdministration: code in Code '208591' from rxnorm]
 define "Criterion 61":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG Ophthalmic Ointment [Maxitrol]208601Ref")
-
+  exists [MedicationAdministration: code in Code '208601' from rxnorm]
 define "Criterion 62":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG Ophthalmic Ointment [Poly-Dex]208602Ref")
-
+  exists [MedicationAdministration: code in Code '208602' from rxnorm]
 define "Criterion 63":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension [Tobradex]208813Ref")
-
+  exists [MedicationAdministration: code in Code '208813' from rxnorm]
 define "Criterion 64":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.001 MG/MG / tobramycin 0.003 MG/MG Ophthalmic Ointment [Tobradex]208821Ref")
-
+  exists [MedicationAdministration: code in Code '208821' from rxnorm]
 define "Criterion 65":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.4 MG Drug Implant [Dextenza]2108020Ref")
-
+  exists [MedicationAdministration: code in Code '2108020' from rxnorm]
 define "Criterion 66":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 20 MG Oral Tablet [Hemady]2286261Ref")
-
+  exists [MedicationAdministration: code in Code '2286261' from rxnorm]
 define "Criterion 67":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.75 MG Oral Tablet [Decadron]343040Ref")
-
+  exists [MedicationAdministration: code in Code '343040' from rxnorm]
 define "Criterion 68":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ciprofloxacin 3 MG/ML / dexamethasone 1 MG/ML Otic Suspension [Ciprodex]404630Ref")
-
+  exists [MedicationAdministration: code in Code '404630' from rxnorm]
 define "Criterion 69":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.7 MG Drug Implant [Ozurdex]854181Ref")
-
+  exists [MedicationAdministration: code in Code '854181' from rxnorm]
 define "Criterion 70":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML / neomycin 3.2 MG/ML / thiabendazole 40 MG/ML [Tresaderm]1009390Ref")
-
+  exists [MedicationAdministration: code in Code '1009390' from rxnorm]
 define "Criterion 71":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.5 MG/ML / tobramycin 3 MG/ML [Tobradex]1011079Ref")
-
+  exists [MedicationAdministration: code in Code '1011079' from rxnorm]
 define "Criterion 72":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 2 MG/ML [Dexium]1049384Ref")
-
+  exists [MedicationAdministration: code in Code '1049384' from rxnorm]
 define "Criterion 73":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 2 MG/ML [Dexasone]1087756Ref")
-
+  exists [MedicationAdministration: code in Code '1087756' from rxnorm]
 define "Criterion 74":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 3 MG/ML [Dexium]1087918Ref")
-
+  exists [MedicationAdministration: code in Code '1087918' from rxnorm]
 define "Criterion 75":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 103.4 MG/ML [Dexycu]2045406Ref")
-
+  exists [MedicationAdministration: code in Code '2045406' from rxnorm]
 define "Criterion 76":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.4 MG [Dextenza]2108017Ref")
-
+  exists [MedicationAdministration: code in Code '2108017' from rxnorm]
 define "Criterion 77":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 20 MG [Hemady]2286257Ref")
-
+  exists [MedicationAdministration: code in Code '2286257' from rxnorm]
 define "Criterion 78":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ciprofloxacin 3 MG/ML / dexamethasone 1 MG/ML [Ciprodex]545158Ref")
-
+  exists [MedicationAdministration: code in Code '545158' from rxnorm]
 define "Criterion 79":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.5 MG [Decadron]564044Ref")
-
+  exists [MedicationAdministration: code in Code '564044' from rxnorm]
 define "Criterion 80":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML [Maxidex]566561Ref")
-
+  exists [MedicationAdministration: code in Code '566561' from rxnorm]
 define "Criterion 81":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 4 MG [Decadron]566603Ref")
-
+  exists [MedicationAdministration: code in Code '566603' from rxnorm]
 define "Criterion 82":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 6 MG [Decadron]566608Ref")
-
+  exists [MedicationAdministration: code in Code '566608' from rxnorm]
 define "Criterion 83":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML / neomycin 3.5 MG/ML / polymyxin B 10000 UNT/ML [Maxitrol]569262Ref")
-
+  exists [MedicationAdministration: code in Code '569262' from rxnorm]
 define "Criterion 84":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG [Maxitrol]569272Ref")
-
+  exists [MedicationAdministration: code in Code '569272' from rxnorm]
 define "Criterion 85":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG [Poly-Dex]569273Ref")
-
+  exists [MedicationAdministration: code in Code '569273' from rxnorm]
 define "Criterion 86":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML / tobramycin 3 MG/ML [Tobradex]569462Ref")
-
+  exists [MedicationAdministration: code in Code '569462' from rxnorm]
 define "Criterion 87":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.001 MG/MG / tobramycin 0.003 MG/MG [Tobradex]569470Ref")
-
+  exists [MedicationAdministration: code in Code '569470' from rxnorm]
 define "Criterion 88":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.75 MG [Decadron]575233Ref")
-
+  exists [MedicationAdministration: code in Code '575233' from rxnorm]
 define "Criterion 89":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.7 MG [Ozurdex]854179Ref")
-
+  exists [MedicationAdministration: code in Code '854179' from rxnorm]
 define "Criterion 90":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML / neomycin 3.2 MG/ML / thiabendazole 40 MG/ML Topical Solution1009388Ref")
-
+  exists [MedicationAdministration: code in Code '1009388' from rxnorm]
 define "Criterion 91":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone sodium phosphate 4 MG/ML Injectable Solution1049400Ref")
-
+  exists [MedicationAdministration: code in Code '1049400' from rxnorm]
 define "Criterion 92":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone phosphate 4 MG/ML Injectable Solution1116927Ref")
-
+  exists [MedicationAdministration: code in Code '1116927' from rxnorm]
 define "Criterion 93":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone sodium phosphate 0.4 MG/ML Injectable Solution1249712Ref")
-
+  exists [MedicationAdministration: code in Code '1249712' from rxnorm]
 define "Criterion 94":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone acetate 8 MG/ML Injectable Suspension1374372Ref")
-
+  exists [MedicationAdministration: code in Code '1374372' from rxnorm]
 define "Criterion 95":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "1 ML dexamethasone phosphate 10 MG/ML Injection1812079Ref")
-
+  exists [MedicationAdministration: code in Code '1812079' from rxnorm]
 define "Criterion 96":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "1 ML dexamethasone phosphate 4 MG/ML Prefilled Syringe1812095Ref")
-
+  exists [MedicationAdministration: code in Code '1812095' from rxnorm]
 define "Criterion 97":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "1 ML dexamethasone phosphate 4 MG/ML Injection1812194Ref")
-
+  exists [MedicationAdministration: code in Code '1812194' from rxnorm]
 define "Criterion 98":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.25 MG Oral Tablet197576Ref")
-
+  exists [MedicationAdministration: code in Code '197576' from rxnorm]
 define "Criterion 99":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.5 MG Oral Tablet197577Ref")
-
+  exists [MedicationAdministration: code in Code '197577' from rxnorm]
 define "Criterion 100":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG Oral Tablet197579Ref")
-
+  exists [MedicationAdministration: code in Code '197579' from rxnorm]
 define "Criterion 101":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1.5 MG Oral Tablet197580Ref")
-
+  exists [MedicationAdministration: code in Code '197580' from rxnorm]
 define "Criterion 102":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 2 MG Oral Tablet197581Ref")
-
+  exists [MedicationAdministration: code in Code '197581' from rxnorm]
 define "Criterion 103":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 4 MG Oral Tablet197582Ref")
-
+  exists [MedicationAdministration: code in Code '197582' from rxnorm]
 define "Criterion 104":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 6 MG Oral Tablet197583Ref")
-
+  exists [MedicationAdministration: code in Code '197583' from rxnorm]
 define "Criterion 105":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "0.005 ML dexamethasone 103.4 MG/ML Injection2045404Ref")
-
+  exists [MedicationAdministration: code in Code '2045404' from rxnorm]
 define "Criterion 106":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "1 ML dexamethasone phosphate 10 MG/ML Prefilled Syringe2099700Ref")
-
+  exists [MedicationAdministration: code in Code '2099700' from rxnorm]
 define "Criterion 107":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.4 MG Drug Implant2108015Ref")
-
+  exists [MedicationAdministration: code in Code '2108015' from rxnorm]
 define "Criterion 108":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 20 MG Oral Tablet2261802Ref")
-
+  exists [MedicationAdministration: code in Code '2261802' from rxnorm]
 define "Criterion 109":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone phosphate 1 MG/ML Ophthalmic Solution226343Ref")
-
+  exists [MedicationAdministration: code in Code '226343' from rxnorm]
 define "Criterion 110":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML / hypromellose 5 MG/ML Ophthalmic Solution227142Ref")
-
+  exists [MedicationAdministration: code in Code '227142' from rxnorm]
 define "Criterion 111":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.02 MG/ACTUAT / tramazoline 0.12 MG/ACTUAT Nasal Spray248175Ref")
-
+  exists [MedicationAdministration: code in Code '248175' from rxnorm]
 define "Criterion 112":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.001 MG/MG / neomycin 0.0035 MG/MG / polymyxin B 10 UNT/MG Ophthalmic Ointment309679Ref")
-
+  exists [MedicationAdministration: code in Code '309679' from rxnorm]
 define "Criterion 113":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML / neomycin 3.5 MG/ML / polymyxin B 10000 UNT/ML Ophthalmic Suspension309680Ref")
-
+  exists [MedicationAdministration: code in Code '309680' from rxnorm]
 define "Criterion 114":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.001 MG/MG / tobramycin 0.003 MG/MG Ophthalmic Ointment309682Ref")
-
+  exists [MedicationAdministration: code in Code '309682' from rxnorm]
 define "Criterion 115":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension309683Ref")
-
+  exists [MedicationAdministration: code in Code '309683' from rxnorm]
 define "Criterion 116":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML Oral Solution309684Ref")
-
+  exists [MedicationAdministration: code in Code '309684' from rxnorm]
 define "Criterion 117":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.1 MG/ML Oral Solution309686Ref")
-
+  exists [MedicationAdministration: code in Code '309686' from rxnorm]
 define "Criterion 118":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML Ophthalmic Suspension309692Ref")
-
+  exists [MedicationAdministration: code in Code '309692' from rxnorm]
 define "Criterion 119":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone phosphate 10 MG/ML Injectable Solution309696Ref")
-
+  exists [MedicationAdministration: code in Code '309696' from rxnorm]
 define "Criterion 120":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.75 MG Oral Tablet343033Ref")
-
+  exists [MedicationAdministration: code in Code '343033' from rxnorm]
 define "Criterion 121":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML Topical Solution388755Ref")
-
+  exists [MedicationAdministration: code in Code '388755' from rxnorm]
 define "Criterion 122":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "ciprofloxacin 3 MG/ML / dexamethasone 1 MG/ML Otic Suspension403908Ref")
-
+  exists [MedicationAdministration: code in Code '403908' from rxnorm]
 define "Criterion 123":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 2 MG/ML Injectable Solution435681Ref")
-
+  exists [MedicationAdministration: code in Code '435681' from rxnorm]
 define "Criterion 124":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.5 MG/ML / tobramycin 3 MG/ML Ophthalmic Suspension849115Ref")
-
+  exists [MedicationAdministration: code in Code '849115' from rxnorm]
 define "Criterion 125":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.7 MG Drug Implant854177Ref")
-
+  exists [MedicationAdministration: code in Code '854177' from rxnorm]
 define "Criterion 126":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 3 MG/ML Injectable Solution880649Ref")
-
+  exists [MedicationAdministration: code in Code '880649' from rxnorm]
 define "Criterion 127":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone sodium phosphate 4 MG/ML1049399Ref")
-
+  exists [MedicationAdministration: code in Code '1049399' from rxnorm]
 define "Criterion 128":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone phosphate 4 MG/ML1116926Ref")
-
+  exists [MedicationAdministration: code in Code '1116926' from rxnorm]
 define "Criterion 129":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone sodium phosphate 0.4 MG/ML1249711Ref")
-
+  exists [MedicationAdministration: code in Code '1249711' from rxnorm]
 define "Criterion 130":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone acetate 8 MG/ML1374371Ref")
-
+  exists [MedicationAdministration: code in Code '1374371' from rxnorm]
 define "Criterion 131":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone phosphate 10 MG/ML1812078Ref")
-
+  exists [MedicationAdministration: code in Code '1812078' from rxnorm]
 define "Criterion 132":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 103.4 MG/ML2045403Ref")
-
+  exists [MedicationAdministration: code in Code '2045403' from rxnorm]
 define "Criterion 133":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 20 MG2261801Ref")
-
+  exists [MedicationAdministration: code in Code '2261801' from rxnorm]
 define "Criterion 134":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone phosphate 1 MG/ML2265538Ref")
-
+  exists [MedicationAdministration: code in Code '2265538' from rxnorm]
 define "Criterion 135":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.1 MG/ML315773Ref")
-
+  exists [MedicationAdministration: code in Code '315773' from rxnorm]
 define "Criterion 136":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.25 MG315774Ref")
-
+  exists [MedicationAdministration: code in Code '315774' from rxnorm]
 define "Criterion 137":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.5 MG315775Ref")
-
+  exists [MedicationAdministration: code in Code '315775' from rxnorm]
 define "Criterion 138":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG315776Ref")
-
+  exists [MedicationAdministration: code in Code '315776' from rxnorm]
 define "Criterion 139":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1.5 MG315777Ref")
-
+  exists [MedicationAdministration: code in Code '315777' from rxnorm]
 define "Criterion 140":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 4 MG315778Ref")
-
+  exists [MedicationAdministration: code in Code '315778' from rxnorm]
 define "Criterion 141":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 6 MG315779Ref")
-
+  exists [MedicationAdministration: code in Code '315779' from rxnorm]
 define "Criterion 142":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 2 MG317346Ref")
-
+  exists [MedicationAdministration: code in Code '317346' from rxnorm]
 define "Criterion 143":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 1 MG/ML317629Ref")
-
+  exists [MedicationAdministration: code in Code '317629' from rxnorm]
 define "Criterion 144":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 3 MG/ML332981Ref")
-
+  exists [MedicationAdministration: code in Code '332981' from rxnorm]
 define "Criterion 145":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.4 MG332984Ref")
-
+  exists [MedicationAdministration: code in Code '332984' from rxnorm]
 define "Criterion 146":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.02 MG/ACTUAT335766Ref")
-
+  exists [MedicationAdministration: code in Code '335766' from rxnorm]
 define "Criterion 147":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.001 MG/MG339981Ref")
-
+  exists [MedicationAdministration: code in Code '339981' from rxnorm]
 define "Criterion 148":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.75 MG345816Ref")
-
+  exists [MedicationAdministration: code in Code '345816' from rxnorm]
 define "Criterion 149":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.5 MG/ML438889Ref")
-
+  exists [MedicationAdministration: code in Code '438889' from rxnorm]
 define "Criterion 150":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 2 MG/ML451789Ref")
-
+  exists [MedicationAdministration: code in Code '451789' from rxnorm]
 define "Criterion 151":
-  exists (from [MedicationAdministration] M
-    where M.medication.reference in "dexamethasone 0.7 MG854175Ref")
-
+  exists [MedicationAdministration: code in Code '854175' from rxnorm]
 define Exclusion:
   "Criterion 3" or
   "Criterion 4" or
