@@ -1,3 +1,0 @@
-# Set a fixed, higher than default, initial heap size that could serve a moderate workload
--Xms512M
--Xmx8G

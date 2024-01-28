@@ -7,7 +7,7 @@ if [[ -z "$compressed_data_path" ]]; then
   exit 1
 fi
 
-# Load environment variables from .env file
+# Load environment variables from .env.default.default.default file
 export $(grep -v '^#' .env | xargs -d '\n')
 
 echo "Decompressing data at ${compressed_data_path}"

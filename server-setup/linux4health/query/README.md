@@ -1,1 +1,0 @@
-This directory contains the queries posed to the server during testing.

@@ -11,3 +11,6 @@
 
 /server-setup/*/result/*
 !/server-setup/*/result/README.md
+
+.env
+/server-setup/*/.env

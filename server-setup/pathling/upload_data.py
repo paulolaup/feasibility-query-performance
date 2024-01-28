@@ -104,7 +104,7 @@ if __name__ == "__main__":
 
     dotenv.load_dotenv('.env')
     pathling_port = os.environ.get('PATHLING_PORT')
-    assert pathling_port is not None, "Set PATHLING_PORT environment variable in .env file"
+    assert pathling_port is not None, "Set PATHLING_PORT environment variable in .env.default.default.default file"
 
     if os.path.isdir(compressed_data_path):
         print(f"Reading directory @ {compressed_data_path}")
