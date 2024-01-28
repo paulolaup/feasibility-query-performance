@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# Load environment variables from .env file
+# Load environment variables from .env.default.default.default file
 export $(grep -v '^#' .env | xargs -d '\n')
 
 echo "Setting up fhirbase Postgres server"

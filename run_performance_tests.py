@@ -2,9 +2,12 @@ import os
 import json
 import glob
 import shutil
+import argparse
 import datetime
 import subprocess
 
+
+email_on_error = False
 
 startup_script_name = 'setup.sh'
 shutdown_script_name = 'remove.sh'
@@ -122,7 +125,24 @@ def run_fhirbase(plans, base_dir, timeout):
     os.chdir(prev_cwd)
 
 
+def configure_argparse():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-e', '--email-on-error', action='store_true', required=False, help='Send mail in case of '
+                                                                                            'errors during execution.')
+    return parser
+
+
 if __name__ == "__main__":
+    arg_parser = configure_argparse()
+    args = arg_parser.parse_args()
+    email_on_error = args.email_on_error
+
+    if email_on_error:
+        email_address = os.environ['EMAIL_ADDRESS']
+        email_password = os.environ['EMAIL_PASSWORD']
+        email_server_host = os.environ['EMAIL_SERVER_HOST']
+        email_server_port = os.environ['EMAIL_SERVER_PORT']
+
     # Init results directory
     dir_path = os.path.join('results', datetime.datetime.today().strftime('%Y-%m-%d#%H:%M:%S'))
     os.makedirs(dir_path, exist_ok=True)
