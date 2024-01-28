@@ -1,54 +1,41 @@
 #!/bin/bash
 
-python_archive_name="Python-3.9.18.tar.xz"
-python_download_url="https://www.python.org/ftp/python/3.9.18/$python_archive_name"
-
-vercomp () {
-    if [[ $1 == $2 ]]
-    then
-        return 0
-    fi
-    local IFS=.
-    local i ver1=($1) ver2=($2)
-    # fill empty fields in ver1 with zeros
-    for ((i=${#ver1[@]}; i<${#ver2[@]}; i++))
-    do
-        ver1[i]=0
-    done
-    for ((i=0; i<${#ver1[@]}; i++))
-    do
-        if [[ -z ${ver2[i]} ]]
-        then
-            # fill empty fields in ver2 with zeros
-            ver2[i]=0
-        fi
-        if ((10#${ver1[i]} > 10#${ver2[i]}))
-        then
-            return 1
-        fi
-        if ((10#${ver1[i]} < 10#${ver2[i]}))
-        then
-            return 2
-        fi
-    done
-    return 0
-}
+python_version="3.11.7"
+python_download_url="https://www.python.org/ftp/python/$python_version/Python-$python_version.tgz"
 
 install_python () {
-  curl "$python_download_url" -o "$python_archive_name"
-  tar -xf "$python_archive_name"
-
-  retun 0
+  echo "Downloading Python"
+  curl -LO "$python_download_url"
+  tar -xzf "Python-$python_version.tgz"
+  echo "Installing Python with version $python_version"
+  cd "Python-$python_version"
+  ./configure --prefix="/opt/python/$python_version" --enable-shared --enable-optimizations --enable-ipv6 LDFLAGS="-Wl,-rpath=/opt/python/$python_version/lib,--disable-new-dtags"
+  make install
+  cd ..
+  rm -r "Python-$python_version"
+  rm "Python-$python_version.tgz"
+  echo "Creating link to downloaded version"
+  cd "/opt/python/$python_version/bin"
+  sudo ln -s python3.8 python
+  echo "PATH=/opt/python/3.8.16/bin/:$""PATH" >> ~/.profile
+  . ~/.profile
+  return 0
 }
 
-python_version=$(python -c 'import sys; version=sys.version_info[:3]; print("{0}.{1}.{2}".format(*version))')
+present_python_version=$(python -c 'import sys; version=sys.version_info[:3]; print("{0}.{1}.{2}".format(*version))')
+echo "$present_python_version"
+
+echo "Installing Python"
+install_python
+
+echo "Installing required Python packages"
+pip3 install dotenv
+
+$(blazectl --help) > /dev/null
 
 if [[ "$?" -eq 127 ]]; then
-  echo "Python not found. Installing Python 3.9"
-  install_python
-elif [[ $(vercomp "$python_version" "3.8.0") -eq 2 || $(vercomp "$python_version" "3.10.0") -eq 1 || $(vercomp "$python_version" "3.10.0") -eq 0 ]]; then
-  echo "Installed Python version $python_version is < 3.8.0 or >= 3.10.0. Installing Python 3.9"
-  install_python
+  echo "Installing blazectl"
+  cd server-setup/blaze
+  bash install_blazectl.sh
+  cd ../..
 fi
-
-echo "$python_version"
