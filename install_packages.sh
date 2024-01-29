@@ -1,5 +1,5 @@
 echo "Installing required Python packages"
 
-pip install dotenv
+pip3 install python-dotenv
 
 echo "Done"

@@ -47,11 +47,11 @@ install_python () {
   echo "Downloading Python"
   curl -LO "$python_download_url"
   tar -xzf "Python-$python_version.tgz"
-  echo "Installing Python with version $python_version"
+  echo "Installing Python with version $python_version. This might take a while"
   cd "Python-$python_version"
-#  ./configure --prefix="/opt/python/$python_version" --enable-shared --enable-optimizations --enable-ipv6 LDFLAGS="-Wl,-rpath=/opt/python/$python_version/lib,--disable-new-dtags"
-  ./configure --prefix="/opt/python/$python_version" LDFLAGS="-Wl,-rpath=/opt/python/$python_version/lib,--disable-new-dtags"
-  make install
+#  ./configure --prefix="/usr/local/bin/python$python_version" --enable-shared --enable-optimizations --enable-ipv6 LDFLAGS="-Wl,-rpath=/usr/local/bin/python/$python_version/lib,--disable-new-dtags"
+  ./configure --with-ssl
+  make clean install
   cd ..
   rm -r "Python-$python_version"
   rm "Python-$python_version.tgz"
@@ -66,11 +66,11 @@ present_python_version=$(python -c 'import sys; version=sys.version_info[:3]; pr
 if [[ "$(compare_versions $present_python_version "3.8.0")" -eq 2 ]]; then
   echo "Present python version $present_python_version is less than 3.8.0"
   read -p  "Do you want a newer version to be installed ($python_version)? (Y/n): " confirm_python
-  #if [[ "$confirm_python" == [yY] || "$confirm_python" == [yY][eE][sS] ]]; then
-  #  sudo bash -c "$(declare -f install_python); install_python $python_version"
-  #fi
+  if [[ "$confirm_python" == [yY] || "$confirm_python" == [yY][eE][sS] ]]; then
+    sudo bash -c "$(declare -f install_python); install_python $python_version"
+  fi
   echo "Creating virtual environment"
-  /opt/python/3.11.7/bin/python3.11 -m venv .venv
+  /usr/local/bin/python3.11 -m venv .venv
 else
   echo "Present python version $present_python_version sufficient (>= 3.8.0)"
   echo "Creating virtual environment"

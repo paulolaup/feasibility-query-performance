@@ -69,7 +69,7 @@ activate. Refer to the **Python** section if you haven't done this already.
 
 You can install the packages by running the following command in the terminal:
 ```bash
-bash install_python_packages.sh
+bash install_packages.sh
 ```
 
 ### BlazeCTL
@@ -111,7 +111,7 @@ python run_performance_tests.py
 # Configuration
 
 # Container Configuration
-**NOTE:** In most cases, changing the contained in the **.env** files will not be necessary unless your systems 
+**NOTE:** In most cases, changing the variables contained in the **.env** files will not be necessary unless your systems 
 currently runs processes on the configured ports.
 
 All systems that can be tested have a dedicated .env file with environment variables governing their behavior. It can be
