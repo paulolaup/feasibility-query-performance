@@ -39,10 +39,6 @@ compare_versions () {
     return 0
 }
 
-activate_venv() {
-  . "$1/bin/activate"
-}
-
 install_python () {
   local python_version
   python_version="$1"
@@ -59,13 +55,11 @@ install_python () {
   cd ..
   rm -r "Python-$python_version"
   rm "Python-$python_version.tgz"
-  #echo "Creating link to downloaded version"
-  #echo "$(ls .)"
-  #cd "/opt/python/$python_version/bin"
-  #sudo ln -s python3.8 python
-  #echo "PATH=/opt/python/3.8.16/bin/:$""PATH" >> ~/.profile
-  #. ~/.profile
   return 0
+}
+
+activate_venv() {
+  . "$1/bin/activate"
 }
 
 present_python_version=$(python -c 'import sys; version=sys.version_info[:3]; print("{0}.{1}.{2}".format(*version))')
@@ -82,19 +76,4 @@ else
   echo "Creating virtual environment"
   python3 -m venv .venv
 fi
-echo "Activating environment"
-activate_venv .venv
-echo "$(python --version)"
-
-#echo "Installing required Python packages"
-#pip install dotenv
-
-#$(blazectl --help) > /dev/null
-
-#if [[ "$?" -eq 127 ]]; then
-#  echo "Blazectl was not found"
-#  echo "Dou you want Blazectl to be installed? (Y/n): " confirm_blazectl
-#  if [[ "$confirm_blazectl" == [yY] || "$confirm_blazectl" == [yY][eE][sS] ]]
-#    bash server-setup/blaze/install_blazectl.sh
-#  fi
-#fi
+echo "Done"

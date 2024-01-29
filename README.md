@@ -9,9 +9,8 @@ The following systems are covered as of this date:
 
 # Requirements
 
-If these requirements are not met, you can install them by running the following scripts. It
-will install missing requirements. If no correct Python version is not installed before 
-running the script, Python 3.11.7 will be installed.
+If these requirements are not met, you can install them by following the instructions 
+provided in each section.
 ```bash
 sudo bash install_requirements.sh
 ```
@@ -19,41 +18,106 @@ It will not install Docker for your system, you have to install it yourself. Che
 [official Docker installation documentation](https://docs.docker.com/engine/install/).
 
 ### Docker
+Check the
+[official Docker installation documentation](https://docs.docker.com/engine/install/) and 
+search for a guide suiting your system and environment.
+
 
 ### Python
 The scripts used within the projects are based largely around this language.
 - Version >= 3.8.0 is required
 
-You can check your Python version by typing
-
+By running
 ```bash
-python --version
+bash install_python.sh
+```
+your python version will be identified and, if not sufficient, the script will automatically
+install a newer version if choose to do so. In addition to installing python, the script creates
+a virtual environment. Otherwise, you also can install a newer version manually or by using
+your systems package manager.
+
+After a suitable python version is available, you will need to create a virtual environment
+and activate it to ensure the project is running this version. This can be done by running
+the following commands in the terminal:
+
+**Creating the virtual environment:**
+
+You can skip this part if you ran **install_python.sh** script, since it already creates a
+virtual environment for you.
+```bash
+python -m venv .venv
+```
+
+**Activating the virtual environment:**
+
+(Linux)
+```bash
+source .venv/bin/activate
+```
+
+(Windows)
+```bash
+.venv\Scripts\activate
 ```
 
 ### Python Packages
 The following Python packages are required:
 - dotenv
 
+**NOTE:** Before installing the required python packages, a virtual environment has to be created and
+activate. Refer to the **Python** section if you haven't done this already. 
+
+You can install the packages by running the following command in the terminal:
+```bash
+bash install_python_packages.sh
+```
+
 ### BlazeCTL
+To check if BlazeCTL is already present and install BlazeCTL if not run the following 
+command in the terminal:
+```bash
+bash install_blazectl.sh
+```
 
 # Running the tests
 
-1. Check if your system meets the requirements and install them if not using the **install_requirements.sh** script and the information provided in the **Requirements** section.
-2. Configure the environment for each system if required as described in the **Configuration** section.
-3. Generate/provide the patient data for testing. If real patient data is not available, [Synthea](https://github.com/synthetichealth/synthea) can be used to generate the patient data. Before it can be uploaded during testing, it will need to be compressed first.
-4. Set the run configuration you desire in **config/run_config.json**. Refer to the **Configuration** section for more details.
-5. Start the tests by invoking the dedicated script in the terminal:
+### Step 1 - Check Requirements
+Check if your system meets the requirements the information provided in the **Requirements** section.
+You will most likely need to create and activate a virtual python environment. To do so run the following:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+### Step 2 - Setup Environment
+Initialize all environments by generating respective environment files using the **initialize_environment.sh**
+script. 
+```bash
+bash initialize_environment.sh 
+```
+Configure the environment for each system if required as described in the **Configuration** section.
+
+### Step 3 - Provide Test Data
+Generate/provide the patient data for testing. If real patient data is not available, [Synthea](https://github.com/synthetichealth/synthea) can be used to generate the patient data. Before it can be uploaded during testing, it will need to be compressed first.
+
+### Step 4 - Adjust Run Configuration
+Set the run configuration you desire in **config/run_config.json**. Refer to the **Configuration** section for more details.
+
+### Step 5 - Run Tests
+Start the tests by invoking the dedicated script in the terminal:
 ```bash
 python run_performance_tests.py
 ```
 # Configuration
 
 # Container Configuration
+**NOTE:** In most cases, changing the contained in the **.env** files will not be necessary unless your systems 
+currently runs processes on the configured ports.
+
 All systems that can be tested have a dedicated .env file with environment variables governing their behavior. It can be
 initialized using the **initialize_env_file.sh** script in each system's setup directory (*server-setup/<system_name>*).
-```bash
-bash initialize_env_file.sh
-```
+Alternatively, all environment files can be initialized at once by running the 
+**initialize_environment.sh** script.
 
 # Test Configuration
 
