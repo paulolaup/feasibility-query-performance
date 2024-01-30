@@ -154,6 +154,6 @@ if __name__ == "__main__":
 
     # Perform tests
     output_dir = os.path.abspath(dir_path)
-#    run_blaze(run_plans, output_dir, request_timeout)
-#    run_pathling(run_plans, output_dir, request_timeout)
+    run_blaze(run_plans, output_dir, request_timeout)
+    run_pathling(run_plans, output_dir, request_timeout)
     run_fhirbase(run_plans, output_dir, request_timeout)

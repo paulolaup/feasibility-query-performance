@@ -11,9 +11,6 @@ The following systems are covered as of this date:
 
 If these requirements are not met, you can install them by following the instructions 
 provided in each section.
-```bash
-sudo bash install_requirements.sh
-```
 It will not install Docker for your system, you have to install it yourself. Check the
 [official Docker installation documentation](https://docs.docker.com/engine/install/).
 
@@ -26,6 +23,17 @@ search for a guide suiting your system and environment.
 ### Python
 The scripts used within the projects are based largely around this language.
 - Version >= 3.8.0 is required
+
+**NOTE:** For **Debian**/**Ubuntu** you will need to install the **python-venv** package first.
+```bash
+apt install python<<your-python-version>>-venv
+```
+Replace *<<your-python-version>>* with either your python version if it is sufficient or 
+*3.11* if you need to install a newer version and are using the **install_python.sh** script.
+You can check your python version by running the aforementioned script or using the terminal:
+```bash
+python --version
+```
 
 By running
 ```bash
