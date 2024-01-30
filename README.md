@@ -90,7 +90,7 @@ bash install_blazectl.sh
 # Running the tests
 
 ### Step 1 - Check Requirements
-Check if your system meets the requirements the information provided in the **Requirements** section.
+Check if your system meets the requirements with the information provided in the **Requirements** section.
 You will most likely need to create and activate a virtual python environment. To do so run the following:
 ```bash
 python -m venv .venv
