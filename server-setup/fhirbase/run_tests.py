@@ -82,8 +82,8 @@ def run_single_query(query_path, timeout):
         #                          '-d', 'fb', '-f', f'/fhirbase/{query_path}'],
         #                         stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
         print(os.path.abspath(query_path))
-        result = subprocess.run(['psql', '-h', 'localhost', '-p', '9432', '-U', 'postgres',
-                                 '-d', 'fb', '-f', f'{query_path}'],
+        result = subprocess.run(['docker', 'exec', fhirbase_project_name + '-server-1', 'psql', '-h', 'localhost',
+                                 '-p', '5432', '-U', 'postgres', '-d', 'fb', '-f', f'{query_path}'],
                                 stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
         end = time.time()
 
