@@ -107,6 +107,8 @@ Configure the environment for each system if required as described in the **Conf
 
 ### Step 3 - Provide Test Data
 Generate/provide the patient data for testing. If real patient data is not available, [Synthea](https://github.com/synthetichealth/synthea) can be used to generate the patient data. Before it can be uploaded during testing, it will need to be compressed first.
+The files need to be packed into a **tar ball files** and then compressed into **zip** archives. Use the file extension 
+*.tar.gz* for the compressed archives.
 
 ### Step 4 - Adjust Run Configuration
 Set the run configuration you desire in **config/run_config.json**. Refer to the **Configuration** section for more details.
