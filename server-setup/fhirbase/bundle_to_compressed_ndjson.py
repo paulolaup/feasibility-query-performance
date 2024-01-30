@@ -26,10 +26,10 @@ if __name__ == "__main__":
     print("Generating compressed NDJSON bundle files")
     files = glob.glob(pathname='*.json', root_dir=bundle_dir_path, recursive=True)
     idx = 1
-    output_file_ptr = gzip.open(os.path.join(ndjson_dir_path, 'data.ndjson.gz'), mode='ab')
-    for file_name in files:
-        # FIXME: Clear previous line properly
-        print(f"[{idx}/{len(files)}] Processing file {file_name}", end='\r', flush=True)
-        bundle_to_compressed_ndjson(os.path.join(bundle_dir_path, file_name), output_file_ptr)
-        idx += 1
-    output_file_ptr.close()
+    archive_path = os.path.join(ndjson_dir_path, 'data.ndjson.gz')
+    with gzip.open(archive_path, mode='wb') as output_file_ptr:
+        for file_name in files:
+            # FIXME: Clear previous line properly
+            print(f"[{idx}/{len(files)}] Processing file {file_name}", end='\r', flush=True)
+            bundle_to_compressed_ndjson(os.path.join(bundle_dir_path, file_name), output_file_ptr)
+            idx += 1
