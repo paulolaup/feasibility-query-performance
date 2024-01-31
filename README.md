@@ -86,6 +86,28 @@ command in the terminal:
 ```bash
 bash install_blazectl.sh
 ```
+If you have are running a Linux distribution or MacOS as your operating system, the script
+can install BlazeCTL for you. If you are running Windows on your machine check out the isntallation
+instructions [here](https://github.com/samply/blazectl?tab=readme-ov-file#windows).
+
+### pigz
+As a parallel implementation of *GZIP*, **pigz** is used to decompress files quickly when uploading data. Thus, it is required to run the tests.
+On Linux, you can install it using your systems package manager:
+
+(Debian/Ubuntu)
+```bash
+sudo apt-get install pigz
+```
+
+(CentOS/RHEL/Fedora)
+```bash
+sudo dnf install pigz
+```
+
+(OpenSUSE)
+```bash
+sudo zypper install pigz
+```
 
 # Running the tests
 
