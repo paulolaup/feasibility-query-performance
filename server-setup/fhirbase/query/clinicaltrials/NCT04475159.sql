@@ -17,10 +17,7 @@ FROM ((SELECT p.id
                                                             FROM medicationadministration ai,
                                                                  jsonb_array_elements(ai.resource #> '{medication,CodeableConcept,coding}') coding
                                                             WHERE coding ->> 'system' = 'http://www.nlm.nih.gov/research/umls/rxnorm'
-                                                              AND coding ->> 'code' IN
-                                                                  ('748962', '831533', '757594', '235389', '749882',
-                                                                   '1359133', '749785', '751905', '749762', '748856',
-                                                                   '978950', '748879')
+                                                              AND coding ->> 'code' IN ('1359133', '748962' , '831533')
                                                               AND (ai.resource #>> '{effective,dateTime}')::timestamp <@
                                                                   '[2023-09-01,2023-10-01)'::tsrange))))
       INTERSECT
