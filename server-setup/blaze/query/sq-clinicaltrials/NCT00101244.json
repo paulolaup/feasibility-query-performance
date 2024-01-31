@@ -1,0 +1,505 @@
+{
+  "version": "http://to_be_decided.com/draft-1/schema#",
+  "display": "",
+  "inclusionCriteria": [
+    [
+      {
+        "termCodes": [
+          {
+            "code": "424144002",
+            "system": "http://snomed.info/sct",
+            "display": "Gegenw\u00c3\u00a4rtiges chronologisches Alter"
+          }
+        ],
+        "context": {
+          "code": "Patient",
+          "system": "fdpg.mii.cds",
+          "version": "1.0.0",
+          "display": "Patient"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "unit": {
+            "code": "a",
+            "display": "a"
+          },
+          "value": 18,
+          "comparator": "gt"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "code": "26499-4",
+            "system": "http://loinc.org",
+            "display": "Neutrophils [#/volume] in Blood"
+          }
+        ],
+        "context": {
+          "code": "Laboruntersuchung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Laboruntersuchung"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "comparator": "ge",
+          "unit": {
+            "code": "10*3/uL",
+            "display": "10*3/uL"
+          },
+          "value": 9
+        }
+      },
+      {
+        "termCodes": [
+          {
+            "code": "751-8",
+            "system": "http://loinc.org",
+            "display": "Neutrophils [#/volume] in Blood by Automated count"
+          }
+        ],
+        "context": {
+          "code": "Laboruntersuchung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Laboruntersuchung"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "comparator": "ge",
+          "unit": {
+            "code": "10*3/uL",
+            "display": "10*3/uL"
+          },
+          "value": 9
+        }
+      },
+      {
+        "termCodes": [
+          {
+            "code": "753-4",
+            "system": "http://loinc.org",
+            "display": "Neutrophils [#/volume] in Blood by Manual count"
+          }
+        ],
+        "context": {
+          "code": "Laboruntersuchung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Laboruntersuchung"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "comparator": "ge",
+          "unit": {
+            "code": "10*3/uL",
+            "display": "10*3/uL"
+          },
+          "value": 9
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "code": "26515-7",
+            "system": "http://loinc.org",
+            "display": "Platelets [#/volume] in Blood"
+          }
+        ],
+        "context": {
+          "code": "Laboruntersuchung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Laboruntersuchung"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "comparator": "ge",
+          "unit": {
+            "code": "K/uL",
+            "display": "K/uL"
+          },
+          "value": 100
+        }
+      },
+      {
+        "termCodes": [
+          {
+            "code": "49497-1",
+            "system": "http://loinc.org",
+            "display": "Platelets [#/volume] in Blood by Estimate"
+          }
+        ],
+        "context": {
+          "code": "Laboruntersuchung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Laboruntersuchung"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "comparator": "ge",
+          "unit": {
+            "code": "K/uL",
+            "display": "K/uL"
+          },
+          "value": 100
+        }
+      },
+      {
+        "termCodes": [
+          {
+            "code": "778-1",
+            "system": "http://loinc.org",
+            "display": "Platelets [#/volume] in Blood by Manual count"
+          }
+        ],
+        "context": {
+          "code": "Laboruntersuchung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Laboruntersuchung"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        },
+        "valueFilter": {
+          "type": "quantity-comparator",
+          "comparator": "ge",
+          "unit": {
+            "code": "K/uL",
+            "display": "K/uL"
+          },
+          "value": 100
+        }
+      }
+    ]
+  ],
+  "exclusionCriteria": [
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "367336001",
+            "display": "Chemotherapy (procedure)"
+          }
+        ],
+        "context": {
+          "code": "Procedure",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Prozedur"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01",
+          "afterDate": "2023-09-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "108290001",
+            "display": "Radiation oncology AND/OR radiotherapy"
+          }
+        ],
+        "context": {
+          "code": "Procedure",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Prozedur"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01",
+          "afterDate": "2023-09-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "197517",
+            "display": "clarithromycin 500 MG Oral Tablet"
+          }
+        ],
+        "context": {
+          "code": "Medikamentenverabreichung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Verabreichung von Medikamenten"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01",
+          "afterDate": "2023-09-17"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "897685",
+            "display": "verapamil hydrochloride 80 MG Oral Tablet [Calan]"
+          }
+        ],
+        "context": {
+          "code": "Medikamentenverabreichung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Verabreichung von Medikamenten"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01",
+          "afterDate": "2023-09-17"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "308971",
+            "display": "carbamazepine 20 MG/ML Oral Suspension [Tegretol]"
+          }
+        ],
+        "context": {
+          "code": "Medikamentenverabreichung",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Verabreichung von Medikamenten"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01",
+          "afterDate": "2023-09-17"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "94225005",
+            "display": "Metastatic malignant neoplasm to brain (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "40733004",
+            "display": "Infectious disease (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "42343007",
+            "display": "Congestive heart failure (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "194828000",
+            "display": "Angina (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "698247007",
+            "display": "Cardiac arrhythmia (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "77386006",
+            "display": "Pregnancy (finding)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "19030005",
+            "display": "Human immunodeficiency virus (organism)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "126877002",
+            "display": "Disorder of glucose metabolism (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "51387008",
+            "display": "Acidosis (disorder)"
+          }
+        ],
+        "context": {
+          "code": "Diagnose",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "Diagnose"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ],
+    [
+      {
+        "termCodes": [
+          {
+            "code": "37333",
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "display": "sulfanilylurea"
+          }
+        ],
+        "context": {
+          "code": "AllergyIntolerance",
+          "system": "fdpg.mii.synthea",
+          "version": "1.0.0",
+          "display": "AllergyIntolerance"
+        },
+        "timeRestriction": {
+          "beforeDate": "2023-10-01"
+        }
+      }
+    ]
+  ]
+}
