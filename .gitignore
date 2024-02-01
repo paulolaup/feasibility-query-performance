@@ -15,3 +15,5 @@
 
 .env
 /server-setup/*/.env
+
+config/run_config.json

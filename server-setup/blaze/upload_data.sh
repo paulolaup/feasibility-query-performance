@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# export $(grep -v '^#' .env | xargs -d '\n')
+source .env
+
 compressed_data_path="$1"
 
 if [[ -z "$compressed_data_path" ]]; then

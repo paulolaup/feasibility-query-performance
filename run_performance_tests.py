@@ -27,6 +27,8 @@ def determine_run_plans(test_config):
     arr_patients_per_run = test_config['num_patients_per_run']
     patients_per_archive = test_config['num_patients_per_archive']
     archive_dir_path = test_config['data_dir_path']
+    keep_volumes = test_config.get('keep_volumes', False)
+    upload_data = test_config.get('upload_data', True)
 
     # Sort in ascending order
     arr_patients_per_run.sort()
@@ -42,7 +44,9 @@ def determine_run_plans(test_config):
             'num_rounds': test_config['num_rounds'],
             'num_pre_queries': test_config['num_pre_queries'],
             'num_patients': patients_per_run,
-            'archives': archive_files[archives_start_idx: archives_start_idx + archives_required]
+            'archives': archive_files[archives_start_idx: archives_start_idx + archives_required],
+            'keep_volumes': True,
+            'upload_data': False
         })
         prev_total_patients = patients_per_run
 
@@ -59,11 +63,15 @@ def run_blaze(plans, base_dir, timeout):
     for plan in plans:
         print("Running test for Blaze with plan: " + str(plan))
         # Upload data
-        subprocess.run(['bash', 'remove_with_flare.sh'])
+        remove_command = ['bash', 'remove_with_flare.sh']
+        if plans['keep_volumes']:
+            remove_command.append('-v')
+        subprocess.run(remove_command)
         subprocess.run(['bash', 'setup_with_flare.sh'])
-        for archive_file_path in plan['archives']:
-            print(f"Uploading data @ {archive_file_path}")
-            subprocess.run(['bash', 'upload_data.sh', archive_file_path])
+        if plans['upload_data']:
+            for archive_file_path in plan['archives']:
+                print(f"Uploading data @ {archive_file_path}")
+                subprocess.run(['bash', 'upload_data.sh', archive_file_path])
 
         # Run tests
         print("Running tests")
@@ -85,11 +93,15 @@ def run_pathling(plans, base_dir, timeout):
     for plan in plans:
         print("Running test for Pathling with plan: " + str(plan))
         # Upload data
-        subprocess.run(['bash', shutdown_script_name])
-        subprocess.run(['bash', startup_script_name])
-        for archive_file_path in plan['archives']:
-            print(f"Uploading data @ {archive_file_path}")
-            subprocess.run(['python3', 'upload_data.py', archive_file_path])
+        remove_command = ['bash', 'remove_with_flare.sh']
+        if plans['keep_volumes']:
+            remove_command.append('-v')
+        subprocess.run(remove_command)
+        subprocess.run(['bash', 'setup_with_flare.sh'])
+        if plans['upload_data']:
+            for archive_file_path in plan['archives']:
+                print(f"Uploading data @ {archive_file_path}")
+                subprocess.run(['python3', 'upload_data.py', archive_file_path])
 
         # Run tests
         print("Running tests")
@@ -110,11 +122,15 @@ def run_fhirbase(plans, base_dir, timeout):
     for plan in plans:
         print("Running test for Fhirbase with plan: " + str(plan))
         # Upload data
-        subprocess.run(['bash', shutdown_script_name])
-        subprocess.run(['bash', startup_script_name])
-        for archive_file_path in plan['archives']:
-            print(f"Uploading data @ {archive_file_path}")
-            subprocess.run(['bash', upload_script_name, archive_file_path])
+        remove_command = ['bash', shutdown_script_name]
+        if plans['keep_volumes']:
+            remove_command.append('-v')
+        subprocess.run(remove_command)
+        subprocess.run(['bash', 'setup_with_flare.sh'])
+        if plans['upload_data']:
+            for archive_file_path in plan['archives']:
+                print(f"Uploading data @ {archive_file_path}")
+                subprocess.run(['bash', 'upload_data.sh', archive_file_path])
 
         # Run tests
         print("Running tests")

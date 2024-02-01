@@ -1,14 +1,15 @@
 #!/bin/bash
 
+# Load environment variables from .env file
+# export $(grep -v '^#' .env | xargs -d '\n')
+source .env
+
 compressed_data_path="$1"
 
 if [[ -z "$compressed_data_path" ]]; then
   echo "Provide path to the compressed data file to decompress and upload"
   exit 1
 fi
-
-# Load environment variables from .env.default.default.default file
-export $(grep -v '^#' .env | xargs -d '\n')
 
 echo "Decompressing data at ${compressed_data_path}"
 mkdir "$DATA_PATH/temp"

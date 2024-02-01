@@ -9,6 +9,7 @@ services:
     volumes:
       - ./data/ndjson:/fhirbase/data/ndjson
       - ./query:/fhirbase/query
+      - fhirbase-data:/var/lib/postgresql/data
     environment:
       - "POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}"
     healthcheck:
@@ -17,3 +18,6 @@ services:
       timeout: 10s
       retries: 30
       start_period: 5s
+
+volumes:
+  fhirbase-data:
