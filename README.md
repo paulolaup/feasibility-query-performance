@@ -119,11 +119,11 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-### Step 2 - Setup Environment
-Initialize all environments by generating respective environment files using the **initialize_environment.sh**
-script. 
+### Step 2 - Setup Environment and Config
+Initialize all environments and the run config by generating respective environment files using the **initialize_environment.sh**
+script in the dedicated directories for each system under the **server-setup** directory. To only initialize the run config file, use the **config/initialize_run_config.sh** script. 
 ```bash
-bash initialize_environment.sh 
+bash initialize_environment_and_config.sh 
 ```
 Configure the environment for each system if required as described in the **Configuration** section.
 
@@ -133,7 +133,8 @@ The files need to be packed into a **tar ball files** and then compressed into *
 *.tar.gz* for the compressed archives.
 
 ### Step 4 - Adjust Run Configuration
-Set the run configuration you desire in **config/run_config.json**. Refer to the **Configuration** section for more details.
+Set the run configuration you desire in **config/run_config.json**. Refer to the **Configuration** section for more 
+details. To initialize it, refer to the second step.
 
 ### Step 5 - Run Tests
 Start the tests by invoking the dedicated script in the terminal:
@@ -164,3 +165,5 @@ below.
 |     num_pre_queries      |    int     |                                    Number of queries to run before each round to populate caches. They are randomly chosen from the available queries                                    |
 |      data_dir_path       |   string   |                                                              Path to the directory in which all compressed archives reside                                                               |
 |         timeout          |    int     |                                                           Timeout in seconds after which requests are automatically terminated                                                           |
+|       keep_volumes       |  boolean   |                                 If true, the volumes serving as the storage location of each system will be kept even after the containers were removed                                  |
+|       upload_data        |  boolean   |                                                        If true, data will be uploaded to each system during the performance tests                                                        |

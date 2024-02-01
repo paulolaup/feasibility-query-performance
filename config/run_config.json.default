@@ -4,7 +4,7 @@
   "num_rounds": 1,
   "num_pre_queries": 0,
   "data_dir_path": "/home/user/data/test_1k",
-  "timeout": 900
+  "timeout": 900,
   "keep_volumes": false,
   "upload_data": true
 }
