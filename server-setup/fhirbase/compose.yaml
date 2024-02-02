@@ -9,9 +9,10 @@ services:
     volumes:
       - ./data/ndjson:/fhirbase/data/ndjson
       - ./query:/fhirbase/query
-      - fhirbase-data:/var/lib/postgresql/data
+      - fhirbase-data:/pgdata:rw
     environment:
       - "POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}"
+      - "PGDATA=/var/lib/postgresql/data"
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready", "-d", "db_prod" ]
       interval: 10s
