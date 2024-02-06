@@ -62,9 +62,7 @@ def run_blaze(plans, base_dir, timeout):
 
     prev_cwd = os.getcwd()
     os.chdir(blaze_setup_location)
-    remove_command = ['bash', 'remove_with_flare.sh']
-    if plans['keep_volumes']:
-        remove_command.append('-v')
+    remove_command = ['bash', 'remove_with_flare.sh', '-v']
     for plan in plans['plans']:
         print("Running test for Blaze with plan: " + str(plan))
         # Upload data
@@ -81,6 +79,9 @@ def run_blaze(plans, base_dir, timeout):
         report_file_path_2 = os.path.join(base_dir, 'blaze', f"run_{plan['num_patients']}_cql.json")
         subprocess.run(['python3', test_script_name, '-r', str(plans['num_rounds']), '-p', str(plans['num_pre_queries']),
                         '-f1', report_file_path_1, '-f2', report_file_path_2, '-t', str(timeout)])
+
+    if not plans['keep_volumes']:
+        remove_command.remove('-v')
     subprocess.run(remove_command)
     os.chdir(prev_cwd)
 
@@ -92,9 +93,7 @@ def run_pathling(plans, base_dir, timeout):
 
     prev_cwd = os.getcwd()
     os.chdir(pathling_setup_location)
-    remove_command = ['bash', 'remove.sh']
-    if plans['keep_volumes']:
-        remove_command.append('-v')
+    remove_command = ['bash', 'remove.sh', '-v']
     for plan in plans['plans']:
         print("Running test for Pathling with plan: " + str(plan))
         # Upload data
@@ -110,6 +109,9 @@ def run_pathling(plans, base_dir, timeout):
         report_file_path = os.path.join(base_dir, 'pathling', f"run_{plan['num_patients']}.json")
         subprocess.run(['python3', test_script_name, '-r', str(plans['num_rounds']), '-p', str(plans['num_pre_queries']),
                         '-u', 'http://localhost:8080/fhir', '-f', report_file_path, '-t', str(timeout)])
+
+    if not plans['keep_volumes']:
+        remove_command.remove('-v')
     subprocess.run(remove_command)
     os.chdir(prev_cwd)
 
@@ -121,9 +123,7 @@ def run_fhirbase(plans, base_dir, timeout):
 
     prev_cwd = os.getcwd()
     os.chdir(fhirbase_setup_location)
-    remove_command = ['bash', shutdown_script_name]
-    if plans['keep_volumes']:
-        remove_command.append('-v')
+    remove_command = ['bash', shutdown_script_name, '-v']
     for plan in plans['plans']:
         print("Running test for Fhirbase with plan: " + str(plan))
         # Upload data
@@ -139,6 +139,9 @@ def run_fhirbase(plans, base_dir, timeout):
         report_file_path = os.path.join(base_dir, 'fhirbase', f"run_{plan['num_patients']}.json")
         subprocess.run(['python3', test_script_name, '-r', str(plans['num_rounds']), '-p', str(plans['num_pre_queries']),
                         '-f', report_file_path, '-t', str(timeout)])
+
+    if not plans['keep_volumes']:
+        remove_command.remove('-v')
     subprocess.run(remove_command)
     os.chdir(prev_cwd)
 
