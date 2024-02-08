@@ -10,6 +10,9 @@ services:
     environment:
       - "BASE_URL=${BLAZE_BASE_URL:-http://server:8080}"
       - "ENFORCE_REFERENTIAL_INTEGRITY=${ENFORCE_REFERENTIAL_INTEGRITY:-true}"
+      - "JAVA_TOOL_OPTIONS=${JAVA_TOOL_OPTIONS:--Xmx4g}"
+      - "DB_BLOCK_CACHE_SIZE=${DB_BLOCK_CACHE_SIZE:-4096}"
+      - "DB_RESOURCE_CACHE_SIZE=${DB_RESOURCE_CACHE_SIZE:-2500000}"
     healthcheck:
       test: [ "CMD", "curl", "-f", "http://localhost:8080/health" ]
       interval: 10s

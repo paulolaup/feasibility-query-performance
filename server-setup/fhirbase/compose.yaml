@@ -6,15 +6,21 @@ services:
     ports:
       - "${POSTGRES_PORT:-9432}:5432"
       - "${SERVER_PORT:-9000}:3000"
+    command: "postgres -c config_file=/fhirbase/config/postgresql.conf"
     volumes:
       - ./data/ndjson:/fhirbase/data/ndjson
       - ./query:/fhirbase/query
-      - ./config/postgresql.conf:/pgdata/postgresql.conf
+      - ./config/postgresql.conf:/fhirbase/config/postgresql.conf
+      - fhirbase-data:/pgdata:rw
     environment:
       - "POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}"
+      - "PGDATA=/var/lib/postgresql/data"
     healthcheck:
       test: [ "CMD-SHELL", "pg_isready", "-d", "db_prod" ]
       interval: 10s
       timeout: 10s
       retries: 30
       start_period: 5s
+
+volumes:
+  fhirbase-data:
