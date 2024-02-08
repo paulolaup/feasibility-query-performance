@@ -74,6 +74,6 @@ if [[ "$(compare_versions $present_python_version "3.8.0")" -eq 2 ]]; then
 else
   echo "Present python version $present_python_version sufficient (>= 3.8.0)"
   echo "Creating virtual environment"
-  python3 -m venv .venv
+  python -m venv .venv
 fi
 echo "Done"

@@ -15,7 +15,7 @@ mkdir "$DATA_PATH/temp"
 pigz -dc "$compressed_data_path" | tar -xf - -C "$DATA_PATH/temp"
 
 echo "Processing files"
-python3 bundle_to_compressed_ndjson.py "$DATA_PATH/temp/output/fhir" "$DATA_PATH/ndjson"
+python bundle_to_compressed_ndjson.py "$DATA_PATH/temp/output/fhir" "$DATA_PATH/ndjson"
 
 echo "Uploading files to fhirbase"
 find "$DATA_PATH/ndjson" -type f -name "*.ndjson.gz" -print0 | while read -d $'\0' file

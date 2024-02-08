@@ -9,6 +9,7 @@ services:
     volumes:
       - ./data/ndjson:/fhirbase/data/ndjson
       - ./query:/fhirbase/query
+      - ./config/postgresql.conf:/pgdata/postgresql.conf
     environment:
       - "POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-postgres}"
     healthcheck:
