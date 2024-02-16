@@ -202,6 +202,7 @@ def generate_test_run_order(query_sets, num_pre_run_queries=None):
 
 def restart_containers(project):
     print(f"Restarting containers for project '{project}'")
+    subprocess.run(f'docker exec {project}-flare-1 rm cache/*', shell=True)
     subprocess.run(['docker', 'container', 'stop', f'{project}-server-1'])
     subprocess.run(['docker', 'container', 'stop', f'{project}-flare-1'])
     subprocess.run(['docker', 'compose', '--project-name', project, '-f', 'compose-with-flare.yaml', 'up', '--wait'])

@@ -38,12 +38,11 @@ FROM ((SELECT p.id
       (SELECT o.resource #>> '{subject,id}'
        FROM observation o,
             jsonb_array_elements(o.resource #> '{code,coding}') coding,
-            jsonb_array_elements(o.resource #> '{value,Quantity}') valueQuantity
        WHERE coding ->> 'system' = 'http://loinc.org'
          AND coding ->> 'code' = '751-8'
-         AND valueQuantity ->> 'system' = 'http://unitsofmeasure.org'
-         AND valueQuantity ->> 'code' = '10*3/uL'
-         AND (valueQuantity ->> 'value')::decimal > 4.0
+         AND o.resource #>> '{value,Quantity,system}' = 'http://unitsofmeasure.org'
+         AND o.resource #>> '{value,Quantity,code}' = '10*3/uL'
+         AND (o.resource #>> '{value,Quantity,value}')::decimal > 4.0
          AND (o.resource #>> '{effective,dateTime}')::timestamp <@ '[2023-09-01, 2023-10-01)'::tsrange)) inclusion
 WHERE inclusion.id NOT IN ((SELECT c.resource #>> '{subject,id}'
                             FROM condition c,
