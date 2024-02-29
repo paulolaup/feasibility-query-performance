@@ -7,6 +7,7 @@
     "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|34095006).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|397923000).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|77386006).anyTrue() and onsetDateTime < @2023-10-01).not()",
-    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|48447003).anyTrue() and onsetDateTime < @2023-10-01).not()"
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|48447003).anyTrue() and onsetDateTime < @2023-10-01).not()",
+    "reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|19829001).anyTrue() and onsetDateTime < @2023-10-01).not()"
   ]
 }

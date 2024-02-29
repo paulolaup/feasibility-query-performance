@@ -7,7 +7,7 @@
     "Patient.reverseResolve(Condition.subject).where((code.coding.subsumedBy(http://snomed.info/sct|66071002).anyTrue() or code.coding.subsumedBy(http://snomed.info/sct|50711007).anyTrue()) and onsetDateTime < @2023-10-01).empty()",
     "Patient.reverseResolve(Condition.subject).where((code.coding.subsumedBy(http://snomed.info/sct|235856003).anyTrue() or code.coding.subsumedBy(http://snomed.info/sct|39621005).anyTrue()) and onsetDateTime < @2023-10-01).empty()",
     "Patient.reverseResolve(Condition.subject).where(code.coding.subsumedBy(http://snomed.info/sct|233703007).anyTrue() and onsetDateTime < @2023-10-01).empty()",
-    "Patient.reverseResolve(Procedure.subject).where((code.coding.subsumedBy(http://snomed.info/sct|387713003).anyTrue() or code.coding.subsumedBy(http://snomed.info/sct|417746004).anyTrue()) and performedPeriod.end < @2023-10-01).empty()",
+    "Patient.reverseResolve(Procedure.subject).where((code.coding.subsumedBy(http://snomed.info/sct|387713003).anyTrue() and performedPeriod.end < @2023-10-01).empty()",
     "Patient.reverseResolve(Condition.subject).where(code.coding.subsumedBy(http://snomed.info/sct|417746004).anyTrue() and onsetDateTime < @2023-10-01).empty()",
     "Patient.reverseResolve(Condition.subject).where(code.coding.subsumedBy(http://snomed.info/sct|363346000).anyTrue() and onsetDateTime >= @2021-10-01 and onsetDateTime < @2023-10-01).empty()"
   ]

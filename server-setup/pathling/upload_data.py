@@ -55,10 +55,10 @@ def upload_archive(archive_path):
         response = requests.post(url=request_url, json=json.load(fp=open(request_file_path, mode='r')))
         if response.status_code < 300:
             print(f"Upload successful: {response.status_code}")
-            # print("Removing temporary data")
-            # subprocess.run(['rm', '-r', temp_dir])
-            # subprocess.run(f"rm {os.path.join(ndjson_dir, '*.ndjson')}", shell=True)
-            # subprocess.run(f"rm {os.path.join(ndjson_dir, '*.json')}", shell=True)
+            #print("Removing temporary data")
+            #subprocess.run(['rm', '-r', temp_dir])
+            #subprocess.run(f"rm {os.path.join(ndjson_dir, '*.ndjson')}", shell=True)
+            #subprocess.run(f"rm {os.path.join(ndjson_dir, '*.json')}", shell=True)
         else:
             print(f"Upload failed: {response.status_code}")
             print(response.text)
@@ -77,9 +77,9 @@ def upload_archive(archive_path):
     # Upload data
     # request_file_path = os.path.join(ndjson_dir, 'request.json')
     # request_url = f"http://localhost:8080/fhir/$import"
-    # print(f"Uploading data to {request_url}")
-    # response = requests.post(url=request_url, json=json.load(fp=open(request_file_path, mode='r')))
-    # if response.status_code < 300:
+    #  print(f"Uploading data to {request_url}")
+    #  response = requests.post(url=request_url, json=json.load(fp=open(request_file_path, mode='r')))
+    #  if response.status_code < 300:
     #    print(f"Upload successful: {response.status_code}")
     #    print("Removing temporary data")
     #    subprocess.run(['rm', '-r', temp_dir])

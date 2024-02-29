@@ -5,7 +5,6 @@
     "Patient.reverseResolve(Procedure.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|73632009).anyTrue() and performedPeriod.start > @2023-10-01)",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|52448006).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|58214004).anyTrue() and onsetDateTime < @2023-10-01).not()",
-    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|52448006).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|32798002).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|128613002).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|127294003).anyTrue() and onsetDateTime < @2023-10-01).not()",

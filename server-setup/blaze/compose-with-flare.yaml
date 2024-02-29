@@ -3,6 +3,7 @@ version: '3.8'
 services:
   server:
     image: samply/blaze:0.22.2
+    command: "rm -r cache/*"
     ports:
       - "${BLAZE_PORT:-8080}:8080"
     volumes:

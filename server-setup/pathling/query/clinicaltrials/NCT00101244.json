@@ -10,6 +10,7 @@
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|40733004).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|42343007).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|194828000).anyTrue() and onsetDateTime < @2023-10-01).not()",
+    "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|698247007).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|77386006).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|19030005).anyTrue() and onsetDateTime < @2023-10-01).not()",
     "Patient.reverseResolve(Condition.subject).exists(code.coding.subsumedBy(http://snomed.info/sct|126877002).anyTrue() and onsetDateTime < @2023-10-01).not()",
