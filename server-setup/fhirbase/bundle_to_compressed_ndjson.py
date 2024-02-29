@@ -10,9 +10,6 @@ allowed_resource_types = {"Condition", "Observation", "MedicationRequest", "Enco
 
 
 def bundle_to_compressed_ndjson(file_path, output_file_pointer):
-    f = open(file_path, mode='r', encoding='utf-8')
-#    f.seek()
-#    f.readline()
     bundle = json.load(fp=open(file_path, mode='r', encoding='utf-8'))
     for entry in bundle['entry']:
         if entry['resource']['resourceType'] in allowed_resource_types:
